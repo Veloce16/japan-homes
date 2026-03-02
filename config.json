@@ -1,0 +1,12 @@
+{
+  "email": {
+    "from_address": "veloce16@gmail.com",
+    "to_address": "veloce16@gmail.com",
+    "gmail_app_password": "ajct sfry kgzb jytw"
+  },
+  "filters": {
+    "max_price_yen": 15000000,
+    "min_building_sqm": 100,
+    "min_land_sqm": 300
+  }
+}

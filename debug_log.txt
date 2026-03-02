@@ -1,0 +1,477 @@
+[01:13:52] =======================================================
+[01:13:52] Japan Real Estate Scraper — DEBUG MODE
+[01:13:52] =======================================================
+[01:13:52] Screenshots will be saved to: C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots
+[01:13:54] 
+──────────────────────────────────────────────────
+[01:13:54] TESTING: Suumo — Used homes, Shizuoka (all cities)
+[01:13:54] URL: https://suumo.jp/jj/bukken/ichiran/JJ012FJ001/?ar=050&bs=030&ta=22&kb=1&mb=1500
+[01:13:59] HTTP status:  404
+[01:13:59] Final URL:    https://suumo.jp/jj/bukken/ichiran/JJ012FJ001/?ar=050&bs=030&ta=22&kb=1&mb=1500
+[01:13:59] Page title:   【SUUMO】 ページが見つかりません。
+[01:14:00] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\suumo_shizuoka.png
+[01:14:00] Selector counts:
+[01:14:00] Page text preview:
+借りる
+賃貸
+マンションを買う
+新築	中古
+一戸建てを買う
+新築	中古
+建てる
+注文住宅	土地
+リフォームする
+リフォーム
+売る
+売却査定
+住まいの相談
+講座/相談
+暮らし
+
+アクセスしようとしたページが見つかりません。
+
+URLが間違っているか、ページが削除された可能性があります。
+ご不便をおかけいたしますが、アドレスをご確認いただくか、SUUMOトップから通常通り検索をお楽しみください。
+
+SUUMOは、住まいを探している人を応援するサイトです。
+
+前の画面に戻る
+ 
+SUUMOトップページへ
+全国の不動産情報へ
+初めての方へ  |  サイトマップ  |  利用規約  |  プライバシーポリシー  |  お問い合わせ
+不動産・住宅サイト SUUMO（スーモ）
+賃貸  |  新築分譲マンション  |  中古マンション  |  新築一戸建て   |   中古一戸建て  |  土地  |  注文住宅  |  住宅リフォーム  |   不動産売却・査定  |  新築相談  |  引越し見積もり  |  住宅ローン  |  物件ライブラリー
+SUUMOエリアトップへ
+北海道  |  東北  |  関東  |  甲信越・北陸  |  東海  |  関西  |  四国  |  中国  |  九州・沖縄
+[01:14:00] ⚠️  BOT DETECTION SIGNALS: ['robot']
+[01:14:02] 
+──────────────────────────────────────────────────
+[01:14:02] TESTING: Suumo — Used homes, Mie (all cities)
+[01:14:02] URL: https://suumo.jp/jj/bukken/ichiran/JJ012FJ001/?ar=050&bs=030&ta=24&kb=1&mb=1500
+[01:14:05] HTTP status:  404
+[01:14:05] Final URL:    https://suumo.jp/jj/bukken/ichiran/JJ012FJ001/?ar=050&bs=030&ta=24&kb=1&mb=1500
+[01:14:05] Page title:   【SUUMO】 ページが見つかりません。
+[01:14:05] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\suumo_mie.png
+[01:14:05] Selector counts:
+[01:14:05] Page text preview:
+借りる
+賃貸
+マンションを買う
+新築	中古
+一戸建てを買う
+新築	中古
+建てる
+注文住宅	土地
+リフォームする
+リフォーム
+売る
+売却査定
+住まいの相談
+講座/相談
+暮らし
+
+アクセスしようとしたページが見つかりません。
+
+URLが間違っているか、ページが削除された可能性があります。
+ご不便をおかけいたしますが、アドレスをご確認いただくか、SUUMOトップから通常通り検索をお楽しみください。
+
+SUUMOは、住まいを探している人を応援するサイトです。
+
+前の画面に戻る
+ 
+SUUMOトップページへ
+全国の不動産情報へ
+初めての方へ  |  サイトマップ  |  利用規約  |  プライバシーポリシー  |  お問い合わせ
+不動産・住宅サイト SUUMO（スーモ）
+賃貸  |  新築分譲マンション  |  中古マンション  |  新築一戸建て   |   中古一戸建て  |  土地  |  注文住宅  |  住宅リフォーム  |   不動産売却・査定  |  新築相談  |  引越し見積もり  |  住宅ローン  |  物件ライブラリー
+SUUMOエリアトップへ
+北海道  |  東北  |  関東  |  甲信越・北陸  |  東海  |  関西  |  四国  |  中国  |  九州・沖縄
+[01:14:05] ⚠️  BOT DETECTION SIGNALS: ['robot']
+[01:14:07] 
+──────────────────────────────────────────────────
+[01:14:07] TESTING: Homes — Gotemba (URL pattern A)
+[01:14:07] URL: https://www.homes.co.jp/kodate/chuko/shizuoka/city-gotemba/list/
+[01:14:13] HTTP status:  404
+[01:14:13] Final URL:    https://www.homes.co.jp/kodate/chuko/shizuoka/city-gotemba/list/
+[01:14:13] Page title:   
+[01:14:13] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\homes_gotemba_a.png
+[01:14:13] Selector counts:
+[01:14:13]   li[class*='item']                        → 2 elements
+[01:14:13] Page text preview:
+メインコンテンツにスキップ
+借りる
+賃貸
+マンションを買う
+新築
+マンション
+中古
+マンション
+一戸建てを買う
+新築
+一戸建て
+中古
+一戸建て
+土地
+注文住宅
+売る
+不動産査定
+その他
+投資
+引越し
+最近見た物件
+お気に入り
+メニュー
+キーワードで不動産情報を探す | LIFULL HOME'S
+
+キーワード検索
+
+ページがみつかりません
+
+LIFULL HOME'Sをご利用いただきましてありがとうございます。
+
+誠に恐れ入りますが、お客様がアクセスしようとしたページがみつかりませんでした。
+すでに削除されたか、アドレスが間違っている可能性がございます。
+
+本日の新着物件 137,541件(20:00現在) 掲載物件総数 5,252,842件
+すべてを含む
+いずれかを含む
+
+特定のキーワードを除く
+
+人気キーワード 吉祥寺 賃貸 目黒 マンション 23区 南向き 京都市 名古屋市 デザイナーズ ルームシェア
+フッター
+ページトップ
+全国の地域から不動産・住宅を探す
+北海道・東北
+北海道 (札幌市) 青森 岩手 宮城 (仙台市) 秋田 山形 福島
+関東
+東京 (東京23区) 神奈川 (横浜市・川崎市・相模原市) 埼玉 (さいたま市) 千葉 (千葉市) 茨城 栃木 群馬
+北陸・甲信越
+新潟 (新潟市) 富山 石川 福井 山梨 長野
+東海
+愛知 (名古屋市) 岐阜 静岡 (静岡市・浜松市) 三重
+近畿
+大阪 (堺市・大阪市) 兵庫 (神戸市) 京都 (京都市) 滋賀 奈良 和歌山
+中国・四国
+鳥取 島根 岡山 (岡山市) 広島 (広島市) 山口 徳島 香川 愛媛 高知
+九州・沖縄
+福岡 (福岡市・北九州市) 佐賀 長崎 熊本 (熊本市) 大分 宮崎 鹿児島 沖縄
+物件の種類から探す
+賃貸 賃貸マンション アパート 賃貸一戸建て 新築マンション 中古マンション 新築一戸建て 中古一
+[01:14:13] ✅ No bot detection signals found
+[01:14:15] 
+──────────────────────────────────────────────────
+[01:14:15] TESTING: Homes — Gotemba (URL pattern B)
+[01:14:15] URL: https://www.homes.co.jp/kodate/b-shizuoka/gotemba-city/chuko/list/
+[01:14:19] HTTP status:  404
+[01:14:19] Final URL:    https://www.homes.co.jp/kodate/b-shizuoka/gotemba-city/chuko/list/
+[01:14:19] Page title:   
+[01:14:19] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\homes_gotemba_b.png
+[01:14:19] Selector counts:
+[01:14:19]   li[class*='item']                        → 2 elements
+[01:14:19] Page text preview:
+メインコンテンツにスキップ
+借りる
+賃貸
+マンションを買う
+新築
+マンション
+中古
+マンション
+一戸建てを買う
+新築
+一戸建て
+中古
+一戸建て
+土地
+注文住宅
+売る
+不動産査定
+その他
+投資
+引越し
+最近見た物件
+お気に入り
+メニュー
+キーワードで不動産情報を探す | LIFULL HOME'S
+
+キーワード検索
+
+ページがみつかりません
+
+LIFULL HOME'Sをご利用いただきましてありがとうございます。
+
+誠に恐れ入りますが、お客様がアクセスしようとしたページがみつかりませんでした。
+すでに削除されたか、アドレスが間違っている可能性がございます。
+
+本日の新着物件 137,541件(20:00現在) 掲載物件総数 5,252,842件
+すべてを含む
+いずれかを含む
+
+特定のキーワードを除く
+
+人気キーワード 吉祥寺 賃貸 目黒 マンション 23区 南向き 京都市 名古屋市 デザイナーズ ルームシェア
+フッター
+ページトップ
+全国の地域から不動産・住宅を探す
+北海道・東北
+北海道 (札幌市) 青森 岩手 宮城 (仙台市) 秋田 山形 福島
+関東
+東京 (東京23区) 神奈川 (横浜市・川崎市・相模原市) 埼玉 (さいたま市) 千葉 (千葉市) 茨城 栃木 群馬
+北陸・甲信越
+新潟 (新潟市) 富山 石川 福井 山梨 長野
+東海
+愛知 (名古屋市) 岐阜 静岡 (静岡市・浜松市) 三重
+近畿
+大阪 (堺市・大阪市) 兵庫 (神戸市) 京都 (京都市) 滋賀 奈良 和歌山
+中国・四国
+鳥取 島根 岡山 (岡山市) 広島 (広島市) 山口 徳島 香川 愛媛 高知
+九州・沖縄
+福岡 (福岡市・北九州市) 佐賀 長崎 熊本 (熊本市) 大分 宮崎 鹿児島 沖縄
+物件の種類から探す
+賃貸 賃貸マンション アパート 賃貸一戸建て 新築マンション 中古マンション 新築一戸建て 中古一
+[01:14:19] ✅ No bot detection signals found
+[01:14:21] 
+──────────────────────────────────────────────────
+[01:14:21] TESTING: Homes — Shizuoka prefecture overview
+[01:14:21] URL: https://www.homes.co.jp/kodate/chuko/shizuoka/list/
+[01:14:25] HTTP status:  202
+[01:14:25] Final URL:    https://www.homes.co.jp/kodate/chuko/shizuoka/list/
+[01:14:25] Page title:   Human Verification
+[01:14:25] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\homes_shizuoka.png
+[01:14:25] Selector counts:
+[01:14:25] Page text preview:
+Let's confirm you are human
+
+Complete the security check before continuing. This step verifies that you are not a bot, which helps to protect your account and prevent spam.
+
+Begin
+العربية
+Čeština
+Dansk
+Deutsch
+English
+Español
+Français
+Bahasa Indonesia
+Italiano
+日本語
+한국어
+Nederlands
+Polski
+Português
+Svenska
+ไทย
+Türkçe
+中文
+[01:14:25] ⚠️  BOT DETECTION SIGNALS: ['captcha', 'robot']
+[01:14:27] 
+──────────────────────────────────────────────────
+[01:14:27] TESTING: AtHome — Gotemba (URL pattern A)
+[01:14:27] URL: https://www.athome.co.jp/kodate/chuko/shizuoka/gotemba-city/list/
+[01:14:33] HTTP status:  200
+[01:14:33] Final URL:    https://www.athome.co.jp/kodate/chuko/shizuoka/gotemba-city/list/
+[01:14:33] Page title:   【アットホーム】御殿場市の中古住宅・中古一戸建て 購入情報｜一軒家の購入
+[01:14:37] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\athome_gotemba_a.png
+[01:14:37] Selector counts:
+[01:14:38]   [class*='bukken']                        → 120 elements
+[01:14:38]   [class*='property']                      → 396 elements
+[01:14:39]   li[class*='item']                        → 239 elements
+[01:14:39]   .item                                    → 30 elements
+[01:14:39] Page text preview:
+___
+
+お気に入り
+
+最近見た物件
+
+保存した検索条件
+
+ログイン・新規登録
+
+メニュー
+
+不動産情報サイト アットホーム
+
+借りる
+ (賃貸)
+
+買う
+
+建てる
+ (注文住宅)
+
+事業用物件
+を探す
+
+不動産会社
+を探す
+
+調べる
+
+お気に入り
+
+保存した
+検索条件
+
+メニュー
+
+不動産・住宅 トップ 
+一戸建て 
+中古一戸建て 
+静岡県 
+御殿場市の中古一戸建て一覧
+情報の見方
+オススメ機能
+この検索条件で
+新着メールを登録する
+この検索条件を
+保存する
+地域から探す
+
+都道府県
+
+静岡県
+
+変更する
+
+市区郡
+
+御殿場市
+
+変更する
+
+町村
+
+ 町名で絞り込む
+探し方を変更する
+沿線・駅から探す
+地図から探す
+路線図から探す
+通勤・通学時間から探す
+条件を絞り込む
+物件種別
+新築一戸建て・分譲一戸建て (93)
+中古一戸建て (89)
+建築条件付き土地 (19)
+価格
+下限なし
+500万円
+1,000万円
+1,500万円
+2,000万円
+2,500万円
+3,000万円
+3,500万円
+4,000万円
+4,500万円
+5,000万円
+5,500万円
+6,000万円
+6,500万円
+7,000万円
+8,000万円
+9,000万円
+10,000万円
+15,000万円
+20,000万円
+〜
+500万円
+1,000万円
+1,500万円
+2,000万円
+2,500万円
+3,000万円
+3,500万円
+4,000万円
+4,500万円
+5,000万円
+5,500万円
+6,000万円
+6,500万円
+7,000万円
+8,000万円
+9,000万円
+10,000万円
+15,000万円
+20,000万円
+上限なし
+価格未定を含める
+間取り(タイプ)
+1LDK以下 (0)
+2K (0)
+2DK (0)
+2LDK (1)
+3K (0)
+3DK (1)
+3LDK (29)
+4K (0)
+4DK
+[01:14:39] ⚠️  BOT DETECTION SIGNALS: ['captcha', 'robot', '403']
+[01:14:41] 
+──────────────────────────────────────────────────
+[01:14:41] TESTING: AtHome — Gotemba (URL pattern B)
+[01:14:41] URL: https://www.athome.co.jp/kodate/1003650035/list/
+[01:14:45] HTTP status:  405
+[01:14:45] Final URL:    https://www.athome.co.jp/kodate/1003650035/list/
+[01:14:45] Page title:   認証にご協力ください。
+[01:14:46] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\athome_gotemba_b.png
+[01:14:46] Selector counts:
+[01:14:46] Page text preview:
+認証にご協力ください。
+
+この画面が表示される理由はいくつかあります。
+
+通常のサイト閲覧を超える速度でリクエストを繰り返している
+ウェブブラウザのJavaScript設定が無効になっている
+Ghostery や NoScriptなどのサードパーティのブラウザプラグインによってJavaScriptの実行が邪魔されている
+
+サイトの閲覧を続けるには、お手数ですが以下の「Click to verify」(クリックして検証)からパズル認証を行ってください。
+
+パズル認証のやり方：パズルピースをパズルの抜けている部分までドラッグしてパズルを完成させてください。
+
+Click to verify
+
+Date: 2026-02-28 20:14:42
+IP: 204.210.116.17
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+Request: GET /kodate/1003650035/list/
+
+
+
+ページが表示されない場合はこちらの フォームからお問い合わせください。
+[01:14:46] ⚠️  BOT DETECTION SIGNALS: ['captcha', 'robot']
+[01:14:48] 
+──────────────────────────────────────────────────
+[01:14:48] TESTING: AtHome — Shizuoka prefecture overview
+[01:14:48] URL: https://www.athome.co.jp/kodate/chuko/shizuoka/list/
+[01:14:51] HTTP status:  405
+[01:14:51] Final URL:    https://www.athome.co.jp/kodate/chuko/shizuoka/list/
+[01:14:51] Page title:   認証にご協力ください。
+[01:14:51] Screenshot:   C:\Users\myblu\AppData\Roaming\Claude\local-agent-mode-sessions\f48e82fb-5d84-4e6e-a453-af85d97ec2be\f3532fb7-17a0-44d0-b2c5-46f9338fc8f9\local_8091be57-a76e-4420-b9c9-728f0c611522\outputs\japan_realestate\debug_screenshots\athome_shizuoka.png
+[01:14:51] Selector counts:
+[01:14:51] Page text preview:
+認証にご協力ください。
+
+この画面が表示される理由はいくつかあります。
+
+通常のサイト閲覧を超える速度でリクエストを繰り返している
+ウェブブラウザのJavaScript設定が無効になっている
+Ghostery や NoScriptなどのサードパーティのブラウザプラグインによってJavaScriptの実行が邪魔されている
+
+サイトの閲覧を続けるには、お手数ですが以下の「Click to verify」(クリックして検証)からパズル認証を行ってください。
+
+パズル認証のやり方：パズルピースをパズルの抜けている部分までドラッグしてパズルを完成させてください。
+
+Click to verify
+
+Date: 2026-02-28 20:14:48
+IP: 204.210.116.17
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+Request: GET /kodate/chuko/shizuoka/list/
+
+
+
+ページが表示されない場合はこちらの フォームからお問い合わせください。
+[01:14:51] ⚠️  BOT DETECTION SIGNALS: ['captcha', 'robot']

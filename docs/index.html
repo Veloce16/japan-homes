@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Home Search | 家探し</title>
+<style>
+/* ── Reset ─────────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0ebe3;color:#1a0a0a;min-height:100vh}
+
+/* ── Banner ─────────────────────────────────────────────────── */
+.banner{position:relative;width:100%;overflow:hidden;display:block}
+.banner-photo-wrap{position:relative;height:210px}
+.banner-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+.banner-photo-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to right,rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.28) 55%,transparent 100%);
+  display:flex;align-items:center;padding:0 52px}
+.banner-text-block{color:#fff}
+.banner-ja{font-size:19px;font-family:'Hiragino Mincho ProN','Yu Mincho','MS Mincho',Georgia,serif;
+  letter-spacing:5px;opacity:.88;text-shadow:0 1px 6px rgba(0,0,0,.55);margin-bottom:4px}
+.banner-en{font-size:36px;font-weight:700;font-family:Georgia,'Times New Roman',serif;
+  letter-spacing:2px;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+
+/* ── Controls bar ────────────────────────────────────────────── */
+.controls-bar{
+  background:#1a1a4e;padding:10px 24px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.btn-scrape{
+  background:#8b1a1a;color:#fff;border:none;padding:8px 16px;border-radius:6px;
+  font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:7px;
+  transition:background .2s;white-space:nowrap;letter-spacing:.3px}
+.btn-scrape:hover{background:#a52020}
+.btn-scrape:disabled{background:#4a4a6a;cursor:default}
+
+/* multi-select dropdowns */
+.ms-wrap{position:relative}
+.ms-btn{
+  background:rgba(255,255,255,.12);color:#fff;
+  border:1px solid rgba(255,255,255,.28);padding:7px 13px;border-radius:6px;
+  font-size:13px;cursor:pointer;display:flex;align-items:center;gap:8px;
+  justify-content:space-between;min-width:130px;white-space:nowrap;transition:background .15s}
+.ms-btn:hover{background:rgba(255,255,255,.22)}
+.ms-btn .arrow{font-size:10px;opacity:.7}
+.ms-drop{
+  position:absolute;top:calc(100% + 5px);left:0;background:#1e2060;
+  border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:5px 0;
+  min-width:170px;z-index:300;box-shadow:0 6px 20px rgba(0,0,0,.45);display:none}
+.ms-drop.open{display:block}
+.ms-drop label{
+  display:flex;align-items:center;gap:9px;padding:7px 14px;color:#fff;
+  font-size:13px;cursor:pointer;transition:background .12s}
+.ms-drop label:hover{background:rgba(255,255,255,.1)}
+.ms-drop input[type=checkbox]{accent-color:#d4a017;width:14px;height:14px;flex-shrink:0}
+.ms-drop .ms-divider{height:1px;background:rgba(255,255,255,.12);margin:4px 0}
+.ms-drop .ms-all{font-weight:700;color:#d4a017}
+
+/* view select */
+.view-sel{
+  background:rgba(255,255,255,.12);color:#fff;
+  border:1px solid rgba(255,255,255,.28);padding:7px 13px;border-radius:6px;
+  font-size:13px;cursor:pointer;appearance:none;min-width:150px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23ffffff80'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
+.view-sel option{background:#1a1a4e;color:#fff}
+
+/* ── Stats bar ───────────────────────────────────────────────── */
+.stats-bar{
+  background:#fff;border-bottom:2px solid #e8e0d5;
+  padding:10px 28px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.stat{display:flex;align-items:baseline;gap:6px}
+.stat-n{font-size:24px;font-weight:700;color:#8b1a1a;line-height:1}
+.stat-n.green{color:#2e7d32}
+.stat-n.blue{color:#1565c0}
+.stat-label{font-size:12px;color:#888;text-transform:uppercase;letter-spacing:.5px}
+.last-run{margin-left:auto;font-size:12px;color:#aaa}
+.scrape-status{font-size:12px;padding:4px 10px;border-radius:12px;display:none}
+.scrape-status.running{display:inline-block;background:#fff3e0;color:#e65100}
+.scrape-status.done{display:inline-block;background:#e8f5e9;color:#2e7d32}
+
+/* ── Main ────────────────────────────────────────────────────── */
+.main{padding:24px 28px;max-width:1540px;margin:0 auto}
+
+/* city section */
+.city-section{margin-bottom:44px}
+.city-header{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:18px;padding-bottom:10px;
+  border-bottom:3px solid #8b1a1a}
+.city-name{font-size:20px;font-weight:700;color:#1a1a4e;font-family:Georgia,serif}
+.city-badge{
+  background:#8b1a1a;color:#fff;padding:2px 11px;
+  border-radius:12px;font-size:12px;font-weight:700}
+.city-empty{color:#b0a090;font-style:italic;font-size:14px;padding:16px 0}
+
+/* card grid */
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:1140px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.cards-grid{grid-template-columns:1fr}}
+
+/* ── Property card ───────────────────────────────────────────── */
+.card{
+  background:#fff;border-radius:10px;overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  transition:box-shadow .2s,transform .2s;
+  position:relative;display:flex;flex-direction:column;
+  border-top:3px solid transparent}
+.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.14);transform:translateY(-2px)}
+.card.is-saved{border-top-color:#d4a017}
+.card.is-viewed:not(.is-saved){border-top-color:#78909c}
+
+/* photo */
+.card-photo{height:200px;background:#e8e0d5;overflow:hidden;position:relative;flex-shrink:0}
+.card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block}
+.card:hover .card-photo img{transform:scale(1.05)}
+.card-photo-none{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#ede5d8,#d4c9b4);font-size:48px;color:#c0a880}
+
+/* photo badges */
+.badge-new{
+  position:absolute;top:10px;right:10px;
+  background:#2e7d32;color:#fff;font-size:11px;font-weight:700;
+  padding:3px 9px;border-radius:4px;letter-spacing:.4px;
+  box-shadow:0 1px 5px rgba(0,0,0,.3)}
+.badge-viewed{
+  position:absolute;top:10px;left:10px;
+  background:rgba(30,30,60,.7);color:#b0c4d8;
+  font-size:11px;padding:3px 8px;border-radius:4px;
+  display:flex;align-items:center;gap:4px}
+
+/* card body */
+.card-body{padding:14px 16px 4px;flex:1;display:flex;flex-direction:column}
+.card-source{
+  font-size:10px;font-weight:700;color:#8b1a1a;
+  letter-spacing:.8px;text-transform:uppercase;margin-bottom:5px}
+.card-title{
+  font-size:14px;font-weight:600;color:#1a0a0a;
+  line-height:1.4;margin-bottom:8px;min-height:40px}
+.card-price{font-size:22px;font-weight:700;color:#8b1a1a;margin-bottom:12px}
+.card-specs{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin-bottom:12px}
+.spec-item{display:flex;flex-direction:column;gap:2px}
+.spec-lbl{font-size:10px;font-weight:700;letter-spacing:.5px;color:#999;text-transform:uppercase}
+.spec-val{font-size:14px;font-weight:600;color:#333}
+.card-notes{
+  width:100%;border:1px solid #e0d8ce;border-radius:6px;
+  padding:8px 10px;font-size:12px;color:#555;resize:vertical;
+  min-height:58px;font-family:inherit;background:#fdfaf6;
+  margin-bottom:10px;transition:border-color .2s;line-height:1.4}
+.card-notes:focus{outline:none;border-color:#8b1a1a;background:#fff}
+.card-notes::placeholder{color:#b8a898;font-style:italic}
+
+/* card footer */
+.card-footer{display:flex;gap:8px;padding:0 16px 14px}
+.btn-view{
+  flex:1;background:#8b1a1a;color:#fff;border:none;
+  padding:9px 0;border-radius:6px;font-size:12px;font-weight:700;
+  letter-spacing:.4px;cursor:pointer;text-decoration:none;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s}
+.btn-view:hover{background:#a52020}
+.btn-fav{
+  background:#fff;color:#8b1a1a;border:2px solid #8b1a1a;
+  padding:9px 12px;border-radius:6px;font-size:12px;font-weight:700;
+  cursor:pointer;display:flex;align-items:center;gap:5px;
+  transition:all .2s;white-space:nowrap}
+.btn-fav:hover{background:#fdf0f0}
+.btn-fav.active{background:#d4a017;color:#fff;border-color:#d4a017}
+.btn-fav.active:hover{background:#b8891a;border-color:#b8891a}
+
+/* ── Modal (GitHub setup) ─────────────────────────────────────── */
+.modal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:1000;
+  display:flex;align-items:center;justify-content:center;padding:20px}
+.modal-bg.hidden{display:none}
+.modal{
+  background:#fff;border-radius:12px;padding:28px;
+  max-width:490px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.modal h3{font-size:18px;color:#1a1a4e;font-family:Georgia,serif;margin-bottom:8px}
+.modal p{font-size:13px;color:#555;margin-bottom:4px;line-height:1.55}
+.modal a{color:#8b1a1a}
+.modal label{font-size:12px;font-weight:700;color:#333;display:block;margin:14px 0 4px}
+.modal input{
+  width:100%;border:1px solid #ddd;border-radius:6px;
+  padding:8px 10px;font-size:13px;font-family:monospace}
+.modal input:focus{outline:none;border-color:#8b1a1a}
+.modal-btns{display:flex;gap:10px;margin-top:20px;justify-content:flex-end}
+.btn-cancel{background:#fff;border:1px solid #ddd;color:#666;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:13px}
+.btn-save-cfg{background:#8b1a1a;color:#fff;border:none;padding:8px 18px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:700}
+.modal-note{font-size:11px;color:#999;margin-top:12px;line-height:1.5}
+
+/* ── No results ──────────────────────────────────────────────── */
+.no-results{text-align:center;padding:64px 20px;color:#aaa}
+.no-results-icon{font-size:52px;margin-bottom:14px}
+.no-results h3{font-size:18px;margin-bottom:8px;color:#888}
+.no-results p{font-size:14px}
+
+/* ── Spinner ─────────────────────────────────────────────────── */
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{width:14px;height:14px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;
+  border-radius:50%;animation:spin .7s linear infinite;display:inline-block;flex-shrink:0}
+
+/* ── Scrollbar ───────────────────────────────────────────────── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#f0ebe3}
+::-webkit-scrollbar-thumb{background:#c0a880;border-radius:3px}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BANNER
+════════════════════════════════════════════════════════════ -->
+<div class="banner" id="banner"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTROLS BAR
+════════════════════════════════════════════════════════════ -->
+<div class="controls-bar">
+
+  <button class="btn-scrape" id="btnScrape" onclick="triggerScrape()">
+    <span id="scrapeIcon">🔍</span>
+    <span id="scrapeLabel">Search Now</span>
+  </button>
+
+  <!-- Source filter -->
+  <div class="ms-wrap" id="wrapSource">
+    <button class="ms-btn" onclick="toggleDrop('dropSource')">
+      <span id="lblSource">All Sources</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="ms-drop" id="dropSource">
+      <label class="ms-all"><input type="checkbox" id="chkSrcAll" checked onchange="toggleAllSources(this)"> All Sources</label>
+      <div class="ms-divider"></div>
+      <label><input type="checkbox" class="chk-src" value="AtHome"       checked onchange="updateSourceFilter()"> AtHome</label>
+      <label><input type="checkbox" class="chk-src" value="Suumo"        checked onchange="updateSourceFilter()"> Suumo</label>
+      <label><input type="checkbox" class="chk-src" value="Lifull Homes" checked onchange="updateSourceFilter()"> Lifull Homes</label>
+      <label><input type="checkbox" class="chk-src" value="Yahoo RE"     checked onchange="updateSourceFilter()"> Yahoo RE</label>
+    </div>
+  </div>
+
+  <!-- City filter -->
+  <div class="ms-wrap" id="wrapCity">
+    <button class="ms-btn" onclick="toggleDrop('dropCity')">
+      <span id="lblCity">All Cities</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="ms-drop" id="dropCity">
+      <label class="ms-all"><input type="checkbox" id="chkCityAll" checked onchange="toggleAllCities(this)"> All Cities</label>
+      <div class="ms-divider"></div>
+      <label><input type="checkbox" class="chk-city" value="Gotemba, Shizuoka" checked onchange="updateCityFilter()"> Gotemba</label>
+      <label><input type="checkbox" class="chk-city" value="Oyama, Shizuoka"   checked onchange="updateCityFilter()"> Oyama</label>
+      <label><input type="checkbox" class="chk-city" value="Suzuka, Mie"       checked onchange="updateCityFilter()"> Suzuka</label>
+      <label><input type="checkbox" class="chk-city" value="Tsu, Mie"          checked onchange="updateCityFilter()"> Tsu</label>
+    </div>
+  </div>
+
+  <!-- View filter -->
+  <select class="view-sel" id="viewSel" onchange="updateViewFilter()">
+    <option value="all">Show All</option>
+    <option value="new7">New (Last 7 Days)</option>
+    <option value="saved">Favorites Only</option>
+  </select>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     STATS BAR
+════════════════════════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-n" id="statTotal">–</span><span class="stat-label">Total</span></div>
+  <div class="stat"><span class="stat-n green" id="statNew">–</span><span class="stat-label">New (7d)</span></div>
+  <div class="stat"><span class="stat-n blue" id="statSaved">–</span><span class="stat-label">Saved</span></div>
+  <span class="last-run" id="lastRun">Loading…</span>
+  <span class="scrape-status" id="scrapeStatus"></span>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════════════ -->
+<div class="main" id="main"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     GITHUB SETUP MODAL
+════════════════════════════════════════════════════════════ -->
+<div class="modal-bg hidden" id="modalBg">
+  <div class="modal">
+    <h3>⚙️ Search Now — Setup</h3>
+    <p>To trigger a live scrape from here, enter your GitHub details once. They're saved in this browser only.</p>
+    <label>GitHub Username</label>
+    <input type="text" id="cfgOwner" placeholder="your-github-username">
+    <label>Repository Name</label>
+    <input type="text" id="cfgRepo" placeholder="japan-homes">
+    <label>Personal Access Token <a href="https://github.com/settings/tokens/new?scopes=workflow" target="_blank">(create one)</a></label>
+    <input type="password" id="cfgToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+    <p class="modal-note">Token needs the <strong>workflow</strong> scope only. It is stored in your browser's localStorage and never sent anywhere except GitHub's API.</p>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save-cfg" onclick="saveGitConfig()">Save & Search</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// ── CONFIG ─────────────────────────────────────────────────────
+// Paste a Mount Fuji photo URL here to use a real photo as the banner.
+// Leave blank ("") to use the built-in SVG illustration.
+// ═══════════════════════════════════════════════════════════════
+const BANNER_PHOTO_URL = "";
+
+// GitHub Actions config — leave blank to use browser-stored values
+const GITHUB_OWNER    = "";   // e.g. "yourname"
+const GITHUB_REPO     = "";   // e.g. "japan-homes"
+const GITHUB_WORKFLOW = "scrape.yml";
+
+// ── SVG Banner ─────────────────────────────────────────────────
+const SVG_BANNER = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 210" width="100%" style="display:block">
+  <defs>
+    <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0d0d2b"/>
+      <stop offset="38%"  stop-color="#1a1a5e"/>
+      <stop offset="70%"  stop-color="#c0392b"/>
+      <stop offset="87%"  stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#f39c12"/>
+    </linearGradient>
+    <linearGradient id="blake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#e67e22" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0d0d2b" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="bsnow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#fff"/>
+      <stop offset="100%" stop-color="#dce8f0"/>
+    </linearGradient>
+    <linearGradient id="bshim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#f39c12" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="#f39c12" stop-opacity="0.55"/>
+      <stop offset="55%"  stop-color="#f5cba7" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#f39c12" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bglow" cx="50%" cy="100%" r="50%">
+      <stop offset="0%"  stop-color="#e67e22" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0d0d2b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="210" fill="url(#bsky)"/>
+  <g fill="white" opacity="0.7">
+    <circle cx="42" cy="14" r="1.1"/><circle cx="120" cy="8" r=".8"/>
+    <circle cx="198" cy="20" r="1.3"/><circle cx="290" cy="10" r=".9"/>
+    <circle cx="430" cy="12" r="1.2"/><circle cx="510" cy="18" r=".8"/>
+    <circle cx="580" cy="7" r="1.0"/><circle cx="820" cy="9" r="1.1"/>
+    <circle cx="900" cy="19" r=".8"/><circle cx="970" cy="6" r="1.3"/>
+    <circle cx="1050" cy="15" r=".9"/><circle cx="1200" cy="11" r="1.2"/>
+    <circle cx="1280" cy="17" r=".8"/><circle cx="1340" cy="8" r="1.0"/>
+    <circle cx="75" cy="32" r=".6"/><circle cx="240" cy="30" r=".6"/>
+    <circle cx="780" cy="14" r=".7"/><circle cx="1160" cy="34" r=".6"/>
+  </g>
+  <rect width="1400" height="210" fill="url(#bglow)"/>
+  <path d="M0,148 Q80,118 160,135 Q240,110 320,130 Q400,100 480,124
+           Q560,113 640,132 Q720,118 800,130 Q880,108 960,126
+           Q1040,114 1120,130 Q1200,116 1280,133 Q1340,124 1400,128 L1400,210 L0,210 Z"
+        fill="#0d0d2b" opacity="0.45"/>
+  <path d="M700,36 C700,36 658,60 638,73 C618,86 604,94 588,104
+           C570,115 552,120 530,126 C505,133 480,136 455,138
+           C420,141 380,141 340,141 C300,141 260,141 220,141
+           C180,141 120,141 0,141 L0,210 L1400,210 L1400,141
+           C1280,141 1220,141 1180,141 C1140,141 1100,141 1060,141
+           C1020,141 980,141 945,138 C920,136 895,133 870,126
+           C848,120 830,115 812,104 C796,94 782,86 762,73
+           C742,60 700,36 700,36 Z" fill="#180808" opacity="0.92"/>
+  <path d="M700,36 C700,36 668,57 650,69 C634,80 622,89 608,99
+           C594,109 578,116 560,122 C540,129 516,133 490,136
+           C465,138 438,139 410,140 L990,140
+           C962,139 935,138 910,136 C884,133 860,129 840,122
+           C822,116 806,109 792,99 C778,89 766,80 750,69
+           C732,57 700,36 700,36 Z" fill="#2d0f0f" opacity="0.65"/>
+  <path d="M700,36 C700,36 685,50 676,58 C668,65 662,71 656,77
+           C664,74 672,71 682,69 C690,67 696,66 700,66
+           C704,66 710,67 718,69 C728,71 736,74 744,77
+           C738,71 732,65 724,58 C715,50 700,36 700,36 Z"
+        fill="url(#bsnow)" opacity="0.93"/>
+  <rect x="0" y="141" width="1400" height="69" fill="url(#blake)"/>
+  <rect x="0" y="145" width="1400" height="3.5" fill="url(#bshim)" opacity="0.65"/>
+  <rect x="0" y="155" width="1400" height="2"   fill="url(#bshim)" opacity="0.38"/>
+  <circle cx="1318" cy="36" r="17" fill="#f5e6c8" opacity="0.52"/>
+  <circle cx="1308" cy="32" r="15" fill="#0d0d2b" opacity="0.44"/>
+  <text x="50" y="90"
+    font-family="'Hiragino Mincho ProN','Yu Mincho','MS Mincho',Georgia,serif"
+    font-size="20" fill="white" opacity="0.85" letter-spacing="5">日本の家探し</text>
+  <text x="50" y="128"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="38" font-weight="bold" fill="white" opacity="0.97" letter-spacing="2">JAPAN Home Search</text>
+</svg>`;
+
+// ══════════════════════════════════════════════════════════════
+// ── STATE
+// ══════════════════════════════════════════════════════════════
+let allListings  = [];
+let metaGenerated = null;
+let viewedIds    = new Set(JSON.parse(localStorage.getItem('jhs_viewed') || '[]'));
+let savedIds     = new Set(JSON.parse(localStorage.getItem('jhs_saved')  || '[]'));
+let notesMap     = JSON.parse(localStorage.getItem('jhs_notes')  || '{}');
+let gitCfg       = JSON.parse(localStorage.getItem('jhs_github') || '{}');
+
+let filterSources = [];  // [] = all
+let filterCities  = [];  // [] = all
+let filterView    = 'all';
+
+const CITY_ORDER  = ['Gotemba, Shizuoka','Oyama, Shizuoka','Suzuka, Mie','Tsu, Mie'];
+const CITY_LABELS = {
+  'Gotemba, Shizuoka':'Gotemba — Shizuoka Prefecture',
+  'Oyama, Shizuoka'  :'Oyama — Shizuoka Prefecture',
+  'Suzuka, Mie'      :'Suzuka — Mie Prefecture',
+  'Tsu, Mie'         :'Tsu — Mie Prefecture'
+};
+
+// ══════════════════════════════════════════════════════════════
+// ── INIT
+// ══════════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  renderBanner();
+  loadListings();
+  document.addEventListener('click', closeDropsOnOutside);
+});
+
+// ── Banner ─────────────────────────────────────────────────────
+function renderBanner() {
+  const el = document.getElementById('banner');
+  const url = BANNER_PHOTO_URL.trim();
+  if (url) {
+    el.innerHTML = `
+      <div class="banner-photo-wrap">
+        <img src="${url}" alt="Mount Fuji" onerror="this.parentElement.outerHTML=document.getElementById('_svgfallback').innerHTML">
+        <div class="banner-photo-overlay">
+          <div class="banner-text-block">
+            <div class="banner-ja">日本の家探し</div>
+            <div class="banner-en">JAPAN Home Search</div>
+          </div>
+        </div>
+      </div>
+      <template id="_svgfallback">${SVG_BANNER}</template>`;
+  } else {
+    el.innerHTML = SVG_BANNER;
+  }
+}
+
+// ── Load data ──────────────────────────────────────────────────
+async function loadListings() {
+  try {
+    const r = await fetch('./listings.json?_=' + Date.now());
+    if (!r.ok) throw new Error('not found');
+    const data = await r.json();
+    allListings   = data.listings || [];
+    metaGenerated = data.generated || null;
+    updateStats();
+    renderAll();
+  } catch(e) {
+    document.getElementById('main').innerHTML = `
+      <div class="no-results">
+        <div class="no-results-icon">🏠</div>
+        <h3>No listings found yet</h3>
+        <p>Click <strong>Search Now</strong> to run the first scrape, or check that listings.json is in the same folder.</p>
+      </div>`;
+    document.getElementById('lastRun').textContent = 'No data yet';
+    document.getElementById('statTotal').textContent = '0';
+    document.getElementById('statNew').textContent   = '0';
+    document.getElementById('statSaved').textContent = '0';
+  }
+}
+
+// ── Stats ──────────────────────────────────────────────────────
+function updateStats() {
+  const today = new Date();
+  const cutoff = new Date(today); cutoff.setDate(cutoff.getDate() - 7);
+  const newCount = allListings.filter(l => l.date_found && new Date(l.date_found) >= cutoff).length;
+  document.getElementById('statTotal').textContent = allListings.length;
+  document.getElementById('statNew').textContent   = newCount;
+  document.getElementById('statSaved').textContent = savedIds.size;
+  if (metaGenerated) {
+    const d = new Date(metaGenerated);
+    document.getElementById('lastRun').textContent =
+      'Last run: ' + d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) +
+      ' at ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',hour12:true});
+  }
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── RENDER
+// ══════════════════════════════════════════════════════════════
+function renderAll() {
+  const today  = new Date();
+  const cutoff = new Date(today); cutoff.setDate(cutoff.getDate() - 7);
+  const main   = document.getElementById('main');
+
+  // Apply filters
+  let visible = allListings.filter(l => {
+    if (filterSources.length && !filterSources.includes(l.source)) return false;
+    if (filterCities.length  && !filterCities.includes(l.area))   return false;
+    if (filterView === 'new7') {
+      if (!l.date_found || new Date(l.date_found) < cutoff) return false;
+    }
+    if (filterView === 'saved') {
+      if (!savedIds.has(propId(l))) return false;
+    }
+    return true;
+  });
+
+  if (!visible.length) {
+    main.innerHTML = `
+      <div class="no-results">
+        <div class="no-results-icon">🔍</div>
+        <h3>No listings match your filters</h3>
+        <p>Try adjusting the city, source, or view filters above.</p>
+      </div>`;
+    return;
+  }
+
+  let html = '';
+  for (const city of CITY_ORDER) {
+    const cityListings = visible.filter(l => l.area === city);
+    if (!cityListings.length) continue;
+    html += `
+      <div class="city-section">
+        <div class="city-header">
+          <span class="city-name">${CITY_LABELS[city] || city}</span>
+          <span class="city-badge">${cityListings.length}</span>
+        </div>
+        <div class="cards-grid">
+          ${cityListings.map(l => cardHTML(l, cutoff)).join('')}
+        </div>
+      </div>`;
+  }
+
+  // Any cities not in the order list
+  const knownCities = new Set(CITY_ORDER);
+  const otherListings = visible.filter(l => !knownCities.has(l.area));
+  if (otherListings.length) {
+    html += `
+      <div class="city-section">
+        <div class="city-header">
+          <span class="city-name">Other</span>
+          <span class="city-badge">${otherListings.length}</span>
+        </div>
+        <div class="cards-grid">${otherListings.map(l => cardHTML(l, cutoff)).join('')}</div>
+      </div>`;
+  }
+
+  main.innerHTML = html;
+}
+
+// ── Property ID ────────────────────────────────────────────────
+function propId(l) {
+  return (l.id || l.url || '').split('?')[0].replace(/\/$/, '');
+}
+
+// ── Single card HTML ───────────────────────────────────────────
+function cardHTML(l, cutoff) {
+  const id      = propId(l);
+  const isSaved = savedIds.has(id);
+  const isViewed= viewedIds.has(id);
+  const isNew   = l.date_found && new Date(l.date_found) >= cutoff;
+
+  // Sizes
+  const sizes = parseSizes(l.size_en || l.size || '');
+  const bldStr = sizes.building != null ? sizes.building.toFixed(1) + ' m²' : '—';
+  const lndStr = sizes.land     != null ? sizes.land.toFixed(1) + ' m²'     : '—';
+
+  // Price
+  const price = l.price_en || l.price || '—';
+
+  // Title
+  const title = escHtml(l.title_en || l.title || 'Property');
+
+  // Address
+  const addr  = escHtml(l.address_en || l.address || l.area || '');
+
+  // Date
+  const found = l.date_found ? new Date(l.date_found).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : '—';
+
+  // Source label
+  const srcLabel = escHtml(l.source || '') + ' · ' + escHtml(l.area || '');
+
+  // Photo
+  const photoHtml = l.image
+    ? `<img src="${escHtml(l.image)}" alt="${title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'card-photo-none\\'>🏠</div>'">`
+    : `<div class="card-photo-none">🏠</div>`;
+
+  // Notes
+  const note = escHtml(notesMap[id] || '');
+
+  return `
+  <div class="card${isSaved?' is-saved':''}${isViewed?' is-viewed':''}" id="card-${btoa(id).replace(/[^a-z0-9]/gi,'').slice(0,16)}">
+    <div class="card-photo">
+      ${photoHtml}
+      ${isNew   ? '<span class="badge-new">NEW</span>' : ''}
+      ${isViewed? '<span class="badge-viewed">👁 Viewed</span>' : ''}
+    </div>
+    <div class="card-body">
+      <div class="card-source">${srcLabel}</div>
+      <div class="card-title">${title}</div>
+      <div class="card-price">${escHtml(price)}</div>
+      <div class="card-specs">
+        <div class="spec-item"><span class="spec-lbl">Building</span><span class="spec-val">${bldStr}</span></div>
+        <div class="spec-item"><span class="spec-lbl">Land</span><span class="spec-val">${lndStr}</span></div>
+        <div class="spec-item"><span class="spec-lbl">Type</span><span class="spec-val">Existing House</span></div>
+        <div class="spec-item"><span class="spec-lbl">Found</span><span class="spec-val">${found}</span></div>
+      </div>
+      <textarea class="card-notes" placeholder="Add notes about this property…"
+        onblur="saveNote('${escAttr(id)}',this.value)">${note}</textarea>
+    </div>
+    <div class="card-footer">
+      <a class="btn-view" href="${escHtml(l.url||'#')}" target="_blank" rel="noopener"
+         onclick="markViewed('${escAttr(id)}',this)">VIEW LISTING</a>
+      <button class="btn-fav${isSaved?' active':''}"
+              onclick="toggleSave('${escAttr(id)}',this)">
+        ${isSaved ? '★ SAVED' : '☆ SAVE'}
+      </button>
+    </div>
+  </div>`;
+}
+
+// ── Parse size string → {building, land} ──────────────────────
+function parseSizes(s) {
+  if (!s) return {building:null,land:null};
+  const nums = [...s.matchAll(/([\d.]+)\s*(?:㎡|m²|m2)/g)].map(m=>parseFloat(m[1]));
+  if (!nums.length) return {building:null,land:null};
+  if (nums.length === 1) return {building:nums[0],land:null};
+  const sorted = [...nums].sort((a,b)=>b-a);
+  return {land:sorted[0], building:sorted[1]};
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── INTERACTIONS
+// ══════════════════════════════════════════════════════════════
+function markViewed(id, el) {
+  viewedIds.add(id);
+  localStorage.setItem('jhs_viewed', JSON.stringify([...viewedIds]));
+  // Update card border immediately
+  const card = el.closest('.card');
+  if (card && !card.classList.contains('is-saved')) card.classList.add('is-viewed');
+  // Show viewed badge if not already there
+  const photo = card && card.querySelector('.card-photo');
+  if (photo && !photo.querySelector('.badge-viewed')) {
+    const b = document.createElement('span');
+    b.className = 'badge-viewed'; b.innerHTML = '👁 Viewed';
+    photo.appendChild(b);
+  }
+  updateStats();
+}
+
+function toggleSave(id, btn) {
+  if (savedIds.has(id)) {
+    savedIds.delete(id);
+    btn.classList.remove('active');
+    btn.textContent = '☆ SAVE';
+    btn.closest('.card').classList.remove('is-saved');
+  } else {
+    savedIds.add(id);
+    btn.classList.add('active');
+    btn.textContent = '★ SAVED';
+    btn.closest('.card').classList.add('is-saved');
+  }
+  localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
+  updateStats();
+}
+
+function saveNote(id, val) {
+  if (val.trim()) { notesMap[id] = val; }
+  else { delete notesMap[id]; }
+  localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── FILTERS
+// ══════════════════════════════════════════════════════════════
+function toggleDrop(id) {
+  document.querySelectorAll('.ms-drop').forEach(d => {
+    if (d.id !== id) d.classList.remove('open');
+  });
+  document.getElementById(id).classList.toggle('open');
+}
+
+function closeDropsOnOutside(e) {
+  if (!e.target.closest('.ms-wrap')) {
+    document.querySelectorAll('.ms-drop').forEach(d => d.classList.remove('open'));
+  }
+}
+
+function toggleAllSources(master) {
+  document.querySelectorAll('.chk-src').forEach(c => c.checked = master.checked);
+  updateSourceFilter();
+}
+function updateSourceFilter() {
+  const all = document.querySelectorAll('.chk-src');
+  const checked = [...all].filter(c=>c.checked).map(c=>c.value);
+  const allChecked = checked.length === all.length;
+  document.getElementById('chkSrcAll').checked = allChecked;
+  document.getElementById('lblSource').textContent = allChecked ? 'All Sources' :
+    checked.length === 0 ? 'No Sources' :
+    checked.length === 1 ? checked[0] : checked.length + ' Sources';
+  filterSources = allChecked ? [] : checked;
+  renderAll();
+}
+
+function toggleAllCities(master) {
+  document.querySelectorAll('.chk-city').forEach(c => c.checked = master.checked);
+  updateCityFilter();
+}
+function updateCityFilter() {
+  const all = document.querySelectorAll('.chk-city');
+  const checked = [...all].filter(c=>c.checked).map(c=>c.value);
+  const allChecked = checked.length === all.length;
+  document.getElementById('chkCityAll').checked = allChecked;
+  const labels = {'Gotemba, Shizuoka':'Gotemba','Oyama, Shizuoka':'Oyama','Suzuka, Mie':'Suzuka','Tsu, Mie':'Tsu'};
+  document.getElementById('lblCity').textContent = allChecked ? 'All Cities' :
+    checked.length === 0 ? 'No Cities' :
+    checked.length === 1 ? (labels[checked[0]] || checked[0]) :
+    checked.map(c=>labels[c]||c).join(', ');
+  filterCities = allChecked ? [] : checked;
+  renderAll();
+}
+
+function updateViewFilter() {
+  filterView = document.getElementById('viewSel').value;
+  renderAll();
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── SEARCH NOW (GitHub Actions trigger)
+// ══════════════════════════════════════════════════════════════
+function triggerScrape() {
+  const owner = GITHUB_OWNER || gitCfg.owner;
+  const repo  = GITHUB_REPO  || gitCfg.repo;
+  const token = gitCfg.token;
+
+  if (!owner || !repo || !token) {
+    document.getElementById('modalBg').classList.remove('hidden');
+    if (owner) document.getElementById('cfgOwner').value = owner;
+    if (repo)  document.getElementById('cfgRepo').value  = repo;
+    if (token) document.getElementById('cfgToken').value = token;
+    return;
+  }
+  runScrape(owner, repo, token);
+}
+
+async function runScrape(owner, repo, token) {
+  const btn = document.getElementById('btnScrape');
+  const icon = document.getElementById('scrapeIcon');
+  const lbl  = document.getElementById('scrapeLabel');
+  const status = document.getElementById('scrapeStatus');
+
+  btn.disabled = true;
+  icon.outerHTML = '<span class="spin" id="scrapeIcon"></span>';
+  lbl.textContent = 'Starting…';
+  status.className = 'scrape-status running';
+  status.textContent = '⏳ Scrape in progress…';
+  status.style.display = 'inline-block';
+
+  try {
+    const r = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${GITHUB_WORKFLOW}/dispatches`,
+      { method:'POST',
+        headers:{'Authorization':'token '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
+        body: JSON.stringify({ref:'main'}) });
+
+    if (r.status === 204) {
+      lbl.textContent = 'Search Now';
+      document.getElementById('scrapeIcon').outerHTML = '<span id="scrapeIcon">🔍</span>';
+      status.className = 'scrape-status done';
+      status.textContent = '✅ Scrape started — results update in ~10 min';
+      // Poll for updated data every 30s for 15 minutes
+      let polls = 0;
+      const poll = setInterval(async () => {
+        polls++;
+        if (polls > 30) { clearInterval(poll); btn.disabled = false; status.style.display='none'; return; }
+        try {
+          const rd = await fetch('./listings.json?_=' + Date.now());
+          if (!rd.ok) return;
+          const d = await rd.json();
+          if (d.generated !== metaGenerated) {
+            clearInterval(poll);
+            allListings   = d.listings || [];
+            metaGenerated = d.generated;
+            updateStats(); renderAll();
+            btn.disabled = false;
+            status.className = 'scrape-status done';
+            status.textContent = '✅ Updated!';
+            setTimeout(()=>{ status.style.display='none'; }, 4000);
+          }
+        } catch(_){}
+      }, 30000);
+    } else {
+      throw new Error('HTTP ' + r.status);
+    }
+  } catch(err) {
+    document.getElementById('scrapeIcon').outerHTML = '<span id="scrapeIcon">🔍</span>';
+    lbl.textContent = 'Search Now';
+    btn.disabled = false;
+    status.className = 'scrape-status running';
+    status.textContent = '❌ Error: ' + err.message + ' — check config';
+    setTimeout(()=>{ status.style.display='none'; }, 6000);
+  }
+}
+
+// ── Modal ──────────────────────────────────────────────────────
+function saveGitConfig() {
+  const owner = document.getElementById('cfgOwner').value.trim();
+  const repo  = document.getElementById('cfgRepo').value.trim();
+  const token = document.getElementById('cfgToken').value.trim();
+  if (!owner || !repo || !token) { alert('Please fill in all fields.'); return; }
+  gitCfg = {owner, repo, token};
+  localStorage.setItem('jhs_github', JSON.stringify(gitCfg));
+  closeModal();
+  runScrape(owner, repo, token);
+}
+function closeModal() { document.getElementById('modalBg').classList.add('hidden'); }
+
+// ── Helpers ────────────────────────────────────────────────────
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function escAttr(s) {
+  return String(s).replace(/'/g,'&#39;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>
