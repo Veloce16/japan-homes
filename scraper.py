@@ -918,75 +918,20 @@ def send_email(listings, cfg):
     total = len(listings)
 
     # ── Fuji SVG banner (inline — no external images needed) ──────────────
-    fuji_banner = """
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 110" width="700" height="110"
-     style="display:block;border-radius:8px 8px 0 0">
-  <defs>
-    <linearGradient id="esky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#0d0d2b"/>
-      <stop offset="45%"  stop-color="#1a1a5e"/>
-      <stop offset="74%"  stop-color="#c0392b"/>
-      <stop offset="90%"  stop-color="#e67e22"/>
-      <stop offset="100%" stop-color="#f39c12"/>
-    </linearGradient>
-    <linearGradient id="elake" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#e67e22" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#0d0d2b" stop-opacity="0.85"/>
-    </linearGradient>
-    <linearGradient id="esnow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#dce8f0"/>
-    </linearGradient>
-    <linearGradient id="eshimmer" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#f39c12" stop-opacity="0"/>
-      <stop offset="45%"  stop-color="#f39c12" stop-opacity="0.6"/>
-      <stop offset="55%"  stop-color="#f5cba7" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#f39c12" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <rect width="700" height="110" fill="url(#esky)"/>
-  <g fill="white" opacity="0.7">
-    <circle cx="20"  cy="7"  r="1.0"/><circle cx="60"  cy="4"  r="0.8"/>
-    <circle cx="99"  cy="10" r="1.1"/><circle cx="145" cy="5"  r="0.8"/>
-    <circle cx="178" cy="14" r="0.7"/><circle cx="215" cy="6"  r="1.0"/>
-    <circle cx="400" cy="8"  r="1.1"/><circle cx="445" cy="4"  r="0.8"/>
-    <circle cx="488" cy="12" r="0.9"/><circle cx="540" cy="6"  r="1.1"/>
-    <circle cx="590" cy="10" r="0.8"/><circle cx="640" cy="5"  r="1.2"/>
-    <circle cx="680" cy="14" r="0.7"/><circle cx="38"  cy="19" r="0.6"/>
-    <circle cx="77"  cy="22" r="0.7"/><circle cx="390" cy="18" r="0.6"/>
-    <circle cx="660" cy="20" r="0.7"/>
-  </g>
-  <path d="M350,18 C350,18 329,31 319,38 C309,44 302,49 294,54
-           C285,59 276,62 265,65 C252,68 240,70 228,71
-           C210,72 190,72 170,72 L0,72 L0,110 L700,110 L700,72
-           L530,72 C510,72 490,72 472,71 C460,70 448,68 435,65
-           C424,62 415,59 406,54 C398,49 391,44 381,38
-           C371,31 350,18 350,18 Z"
-        fill="#1a0a0a" opacity="0.92"/>
-  <path d="M350,18 C350,18 334,29 325,35 C317,41 311,46 304,51
-           C296,56 287,60 277,63 C265,66 252,68 238,69
-           L350,69 L462,69 C448,68 435,66 423,63
-           C413,60 404,56 396,51 C389,46 383,41 375,35
-           C366,29 350,18 350,18 Z"
-        fill="#2d0f0f" opacity="0.65"/>
-  <path d="M350,18 C350,18 343,26 338,30 C333,34 329,37 324,40
-           C330,38 336,36 341,35 C345,34 348,34 350,34
-           C352,34 355,34 359,35 C364,36 370,38 376,40
-           C371,37 367,34 362,30 C357,26 350,18 350,18 Z"
-        fill="url(#esnow)" opacity="0.93"/>
-  <rect x="0" y="72" width="700" height="38" fill="url(#elake)"/>
-  <rect x="0" y="74" width="700" height="3" fill="url(#eshimmer)" opacity="0.65"/>
-  <rect x="0" y="80" width="700" height="2" fill="url(#eshimmer)" opacity="0.35"/>
-  <text x="26" y="42"
-        font-family="'Hiragino Mincho ProN','Yu Mincho','MS Mincho',serif"
-        font-size="13" fill="white" opacity="0.82" letter-spacing="3">日本の家探し</text>
-  <text x="24" y="64"
-        font-family="Georgia,'Times New Roman',serif"
-        font-size="22" font-weight="bold" fill="white" opacity="0.97" letter-spacing="1">
-    &#127968; JAPAN Home Search</text>
-  <circle cx="662" cy="20" r="9" fill="#f5e6c8" opacity="0.5"/>
-  <circle cx="658" cy="17" r="8" fill="#0d0d2b" opacity="0.42"/>
-</svg>""".strip()
+    fuji_banner = (
+        "<div style='position:relative;border-radius:8px 8px 0 0;overflow:hidden;height:160px;"
+        "background:#1a3a5c'>"
+        f"<img src='https://veloce16.github.io/japan-homes/fuji.jpg' "
+        "width='700' style='width:100%;height:160px;object-fit:cover;object-position:center 40%;"
+        "display:block' alt='Mount Fuji'>"
+        "<div style='position:absolute;bottom:0;left:0;right:0;padding:12px 22px;"
+        "background:linear-gradient(transparent,rgba(0,0,0,0.65))'>"
+        "<div style=\"font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-size:12px;"
+        "color:rgba(255,255,255,0.85);letter-spacing:3px;margin-bottom:3px\">日本の家探し</div>"
+        "<div style=\"font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:bold;"
+        "color:#fff;letter-spacing:1px\">&#127968; JAPAN Home Search</div>"
+        "</div></div>"
+    )
 
     # ── Listing rows ───────────────────────────────────────────────────────
     rows = ""
