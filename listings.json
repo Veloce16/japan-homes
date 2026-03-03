@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-03T01:27:56",
+  "generated": "2026-03-03T08:07:48",
   "listings": [
     {
       "source": "AtHome",
@@ -655,12 +655,12 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1298万円",
+      "price": "1398万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_76704708/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F708%2F76704708%2F76704708_0012.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
-      "price_en": "¥12,980,000  (~$86,533 USD)",
+      "price_en": "¥13,980,000  (~$93,200 USD)",
       "size_en": "",
       "date_found": "2026-03-03"
     },
@@ -688,6 +688,19 @@
       "area": "Suzuka, Mie",
       "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "116 m² building  /  304 m² land",
+      "date_found": "2026-03-03"
+    },
+    {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Suzuka City",
+      "price": "1300万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78968582/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F582%2F78968582%2F78968582_0013.jpg&w=70&h=50",
+      "area": "Suzuka, Mie",
+      "price_en": "¥13,000,000  (~$86,666 USD)",
+      "size_en": "",
       "date_found": "2026-03-03"
     },
     {
