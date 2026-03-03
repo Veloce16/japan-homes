@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-03T14:23:24",
+  "generated": "2026-03-03T19:53:57",
   "listings": [
     {
       "source": "AtHome",
@@ -655,12 +655,12 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "998万円",
+      "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_74774866/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F866%2F74774866%2F74774866_0039.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
-      "price_en": "¥9,980,000  (~$66,533 USD)",
+      "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
       "date_found": "2026-03-03"
     },
@@ -694,26 +694,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1380万円",
+      "price": "1280万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78286694/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F694%2F78286694%2F78286694_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
-      "price_en": "¥13,800,000  (~$92,000 USD)",
+      "price_en": "¥12,800,000  (~$85,333 USD)",
       "size_en": "",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "Suumo",
-      "title": "☆A residence with a warehouse in a quiet residential area ☆A lot of storage in the warehouse ♪☆Unique!",
-      "address": "1405-5 Korasucho, Tsu City, Mie Prefecture",
-      "price": "498万円",
-      "size": "206.1m2 / 312.28m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78423475/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F475%2F78423475%2F78423475_0001.jpg&w=192&h=144",
-      "area": "Tsu, Mie",
-      "price_en": "¥4,980,000  (~$33,200 USD)",
-      "size_en": "312 m² building  /  206 m² land",
       "date_found": "2026-03-03"
     },
     {
@@ -831,6 +818,19 @@
       "area": "Tsu, Mie",
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "164 m² building  /  569 m² land",
+      "date_found": "2026-03-03"
+    },
+    {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Tsu City",
+      "price": "1050万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20220608/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F608%2F20220608%2F20220608_0012.jpg&w=70&h=50",
+      "area": "Tsu, Mie",
+      "price_en": "¥10,500,000  (~$70,000 USD)",
+      "size_en": "",
       "date_found": "2026-03-03"
     },
     {
