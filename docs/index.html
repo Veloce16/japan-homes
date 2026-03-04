@@ -97,6 +97,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   border-radius:12px;font-size:12px;font-weight:700}
 .city-empty{color:#b0a090;font-style:italic;font-size:14px;padding:16px 0}
 
+/* ghost section */
+.ghost-header{border-bottom-color:#c62828}
+.ghost-badge{background:#c62828}
+.ghost-note{font-size:12px;color:#888;font-style:italic;margin-left:4px}
+.is-ghost{opacity:0.85;border:2px solid #ffcdd2!important}
+.ghost-banner{background:#ffebee;color:#c62828;font-size:12px;font-weight:600;
+  padding:6px 14px;border-bottom:1px solid #ffcdd2;border-radius:8px 8px 0 0}
+
 /* card grid */
 .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:1140px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
@@ -320,6 +328,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 // ═══════════════════════════════════════════════════════════════
 const BANNER_PHOTO_URL = "./fuji.jpg";
 
+// ── GitHub sync config (for saved listings) ────────────────────
+const GITHUB_OWNER = 'veloce16';
+const GITHUB_REPO  = 'japan-homes';
+const GITHUB_TOKEN = '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';
+const SAVED_PATH   = 'docs/saved.json';
+
 // GitHub Actions config — leave blank to use browser-stored values
 const GITHUB_OWNER    = "";   // e.g. "yourname"
 const GITHUB_REPO     = "";   // e.g. "japan-homes"
@@ -406,12 +420,14 @@ const SVG_BANNER = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 21
 // ══════════════════════════════════════════════════════════════
 // ── STATE
 // ══════════════════════════════════════════════════════════════
-let allListings  = [];
+let allListings   = [];
 let metaGenerated = null;
-let viewedIds    = new Set(JSON.parse(localStorage.getItem('jhs_viewed') || '[]'));
-let savedIds     = new Set(JSON.parse(localStorage.getItem('jhs_saved')  || '[]'));
-let notesMap     = JSON.parse(localStorage.getItem('jhs_notes')  || '{}');
-let gitCfg       = JSON.parse(localStorage.getItem('jhs_github') || '{}');
+let viewedIds     = new Set(JSON.parse(localStorage.getItem('jhs_viewed') || '[]'));
+let savedIds      = new Set();   // populated from saved.json on load
+let savedData     = {};          // id → full listing object (persisted to GitHub)
+let listingsById  = {};          // id → listing (all known, including ghosts)
+let notesMap      = JSON.parse(localStorage.getItem('jhs_notes')  || '{}');
+let gitCfg        = JSON.parse(localStorage.getItem('jhs_github') || '{}');
 
 let filterSources = [];  // [] = all
 let filterCities  = [];  // [] = all
@@ -463,6 +479,26 @@ async function loadListings() {
     const data = await r.json();
     allListings   = data.listings || [];
     metaGenerated = data.generated || null;
+
+    // Build quick lookup
+    listingsById = {};
+    allListings.forEach(l => { listingsById[propId(l)] = l; });
+
+    // Load saved listings from GitHub
+    try {
+      const sr = await fetch('./saved.json?_=' + Date.now());
+      if (sr.ok) {
+        const sd = await sr.json();
+        savedData = {};
+        (sd.saved || []).forEach(l => {
+          const id = propId(l);
+          savedData[id] = l;
+          savedIds.add(id);
+          if (!listingsById[id]) listingsById[id] = l; // keep ghosts in lookup
+        });
+      }
+    } catch(se) { /* saved.json doesn't exist yet — that's fine */ }
+
     updateStats();
     renderAll();
   } catch(e) {
@@ -521,7 +557,16 @@ function renderAll() {
     return true;
   });
 
-  if (!visible.length) {
+  // In saved view, also show ghost listings (saved but no longer in feed)
+  let ghosts = [];
+  if (filterView === 'saved') {
+    const liveIds = new Set(allListings.map(l => propId(l)));
+    ghosts = Object.values(savedData)
+      .filter(l => !liveIds.has(propId(l)))
+      .map(l => ({ ...l, _ghost: true }));
+  }
+
+  if (!visible.length && !ghosts.length) {
     main.innerHTML = `
       <div class="no-results">
         <div class="no-results-icon">🔍</div>
@@ -561,6 +606,19 @@ function renderAll() {
       </div>`;
   }
 
+  // Ghost listings — saved but no longer in the live feed
+  if (ghosts.length) {
+    html += `
+      <div class="city-section ghost-section">
+        <div class="city-header ghost-header">
+          <span class="city-name">🔴 No Longer Listed</span>
+          <span class="city-badge ghost-badge">${ghosts.length}</span>
+          <span class="ghost-note">These properties have disappeared from the listing sites — possibly sold, relisted, or temporarily removed.</span>
+        </div>
+        <div class="cards-grid">${ghosts.map(l => cardHTML(l, cutoff)).join('')}</div>
+      </div>`;
+  }
+
   main.innerHTML = html;
 }
 
@@ -575,6 +633,7 @@ function cardHTML(l, cutoff) {
   const isSaved = savedIds.has(id);
   const isViewed= viewedIds.has(id);
   const isNew   = l.date_found && new Date(l.date_found) >= cutoff;
+  const isGhost = !!l._ghost;
 
   // Sizes
   const sizes = parseSizes(l.size_en || l.size || '');
@@ -605,7 +664,8 @@ function cardHTML(l, cutoff) {
   const note = escHtml(notesMap[id] || '');
 
   return `
-  <div class="card${isSaved?' is-saved':''}${isViewed?' is-viewed':''}" id="card-${btoa(id).replace(/[^a-z0-9]/gi,'').slice(0,16)}">
+  <div class="card${isSaved?' is-saved':''}${isViewed?' is-viewed':''}${isGhost?' is-ghost':''}" id="card-${btoa(id).replace(/[^a-z0-9]/gi,'').slice(0,16)}">
+    ${isGhost ? '<div class="ghost-banner">🔴 No longer listed — may be sold or relisted</div>' : ''}
     <div class="card-photo">
       ${photoHtml}
       ${isNew   ? '<span class="badge-new">NEW</span>' : ''}
@@ -667,17 +727,43 @@ function markViewed(id, el) {
 function toggleSave(id, btn) {
   if (savedIds.has(id)) {
     savedIds.delete(id);
+    delete savedData[id];
     btn.classList.remove('active');
     btn.textContent = '☆ SAVE';
-    btn.closest('.card').classList.remove('is-saved');
+    const card = btn.closest('.card');
+    if (card) card.classList.remove('is-saved');
   } else {
     savedIds.add(id);
+    savedData[id] = listingsById[id] || { id };  // store full listing
     btn.classList.add('active');
     btn.textContent = '★ SAVED';
-    btn.closest('.card').classList.add('is-saved');
+    const card = btn.closest('.card');
+    if (card) card.classList.add('is-saved');
   }
-  localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
   updateStats();
+  writeSavedToGitHub();
+}
+
+// ── Write saved.json to GitHub ──────────────────────────────────
+async function writeSavedToGitHub() {
+  if (!GITHUB_TOKEN || GITHUB_TOKEN === 'YOUR_PAT_HERE') return;
+  try {
+    const content = JSON.stringify({ saved: Object.values(savedData) }, null, 2);
+    const b64 = btoa(unescape(encodeURIComponent(content)));
+    const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${SAVED_PATH}`;
+    const headers = { Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' };
+
+    // Get current SHA (needed for update)
+    let sha = null;
+    const getResp = await fetch(apiUrl, { headers });
+    if (getResp.ok) { const f = await getResp.json(); sha = f.sha; }
+
+    const body = { message: 'Update saved listings', content: b64 };
+    if (sha) body.sha = sha;
+    await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+  } catch(e) {
+    console.warn('Could not sync saved listings to GitHub:', e);
+  }
 }
 
 function saveNote(id, val) {
