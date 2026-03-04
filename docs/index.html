@@ -335,9 +335,7 @@ const SAVED_PATH   = 'docs/saved.json';
 // Token is stored privately in your browser (never in the code)
 function getGithubToken() { return localStorage.getItem('jhs_gh_token') || ''; }
 
-// GitHub Actions config — leave blank to use browser-stored values
-const GITHUB_OWNER    = "";   // e.g. "yourname"
-const GITHUB_REPO     = "";   // e.g. "japan-homes"
+// GitHub Actions config
 const GITHUB_WORKFLOW = "scrape.yml";
 
 // ── SVG Banner ─────────────────────────────────────────────────
