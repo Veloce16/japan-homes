@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-04T08:03:35",
+  "generated": "2026-03-04T14:19:00",
   "listings": [
     {
       "source": "AtHome",
@@ -657,8 +657,8 @@
       "address": "Gotemba City",
       "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
@@ -689,6 +689,19 @@
       "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "116 m² building  /  304 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Suzuka City",
+      "price": "980万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_77724557/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F557%2F77724557%2F77724557_0075.jpg&w=70&h=50",
+      "area": "Suzuka, Mie",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "",
+      "date_found": "2026-03-04"
     },
     {
       "source": "Suumo",
@@ -808,19 +821,6 @@
       "date_found": "2026-03-03"
     },
     {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu City",
-      "price": "1050万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20220608/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F608%2F20220608%2F20220608_0012.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "price_en": "¥10,500,000  (~$70,000 USD)",
-      "size_en": "",
-      "date_found": "2026-03-04"
-    },
-    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -861,19 +861,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
-      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
-      "price": "1,400万円",
-      "size": "219.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Nishi-Shonai Town",
       "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
       "price": "880万円",
@@ -883,6 +870,19 @@
       "area": "Suzuka, Mie",
       "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "129 m² building  /  691 m² land",
+      "date_found": "2026-03-03"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
+      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
+      "price": "1,400万円",
+      "size": "219.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "219 m² land",
       "date_found": "2026-03-03"
     },
     {
@@ -910,6 +910,19 @@
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
+      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
+      "price": "1,199万円",
+      "size": "174.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "price_en": "¥11,990,000  (~$79,933 USD)",
+      "size_en": "174 m² land",
+      "date_found": "2026-03-04"
     },
     {
       "source": "Lifull Homes",
