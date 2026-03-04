@@ -492,13 +492,24 @@ EXTRACT_JS = """
             }
         }
 
+        // Building year: look for 築XXXX年 (built in year) or XXXX年築
+        const byFull = text.match(/築(\d{4})年|(\d{4})年築/);
+        const byAge  = text.match(/築(\d{1,2})年/);
+        let buildYear = '';
+        if (byFull) {
+            buildYear = byFull[1] || byFull[2];
+        } else if (byAge) {
+            buildYear = String(new Date().getFullYear() - parseInt(byAge[1]));
+        }
+
         results.push({
-            title:   title.trim() || '\u7269\u4ef6',
-            price:   price,
-            sizes:   sqm.slice(0, 3).join(' / '),
-            address: address,
-            url:     propUrl,
-            image:   imgUrl,
+            title:      title.trim() || '\u7269\u4ef6',
+            price:      price,
+            sizes:      sqm.slice(0, 3).join(' / '),
+            address:    address,
+            url:        propUrl,
+            image:      imgUrl,
+            build_year: buildYear,
         });
         if (results.length >= 60) break;
     }
@@ -571,14 +582,15 @@ async def scrape_athome(pw, cfg):
                         if not passes_size(item["sizes"], cfg):
                             continue
                         listings.append({
-                            "source":  "AtHome",
-                            "title":   item["title"],
-                            "address": item["address"] or t["city_ja"],
-                            "price":   item["price"],
-                            "size":    item["sizes"],
-                            "url":     item["url"],
-                            "image":   item.get("image", ""),
-                            "area":    t["name_en"],
+                            "source":      "AtHome",
+                            "title":       item["title"],
+                            "address":     item["address"] or t["city_ja"],
+                            "price":       item["price"],
+                            "size":        item["sizes"],
+                            "url":         item["url"],
+                            "image":       item.get("image", ""),
+                            "area":        t["name_en"],
+                            "build_year":  item.get("build_year", ""),
                         })
 
                     print(f"     p{pg} new unique: {new_on_page}")
@@ -649,14 +661,15 @@ async def scrape_suumo(pw, cfg):
                 if not passes_size(item["sizes"], cfg):
                     continue
                 listings.append({
-                    "source":  "Suumo",
-                    "title":   item["title"],
-                    "address": item["address"] or t["city_ja"],
-                    "price":   item["price"],
-                    "size":    item["sizes"],
-                    "url":     item["url"],
-                    "image":   item.get("image", ""),
-                    "area":    t["name_en"],
+                    "source":     "Suumo",
+                    "title":      item["title"],
+                    "address":    item["address"] or t["city_ja"],
+                    "price":      item["price"],
+                    "size":       item["sizes"],
+                    "url":        item["url"],
+                    "image":      item.get("image", ""),
+                    "area":       t["name_en"],
+                    "build_year": item.get("build_year", ""),
                 })
         finally:
             await browser.close()
@@ -706,14 +719,15 @@ async def scrape_yahoo(pw, cfg):
                         if not passes_size(item["sizes"], cfg):
                             continue
                         listings.append({
-                            "source":  "Yahoo RE",
-                            "title":   item["title"],
-                            "address": item["address"] or t["city_ja"],
-                            "price":   item["price"],
-                            "size":    item["sizes"],
-                            "url":     item["url"],
-                            "image":   item.get("image", ""),
-                            "area":    t["name_en"],
+                            "source":     "Yahoo RE",
+                            "title":      item["title"],
+                            "address":    item["address"] or t["city_ja"],
+                            "price":      item["price"],
+                            "size":       item["sizes"],
+                            "url":        item["url"],
+                            "image":      item.get("image", ""),
+                            "area":       t["name_en"],
+                            "build_year": item.get("build_year", ""),
                         })
             except Exception as e:
                 print(f"     Error: {e}")
@@ -782,14 +796,15 @@ async def scrape_homes(pw, cfg):
                         if not passes_size(item["sizes"], cfg):
                             continue
                         listings.append({
-                            "source":  "Lifull Homes",
-                            "title":   item["title"],
-                            "address": item["address"] or t["city_ja"],
-                            "price":   item["price"],
-                            "size":    item["sizes"],
-                            "url":     item["url"],
-                            "image":   item.get("image", ""),
-                            "area":    t["name_en"],
+                            "source":     "Lifull Homes",
+                            "title":      item["title"],
+                            "address":    item["address"] or t["city_ja"],
+                            "price":      item["price"],
+                            "size":       item["sizes"],
+                            "url":        item["url"],
+                            "image":      item.get("image", ""),
+                            "area":       t["name_en"],
+                            "build_year": item.get("build_year", ""),
                         })
 
                     print(f"     p{pg} new unique: {new_on_page}")
@@ -816,17 +831,32 @@ def generate_html(listings, cfg):
     for l in listings:
         by_area.setdefault(l["area"], []).append(l)
 
+    CITY_ORDER_EMAIL = ["Gotemba, Shizuoka", "Oyama, Shizuoka", "Suzuka, Mie", "Tsu, Mie"]
+    sorted_areas = sorted(by_area, key=lambda a: CITY_ORDER_EMAIL.index(a) if a in CITY_ORDER_EMAIL else 99)
     rows = ""
-    for area in sorted(by_area):
+    for area in sorted_areas:
         group = by_area[area]
-        rows += f'<tr class="ah"><td colspan="7">{area} &mdash; {len(group)} listing{"s" if len(group)!=1 else ""}</td></tr>'
+        rows += (
+            f'<tr><td colspan="7" style="padding:0">'
+            f'<div style="background:linear-gradient(90deg,#1a3a5c,#2755a0);color:#fff;'
+            f'padding:12px 20px;font-size:1em;font-weight:700;letter-spacing:1px;'
+            f'margin-top:8px;border-left:6px solid #f0b429">'
+            f'&#127968; {area} &nbsp;&mdash;&nbsp; {len(group)} listing{"s" if len(group)!=1 else ""}'
+            f'</div></td></tr>'
+        )
         for l in group:
+            import datetime as _dt
             sc    = re.sub(r"[^a-zA-Z]", "", l["source"])
             title = l.get("title", "Property")[:60]
             addr  = l.get("address", "")[:60]
             price = l.get("price_en") or l.get("price", "")
             size  = l.get("size_en")  or l.get("size", "")
             img   = l.get("image", "")
+            by    = l.get("build_year", "")
+            age_str = ""
+            if by:
+                age = _dt.datetime.now().year - int(by)
+                age_str = f'<div style="font-size:.75em;color:#888;margin-top:2px">Built {by} &bull; {age} yrs old</div>'
             thumb = (
                 f'<a href="{l["url"]}" target="_blank">'
                 f'<img src="{img}" alt="photo" referrerpolicy="no-referrer" loading="lazy"'
@@ -840,7 +870,7 @@ def generate_html(listings, cfg):
                 f'<td><span class="badge {sc}">{l["source"]}</span></td>'
                 f'<td class="tc"><a href="{l["url"]}" target="_blank">{title}</a></td>'
                 f'<td class="ac">{addr}</td>'
-                f'<td class="pc">{price}</td>'
+                f'<td class="pc">{price}{age_str}</td>'
                 f'<td>{size}</td>'
                 f'<td><a class="vb" href="{l["url"]}" target="_blank">View &rarr;</a></td>'
                 f'</tr>'

@@ -536,9 +536,11 @@ function updateStats() {
     const raw = metaGenerated.includes('Z') || metaGenerated.includes('+') ? metaGenerated : metaGenerated + 'Z';
     const d = new Date(raw);
     const tzAbbr = new Intl.DateTimeFormat('en-US',{timeZoneName:'short'}).formatToParts(d).find(p=>p.type==='timeZoneName').value;
-    document.getElementById('lastRun').textContent =
-      'Last run: ' + d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) +
+    const localStr = d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) +
       ' at ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',hour12:true}) + ' ' + tzAbbr;
+    const jstStr = d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Tokyo'}) + ' JST';
+    document.getElementById('lastRun').innerHTML =
+      'Last run: ' + localStr + '<br><span style="font-size:10px;color:#bbb">Japan: ' + jstStr + '</span>';
   }
 }
 
@@ -655,8 +657,12 @@ function cardHTML(l, cutoff) {
   // Address
   const addr  = escHtml(l.address_en || l.address || l.area || '');
 
-  // Date
+  // Date found
   const found = l.date_found ? new Date(l.date_found).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : '—';
+
+  // Property age
+  const buildYear = l.build_year || '';
+  const propAge   = buildYear ? (new Date().getFullYear() - parseInt(buildYear)) + ' yrs (built ' + buildYear + ')' : '—';
 
   // Source label
   const srcLabel = escHtml(l.source || '') + ' · ' + escHtml(l.area || '');
@@ -684,8 +690,8 @@ function cardHTML(l, cutoff) {
       <div class="card-specs">
         <div class="spec-item"><span class="spec-lbl">Building</span><span class="spec-val">${bldStr}</span></div>
         <div class="spec-item"><span class="spec-lbl">Land</span><span class="spec-val">${lndStr}</span></div>
-        <div class="spec-item"><span class="spec-lbl">Type</span><span class="spec-val">Existing House</span></div>
-        <div class="spec-item"><span class="spec-lbl">Found</span><span class="spec-val">${found}</span></div>
+        <div class="spec-item"><span class="spec-lbl">Property Age</span><span class="spec-val">${propAge}</span></div>
+        <div class="spec-item"><span class="spec-lbl">Discovered</span><span class="spec-val">${found}</span></div>
       </div>
       <textarea class="card-notes" placeholder="Add notes about this property…"
         onblur="saveNote('${escAttr(id)}',this.value)">${note}</textarea>
