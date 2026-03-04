@@ -331,9 +331,9 @@ const BANNER_PHOTO_URL = "./fuji.jpg";
 // ── GitHub sync config (for saved listings) ────────────────────
 const GITHUB_OWNER = 'veloce16';
 const GITHUB_REPO  = 'japan-homes';
-const GITHUB_TOKEN = ['github_pat_11B7GZ2KI0Hcfv11YcA1tF_',
-  'gT2dbALX1KMcjrpOTCal5Pd80OzgOzuMsUJpH8nCRvPVVDUJZBIhtc22N43'].join('');
 const SAVED_PATH   = 'docs/saved.json';
+// Token is stored privately in your browser (never in the code)
+function getGithubToken() { return localStorage.getItem('jhs_gh_token') || ''; }
 
 // GitHub Actions config — leave blank to use browser-stored values
 const GITHUB_OWNER    = "";   // e.g. "yourname"
@@ -747,12 +747,18 @@ function toggleSave(id, btn) {
 
 // ── Write saved.json to GitHub ──────────────────────────────────
 async function writeSavedToGitHub() {
-  if (!GITHUB_TOKEN || GITHUB_TOKEN === 'YOUR_PAT_HERE') return;
+  let token = getGithubToken();
+  if (!token) {
+    token = prompt('🔑 Enter your GitHub Personal Access Token to enable saved listings sync across devices.\n\nYou only need to do this once per browser/device:');
+    if (!token) return;
+    localStorage.setItem('jhs_gh_token', token.trim());
+    token = token.trim();
+  }
   try {
     const content = JSON.stringify({ saved: Object.values(savedData) }, null, 2);
     const b64 = btoa(unescape(encodeURIComponent(content)));
     const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${SAVED_PATH}`;
-    const headers = { Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' };
+    const headers = { Authorization: `token ${token}`, 'Content-Type': 'application/json' };
 
     // Get current SHA (needed for update)
     let sha = null;
@@ -761,7 +767,12 @@ async function writeSavedToGitHub() {
 
     const body = { message: 'Update saved listings', content: b64 };
     if (sha) body.sha = sha;
-    await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    const putResp = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (!putResp.ok) {
+      // Token might be wrong — clear it so user is prompted again next time
+      localStorage.removeItem('jhs_gh_token');
+      console.warn('GitHub sync failed — token cleared, will prompt again next save.');
+    }
   } catch(e) {
     console.warn('Could not sync saved listings to GitHub:', e);
   }
