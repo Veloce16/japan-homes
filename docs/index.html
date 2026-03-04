@@ -425,8 +425,8 @@ const SVG_BANNER = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 21
 let allListings   = [];
 let metaGenerated = null;
 let viewedIds     = new Set(JSON.parse(localStorage.getItem('jhs_viewed') || '[]'));
-let savedIds      = new Set();   // populated from saved.json on load
-let savedData     = {};          // id → full listing object (persisted to GitHub)
+let savedIds      = new Set(JSON.parse(localStorage.getItem('jhs_saved') || '[]')); // localStorage backup
+let savedData     = JSON.parse(localStorage.getItem('jhs_saved_data') || '{}');    // full listing objects
 let listingsById  = {};          // id → listing (all known, including ghosts)
 let notesMap      = JSON.parse(localStorage.getItem('jhs_notes')  || '{}');
 let gitCfg        = JSON.parse(localStorage.getItem('jhs_github') || '{}');
@@ -746,6 +746,9 @@ function toggleSave(id, btn) {
     const card = btn.closest('.card');
     if (card) card.classList.add('is-saved');
   }
+  // Always save to localStorage immediately (reliable backup)
+  localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
+  localStorage.setItem('jhs_saved_data', JSON.stringify(savedData));
   updateStats();
   writeSavedToGitHub();
 }
@@ -790,7 +793,15 @@ async function writeSavedToGitHub() {
 
     const body = { message: 'Update saved listings', content: b64 };
     if (sha) body.sha = sha;
-    await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    const putResp = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    const btn = document.getElementById('syncSetupBtn');
+    if (putResp.ok) {
+      if (btn) { btn.textContent = '✅'; setTimeout(() => { btn.textContent = '🔗'; }, 3000); }
+    } else {
+      if (btn) { btn.textContent = '❌'; btn.title = 'Sync failed — click to update your token'; }
+      localStorage.removeItem('jhs_gh_token'); // clear bad token
+      updateSyncBtn();
+    }
   } catch(e) {
     console.warn('Could not sync saved listings to GitHub:', e);
   }
