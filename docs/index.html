@@ -78,6 +78,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .last-run{font-size:12px;color:#aaa;margin-left:auto}
 .stat-divider{color:#ddd;font-size:18px;align-self:center}
 .search-criteria{font-size:11px;color:#aaa;white-space:nowrap;padding-top:2px}
+.btn-sync-setup{background:none;border:none;cursor:pointer;font-size:16px;opacity:0.5;padding:0 4px;line-height:1}
+.btn-sync-setup:hover{opacity:1}
 .scrape-status{font-size:12px;padding:4px 10px;border-radius:12px;display:none}
 .scrape-status.running{display:inline-block;background:#fff3e0;color:#e65100}
 .scrape-status.done{display:inline-block;background:#e8f5e9;color:#2e7d32}
@@ -292,6 +294,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <span class="scrape-status" id="scrapeStatus"></span>
   <span class="last-run" id="lastRun">Loading…</span>
   <div class="search-criteria">🔍 Gotemba · Oyama · Suzuka · Tsu &nbsp;|&nbsp; Under ¥30M &nbsp;|&nbsp; House / Land</div>
+  <button class="btn-sync-setup" id="syncSetupBtn" onclick="setupSyncToken()" title="Set up cross-device sync"></button>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
@@ -446,6 +449,7 @@ const CITY_LABELS = {
 document.addEventListener('DOMContentLoaded', () => {
   renderBanner();
   loadListings();
+  updateSyncBtn();
   document.addEventListener('click', closeDropsOnOutside);
 });
 
@@ -528,10 +532,13 @@ function updateStats() {
   document.getElementById('statSuzuka').textContent  = allListings.filter(l => (l.area||'').includes('Suzuka')).length;
   document.getElementById('statTsu').textContent     = allListings.filter(l => (l.area||'').includes('Tsu')).length;
   if (metaGenerated) {
-    const d = new Date(metaGenerated);
+    // Force UTC parsing (scraper timestamps have no timezone marker)
+    const raw = metaGenerated.includes('Z') || metaGenerated.includes('+') ? metaGenerated : metaGenerated + 'Z';
+    const d = new Date(raw);
+    const tzAbbr = new Intl.DateTimeFormat('en-US',{timeZoneName:'short'}).formatToParts(d).find(p=>p.type==='timeZoneName').value;
     document.getElementById('lastRun').textContent =
       'Last run: ' + d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) +
-      ' at ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',hour12:true});
+      ' at ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',hour12:true}) + ' ' + tzAbbr;
   }
 }
 
@@ -743,15 +750,33 @@ function toggleSave(id, btn) {
   writeSavedToGitHub();
 }
 
+// ── Sync token setup ───────────────────────────────────────────
+function updateSyncBtn() {
+  const btn = document.getElementById('syncSetupBtn');
+  if (!btn) return;
+  btn.textContent = getGithubToken() ? '🔗' : '🔑';
+  btn.title = getGithubToken() ? 'Sync active — click to update token' : 'Click to set up cross-device sync';
+}
+
+function setupSyncToken() {
+  const current = getGithubToken();
+  const msg = current
+    ? 'Update your GitHub Personal Access Token for cross-device sync:\n(Leave blank to clear it)'
+    : '🔑 Enter your GitHub Personal Access Token to sync saved listings across all your devices.\n\nYou only need to do this once per browser/device:';
+  const token = prompt(msg, current || '');
+  if (token === null) return; // user hit Cancel — do nothing
+  if (token.trim() === '') {
+    localStorage.removeItem('jhs_gh_token');
+  } else {
+    localStorage.setItem('jhs_gh_token', token.trim());
+  }
+  updateSyncBtn();
+}
+
 // ── Write saved.json to GitHub ──────────────────────────────────
 async function writeSavedToGitHub() {
-  let token = getGithubToken();
-  if (!token) {
-    token = prompt('🔑 Enter your GitHub Personal Access Token to enable saved listings sync across devices.\n\nYou only need to do this once per browser/device:');
-    if (!token) return;
-    localStorage.setItem('jhs_gh_token', token.trim());
-    token = token.trim();
-  }
+  const token = getGithubToken();
+  if (!token) return; // no token set — just save locally, no sync
   try {
     const content = JSON.stringify({ saved: Object.values(savedData) }, null, 2);
     const b64 = btoa(unescape(encodeURIComponent(content)));
@@ -765,12 +790,7 @@ async function writeSavedToGitHub() {
 
     const body = { message: 'Update saved listings', content: b64 };
     if (sha) body.sha = sha;
-    const putResp = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
-    if (!putResp.ok) {
-      // Token might be wrong — clear it so user is prompted again next time
-      localStorage.removeItem('jhs_gh_token');
-      console.warn('GitHub sync failed — token cleared, will prompt again next save.');
-    }
+    await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
   } catch(e) {
     console.warn('Could not sync saved listings to GitHub:', e);
   }
