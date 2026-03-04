@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-03T19:53:57",
+  "generated": "2026-03-04T00:53:41",
   "listings": [
     {
       "source": "AtHome",
@@ -655,14 +655,14 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1299万円",
+      "price": "1298万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_76704708/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F708%2F76704708%2F76704708_0012.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
-      "price_en": "¥12,990,000  (~$86,600 USD)",
+      "price_en": "¥12,980,000  (~$86,533 USD)",
       "size_en": "",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-04"
     },
     {
       "source": "Suumo",
@@ -783,8 +783,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -818,19 +818,6 @@
       "area": "Tsu, Mie",
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "164 m² building  /  569 m² land",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu City",
-      "price": "1050万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20220608/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F608%2F20220608%2F20220608_0012.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "price_en": "¥10,500,000  (~$70,000 USD)",
-      "size_en": "",
       "date_found": "2026-03-03"
     },
     {
@@ -923,6 +910,19 @@
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
+      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
+      "price": "1,199万円",
+      "size": "174.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "price_en": "¥11,990,000  (~$79,933 USD)",
+      "size_en": "174 m² land",
+      "date_found": "2026-03-04"
     },
     {
       "source": "Lifull Homes",
