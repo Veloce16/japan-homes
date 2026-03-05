@@ -1148,13 +1148,13 @@ async def main():
         except Exception:
             pass
 
-    # Fetch exact coordinates for AtHome, Suumo, Yahoo RE (Lifull added once format confirmed)
+    # Fetch exact coordinates for all four sources
     athome_no_coords = [l for l in unique
-                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE")
+                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE", "Lifull Homes")
                         and "lat" not in l
                         and l.get("url", "").startswith("http")]
     if athome_no_coords:
-        print(f"\nFetching exact coordinates for {len(athome_no_coords)} listings (AtHome + Suumo + Yahoo RE)...")
+        print(f"\nFetching exact coordinates for {len(athome_no_coords)} listings...")
         async with async_playwright() as pw2:
             coords_found = 0
             # One browser reused for all pages — much faster than launching per listing
@@ -1208,7 +1208,7 @@ async def main():
                         "  const el = document.querySelector('[data-lat],[data-latitude],[data-y]');"
                         "  if (el) {"
                         "    const lat = parseFloat(el.getAttribute('data-lat') || el.getAttribute('data-latitude') || el.getAttribute('data-y') || '');"
-                        "    const lng = parseFloat(el.getAttribute('data-lng') || el.getAttribute('data-longitude') || el.getAttribute('data-x') || '');"
+                        "    const lng = parseFloat(el.getAttribute('data-lng') || el.getAttribute('data-lon') || el.getAttribute('data-longitude') || el.getAttribute('data-x') || '');"
                         "    if (lat && lng) return {lat, lng, pat: 'data-attr'};"
                         "  }"
                         "  return null;"
@@ -1230,86 +1230,6 @@ async def main():
             await browser2.close()
         print(f"Coordinates found: {coords_found}/{len(athome_no_coords)}")
 
-    # DEBUG: Sniff coordinate format for Suumo, Yahoo RE, Lifull Homes (one listing each)
-    debug_sources = ["Lifull Homes"]
-    debug_done = set()
-    debug_listings = [l for l in unique if l.get("source") in debug_sources
-                      and l.get("url","").startswith("http")]
-    # Pick one per source
-    debug_pick = {}
-    for l in debug_listings:
-        src = l.get("source")
-        if src not in debug_pick:
-            debug_pick[src] = l
-    if debug_pick:
-        print("\n=== COORD DEBUG: sniffing one listing per source ===")
-        async with async_playwright() as pw3:
-            browser3 = await pw3.chromium.launch(headless=True, args=browser_args())
-            ctx3 = await make_context(browser3)
-            page3 = await ctx3.new_page()
-            for src, l in debug_pick.items():
-                try:
-                    print(f"\n--- {src}: {l['url'][:80]}")
-                    await page3.goto(l["url"], wait_until="domcontentloaded", timeout=25000)
-                    await page3.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    await asyncio.sleep(5)  # extra wait for dynamic content
-                    result = await page3.evaluate(
-                        "(()=>{"
-                        "  const out = {};"
-                        # ALL script tags including type=application/json
-                        "  const txt = Array.from(document.querySelectorAll('script')).map(s=>s.textContent).join(' ');"
-                        "  const pat = /(3[0-9]\\.[0-9]{4,})/g;"
-                        "  const hits = []; let m;"
-                        "  while ((m = pat.exec(txt)) !== null && hits.length < 4)"
-                        "    hits.push(txt.substring(Math.max(0,m.index-70), m.index+90));"
-                        "  out.scriptHits = hits;"
-                        # data attributes on any element
-                        "  const attrEl = document.querySelector('[data-lat],[data-latitude],[data-lon],[data-longitude],[data-y],[data-x],[data-latlng]');"
-                        "  out.attrHit = attrEl ? attrEl.outerHTML.substring(0,300) : null;"
-                        # window globals that might hold map state
-                        "  const globals = [];"
-                        "  for (const k of Object.keys(window)) {"
-                        "    try {"
-                        "      const v = JSON.stringify(window[k]);"
-                        "      if (v && v.match(/3[0-9]\\.[0-9]{4,}/)) globals.push(k + ': ' + v.substring(0,150));"
-                        "    } catch(e) {}"
-                        "    if (globals.length >= 3) break;"
-                        "  }"
-                        "  out.globalHits = globals;"
-                        # Full body HTML
-                        "  const body = document.body ? document.body.innerHTML : '';"
-                        "  const bpat = /(3[0-9]\\.[0-9]{5,})/g;"
-                        "  const bhits = []; let bm;"
-                        "  while ((bm = bpat.exec(body)) !== null && bhits.length < 3)"
-                        "    bhits.push(body.substring(Math.max(0,bm.index-80), bm.index+100));"
-                        "  out.bodyHits = bhits;"
-                        "  return out;"
-                        "})()"
-                    )
-                    if result:
-                        if result.get('scriptHits'):
-                            for i, s in enumerate(result['scriptHits']):
-                                print(f"  script hit {i+1}: ...{s}...")
-                        else:
-                            print("  No lat-range numbers in ANY script tags")
-                        if result.get('attrHit'):
-                            print(f"  attr hit: {result['attrHit']}")
-                        else:
-                            print("  No data-lat/lon attributes found")
-                        if result.get('globalHits'):
-                            for s in result['globalHits']:
-                                print(f"  window global: {s[:150]}")
-                        else:
-                            print("  No window globals with coords")
-                        if result.get('bodyHits'):
-                            for i, s in enumerate(result['bodyHits']):
-                                print(f"  body hit {i+1}: ...{s}...")
-                        else:
-                            print("  No lat-range numbers in page body either")
-                except Exception as e:
-                    print(f"  ! Error: {e}")
-            await browser3.close()
-        print("=== END COORD DEBUG ===\n")
 
     # Build output payload with generated timestamp
     generated_ts = datetime.datetime.now().isoformat(timespec="seconds")
