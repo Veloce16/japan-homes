@@ -1148,13 +1148,13 @@ async def main():
         except Exception:
             pass
 
-    # Fetch exact coordinates for AtHome + Suumo listings (others added once format confirmed)
+    # Fetch exact coordinates for AtHome, Suumo, Yahoo RE (Lifull added once format confirmed)
     athome_no_coords = [l for l in unique
-                        if l.get("source") in ("AtHome", "Suumo")
+                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE")
                         and "lat" not in l
                         and l.get("url", "").startswith("http")]
     if athome_no_coords:
-        print(f"\nFetching exact coordinates for {len(athome_no_coords)} listings (AtHome + Suumo)...")
+        print(f"\nFetching exact coordinates for {len(athome_no_coords)} listings (AtHome + Suumo + Yahoo RE)...")
         async with async_playwright() as pw2:
             coords_found = 0
             # One browser reused for all pages — much faster than launching per listing
@@ -1195,6 +1195,8 @@ async def main():
                         "  if (mJP) return {lat: parseFloat(mJP[1]), lng: parseFloat(mJP[2]), pat: 'ido-keido'};"
                         "  const mLatLng = scripts.match(/lat\\s*:\\s*'?(3[0-9]\\.\\d{4,})'?[\\s\\S]{0,40}?lng\\s*:\\s*'?(1[34][0-9]\\.\\d{4,})'?/);"
                         "  if (mLatLng) return {lat: parseFloat(mLatLng[1]), lng: parseFloat(mLatLng[2]), pat: 'lat-lng-quoted'};"
+                        "  const mYahoo = scripts.match(/\"lat\"\\s*:\\s*\"(3[0-9]\\.\\d+)\"[\\s\\S]{0,30}?\"lon\"\\s*:\\s*\"(1[34][0-9]\\.\\d+)\"/);"
+                        "  if (mYahoo) return {lat: parseFloat(mYahoo[1]), lng: parseFloat(mYahoo[2]), pat: 'yahoo-lat-lon'};"
                         "  const m1 = scripts.match(/\"latitude\"\\s*:\\s*\"?(3[0-9]\\.\\d{3,})\"?[\\s\\S]{0,80}?\"longitude\"\\s*:\\s*\"?(1[34][0-9]\\.\\d{3,})\"?/);"
                         "  if (m1) return {lat: parseFloat(m1[1]), lng: parseFloat(m1[2]), pat: 'script-latlon'};"
                         "  const m2 = scripts.match(/lat\\s*[=:]\\s*(3[0-9]\\.\\d{4,})[\\s\\S]{0,60}?l(?:ng|on)\\s*[=:]\\s*(1[34][0-9]\\.\\d{4,})/);"
@@ -1251,24 +1253,45 @@ async def main():
                     await page3.goto(l["url"], wait_until="domcontentloaded", timeout=25000)
                     await page3.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                     await asyncio.sleep(3)
-                    # Grab all inline script text and search for Japan-range coordinate patterns
+                    # Search inline scripts, HTML attrs, and full body for coordinate patterns
                     result = await page3.evaluate(
                         "(()=>{"
+                        "  const out = {};"
+                        # Inline scripts
                         "  const txt = Array.from(document.querySelectorAll('script:not([src])')).map(s=>s.textContent).join(' ');"
                         "  const pat = /(3[0-9]\\.[0-9]{4,})/g;"
-                        "  const hits = [];"
-                        "  let m;"
-                        "  while ((m = pat.exec(txt)) !== null && hits.length < 5) {"
+                        "  const hits = []; let m;"
+                        "  while ((m = pat.exec(txt)) !== null && hits.length < 4)"
                         "    hits.push(txt.substring(Math.max(0,m.index-60), m.index+80));"
-                        "  }"
-                        "  return hits;"
+                        "  out.scriptHits = hits;"
+                        # data-lat / data-lng / data-latitude / data-longitude attributes
+                        "  const attrEl = document.querySelector('[data-lat],[data-latitude],[data-lon],[data-longitude],[data-y],[data-x]');"
+                        "  out.attrHit = attrEl ? attrEl.outerHTML.substring(0,200) : null;"
+                        # Full page body text (last resort)
+                        "  const body = document.body ? document.body.innerHTML : '';"
+                        "  const bpat = /(3[0-9]\\.[0-9]{5,})/g;"
+                        "  const bhits = []; let bm;"
+                        "  while ((bm = bpat.exec(body)) !== null && bhits.length < 3)"
+                        "    bhits.push(body.substring(Math.max(0,bm.index-80), bm.index+100));"
+                        "  out.bodyHits = bhits;"
+                        "  return out;"
                         "})()"
                     )
                     if result:
-                        for i, snippet in enumerate(result):
-                            print(f"  hit {i+1}: ...{snippet}...")
-                    else:
-                        print("  No lat-range numbers found in inline scripts")
+                        if result.get('scriptHits'):
+                            for i, s in enumerate(result['scriptHits']):
+                                print(f"  script hit {i+1}: ...{s}...")
+                        else:
+                            print("  No lat-range numbers in inline scripts")
+                        if result.get('attrHit'):
+                            print(f"  attr hit: {result['attrHit']}")
+                        else:
+                            print("  No data-lat/lon attributes found")
+                        if result.get('bodyHits'):
+                            for i, s in enumerate(result['bodyHits']):
+                                print(f"  body hit {i+1}: ...{s}...")
+                        else:
+                            print("  No lat-range numbers in page body either")
                 except Exception as e:
                     print(f"  ! Error: {e}")
             await browser3.close()
