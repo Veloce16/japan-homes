@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T09:30:24",
+  "generated": "2026-03-05T14:42:18",
   "listings": [
     {
       "source": "AtHome",
@@ -817,15 +817,15 @@
       "address": "Gotemba City",
       "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
       "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
       "date_found": "2026-03-05",
-      "lat": 35.205294,
-      "lng": 138.639989
+      "lat": 35.203334,
+      "lng": 138.646305
     },
     {
       "source": "Suumo",
@@ -858,22 +858,6 @@
       "date_found": "2026-03-03",
       "lat": 34.833401,
       "lng": 136.585945
-    },
-    {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Suzuka City",
-      "price": "1450万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_77904994/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F994%2F77904994%2F77904994_0212.jpg&w=70&h=50",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
-      "size_en": "",
-      "date_found": "2026-03-05",
-      "lat": 34.752486,
-      "lng": 136.481832
     },
     {
       "source": "Suumo",
@@ -1018,22 +1002,6 @@
       "date_found": "2026-03-03",
       "lat": 34.664442,
       "lng": 136.539435
-    },
-    {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu city",
-      "price": "1499万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "",
-      "date_found": "2026-03-05",
-      "lat": 34.653024,
-      "lng": 136.131939
     },
     {
       "source": "Yahoo RE",
