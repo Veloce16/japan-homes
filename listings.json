@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T05:48:11",
+  "generated": "2026-03-05T06:26:34",
   "listings": [
     {
       "source": "AtHome",
@@ -13,7 +13,9 @@
       "build_year": "1994",
       "price_en": "¥11,900,000  (~$79,333 USD)",
       "size_en": "146 m² building  /  352 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 35.32529,
+      "lng": 138.935895
     },
     {
       "source": "AtHome",
@@ -27,7 +29,9 @@
       "build_year": "1968",
       "price_en": "¥15,000,000  (~$100,000 USD)",
       "size_en": "142 m² building  /  498 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 35.361315,
+      "lng": 138.985749
     },
     {
       "source": "AtHome",
@@ -41,7 +45,9 @@
       "build_year": "1969",
       "price_en": "¥4,000,000  (~$26,666 USD)",
       "size_en": "117 m² building  /  366 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.828728,
+      "lng": 136.586832
     },
     {
       "source": "AtHome",
@@ -55,7 +61,9 @@
       "build_year": "1966",
       "price_en": "¥5,800,000  (~$38,666 USD)",
       "size_en": "203 m² building  /  380 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.853257,
+      "lng": 136.607897
     },
     {
       "source": "AtHome",
@@ -83,7 +91,9 @@
       "build_year": "1976",
       "price_en": "¥11,000,000  (~$73,333 USD)",
       "size_en": "213 m² building  /  496 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.9092,
+      "lng": 136.468997
     },
     {
       "source": "AtHome",
@@ -97,7 +107,9 @@
       "build_year": "1973",
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.897012,
+      "lng": 136.550586
     },
     {
       "source": "AtHome",
@@ -111,7 +123,9 @@
       "build_year": "1973",
       "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.831088,
+      "lng": 136.584061
     },
     {
       "source": "AtHome",
@@ -125,7 +139,9 @@
       "build_year": "1981",
       "price_en": "¥1,900,000  (~$12,666 USD)",
       "size_en": "177 m² building  /  444 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.621249,
+      "lng": 136.389707
     },
     {
       "source": "AtHome",
@@ -139,7 +155,9 @@
       "build_year": "1959",
       "price_en": "¥2,200,000  (~$14,666 USD)",
       "size_en": "133 m² building  /  417 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.595542,
+      "lng": 136.304545
     },
     {
       "source": "AtHome",
@@ -153,7 +171,9 @@
       "build_year": "1967",
       "price_en": "¥2,800,000  (~$18,666 USD)",
       "size_en": "167 m² building  /  637 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.657404,
+      "lng": 136.529051
     },
     {
       "source": "AtHome",
@@ -195,7 +215,9 @@
       "build_year": "1982",
       "price_en": "¥3,980,000  (~$26,533 USD)",
       "size_en": "203 m² building  /  629 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.742927,
+      "lng": 136.410681
     },
     {
       "source": "AtHome",
@@ -209,7 +231,9 @@
       "build_year": "1982",
       "price_en": "¥3,980,000  (~$26,533 USD)",
       "size_en": "203 m² building  /  629 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.742753,
+      "lng": 136.410614
     },
     {
       "source": "AtHome",
@@ -237,7 +261,9 @@
       "build_year": "1953",
       "price_en": "¥4,800,000  (~$32,000 USD)",
       "size_en": "226 m² building  /  644 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.698216,
+      "lng": 136.347647
     },
     {
       "source": "AtHome",
@@ -251,7 +277,9 @@
       "build_year": "1979",
       "price_en": "¥4,800,000  (~$32,000 USD)",
       "size_en": "117 m² building  /  353 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.760023,
+      "lng": 136.533219
     },
     {
       "source": "AtHome",
@@ -265,7 +293,9 @@
       "build_year": "1970",
       "price_en": "¥4,800,000  (~$32,000 USD)",
       "size_en": "150 m² building  /  698 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.616694,
+      "lng": 136.316553
     },
     {
       "source": "AtHome",
@@ -293,7 +323,9 @@
       "build_year": "1927",
       "price_en": "¥5,000,000  (~$33,333 USD)",
       "size_en": "161 m² building  /  735 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.74833,
+      "lng": 136.450146
     },
     {
       "source": "AtHome",
@@ -307,7 +339,9 @@
       "build_year": "1971",
       "price_en": "¥5,500,000  (~$36,666 USD)",
       "size_en": "179 m² building  /  364 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.697399,
+      "lng": 136.516441
     },
     {
       "source": "AtHome",
@@ -321,7 +355,9 @@
       "build_year": "1988",
       "price_en": "¥5,520,000  (~$36,800 USD)",
       "size_en": "145 m² building  /  377 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.762598,
+      "lng": 136.522511
     },
     {
       "source": "AtHome",
@@ -349,7 +385,9 @@
       "build_year": "1963",
       "price_en": "¥5,800,000  (~$38,666 USD)",
       "size_en": "126 m² building  /  327 m² land",
-      "date_found": "2026-03-05"
+      "date_found": "2026-03-05",
+      "lat": 34.646564,
+      "lng": 136.452608
     },
     {
       "source": "AtHome",
@@ -363,7 +401,9 @@
       "build_year": "1989",
       "price_en": "¥5,900,000  (~$39,333 USD)",
       "size_en": "109 m² building  /  740 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.646799,
+      "lng": 136.5388
     },
     {
       "source": "AtHome",
@@ -377,7 +417,9 @@
       "build_year": "1975",
       "price_en": "¥6,000,000  (~$40,000 USD)",
       "size_en": "139 m² building  /  637 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.800889,
+      "lng": 136.561363
     },
     {
       "source": "AtHome",
@@ -391,7 +433,9 @@
       "build_year": "1978",
       "price_en": "¥7,000,000  (~$46,666 USD)",
       "size_en": "162 m² building  /  545 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.705479,
+      "lng": 136.379755
     },
     {
       "source": "AtHome",
@@ -419,7 +463,9 @@
       "build_year": "1963",
       "price_en": "¥7,500,000  (~$50,000 USD)",
       "size_en": "121 m² building  /  331 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.679674,
+      "lng": 136.508897
     },
     {
       "source": "AtHome",
@@ -475,7 +521,9 @@
       "build_year": "1982",
       "price_en": "¥7,900,000  (~$52,666 USD)",
       "size_en": "142 m² building  /  668 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.754402,
+      "lng": 136.523915
     },
     {
       "source": "AtHome",
@@ -489,7 +537,9 @@
       "build_year": "1975",
       "price_en": "¥8,000,000  (~$53,333 USD)",
       "size_en": "121 m² building  /  312 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.762605,
+      "lng": 136.531186
     },
     {
       "source": "AtHome",
@@ -503,7 +553,9 @@
       "build_year": "1990",
       "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "194 m² building  /  572 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.69356,
+      "lng": 136.411577
     },
     {
       "source": "AtHome",
@@ -545,7 +597,9 @@
       "build_year": "1992",
       "price_en": "¥10,900,000  (~$72,666 USD)",
       "size_en": "131 m² building  /  310 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.699777,
+      "lng": 136.440416
     },
     {
       "source": "AtHome",
@@ -559,7 +613,9 @@
       "build_year": "1987",
       "price_en": "¥11,000,000  (~$73,333 USD)",
       "size_en": "162 m² building  /  389 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.685199,
+      "lng": 136.50903
     },
     {
       "source": "AtHome",
@@ -573,7 +629,9 @@
       "build_year": "1978",
       "price_en": "¥11,980,000  (~$79,866 USD)",
       "size_en": "193 m² building  /  371 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.679294,
+      "lng": 136.510357
     },
     {
       "source": "AtHome",
@@ -587,7 +645,9 @@
       "build_year": "1987",
       "price_en": "¥13,000,000  (~$86,666 USD)",
       "size_en": "185 m² building  /  342 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.759459,
+      "lng": 136.508681
     },
     {
       "source": "AtHome",
@@ -601,7 +661,9 @@
       "build_year": "1995",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "112 m² building  /  308 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.681438,
+      "lng": 136.493328
     },
     {
       "source": "AtHome",
@@ -629,7 +691,9 @@
       "build_year": "1954",
       "price_en": "¥14,350,000  (~$95,666 USD)",
       "size_en": "185 m² building  /  931 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.650488,
+      "lng": 136.420789
     },
     {
       "source": "AtHome",
@@ -643,7 +707,9 @@
       "build_year": "1978",
       "price_en": "¥14,600,000  (~$97,333 USD)",
       "size_en": "167 m² building  /  577 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.752992,
+      "lng": 136.518967
     },
     {
       "source": "AtHome",
@@ -657,7 +723,9 @@
       "build_year": "1983",
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "102 m² building  /  335 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.702293,
+      "lng": 136.440657
     },
     {
       "source": "AtHome",
@@ -685,7 +753,9 @@
       "build_year": "1979",
       "price_en": "¥15,000,000  (~$100,000 USD)",
       "size_en": "175 m² building  /  762 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.757805,
+      "lng": 136.526934
     },
     {
       "source": "AtHome",
@@ -699,19 +769,21 @@
       "build_year": "1991",
       "price_en": "¥15,000,000  (~$100,000 USD)",
       "size_en": "170 m² building  /  418 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.662944,
+      "lng": 136.364937
     },
     {
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1398万円",
+      "price": "998万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_74774866/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F866%2F74774866%2F74774866_0039.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥13,980,000  (~$93,200 USD)",
+      "price_en": "¥9,980,000  (~$66,533 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -747,13 +819,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1280万円",
+      "price": "1300万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78968582/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F582%2F78968582%2F78968582_0013.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥12,800,000  (~$85,333 USD)",
+      "price_en": "¥13,000,000  (~$86,666 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -843,8 +915,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
