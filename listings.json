@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T01:55:11",
+  "generated": "2026-03-05T02:51:22",
   "listings": [
     {
       "source": "AtHome",
@@ -705,13 +705,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1430万円",
+      "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_79211933/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F933%2F79211933%2F79211933_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥14,300,000  (~$95,333 USD)",
+      "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -884,6 +884,20 @@
       "date_found": "2026-03-03"
     },
     {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Tsu city",
+      "price": "1499万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥14,990,000  (~$99,933 USD)",
+      "size_en": "",
+      "date_found": "2026-03-05"
+    },
+    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -924,6 +938,20 @@
       "price_en": "¥11,900,000  (~$79,333 USD)",
       "size_en": "146 m² building  /  352 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
+      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
+      "price": "1,400万円",
+      "size": "219.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "219 m² land",
+      "date_found": "2026-03-05"
     },
     {
       "source": "Lifull Homes",
