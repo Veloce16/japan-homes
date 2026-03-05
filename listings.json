@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T14:42:18",
+  "generated": "2026-03-05T20:14:07",
   "listings": [
     {
       "source": "AtHome",
@@ -227,22 +227,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Misato Machiyadokoro 2-story 6LDK",
-      "address": "Tsu City Misato Machiyadokoro 2-story 6LDK",
-      "price": "398万円",
-      "size": "629.03m² / 203.34m²",
-      "url": "https://www.athome.co.jp/kodate/6987766143/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/9npEZOqhbI9X3_KGXt3pMQ==",
-      "area": "Tsu, Mie",
-      "build_year": "1982",
-      "price_en": "¥3,980,000  (~$26,533 USD)",
-      "size_en": "203 m² building  /  629 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.742927,
-      "lng": 136.410681
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) 2-story 6DK",
       "address": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) 2-story 6DK",
       "price": "398万円",
@@ -256,6 +240,22 @@
       "date_found": "2026-03-03",
       "lat": 34.742753,
       "lng": 136.410614
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Misato Machiyadokoro 2-story 6LDK",
+      "address": "Tsu City Misato Machiyadokoro 2-story 6LDK",
+      "price": "398万円",
+      "size": "629.03m² / 203.34m²",
+      "url": "https://www.athome.co.jp/kodate/6987766143/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/9npEZOqhbI9X3_KGXt3pMQ==",
+      "area": "Tsu, Mie",
+      "build_year": "1982",
+      "price_en": "¥3,980,000  (~$26,533 USD)",
+      "size_en": "203 m² building  /  629 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.742927,
+      "lng": 136.410681
     },
     {
       "source": "AtHome",
@@ -861,6 +861,22 @@
     },
     {
       "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Suzuka City",
+      "price": "1450万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_77904994/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F994%2F77904994%2F77904994_0212.jpg&w=70&h=50",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "size_en": "",
+      "date_found": "2026-03-05",
+      "lat": 34.752486,
+      "lng": 136.481832
+    },
+    {
+      "source": "Suumo",
       "title": "Kurima Nakayamacho (Takada Motoyama Station) 5.52 million yen",
       "address": "Kurima Nakayamacho (Takada Motoyama Station) 5.52 million yen",
       "price": "552万円",
@@ -1117,19 +1133,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
-      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
-      "price": "1,199万円",
-      "size": "174.36m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu city Ichimida town detached house PR price 5.8 million yen Location 3",
+      "price": "580万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥11,990,000  (~$79,933 USD)",
-      "size_en": "174 m² land",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "215 m² land",
       "date_found": "2026-03-05",
-      "lat": 34.773928,
-      "lng": 136.535681
+      "lat": 34.762742,
+      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
