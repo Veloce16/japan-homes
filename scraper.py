@@ -1148,13 +1148,13 @@ async def main():
         except Exception:
             pass
 
-    # Fetch exact coordinates for new AtHome listings (detail page has embedded Google Maps)
+    # Fetch exact coordinates for AtHome + Suumo listings (others added once format confirmed)
     athome_no_coords = [l for l in unique
-                        if l.get("source") == "AtHome"
+                        if l.get("source") in ("AtHome", "Suumo")
                         and "lat" not in l
                         and l.get("url", "").startswith("http")]
     if athome_no_coords:
-        print(f"\nFetching exact coordinates for {len(athome_no_coords)} new AtHome listings...")
+        print(f"\nFetching exact coordinates for {len(athome_no_coords)} listings (AtHome + Suumo)...")
         async with async_playwright() as pw2:
             coords_found = 0
             # One browser reused for all pages — much faster than launching per listing
@@ -1191,8 +1191,10 @@ async def main():
                         "    } catch(e) {}"
                         "  }"
                         "  const scripts = Array.from(document.querySelectorAll('script:not([src])')).map(s=>s.textContent).join(' ');"
-                        "  const mJP = scripts.match(/\"ido\"\\s*:\\s*\"?(3[0-9]\\.\\d+)\"?[\\s\\S]{0,30}?\"keido\"\\s*:\\s*\"?(1[34][0-9]\\.\\d+)\"?/);"
+                        "  const mJP = scripts.match(/[\"']?(?:init)?[Ii]do[\"']?\\s*:\\s*[\"']?(3[0-9]\\.\\d+)[\"']?[\\s\\S]{0,40}?[\"']?(?:init)?[Kk]eido[\"']?\\s*:\\s*[\"']?(1[34][0-9]\\.\\d+)[\"']?/);"
                         "  if (mJP) return {lat: parseFloat(mJP[1]), lng: parseFloat(mJP[2]), pat: 'ido-keido'};"
+                        "  const mLatLng = scripts.match(/lat\\s*:\\s*'?(3[0-9]\\.\\d{4,})'?[\\s\\S]{0,40}?lng\\s*:\\s*'?(1[34][0-9]\\.\\d{4,})'?/);"
+                        "  if (mLatLng) return {lat: parseFloat(mLatLng[1]), lng: parseFloat(mLatLng[2]), pat: 'lat-lng-quoted'};"
                         "  const m1 = scripts.match(/\"latitude\"\\s*:\\s*\"?(3[0-9]\\.\\d{3,})\"?[\\s\\S]{0,80}?\"longitude\"\\s*:\\s*\"?(1[34][0-9]\\.\\d{3,})\"?/);"
                         "  if (m1) return {lat: parseFloat(m1[1]), lng: parseFloat(m1[2]), pat: 'script-latlon'};"
                         "  const m2 = scripts.match(/lat\\s*[=:]\\s*(3[0-9]\\.\\d{4,})[\\s\\S]{0,60}?l(?:ng|on)\\s*[=:]\\s*(1[34][0-9]\\.\\d{4,})/);"
@@ -1227,7 +1229,7 @@ async def main():
         print(f"Coordinates found: {coords_found}/{len(athome_no_coords)}")
 
     # DEBUG: Sniff coordinate format for Suumo, Yahoo RE, Lifull Homes (one listing each)
-    debug_sources = ["Suumo", "YahooRE", "LifullHomes"]
+    debug_sources = ["Suumo", "Yahoo RE", "Lifull Homes"]
     debug_done = set()
     debug_listings = [l for l in unique if l.get("source") in debug_sources
                       and l.get("url","").startswith("http")]
