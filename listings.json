@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T06:26:34",
+  "generated": "2026-03-05T07:00:52",
   "listings": [
     {
       "source": "AtHome",
@@ -777,13 +777,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "998万円",
+      "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_74774866/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F866%2F74774866%2F74774866_0039.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥9,980,000  (~$66,533 USD)",
+      "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -819,13 +819,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1300万円",
+      "price": "600万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78968582/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F582%2F78968582%2F78968582_0013.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78072093/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F093%2F78072093%2F78072093_0010.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥13,000,000  (~$86,666 USD)",
+      "price_en": "¥6,000,000  (~$40,000 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -915,8 +915,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
