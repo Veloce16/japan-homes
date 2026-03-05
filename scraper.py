@@ -1226,6 +1226,52 @@ async def main():
             await browser2.close()
         print(f"Coordinates found: {coords_found}/{len(athome_no_coords)}")
 
+    # DEBUG: Sniff coordinate format for Suumo, Yahoo RE, Lifull Homes (one listing each)
+    debug_sources = ["Suumo", "YahooRE", "LifullHomes"]
+    debug_done = set()
+    debug_listings = [l for l in unique if l.get("source") in debug_sources
+                      and l.get("url","").startswith("http")]
+    # Pick one per source
+    debug_pick = {}
+    for l in debug_listings:
+        src = l.get("source")
+        if src not in debug_pick:
+            debug_pick[src] = l
+    if debug_pick:
+        print("\n=== COORD DEBUG: sniffing one listing per source ===")
+        async with async_playwright() as pw3:
+            browser3 = await pw3.chromium.launch(headless=True, args=browser_args())
+            ctx3 = await make_context(browser3)
+            page3 = await ctx3.new_page()
+            for src, l in debug_pick.items():
+                try:
+                    print(f"\n--- {src}: {l['url'][:80]}")
+                    await page3.goto(l["url"], wait_until="domcontentloaded", timeout=25000)
+                    await page3.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    await asyncio.sleep(3)
+                    # Grab all inline script text and search for Japan-range coordinate patterns
+                    result = await page3.evaluate(
+                        "(()=>{"
+                        "  const txt = Array.from(document.querySelectorAll('script:not([src])')).map(s=>s.textContent).join(' ');"
+                        "  const pat = /(3[0-9]\\.[0-9]{4,})/g;"
+                        "  const hits = [];"
+                        "  let m;"
+                        "  while ((m = pat.exec(txt)) !== null && hits.length < 5) {"
+                        "    hits.push(txt.substring(Math.max(0,m.index-60), m.index+80));"
+                        "  }"
+                        "  return hits;"
+                        "})()"
+                    )
+                    if result:
+                        for i, snippet in enumerate(result):
+                            print(f"  hit {i+1}: ...{snippet}...")
+                    else:
+                        print("  No lat-range numbers found in inline scripts")
+                except Exception as e:
+                    print(f"  ! Error: {e}")
+            await browser3.close()
+        print("=== END COORD DEBUG ===\n")
+
     # Build output payload with generated timestamp
     generated_ts = datetime.datetime.now().isoformat(timespec="seconds")
     payload = {"generated": generated_ts, "listings": unique}
