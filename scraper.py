@@ -1191,6 +1191,8 @@ async def main():
                         "    } catch(e) {}"
                         "  }"
                         "  const scripts = Array.from(document.querySelectorAll('script:not([src])')).map(s=>s.textContent).join(' ');"
+                        "  const mJP = scripts.match(/\"ido\"\\s*:\\s*\"?(3[0-9]\\.\\d+)\"?[\\s\\S]{0,30}?\"keido\"\\s*:\\s*\"?(1[34][0-9]\\.\\d+)\"?/);"
+                        "  if (mJP) return {lat: parseFloat(mJP[1]), lng: parseFloat(mJP[2]), pat: 'ido-keido'};"
                         "  const m1 = scripts.match(/\"latitude\"\\s*:\\s*\"?(3[0-9]\\.\\d{3,})\"?[\\s\\S]{0,80}?\"longitude\"\\s*:\\s*\"?(1[34][0-9]\\.\\d{3,})\"?/);"
                         "  if (m1) return {lat: parseFloat(m1[1]), lng: parseFloat(m1[2]), pat: 'script-latlon'};"
                         "  const m2 = scripts.match(/lat\\s*[=:]\\s*(3[0-9]\\.\\d{4,})[\\s\\S]{0,60}?l(?:ng|on)\\s*[=:]\\s*(1[34][0-9]\\.\\d{4,})/);"
