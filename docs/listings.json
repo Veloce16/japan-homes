@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T08:14:32",
+  "generated": "2026-03-05T08:59:56",
   "listings": [
     {
       "source": "AtHome",
@@ -16,6 +16,22 @@
       "date_found": "2026-03-03",
       "lat": 35.32529,
       "lng": 138.935895
+    },
+    {
+      "source": "AtHome",
+      "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
+      "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
+      "price": "900万円",
+      "size": "329.40m² / 117.58m²",
+      "url": "https://www.athome.co.jp/kodate/6989336556/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/nd_uN4XAqvUO8Xy98JwB8g==",
+      "area": "Oyama, Shizuoka",
+      "build_year": "1993",
+      "price_en": "¥9,000,000  (~$60,000 USD)",
+      "size_en": "118 m² building  /  329 m² land",
+      "date_found": "2026-03-05",
+      "lat": 35.36008,
+      "lng": 138.979586
     },
     {
       "source": "AtHome",
@@ -799,13 +815,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1398万円",
+      "price": "748万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_77448277/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F277%2F77448277%2F77448277_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥13,980,000  (~$93,200 USD)",
+      "price_en": "¥7,480,000  (~$49,866 USD)",
       "size_en": "",
       "date_found": "2026-03-05",
       "lat": 35.193481,
@@ -847,17 +863,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1280万円",
+      "price": "1450万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20219570/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F570%2F20219570%2F20219570_0113.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥12,800,000  (~$85,333 USD)",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "",
       "date_found": "2026-03-05",
-      "lat": 34.956816,
-      "lng": 136.539069
+      "lat": 34.752631,
+      "lng": 136.482329
     },
     {
       "source": "Suumo",
@@ -1104,20 +1120,6 @@
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
       "date_found": "2026-03-03"
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
-      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
-      "price": "1,199万円",
-      "size": "174.36m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥11,990,000  (~$79,933 USD)",
-      "size_en": "174 m² land",
-      "date_found": "2026-03-05"
     },
     {
       "source": "Lifull Homes",
