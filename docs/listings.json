@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T08:59:56",
+  "generated": "2026-03-05T09:30:24",
   "listings": [
     {
       "source": "AtHome",
@@ -815,17 +815,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "748万円",
+      "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_77448277/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F277%2F77448277%2F77448277_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥7,480,000  (~$49,866 USD)",
+      "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
       "date_found": "2026-03-05",
-      "lat": 35.193481,
-      "lng": 138.695817
+      "lat": 35.205294,
+      "lng": 138.639989
     },
     {
       "source": "Suumo",
@@ -865,15 +865,15 @@
       "address": "Suzuka City",
       "price": "1450万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20219570/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F570%2F20219570%2F20219570_0113.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_77904994/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F994%2F77904994%2F77904994_0212.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "",
       "date_found": "2026-03-05",
-      "lat": 34.752631,
-      "lng": 136.482329
+      "lat": 34.752486,
+      "lng": 136.481832
     },
     {
       "source": "Suumo",
@@ -1020,6 +1020,22 @@
       "lng": 136.539435
     },
     {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Tsu city",
+      "price": "1499万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥14,990,000  (~$99,933 USD)",
+      "size_en": "",
+      "date_found": "2026-03-05",
+      "lat": 34.653024,
+      "lng": 136.131939
+    },
+    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -1063,7 +1079,9 @@
       "build_year": "1993",
       "price_en": "¥11,900,000  (~$79,333 USD)",
       "size_en": "146 m² building  /  352 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 35.325296,
+      "lng": 138.935884
     },
     {
       "source": "Lifull Homes",
@@ -1077,7 +1095,9 @@
       "build_year": "",
       "price_en": "¥14,000,000  (~$93,333 USD)",
       "size_en": "219 m² land",
-      "date_found": "2026-03-05"
+      "date_found": "2026-03-05",
+      "lat": 34.893343,
+      "lng": 136.624456
     },
     {
       "source": "Lifull Homes",
@@ -1091,7 +1111,9 @@
       "build_year": "1993",
       "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "129 m² building  /  691 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.925589,
+      "lng": 136.453997
     },
     {
       "source": "Lifull Homes",
@@ -1105,7 +1127,9 @@
       "build_year": "1972",
       "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.831075,
+      "lng": 136.584066
     },
     {
       "source": "Lifull Homes",
@@ -1119,7 +1143,25 @@
       "build_year": "1972",
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.897021,
+      "lng": 136.550615
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
+      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
+      "price": "1,199万円",
+      "size": "174.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,990,000  (~$79,933 USD)",
+      "size_en": "174 m² land",
+      "date_found": "2026-03-05",
+      "lat": 34.773928,
+      "lng": 136.535681
     },
     {
       "source": "Lifull Homes",
@@ -1133,7 +1175,9 @@
       "build_year": "1999",
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "164 m² building  /  569 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.665984,
+      "lng": 136.536732
     },
     {
       "source": "Lifull Homes",
@@ -1147,7 +1191,9 @@
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "112 m² building  /  308 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.681462,
+      "lng": 136.493321
     },
     {
       "source": "Lifull Homes",
@@ -1161,7 +1207,9 @@
       "build_year": "1995",
       "price_en": "¥7,800,000  (~$52,000 USD)",
       "size_en": "159 m² building  /  395 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.703049,
+      "lng": 136.501725
     },
     {
       "source": "Lifull Homes",
@@ -1175,7 +1223,9 @@
       "build_year": "1991",
       "price_en": "¥10,900,000  (~$72,666 USD)",
       "size_en": "131 m² building  /  310 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.699798,
+      "lng": 136.440428
     },
     {
       "source": "Lifull Homes",
@@ -1189,7 +1239,9 @@
       "build_year": "1989",
       "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "194 m² building  /  572 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.693551,
+      "lng": 136.411568
     }
   ]
 }
