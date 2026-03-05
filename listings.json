@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T07:44:12",
+  "generated": "2026-03-05T08:14:32",
   "listings": [
     {
       "source": "AtHome",
@@ -77,7 +77,9 @@
       "build_year": "1994",
       "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "129 m² building  /  691 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.89033,
+      "lng": 136.530017
     },
     {
       "source": "AtHome",
@@ -187,7 +189,9 @@
       "build_year": "1978",
       "price_en": "¥2,800,000  (~$18,666 USD)",
       "size_en": "145 m² building  /  423 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.532276,
+      "lng": 136.270777
     },
     {
       "source": "AtHome",
@@ -201,7 +205,9 @@
       "build_year": "1934",
       "price_en": "¥3,950,000  (~$26,333 USD)",
       "size_en": "141 m² building  /  314 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.755144,
+      "lng": 136.516322
     },
     {
       "source": "AtHome",
@@ -309,7 +315,9 @@
       "build_year": "1972",
       "price_en": "¥4,800,000  (~$32,000 USD)",
       "size_en": "158 m² building  /  596 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.573991,
+      "lng": 136.278406
     },
     {
       "source": "AtHome",
@@ -371,7 +379,9 @@
       "build_year": "1992",
       "price_en": "¥5,600,000  (~$37,333 USD)",
       "size_en": "111 m² building  /  509 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.667247,
+      "lng": 136.512646
     },
     {
       "source": "AtHome",
@@ -449,7 +459,9 @@
       "build_year": "",
       "price_en": "¥7,000,000  (~$46,666 USD)",
       "size_en": "212 m² building  /  654 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.512148,
+      "lng": 136.260018
     },
     {
       "source": "AtHome",
@@ -493,7 +505,9 @@
       "build_year": "1970",
       "price_en": "¥7,800,000  (~$52,000 USD)",
       "size_en": "202 m² building  /  706 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.715621,
+      "lng": 136.499955
     },
     {
       "source": "AtHome",
@@ -507,7 +521,9 @@
       "build_year": "1996",
       "price_en": "¥7,800,000  (~$52,000 USD)",
       "size_en": "159 m² building  /  395 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.715621,
+      "lng": 136.499955
     },
     {
       "source": "AtHome",
@@ -569,7 +585,9 @@
       "build_year": "1960",
       "price_en": "¥9,800,000  (~$65,333 USD)",
       "size_en": "254 m² building  /  508 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.692214,
+      "lng": 136.496756
     },
     {
       "source": "AtHome",
@@ -583,7 +601,9 @@
       "build_year": "1983",
       "price_en": "¥10,800,000  (~$72,000 USD)",
       "size_en": "143 m² building  /  363 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.692214,
+      "lng": 136.496756
     },
     {
       "source": "AtHome",
@@ -739,7 +759,9 @@
       "build_year": "2000",
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "164 m² building  /  569 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.692214,
+      "lng": 136.496756
     },
     {
       "source": "AtHome",
@@ -825,17 +847,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1380万円",
+      "price": "1280万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78286694/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F694%2F78286694%2F78286694_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥13,800,000  (~$92,000 USD)",
+      "price_en": "¥12,800,000  (~$85,333 USD)",
       "size_en": "",
       "date_found": "2026-03-05",
-      "lat": 34.954912,
-      "lng": 136.604728
+      "lat": 34.956816,
+      "lng": 136.539069
     },
     {
       "source": "Suumo",
@@ -993,7 +1015,9 @@
       "build_year": "",
       "price_en": "¥7,000,000  (~$46,666 USD)",
       "size_en": "212 m² building  /  654 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.515739,
+      "lng": 136.300136
     },
     {
       "source": "Yahoo RE",
@@ -1007,7 +1031,9 @@
       "build_year": "1971",
       "price_en": "¥4,800,000  (~$32,000 USD)",
       "size_en": "596 m² building  /  596 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.554847,
+      "lng": 136.262127
     },
     {
       "source": "Lifull Homes",
@@ -1078,6 +1104,20 @@
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
+      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
+      "price": "1,199万円",
+      "size": "174.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,990,000  (~$79,933 USD)",
+      "size_en": "174 m² land",
+      "date_found": "2026-03-05"
     },
     {
       "source": "Lifull Homes",
