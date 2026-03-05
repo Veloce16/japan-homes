@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T03:33:08",
+  "generated": "2026-03-05T05:19:17",
   "listings": [
     {
       "source": "AtHome",
@@ -97,20 +97,6 @@
       "build_year": "1973",
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Kawatacho (Suzuka City Station) 2-story 4LDK",
-      "address": "Suzuka City Kawatacho (Suzuka City Station) 2-story 4LDK",
-      "price": "1,200万円",
-      "size": "803.40m² / 105.98m²",
-      "url": "https://www.athome.co.jp/kodate/6988687896/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/0vgt4lXOIcU1dllwb2FaxQ==",
-      "area": "Suzuka, Mie",
-      "build_year": "2016",
-      "price_en": "¥12,000,000  (~$80,000 USD)",
-      "size_en": "106 m² building  /  803 m² land",
       "date_found": "2026-03-03"
     },
     {
@@ -350,6 +336,20 @@
       "price_en": "¥5,600,000  (~$37,333 USD)",
       "size_en": "111 m² building  /  509 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6DK",
+      "address": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6D",
+      "price": "580万円",
+      "size": "327.00m² / 126.43m²",
+      "url": "https://www.athome.co.jp/kodate/6989769732/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/P2X2UPkDozYS_DnEOhjWlQ==",
+      "area": "Tsu, Mie",
+      "build_year": "1963",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "126 m² building  /  327 m² land",
+      "date_found": "2026-03-05"
     },
     {
       "source": "AtHome",
@@ -705,13 +705,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1298万円",
+      "price": "1430万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_76704708/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F708%2F76704708%2F76704708_0012.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_79211933/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F933%2F79211933%2F79211933_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥12,980,000  (~$86,533 USD)",
+      "price_en": "¥14,300,000  (~$95,333 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -747,13 +747,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "600万円",
+      "price": "1280万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78072093/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F093%2F78072093%2F78072093_0010.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "price_en": "¥12,800,000  (~$85,333 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -843,8 +843,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -887,13 +887,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Tsu city",
-      "price": "1050万円",
+      "price": "1499万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20220608/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F608%2F20220608%2F20220608_0012.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥10,500,000  (~$70,000 USD)",
+      "price_en": "¥14,990,000  (~$99,933 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
