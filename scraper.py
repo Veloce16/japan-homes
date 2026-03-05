@@ -1231,7 +1231,7 @@ async def main():
         print(f"Coordinates found: {coords_found}/{len(athome_no_coords)}")
 
     # DEBUG: Sniff coordinate format for Suumo, Yahoo RE, Lifull Homes (one listing each)
-    debug_sources = ["Suumo", "Yahoo RE", "Lifull Homes"]
+    debug_sources = ["Lifull Homes"]
     debug_done = set()
     debug_listings = [l for l in unique if l.get("source") in debug_sources
                       and l.get("url","").startswith("http")]
@@ -1252,22 +1252,31 @@ async def main():
                     print(f"\n--- {src}: {l['url'][:80]}")
                     await page3.goto(l["url"], wait_until="domcontentloaded", timeout=25000)
                     await page3.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    await asyncio.sleep(3)
-                    # Search inline scripts, HTML attrs, and full body for coordinate patterns
+                    await asyncio.sleep(5)  # extra wait for dynamic content
                     result = await page3.evaluate(
                         "(()=>{"
                         "  const out = {};"
-                        # Inline scripts
-                        "  const txt = Array.from(document.querySelectorAll('script:not([src])')).map(s=>s.textContent).join(' ');"
+                        # ALL script tags including type=application/json
+                        "  const txt = Array.from(document.querySelectorAll('script')).map(s=>s.textContent).join(' ');"
                         "  const pat = /(3[0-9]\\.[0-9]{4,})/g;"
                         "  const hits = []; let m;"
                         "  while ((m = pat.exec(txt)) !== null && hits.length < 4)"
-                        "    hits.push(txt.substring(Math.max(0,m.index-60), m.index+80));"
+                        "    hits.push(txt.substring(Math.max(0,m.index-70), m.index+90));"
                         "  out.scriptHits = hits;"
-                        # data-lat / data-lng / data-latitude / data-longitude attributes
-                        "  const attrEl = document.querySelector('[data-lat],[data-latitude],[data-lon],[data-longitude],[data-y],[data-x]');"
-                        "  out.attrHit = attrEl ? attrEl.outerHTML.substring(0,200) : null;"
-                        # Full page body text (last resort)
+                        # data attributes on any element
+                        "  const attrEl = document.querySelector('[data-lat],[data-latitude],[data-lon],[data-longitude],[data-y],[data-x],[data-latlng]');"
+                        "  out.attrHit = attrEl ? attrEl.outerHTML.substring(0,300) : null;"
+                        # window globals that might hold map state
+                        "  const globals = [];"
+                        "  for (const k of Object.keys(window)) {"
+                        "    try {"
+                        "      const v = JSON.stringify(window[k]);"
+                        "      if (v && v.match(/3[0-9]\\.[0-9]{4,}/)) globals.push(k + ': ' + v.substring(0,150));"
+                        "    } catch(e) {}"
+                        "    if (globals.length >= 3) break;"
+                        "  }"
+                        "  out.globalHits = globals;"
+                        # Full body HTML
                         "  const body = document.body ? document.body.innerHTML : '';"
                         "  const bpat = /(3[0-9]\\.[0-9]{5,})/g;"
                         "  const bhits = []; let bm;"
@@ -1282,11 +1291,16 @@ async def main():
                             for i, s in enumerate(result['scriptHits']):
                                 print(f"  script hit {i+1}: ...{s}...")
                         else:
-                            print("  No lat-range numbers in inline scripts")
+                            print("  No lat-range numbers in ANY script tags")
                         if result.get('attrHit'):
                             print(f"  attr hit: {result['attrHit']}")
                         else:
                             print("  No data-lat/lon attributes found")
+                        if result.get('globalHits'):
+                            for s in result['globalHits']:
+                                print(f"  window global: {s[:150]}")
+                        else:
+                            print("  No window globals with coords")
                         if result.get('bodyHits'):
                             for i, s in enumerate(result['bodyHits']):
                                 print(f"  body hit {i+1}: ...{s}...")
