@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T01:55:11",
+  "generated": "2026-03-05T05:19:17",
   "listings": [
     {
       "source": "AtHome",
@@ -97,20 +97,6 @@
       "build_year": "1973",
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Kawatacho (Suzuka City Station) 2-story 4LDK",
-      "address": "Suzuka City Kawatacho (Suzuka City Station) 2-story 4LDK",
-      "price": "1,200万円",
-      "size": "803.40m² / 105.98m²",
-      "url": "https://www.athome.co.jp/kodate/6988687896/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/0vgt4lXOIcU1dllwb2FaxQ==",
-      "area": "Suzuka, Mie",
-      "build_year": "2016",
-      "price_en": "¥12,000,000  (~$80,000 USD)",
-      "size_en": "106 m² building  /  803 m² land",
       "date_found": "2026-03-03"
     },
     {
@@ -350,6 +336,20 @@
       "price_en": "¥5,600,000  (~$37,333 USD)",
       "size_en": "111 m² building  /  509 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6DK",
+      "address": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6D",
+      "price": "580万円",
+      "size": "327.00m² / 126.43m²",
+      "url": "https://www.athome.co.jp/kodate/6989769732/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/P2X2UPkDozYS_DnEOhjWlQ==",
+      "area": "Tsu, Mie",
+      "build_year": "1963",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "126 m² building  /  327 m² land",
+      "date_found": "2026-03-05"
     },
     {
       "source": "AtHome",
@@ -747,13 +747,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1450万円",
+      "price": "1280万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20219570/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F570%2F20219570%2F20219570_0113.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "price_en": "¥12,800,000  (~$85,333 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -884,6 +884,20 @@
       "date_found": "2026-03-03"
     },
     {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Tsu city",
+      "price": "1499万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥14,990,000  (~$99,933 USD)",
+      "size_en": "",
+      "date_found": "2026-03-05"
+    },
+    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -924,6 +938,20 @@
       "price_en": "¥11,900,000  (~$79,333 USD)",
       "size_en": "146 m² building  /  352 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
+      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
+      "price": "1,400万円",
+      "size": "219.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "219 m² land",
+      "date_found": "2026-03-05"
     },
     {
       "source": "Lifull Homes",
