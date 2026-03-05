@@ -1171,45 +1171,43 @@ async def main():
                     await page2.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                     await asyncio.sleep(3)  # Wait for map JS to execute after scroll
 
-                    coords = await page2.evaluate("""() => {
-                        // Pattern 1: Google Maps iframe src (lazy-loaded — check data-src too)
-                        for (const iframe of document.querySelectorAll('iframe')) {
-                            const src = iframe.src || iframe.getAttribute('data-src') || iframe.getAttribute('data-lazy-src') || '';
-                            if (!src.includes('google.com/maps') && !src.includes('maps.google')) continue;
-                            const q = src.match(/[?&]q=([-\d.]+),([-\d.]+)/);
-                            if (q) return {lat: parseFloat(q[1]), lng: parseFloat(q[2]), pat: 'iframe-q'};
-                            const pb = src.match(/!3d([-\d.]+).*?!4d([-\d.]+)/);
-                            if (pb) return {lat: parseFloat(pb[1]), lng: parseFloat(pb[2]), pat: 'iframe-pb'};
-                            const ll = src.match(/[?&]ll=([-\d.]+),([-\d.]+)/);
-                            if (ll) return {lat: parseFloat(ll[1]), lng: parseFloat(ll[2]), pat: 'iframe-ll'};
-                        }
-                        // Pattern 2: JSON-LD structured data
-                        for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
-                            try {
-                                const d = JSON.parse(s.textContent);
-                                const geo = d.geo || (d['@graph'] && d['@graph'].find(x=>x&&x.geo)||{}).geo;
-                                if (geo && geo.latitude) return {lat: parseFloat(geo.latitude), lng: parseFloat(geo.longitude), pat: 'jsonld'};
-                            } catch(e) {}
-                        }
-                        // Pattern 3: inline script variables — broad search for Japan-range coords
-                        const scripts = [...document.querySelectorAll('script:not([src])')].map(s=>s.textContent).join('\n');
-                        const m1 = scripts.match(/"latitude"\s*:\s*"?(3[0-9]\.\d{3,})"?.*?"longitude"\s*:\s*"?(1[34][0-9]\.\d{3,})"?/s);
-                        if (m1) return {lat: parseFloat(m1[1]), lng: parseFloat(m1[2]), pat: 'script-latlon'};
-                        const m2 = scripts.match(/lat\s*[=:]\s*(3[0-9]\.\d{4,})[\s\S]{0,60}?l(?:ng|on)\s*[=:]\s*(1[34][0-9]\.\d{4,})/);
-                        if (m2) return {lat: parseFloat(m2[1]), lng: parseFloat(m2[2]), pat: 'script-lat-lng'};
-                        const m3 = scripts.match(/center\s*[:=]\s*\[\s*(3[0-9]\.\d{4,})\s*,\s*(1[34][0-9]\.\d{4,})/);
-                        if (m3) return {lat: parseFloat(m3[1]), lng: parseFloat(m3[2]), pat: 'script-center'};
-                        const m4 = scripts.match(/(3[0-9]\.\d{5,})\s*,\s*(1[34][0-9]\.\d{5,})/);
-                        if (m4) return {lat: parseFloat(m4[1]), lng: parseFloat(m4[2]), pat: 'script-bare'};
-                        // Pattern 4: data-lat / data-lng on any element
-                        const el = document.querySelector('[data-lat],[data-latitude],[data-y]');
-                        if (el) {
-                            const lat = parseFloat(el.getAttribute('data-lat') || el.getAttribute('data-latitude') || el.getAttribute('data-y') || '');
-                            const lng = parseFloat(el.getAttribute('data-lng') || el.getAttribute('data-longitude') || el.getAttribute('data-x') || '');
-                            if (lat && lng) return {lat, lng, pat: 'data-attr'};
-                        }
-                        return null;
-                    }""")
+                    coords = await page2.evaluate(
+                        "(() => {"
+                        "  for (const iframe of document.querySelectorAll('iframe')) {"
+                        "    const src = iframe.src || iframe.getAttribute('data-src') || iframe.getAttribute('data-lazy-src') || '';"
+                        "    if (!src.includes('google.com/maps') && !src.includes('maps.google')) continue;"
+                        "    const q = src.match(/[?&]q=([-\\d.]+),([-\\d.]+)/);"
+                        "    if (q) return {lat: parseFloat(q[1]), lng: parseFloat(q[2]), pat: 'iframe-q'};"
+                        "    const pb = src.match(/!3d([-\\d.]+)[\\s\\S]*?!4d([-\\d.]+)/);"
+                        "    if (pb) return {lat: parseFloat(pb[1]), lng: parseFloat(pb[2]), pat: 'iframe-pb'};"
+                        "    const ll = src.match(/[?&]ll=([-\\d.]+),([-\\d.]+)/);"
+                        "    if (ll) return {lat: parseFloat(ll[1]), lng: parseFloat(ll[2]), pat: 'iframe-ll'};"
+                        "  }"
+                        "  for (const s of document.querySelectorAll('script[type=\"application/ld+json\"]')) {"
+                        "    try {"
+                        "      const d = JSON.parse(s.textContent);"
+                        "      const geo = d.geo || ((d['@graph'] && d['@graph'].find(x=>x&&x.geo)) || {}).geo;"
+                        "      if (geo && geo.latitude) return {lat: parseFloat(geo.latitude), lng: parseFloat(geo.longitude), pat: 'jsonld'};"
+                        "    } catch(e) {}"
+                        "  }"
+                        "  const scripts = Array.from(document.querySelectorAll('script:not([src])')).map(s=>s.textContent).join(' ');"
+                        "  const m1 = scripts.match(/\"latitude\"\\s*:\\s*\"?(3[0-9]\\.\\d{3,})\"?[\\s\\S]{0,80}?\"longitude\"\\s*:\\s*\"?(1[34][0-9]\\.\\d{3,})\"?/);"
+                        "  if (m1) return {lat: parseFloat(m1[1]), lng: parseFloat(m1[2]), pat: 'script-latlon'};"
+                        "  const m2 = scripts.match(/lat\\s*[=:]\\s*(3[0-9]\\.\\d{4,})[\\s\\S]{0,60}?l(?:ng|on)\\s*[=:]\\s*(1[34][0-9]\\.\\d{4,})/);"
+                        "  if (m2) return {lat: parseFloat(m2[1]), lng: parseFloat(m2[2]), pat: 'script-lat-lng'};"
+                        "  const m3 = scripts.match(/center\\s*[:=]\\s*\\[\\s*(3[0-9]\\.\\d{4,})\\s*,\\s*(1[34][0-9]\\.\\d{4,})/);"
+                        "  if (m3) return {lat: parseFloat(m3[1]), lng: parseFloat(m3[2]), pat: 'script-center'};"
+                        "  const m4 = scripts.match(/(3[0-9]\\.\\d{5,})\\s*,\\s*(1[34][0-9]\\.\\d{5,})/);"
+                        "  if (m4) return {lat: parseFloat(m4[1]), lng: parseFloat(m4[2]), pat: 'script-bare'};"
+                        "  const el = document.querySelector('[data-lat],[data-latitude],[data-y]');"
+                        "  if (el) {"
+                        "    const lat = parseFloat(el.getAttribute('data-lat') || el.getAttribute('data-latitude') || el.getAttribute('data-y') || '');"
+                        "    const lng = parseFloat(el.getAttribute('data-lng') || el.getAttribute('data-longitude') || el.getAttribute('data-x') || '');"
+                        "    if (lat && lng) return {lat, lng, pat: 'data-attr'};"
+                        "  }"
+                        "  return null;"
+                        "})()"
+                    )
 
                     if coords and 30 < coords["lat"] < 46 and 129 < coords["lng"] < 146:
                         l["lat"] = round(coords["lat"], 6)
