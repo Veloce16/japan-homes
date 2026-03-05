@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T07:00:52",
+  "generated": "2026-03-05T07:44:12",
   "listings": [
     {
       "source": "AtHome",
@@ -777,15 +777,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1299万円",
+      "price": "1398万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥12,990,000  (~$86,600 USD)",
+      "price_en": "¥13,980,000  (~$93,200 USD)",
       "size_en": "",
-      "date_found": "2026-03-05"
+      "date_found": "2026-03-05",
+      "lat": 35.193481,
+      "lng": 138.695817
     },
     {
       "source": "Suumo",
@@ -799,7 +801,9 @@
       "build_year": "",
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.897017,
+      "lng": 136.550597
     },
     {
       "source": "Suumo",
@@ -813,21 +817,25 @@
       "build_year": "",
       "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.833401,
+      "lng": 136.585945
     },
     {
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "600万円",
+      "price": "1380万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78072093/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F093%2F78072093%2F78072093_0010.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78286694/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F694%2F78286694%2F78286694_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "",
-      "date_found": "2026-03-05"
+      "date_found": "2026-03-05",
+      "lat": 34.954912,
+      "lng": 136.604728
     },
     {
       "source": "Suumo",
@@ -841,7 +849,9 @@
       "build_year": "",
       "price_en": "¥5,520,000  (~$36,800 USD)",
       "size_en": "145 m² building  /  377 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.762593,
+      "lng": 136.5225
     },
     {
       "source": "Suumo",
@@ -855,7 +865,9 @@
       "build_year": "",
       "price_en": "¥5,800,000  (~$38,666 USD)",
       "size_en": "109 m² building  /  792 m² land  /  15 m² other",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.653085,
+      "lng": 136.533181
     },
     {
       "source": "Suumo",
@@ -869,7 +881,9 @@
       "build_year": "",
       "price_en": "¥7,000,000  (~$46,666 USD)",
       "size_en": "164 m² building  /  1019 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.65449,
+      "lng": 136.266975
     },
     {
       "source": "Suumo",
@@ -883,7 +897,9 @@
       "build_year": "",
       "price_en": "¥7,500,000  (~$50,000 USD)",
       "size_en": "106 m² building  /  349 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.683274,
+      "lng": 136.468639
     },
     {
       "source": "Suumo",
@@ -897,7 +913,9 @@
       "build_year": "",
       "price_en": "¥7,900,000  (~$52,666 USD)",
       "size_en": "142 m² building  /  668 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.754397,
+      "lng": 136.523904
     },
     {
       "source": "Suumo",
@@ -911,12 +929,14 @@
       "build_year": "",
       "price_en": "¥10,900,000  (~$72,666 USD)",
       "size_en": "131 m² building  /  310 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.701941,
+      "lng": 136.437265
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -925,7 +945,9 @@
       "build_year": "",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "112 m² building  /  308 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.681244,
+      "lng": 136.490889
     },
     {
       "source": "Suumo",
@@ -939,7 +961,9 @@
       "build_year": "",
       "price_en": "¥13,800,000  (~$92,000 USD)",
       "size_en": "144 m² building  /  464 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.765901,
+      "lng": 136.435824
     },
     {
       "source": "Suumo",
@@ -953,7 +977,9 @@
       "build_year": "",
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "164 m² building  /  569 m² land",
-      "date_found": "2026-03-03"
+      "date_found": "2026-03-03",
+      "lat": 34.664442,
+      "lng": 136.539435
     },
     {
       "source": "Yahoo RE",
@@ -1052,20 +1078,6 @@
       "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "242 m² building  /  466 m² land",
       "date_found": "2026-03-03"
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
-      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
-      "price": "1,199万円",
-      "size": "174.36m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥11,990,000  (~$79,933 USD)",
-      "size_en": "174 m² land",
-      "date_found": "2026-03-05"
     },
     {
       "source": "Lifull Homes",
