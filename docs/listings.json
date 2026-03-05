@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-05T05:19:17",
+  "generated": "2026-03-05T05:48:11",
   "listings": [
     {
       "source": "AtHome",
@@ -705,13 +705,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1430万円",
+      "price": "1398万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_79211933/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F933%2F79211933%2F79211933_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥14,300,000  (~$95,333 USD)",
+      "price_en": "¥13,980,000  (~$93,200 USD)",
       "size_en": "",
       "date_found": "2026-03-05"
     },
@@ -843,8 +843,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -882,20 +882,6 @@
       "price_en": "¥14,800,000  (~$98,666 USD)",
       "size_en": "164 m² building  /  569 m² land",
       "date_found": "2026-03-03"
-    },
-    {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu city",
-      "price": "1499万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "",
-      "date_found": "2026-03-05"
     },
     {
       "source": "Yahoo RE",
