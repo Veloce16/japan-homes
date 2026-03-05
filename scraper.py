@@ -1107,19 +1107,91 @@ async def main():
             l["date_found"] = today_str
     print("Formatting complete")
 
-    # Merge date_found from previous run so known listings keep their original date
+    # Merge date_found AND coordinates from previous run
     if JSON_FILE.exists():
         try:
             with open(JSON_FILE, encoding="utf-8") as f:
                 prev = json.load(f)
-            # Support both old format (plain list) and new format (dict with listings key)
             prev_list = prev if isinstance(prev, list) else prev.get("listings", [])
             prev_dates = {l["url"]: l["date_found"] for l in prev_list if "url" in l and "date_found" in l}
+            prev_coords = {l["url"]: (l["lat"], l["lng"]) for l in prev_list
+                           if "url" in l and "lat" in l and "lng" in l}
             for l in unique:
                 if l["url"] in prev_dates:
                     l["date_found"] = prev_dates[l["url"]]
+                if l["url"] in prev_coords:
+                    l["lat"], l["lng"] = prev_coords[l["url"]]
         except Exception:
             pass
+
+    # Fetch exact coordinates for new AtHome listings (detail page has embedded Google Maps)
+    athome_no_coords = [l for l in unique
+                        if l.get("source") == "AtHome"
+                        and "lat" not in l
+                        and l.get("url", "").startswith("http")]
+    if athome_no_coords:
+        print(f"\nFetching exact coordinates for {len(athome_no_coords)} new AtHome listings...")
+        async with async_playwright() as pw2:
+            coords_found = 0
+            for l in athome_no_coords:
+                try:
+                    browser2 = await pw2.chromium.launch(headless=True, args=browser_args())
+                    ctx2 = await make_context(browser2)
+                    page2 = await ctx2.new_page()
+                    await page2.goto(l["url"], wait_until="domcontentloaded", timeout=20000)
+                    await asyncio.sleep(2)
+
+                    coords = await page2.evaluate("""() => {
+                        // Pattern 1: Google Maps iframe src with coordinates
+                        for (const iframe of document.querySelectorAll('iframe[src*="google.com/maps"]')) {
+                            const src = iframe.src || iframe.getAttribute('src') || '';
+                            // q=lat,lng format
+                            const q = src.match(/[?&]q=([-\d.]+),([-\d.]+)/);
+                            if (q) return {lat: parseFloat(q[1]), lng: parseFloat(q[2])};
+                            // !3d{lat}!4d{lng} format in embed URL
+                            const pb = src.match(/!3d([-\d.]+).*?!4d([-\d.]+)/);
+                            if (pb) return {lat: parseFloat(pb[1]), lng: parseFloat(pb[2])};
+                        }
+                        // Pattern 2: JSON-LD structured data
+                        for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                            try {
+                                const d = JSON.parse(s.textContent);
+                                const geo = d.geo || (d['@graph'] && d['@graph'].find(x=>x.geo) || {}).geo;
+                                if (geo && geo.latitude) return {lat: parseFloat(geo.latitude), lng: parseFloat(geo.longitude)};
+                            } catch(e) {}
+                        }
+                        // Pattern 3: JavaScript variables in page source
+                        const scripts = [...document.querySelectorAll('script:not([src])')].map(s=>s.textContent).join('');
+                        const m1 = scripts.match(/"latitude"\s*:\s*([-\d.]+).*?"longitude"\s*:\s*([-\d.]+)/s);
+                        if (m1) return {lat: parseFloat(m1[1]), lng: parseFloat(m1[2])};
+                        const m2 = scripts.match(/lat(?:itude)?\s*[=:]\s*(3[0-9]\.\d+).*?l(?:ng|on)(?:gitude)?\s*[=:]\s*(13[0-9]\.\d+)/s);
+                        if (m2) return {lat: parseFloat(m2[1]), lng: parseFloat(m2[2])};
+                        // Pattern 4: data-lat / data-lng attributes
+                        const el = document.querySelector('[data-lat],[data-latitude]');
+                        if (el) {
+                            const lat = parseFloat(el.getAttribute('data-lat') || el.getAttribute('data-latitude'));
+                            const lng = parseFloat(el.getAttribute('data-lng') || el.getAttribute('data-longitude'));
+                            if (lat && lng) return {lat, lng};
+                        }
+                        return null;
+                    }""")
+
+                    if coords and 30 < coords["lat"] < 46 and 129 < coords["lng"] < 146:
+                        l["lat"] = round(coords["lat"], 6)
+                        l["lng"] = round(coords["lng"], 6)
+                        coords_found += 1
+                        print(f"   ✓ {l.get('area','')} — {l['lat']}, {l['lng']}")
+                    else:
+                        print(f"   – No coords: {l['url'][:60]}")
+
+                    await browser2.close()
+                    await asyncio.sleep(2)
+                except Exception as e:
+                    print(f"   ! Error fetching coords: {e}")
+                    try: await browser2.close()
+                    except: pass
+
+        print(f"Coordinates found: {coords_found}/{len(athome_no_coords)}")
 
     # Build output payload with generated timestamp
     generated_ts = datetime.datetime.now().isoformat(timespec="seconds")
