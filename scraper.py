@@ -963,37 +963,61 @@ def send_email(listings, cfg):
         "</div></div>"
     )
 
-    # ── Listing rows ───────────────────────────────────────────────────────
+    # ── Listing rows grouped by city with separator headers ─────────────────
+    import datetime as _dt
+    CITY_ORDER_EMAIL = ["Gotemba, Shizuoka", "Oyama, Shizuoka", "Suzuka, Mie", "Tsu, Mie"]
+    by_area = {}
+    for l in listings:
+        by_area.setdefault(l.get("area", "Other"), []).append(l)
+    sorted_areas = sorted(by_area, key=lambda a: CITY_ORDER_EMAIL.index(a) if a in CITY_ORDER_EMAIL else 99)
+
     rows = ""
-    for i, l in enumerate(listings):
-        bg    = "#f9f9f9" if i % 2 == 0 else "#fff"
-        title = l.get("title", "Property")
-        t     = (title[:48] + "…") if len(title) > 48 else title
-        price = l.get("price_en") or l.get("price", "")
-        size  = l.get("size_en")  or l.get("size", "")
-        img   = l.get("image", "")
-        date_found = l.get("date_found", "")
-        thumb_td = (
-            f"<td style='padding:5px 8px;width:110px;vertical-align:top'>"
-            f"<a href='{l['url']}'><img src='{img}' width='100' height='75' referrerpolicy='no-referrer'"
-            f" style='object-fit:cover;border-radius:4px;border:1px solid #ddd;display:block'></a></td>"
-        ) if img else (
-            "<td style='padding:5px 8px;width:110px;vertical-align:top;"
-            "color:#ccc;font-size:11px;text-align:center'>no photo</td>"
-        )
+    for area in sorted_areas:
+        group = by_area[area]
+        # City separator banner
         rows += (
-            f"<tr style='background:{bg};border-bottom:1px solid #e8eaf0'>"
-            f"{thumb_td}"
-            f"<td style='padding:7px 10px;vertical-align:top'>"
-            f"<div style='font-size:13px;font-weight:600;margin-bottom:3px'>"
-            f"<a href='{l['url']}' style='color:#1a3a5c;text-decoration:none'>{t}</a></div>"
-            f"<div style='font-size:12px;color:#666;margin-bottom:2px'>"
-            f"{l.get('source','')} &bull; {l.get('area','')}</div>"
-            f"<div style='font-size:14px;color:#c0392b;font-weight:bold;margin-bottom:2px'>{price}</div>"
-            f"<div style='font-size:12px;color:#555'>{size[:50]}</div>"
-            + (f"<div style='font-size:11px;color:#aaa;margin-top:2px'>Found: {date_found}</div>" if date_found else "")
-            + "</td></tr>"
+            f"<tr><td colspan='2' style='padding:0'>"
+            f"<div style='background:linear-gradient(90deg,#1a3a5c,#2755a0);color:#fff;"
+            f"padding:11px 18px;font-size:13px;font-weight:700;letter-spacing:1px;"
+            f"margin-top:6px;border-left:6px solid #f0b429'>"
+            f"&#127968; {area} &nbsp;&mdash;&nbsp; {len(group)} listing{'s' if len(group)!=1 else ''}"
+            f"</div></td></tr>"
         )
+        for i, l in enumerate(group):
+            bg    = "#f9f9f9" if i % 2 == 0 else "#fff"
+            title = l.get("title", "Property")
+            t     = (title[:48] + "…") if len(title) > 48 else title
+            price = l.get("price_en") or l.get("price", "")
+            size  = l.get("size_en")  or l.get("size", "")
+            img   = l.get("image", "")
+            date_found = l.get("date_found", "")
+            by    = l.get("build_year", "")
+            age_str = ""
+            if by:
+                age = _dt.datetime.now().year - int(by)
+                age_str = f"<div style='font-size:11px;color:#888;margin-top:2px'>Built {by} &bull; {age} yrs old</div>"
+            thumb_td = (
+                f"<td style='padding:5px 8px;width:110px;vertical-align:top'>"
+                f"<a href='{l['url']}'><img src='{img}' width='100' height='75' referrerpolicy='no-referrer'"
+                f" style='object-fit:cover;border-radius:4px;border:1px solid #ddd;display:block'></a></td>"
+            ) if img else (
+                "<td style='padding:5px 8px;width:110px;vertical-align:top;"
+                "color:#ccc;font-size:11px;text-align:center'>no photo</td>"
+            )
+            rows += (
+                f"<tr style='background:{bg};border-bottom:1px solid #e8eaf0'>"
+                f"{thumb_td}"
+                f"<td style='padding:7px 10px;vertical-align:top'>"
+                f"<div style='font-size:13px;font-weight:600;margin-bottom:3px'>"
+                f"<a href='{l['url']}' style='color:#1a3a5c;text-decoration:none'>{t}</a></div>"
+                f"<div style='font-size:12px;color:#666;margin-bottom:2px'>"
+                f"{l.get('source','')} &bull; {l.get('area','')}</div>"
+                f"<div style='font-size:14px;color:#c0392b;font-weight:bold;margin-bottom:2px'>{price}</div>"
+                f"<div style='font-size:12px;color:#555'>{size[:50]}</div>"
+                + age_str
+                + (f"<div style='font-size:11px;color:#aaa;margin-top:2px'>Found: {date_found}</div>" if date_found else "")
+                + "</td></tr>"
+            )
 
     tbl = (
         "<table style='width:100%;border-collapse:collapse;border:1px solid #dde2e8'>"

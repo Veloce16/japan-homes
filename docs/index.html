@@ -983,13 +983,43 @@ function toggleMapView() {
 function initMap() {
   if (!mapInstance) {
     mapInstance = L.map('map').setView([34.9, 136.5], 8);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+
+    // Base layers — street (default) and satellite
+    const streetLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
       attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: 'abcd',
       maxZoom: 20,
-    }).addTo(mapInstance);
+    });
+    const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics',
+      maxZoom: 20,
+    });
+    const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', {
+      attribution: '',
+      subdomains: 'abcd',
+      maxZoom: 20,
+      pane: 'shadowPane',
+    });
+
+    streetLayer.addTo(mapInstance);
+
+    // Layer control (top-right toggle)
+    L.control.layers(
+      { '🗺️ Street': streetLayer, '🛰️ Satellite': satelliteLayer },
+      {},
+      { position: 'topright', collapsed: false }
+    ).addTo(mapInstance);
+
+    // When switching to satellite, add English labels on top
+    mapInstance.on('baselayerchange', (e) => {
+      if (e.name === '🛰️ Satellite') {
+        labelsLayer.addTo(mapInstance);
+      } else {
+        if (mapInstance.hasLayer(labelsLayer)) mapInstance.removeLayer(labelsLayer);
+      }
+    });
   } else {
-    // Clear existing markers
+    // Clear existing markers only (keep tile layers)
     mapInstance.eachLayer(l => { if (l instanceof L.Marker) mapInstance.removeLayer(l); });
   }
   populateMap();
