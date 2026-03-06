@@ -1223,6 +1223,18 @@ async def main():
                     else:
                         print(f"   – No coords: {l['url'][:70]}")
 
+                    # Grab og:image for listings missing a photo (Yahoo RE always missing)
+                    if not l.get("image"):
+                        og_img = await page2.evaluate(
+                            "(()=>{"
+                            "  const m = document.querySelector('meta[property=\"og:image\"],meta[name=\"og:image\"]');"
+                            "  return m ? m.getAttribute('content') : null;"
+                            "})()"
+                        )
+                        if og_img and og_img.startswith("http"):
+                            l["image"] = og_img
+                            print(f"   📷 Image grabbed for {l.get('area','')} — {l['url'][:50]}")
+
                     await asyncio.sleep(1)
                 except Exception as e:
                     print(f"   ! Error: {e} | {l['url'][:60]}")
