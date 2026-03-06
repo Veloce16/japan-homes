@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-06T19:14:16",
+  "generated": "2026-03-06T20:04:37",
   "listings": [
     {
       "source": "AtHome",
@@ -815,17 +815,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1299万円",
+      "price": "1398万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥12,990,000  (~$86,600 USD)",
+      "price_en": "¥13,980,000  (~$93,200 USD)",
       "size_en": "",
       "date_found": "2026-03-06",
-      "lat": 35.203334,
-      "lng": 138.646305
+      "lat": 35.193481,
+      "lng": 138.695817
     },
     {
       "source": "Suumo",
@@ -863,17 +863,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1200万円",
+      "price": "1450万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_79179495/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F495%2F79179495%2F79179495_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20219570/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F570%2F20219570%2F20219570_0113.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥12,000,000  (~$80,000 USD)",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "",
       "date_found": "2026-03-06",
-      "lat": 35.024693,
-      "lng": 136.624721
+      "lat": 34.752631,
+      "lng": 136.482329
     },
     {
       "source": "Suumo",
@@ -1020,22 +1020,6 @@
       "lng": 136.539435
     },
     {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu city",
-      "price": "1499万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "",
-      "date_found": "2026-03-06",
-      "lat": 34.653024,
-      "lng": 136.131939
-    },
-    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -1149,19 +1133,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
-      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
-      "price": "1,199万円",
-      "size": "174.36m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu city Ichimida town detached house PR price 5.8 million yen Location 3",
+      "price": "580万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥11,990,000  (~$79,933 USD)",
-      "size_en": "174 m² land",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "215 m² land",
       "date_found": "2026-03-06",
-      "lat": 34.773928,
-      "lng": 136.535681
+      "lat": 34.762742,
+      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
