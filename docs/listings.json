@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-06T04:06:22",
+  "generated": "2026-03-06T05:18:36",
   "listings": [
     {
       "source": "AtHome",
@@ -815,17 +815,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1299万円",
+      "price": "1430万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_79211933/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F933%2F79211933%2F79211933_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥12,990,000  (~$86,600 USD)",
+      "price_en": "¥14,300,000  (~$95,333 USD)",
       "size_en": "",
       "date_found": "2026-03-06",
-      "lat": 35.205294,
-      "lng": 138.639989
+      "lat": 35.180521,
+      "lng": 138.665362
     },
     {
       "source": "Suumo",
@@ -863,17 +863,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1300万円",
+      "price": "600万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78968582/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F582%2F78968582%2F78968582_0013.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78072093/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F093%2F78072093%2F78072093_0010.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥13,000,000  (~$86,666 USD)",
+      "price_en": "¥6,000,000  (~$40,000 USD)",
       "size_en": "",
       "date_found": "2026-03-06",
-      "lat": 34.947467,
-      "lng": 136.597726
+      "lat": 34.974804,
+      "lng": 136.559507
     },
     {
       "source": "Suumo",
