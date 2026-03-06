@@ -914,6 +914,9 @@ async def scrape_homes_akiya(pw, cfg):
                     await asyncio.sleep(0.5)
 
                     raw = await page.evaluate(EXTRACT_JS, "homes.co.jp")
+                    # Akiya detail pages always use /akiyabank/b-NNNNN/ — drop pagination
+                    # links, region index pages, and list URLs that EXTRACT_JS may pick up.
+                    raw = [item for item in raw if "/akiyabank/b-" in item.get("url", "")]
                     print(f"     p{pg} candidates: {len(raw)}")
 
                     if not raw:
@@ -927,10 +930,8 @@ async def scrape_homes_akiya(pw, cfg):
                             continue
                         seen_urls.add(url_base)
                         new_on_page += 1
-                        if not passes_price(item["price"], cfg):
-                            continue
-                        if not passes_size(item["sizes"], cfg):
-                            continue
+                        # No price or size filter for akiya — municipalities list few properties
+                        # and often omit size data; we want every one that belongs to the city.
                         if not city_ok(item.get("address", ""), item.get("title", ""), t):
                             print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
                             continue
