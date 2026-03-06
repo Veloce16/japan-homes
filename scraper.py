@@ -1223,17 +1223,6 @@ async def main():
                     else:
                         print(f"   – No coords: {l['url'][:70]}")
 
-                    # Grab og:image for listings missing a photo (Yahoo RE always missing)
-                    if not l.get("image"):
-                        og_img = await page2.evaluate(
-                            "(()=>{"
-                            "  const m = document.querySelector('meta[property=\"og:image\"],meta[name=\"og:image\"]');"
-                            "  return m ? m.getAttribute('content') : null;"
-                            "})()"
-                        )
-                        if og_img and og_img.startswith("http"):
-                            l["image"] = og_img
-                            print(f"   📷 Image grabbed for {l.get('area','')} — {l['url'][:50]}")
 
                     await asyncio.sleep(1)
                 except Exception as e:
@@ -1242,6 +1231,36 @@ async def main():
             await browser2.close()
         print(f"Coordinates found: {coords_found}/{len(athome_no_coords)}")
 
+    # Fetch og:image for any listing still missing a photo (runs independently of coords)
+    no_image = [l for l in unique if not l.get("image") and l.get("url","").startswith("http")]
+    if no_image:
+        print(f"\nFetching missing photos for {len(no_image)} listings...")
+        async with async_playwright() as pw4:
+            browser4 = await pw4.chromium.launch(headless=True, args=browser_args())
+            ctx4 = await make_context(browser4)
+            page4 = await ctx4.new_page()
+            imgs_found = 0
+            for l in no_image:
+                try:
+                    await page4.goto(l["url"], wait_until="domcontentloaded", timeout=20000)
+                    await asyncio.sleep(2)
+                    og_img = await page4.evaluate(
+                        "(()=>{"
+                        "  const m = document.querySelector('meta[property=\"og:image\"],meta[name=\"og:image\"],meta[property=\"og:image:url\"]');"
+                        "  return m ? m.getAttribute('content') : null;"
+                        "})()"
+                    )
+                    if og_img and og_img.startswith("http"):
+                        l["image"] = og_img
+                        imgs_found += 1
+                        print(f"   📷 {l.get('source','')} {l.get('area','')} — got photo")
+                    else:
+                        print(f"   – No og:image: {l['url'][:60]}")
+                    await asyncio.sleep(1)
+                except Exception as e:
+                    print(f"   ! Error: {e} | {l['url'][:50]}")
+            await browser4.close()
+        print(f"Photos found: {imgs_found}/{len(no_image)}")
 
     # Build output payload with generated timestamp
     generated_ts = datetime.datetime.now().isoformat(timespec="seconds")
