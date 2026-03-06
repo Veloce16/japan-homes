@@ -25,6 +25,22 @@
       "price_en": "¥7,900,000  (~$52,666 USD)",
       "size_en": "142 m² building  /  668 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
+      "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
+      "price": "1,500万円",
+      "size": "761.66m² / 174.90m²",
+      "url": "https://www.athome.co.jp/kodate/6986017757/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/K37UtBvNqKz5QRIVuOzZHg==",
+      "area": "Tsu, Mie",
+      "build_year": "1979",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "175 m² building  /  762 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.757805,
+      "lng": 136.526934
     }
   ]
 }
