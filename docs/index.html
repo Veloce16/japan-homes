@@ -276,6 +276,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <label><input type="checkbox" class="chk-src" value="Suumo"        checked onchange="updateSourceFilter()"> Suumo</label>
       <label><input type="checkbox" class="chk-src" value="Lifull Homes" checked onchange="updateSourceFilter()"> Lifull Homes</label>
       <label><input type="checkbox" class="chk-src" value="Yahoo RE"     checked onchange="updateSourceFilter()"> Yahoo RE</label>
+      <label><input type="checkbox" class="chk-src" value="Akiya Bank"   checked onchange="updateSourceFilter()"> Akiya Bank</label>
     </div>
   </div>
 
@@ -673,6 +674,9 @@ function renderAll() {
   }
 
   main.innerHTML = html;
+
+  // If map is currently open, refresh it to match the new filter
+  if (mapVisible) initMap();
 }
 
 // ── Property ID ────────────────────────────────────────────────

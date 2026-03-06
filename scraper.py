@@ -172,6 +172,10 @@ TARGETS = [
         # Yahoo: la_from=300 (land>=300m²), ba_from=100 (building>=100m²). No price max in URL —
         # passes_price() enforces <=1500万 client-side. geo=22215 = Gotemba city.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/22/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=22&geo=22215",
+        # Lifull Homes Akiya Bank — government-registered vacant homes, separate database from
+        # regular listings. No size/price filters in URL (akiya pages don't support them);
+        # passes_price() and passes_size() enforce limits client-side.
+        "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/gotemba/",
     },
     {
         "name_en":    "Oyama, Shizuoka",
@@ -186,6 +190,7 @@ TARGETS = [
         "city_ja_list": ["小山"],
         # Yahoo: geo=22344 = Oyama town (Sunto District). Same filter logic as other cities.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/22/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=22&geo=22344",
+        "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/oyama/",
     },
     {
         "name_en":    "Suzuka, Mie",
@@ -199,6 +204,7 @@ TARGETS = [
         "city_ja_list": ["鈴鹿"],
         # Yahoo: geo=24207 = Suzuka city.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/24/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=24&geo=24207",
+        "homes_akiya_url": "https://www.homes.co.jp/akiyabank/mie/suzuka/",
     },
     {
         "name_en":    "Tsu, Mie",
@@ -212,8 +218,38 @@ TARGETS = [
         "city_ja_list": ["津市", "津　"],
         # Yahoo: geo=24201 = Tsu city.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/24/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=24&geo=24201",
+        "homes_akiya_url": "https://www.homes.co.jp/akiyabank/mie/tsu/",
     },
 ]
+
+# ── city validation ───────────────────────────────────────────
+# Known neighboring cities that bleed into our search results
+# (e.g. Fuji City showing up in Gotemba Suumo search)
+NEIGHBOR_CITIES = [
+    "富士市", "富士宮", "沼津市", "三島市", "裾野市", "熱海市",  # Shizuoka neighbors
+    "四日市", "伊勢市", "亀山市", "松阪市", "桑名市", "いなべ市",  # Mie neighbors
+]
+
+def city_ok(address, title, target):
+    """Return True if listing belongs to target city, False if it's from a different city."""
+    text = (address or "") + (title or "")
+    if not text.strip():
+        return True  # No address info — give benefit of doubt
+    # Accept if any expected city fragment found
+    for c in target.get("city_ja_list", [target["city_ja"]]):
+        if c in text:
+            return True
+    # Reject if a known neighbor city is clearly identified
+    for c in NEIGHBOR_CITIES:
+        if c in text:
+            return False
+    # Also reject if a different target city is found
+    for t in TARGETS:
+        if t["name_en"] != target["name_en"]:
+            for c in t.get("city_ja_list", [t["city_ja"]]):
+                if c in text:
+                    return False
+    return True  # No city identified either way — keep it
 
 # ── helpers ───────────────────────────────────────────────────
 def parse_price_man(text):
@@ -581,6 +617,9 @@ async def scrape_athome(pw, cfg):
                             continue
                         if not passes_size(item["sizes"], cfg):
                             continue
+                        if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                            print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                            continue
                         listings.append({
                             "source":      "AtHome",
                             "title":       item["title"],
@@ -660,6 +699,9 @@ async def scrape_suumo(pw, cfg):
                     continue
                 if not passes_size(item["sizes"], cfg):
                     continue
+                if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                    print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                    continue
                 listings.append({
                     "source":     "Suumo",
                     "title":      item["title"],
@@ -717,6 +759,9 @@ async def scrape_yahoo(pw, cfg):
                         if not passes_price(item["price"], cfg):
                             continue
                         if not passes_size(item["sizes"], cfg):
+                            continue
+                        if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                            print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
                             continue
                         listings.append({
                             "source":     "Yahoo RE",
@@ -795,6 +840,9 @@ async def scrape_homes(pw, cfg):
                             continue
                         if not passes_size(item["sizes"], cfg):
                             continue
+                        if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                            print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                            continue
                         listings.append({
                             "source":     "Lifull Homes",
                             "title":      item["title"],
@@ -810,6 +858,97 @@ async def scrape_homes(pw, cfg):
                     print(f"     p{pg} new unique: {new_on_page}")
                     if new_on_page < 5:
                         print(f"     Few new results — stopping pagination")
+                        break
+
+                    await asyncio.sleep(3)
+
+                except Exception as e:
+                    print(f"     Error on page {pg}: {e}")
+                    break
+
+        finally:
+            await browser.close()
+        await asyncio.sleep(7)
+    return listings
+
+
+# ── Lifull Homes Akiya Bank ───────────────────────────────────
+# Separate government-registered vacant home database on homes.co.jp/akiyabank/.
+# Akiya listings are distinct from regular Lifull Homes inventory — properties
+# registered by local municipalities as officially vacant/abandoned.
+# URL filters not available on akiya pages; passes_price() + passes_size() enforce limits.
+async def scrape_homes_akiya(pw, cfg):
+    listings = []
+    seen_urls = set()
+
+    for t in TARGETS:
+        base_url = t.get("homes_akiya_url")
+        if not base_url:
+            continue
+        print(f"   Lifull Akiya Bank -> {t['name_en']}")
+        browser = await pw.chromium.launch(headless=True, args=browser_args())
+        try:
+            ctx  = await make_context(browser)
+            page = await ctx.new_page()
+            await page.add_init_script(
+                "Object.defineProperty(navigator,'webdriver',{get:()=>undefined})"
+            )
+
+            for pg in range(1, 5):   # akiya banks are small — cap at 4 pages
+                url = base_url if pg == 1 else f"{base_url}?page={pg}"
+                try:
+                    resp = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                    await asyncio.sleep(4)
+                    status = resp.status if resp else 0
+                    title  = await page.title()
+                    print(f"     p{pg} status={status}  title={title[:60]}")
+
+                    if status in (403, 404, 405) or any(k in title.lower() for k in
+                            ["verify", "captcha", "robot", "blocked", "認証"]):
+                        print("     Blocked or not found — skipping")
+                        break
+
+                    await page.evaluate(GENTLE_SCROLL_JS)
+                    await asyncio.sleep(1.5)
+                    await page.evaluate(LAZY_LOAD_JS)
+                    await asyncio.sleep(0.5)
+
+                    raw = await page.evaluate(EXTRACT_JS, "homes.co.jp")
+                    print(f"     p{pg} candidates: {len(raw)}")
+
+                    if not raw:
+                        print(f"     No candidates on page {pg} — stopping")
+                        break
+
+                    new_on_page = 0
+                    for item in raw:
+                        url_base = item["url"].split("?")[0].rstrip("/")
+                        if url_base in seen_urls:
+                            continue
+                        seen_urls.add(url_base)
+                        new_on_page += 1
+                        if not passes_price(item["price"], cfg):
+                            continue
+                        if not passes_size(item["sizes"], cfg):
+                            continue
+                        if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                            print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                            continue
+                        listings.append({
+                            "source":     "Akiya Bank",
+                            "title":      item["title"],
+                            "address":    item["address"] or t["city_ja"],
+                            "price":      item["price"],
+                            "size":       item["sizes"],
+                            "url":        item["url"],
+                            "image":      item.get("image", ""),
+                            "area":       t["name_en"],
+                            "build_year": item.get("build_year", ""),
+                        })
+
+                    print(f"     p{pg} new unique: {new_on_page}")
+                    if new_on_page == 0:
+                        print(f"     No new results on page {pg} — stopping")
                         break
 
                     await asyncio.sleep(3)
@@ -1109,6 +1248,11 @@ async def main():
         print(f"  -> {len(r)} listings\n")
         all_listings.extend(r)
 
+        print("Scraping Lifull Homes Akiya Bank...")
+        r = await scrape_homes_akiya(pw, cfg)
+        print(f"  -> {len(r)} listings\n")
+        all_listings.extend(r)
+
     # De-duplicate by URL
     seen, unique = set(), []
     for l in all_listings:
@@ -1150,7 +1294,7 @@ async def main():
 
     # Fetch exact coordinates for all four sources
     athome_no_coords = [l for l in unique
-                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE", "Lifull Homes")
+                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE", "Lifull Homes", "Akiya Bank")
                         and "lat" not in l
                         and l.get("url", "").startswith("http")]
     if athome_no_coords:
