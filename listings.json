@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-06T00:29:34",
+  "generated": "2026-03-06T00:56:10",
   "listings": [
     {
       "source": "AtHome",
@@ -612,7 +612,7 @@
       "price": "1,080万円",
       "size": "362.82m² / 143.40m²",
       "url": "https://www.athome.co.jp/kodate/6985406622/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "",
+      "image": "https://www.athome.co.jp/image_files/path/qDSpFUS4xNEQVbDl8yk07A==",
       "area": "Tsu, Mie",
       "build_year": "1983",
       "price_en": "¥10,800,000  (~$72,000 USD)",
@@ -817,15 +817,15 @@
       "address": "Gotemba City",
       "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
       "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
-      "date_found": "2026-03-05",
-      "lat": 35.203334,
-      "lng": 138.646305
+      "date_found": "2026-03-06",
+      "lat": 35.205294,
+      "lng": 138.639989
     },
     {
       "source": "Suumo",
@@ -1020,29 +1020,13 @@
       "lng": 136.539435
     },
     {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu city",
-      "price": "1499万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "",
-      "date_found": "2026-03-06",
-      "lat": 34.653024,
-      "lng": 136.131939
-    },
-    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
       "price": "700万円",
       "size": "653.85m2 / 211.56m2",
       "url": "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280/",
-      "image": "",
+      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2350/0280/0001/7451d5b0b2fe5a2d4b1cd22d600861b2_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥7,000,000  (~$46,666 USD)",
@@ -1058,7 +1042,7 @@
       "price": "480万円",
       "size": "596.19m2 / 596.19m2",
       "url": "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335/",
-      "image": "",
+      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2195/8335/0001/07f79491d7fe0b8e64d8407b9f31b973_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
       "area": "Tsu, Mie",
       "build_year": "1971",
       "price_en": "¥4,800,000  (~$32,000 USD)",
