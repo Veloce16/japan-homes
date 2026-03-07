@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-07T07:36:08",
+  "generated": "2026-03-07T14:06:05",
   "listings": [
     {
       "source": "AtHome",
@@ -179,7 +179,7 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 雲出伊倉津町（高茶屋駅） 平屋建 ９ＬＤＫ",
+      "title": "Tsu City Kumoide Ikuratsu Town (Takachaya Station) One-story building 9LDK",
       "address": "Tsu City Kumoide Ikuratsu Town (Takachaya Station) One-story building 9L",
       "price": "280万円",
       "size": "637.13m² / 166.70m²",
@@ -717,6 +717,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Korazu-cho 2-story 7DK",
+      "address": "Tsu City Korazu-cho 2-story 7DK",
+      "price": "1,400万円",
+      "size": "756.93m² / 208.15m²",
+      "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/Hkc7O_7aOvSaI8JDJASJQA==",
+      "area": "Tsu, Mie",
+      "build_year": "1992",
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "208 m² building  /  757 m² land",
+      "date_found": "2026-03-07",
+      "lat": 34.65274,
+      "lng": 136.543442
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7DK",
       "address": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7D",
       "price": "1,435万円",
@@ -815,13 +831,13 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1299万円",
+      "price": "1298万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_76704708/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F708%2F76704708%2F76704708_0012.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥12,990,000  (~$86,600 USD)",
+      "price_en": "¥12,980,000  (~$86,533 USD)",
       "size_en": "",
       "date_found": "2026-03-07",
       "lat": 35.203334,
@@ -863,17 +879,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "600万円",
+      "price": "880万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78072093/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F093%2F78072093%2F78072093_0010.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_77144158/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F158%2F77144158%2F77144158_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "",
       "date_found": "2026-03-07",
-      "lat": 34.974804,
-      "lng": 136.559507
+      "lat": 34.98322,
+      "lng": 136.590676
     },
     {
       "source": "Suumo",
@@ -1020,22 +1036,6 @@
       "lng": 136.539435
     },
     {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu city",
-      "price": "1499万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "",
-      "date_found": "2026-03-07",
-      "lat": 34.653024,
-      "lng": 136.131939
-    },
-    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -1146,6 +1146,22 @@
       "date_found": "2026-03-03",
       "lat": 34.897021,
       "lng": 136.550615
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
+      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
+      "price": "1,199万円",
+      "size": "174.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,990,000  (~$79,933 USD)",
+      "size_en": "174 m² land",
+      "date_found": "2026-03-07",
+      "lat": 34.773928,
+      "lng": 136.535681
     },
     {
       "source": "Lifull Homes",
