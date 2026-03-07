@@ -41,6 +41,22 @@
       "date_found": "2026-03-03",
       "lat": 34.757805,
       "lng": 136.526934
+    },
+    {
+      "source": "AtHome",
+      "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
+      "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
+      "price": "900万円",
+      "size": "329.40m² / 117.58m²",
+      "url": "https://www.athome.co.jp/kodate/6989336556/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/nd_uN4XAqvUO8Xy98JwB8g==",
+      "area": "Oyama, Shizuoka",
+      "build_year": "1993",
+      "price_en": "¥9,000,000  (~$60,000 USD)",
+      "size_en": "118 m² building  /  329 m² land",
+      "date_found": "2026-03-05",
+      "lat": 35.36008,
+      "lng": 138.979586
     }
   ]
 }
