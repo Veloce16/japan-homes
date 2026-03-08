@@ -57,6 +57,22 @@
       "date_found": "2026-03-05",
       "lat": 35.36008,
       "lng": 138.979586
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "price": "580万円",
+      "size": "380.16m² / 202.63m²",
+      "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/4QwjK9ozOy1lMMG0ibjtjg==",
+      "area": "Suzuka, Mie",
+      "build_year": "1966",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "203 m² building  /  380 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.853257,
+      "lng": 136.607897
     }
   ]
 }
