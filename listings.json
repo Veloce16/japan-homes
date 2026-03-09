@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-09T14:56:42",
+  "generated": "2026-03-09T20:10:30",
   "listings": [
     {
       "source": "AtHome",
@@ -163,7 +163,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -847,17 +847,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1430万円",
+      "price": "1398万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_79211933/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F933%2F79211933%2F79211933_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥14,300,000  (~$95,333 USD)",
+      "price_en": "¥13,980,000  (~$93,200 USD)",
       "size_en": "",
       "date_found": "2026-03-09",
-      "lat": 35.180521,
-      "lng": 138.665362
+      "lat": 35.193481,
+      "lng": 138.695817
     },
     {
       "source": "Suumo",
@@ -895,17 +895,33 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1450万円",
+      "price": "880万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_77904994/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F994%2F77904994%2F77904994_0212.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_77144158/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F158%2F77144158%2F77144158_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "",
       "date_found": "2026-03-09",
-      "lat": 34.752486,
-      "lng": 136.481832
+      "lat": 34.98322,
+      "lng": 136.590676
+    },
+    {
+      "source": "Suumo",
+      "title": "☆A residence with a warehouse in a quiet residential area ☆A lot of storage in the warehouse ♪☆Unique!",
+      "address": "1405-5 Korasucho, Tsu City, Mie Prefecture",
+      "price": "498万円",
+      "size": "206.1m2 / 312.28m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78423475/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F475%2F78423475%2F78423475_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥4,980,000  (~$33,200 USD)",
+      "size_en": "312 m² building  /  206 m² land",
+      "date_found": "2026-03-09",
+      "lat": 34.653085,
+      "lng": 136.533181
     },
     {
       "source": "Suumo",
@@ -1005,8 +1021,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1149,22 +1165,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-09",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1274,7 +1274,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Property in Kawashimada, Gotemba City",
+      "address": "Properties in Kawashimada, Gotemba City",
       "price": "2,290万円",
       "size": "222.56 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-39242/",
@@ -1343,7 +1343,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
