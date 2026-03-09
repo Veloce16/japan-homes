@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-09T05:27:57",
+  "generated": "2026-03-09T08:17:24",
   "listings": [
     {
       "source": "AtHome",
@@ -144,6 +144,22 @@
       "date_found": "2026-03-03",
       "lat": 34.831088,
       "lng": 136.584061
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2-story 3SLDK",
+      "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
+      "price": "1,500万円",
+      "size": "367.70m² / 113.80m²",
+      "url": "https://www.athome.co.jp/kodate/6986708794/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hb6cBLI1KbZXsTuMiXHd0A==",
+      "area": "Suzuka, Mie",
+      "build_year": "1994",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "114 m² building  /  368 m² land",
+      "date_found": "2026-03-09",
+      "lat": 34.841105,
+      "lng": 136.555196
     },
     {
       "source": "AtHome",
@@ -831,17 +847,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "998万円",
+      "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_74774866/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F866%2F74774866%2F74774866_0039.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20180991/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F991%2F20180991%2F20180991_0001.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥9,980,000  (~$66,533 USD)",
+      "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
-      "date_found": "2026-03-08",
-      "lat": 35.184158,
-      "lng": 138.637482
+      "date_found": "2026-03-09",
+      "lat": 35.205294,
+      "lng": 138.639989
     },
     {
       "source": "Suumo",
@@ -879,17 +895,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1450万円",
+      "price": "1200万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20219570/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F570%2F20219570%2F20219570_0113.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_79179495/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F495%2F79179495%2F79179495_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "price_en": "¥12,000,000  (~$80,000 USD)",
       "size_en": "",
       "date_found": "2026-03-09",
-      "lat": 34.752631,
-      "lng": 136.482329
+      "lat": 35.024693,
+      "lng": 136.624721
     },
     {
       "source": "Suumo",
@@ -1146,38 +1162,6 @@
       "date_found": "2026-03-03",
       "lat": 34.897021,
       "lng": 136.550615
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-08",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
-      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
-      "price": "1,199万円",
-      "size": "174.36m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥11,990,000  (~$79,933 USD)",
-      "size_en": "174 m² land",
-      "date_found": "2026-03-09",
-      "lat": 34.773928,
-      "lng": 136.535681
     },
     {
       "source": "Lifull Homes",
@@ -1496,6 +1480,34 @@
       "price_en": "¥340,000  (~$2,266 USD)",
       "size_en": "",
       "date_found": "2026-03-06"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Kitakamiyama, Geino Town, Tsu City, Mie Prefecture",
+      "price": "480万円",
+      "size": "",
+      "url": "https://www.homes.co.jp/akiyabank/b-46440/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-424de18cdaeeece8334df8f412c319f29a12f82c.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥4,800,000  (~$32,000 USD)",
+      "size_en": "",
+      "date_found": "2026-03-09"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Takanoo Town",
+      "price": "700万円",
+      "size": "",
+      "url": "https://www.homes.co.jp/akiyabank/b-46378/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-aab50c4867c42b0e5028ff7e3f0494d920030d7a.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥7,000,000  (~$46,666 USD)",
+      "size_en": "",
+      "date_found": "2026-03-09"
     },
     {
       "source": "Akiya Bank",
