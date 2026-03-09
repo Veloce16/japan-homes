@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-08T19:19:04",
+  "generated": "2026-03-09T05:27:57",
   "listings": [
     {
       "source": "AtHome",
@@ -147,7 +147,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -881,15 +881,15 @@
       "address": "Suzuka City",
       "price": "1450万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_77904994/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F994%2F77904994%2F77904994_0212.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20219570/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F570%2F20219570%2F20219570_0113.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "",
-      "date_found": "2026-03-08",
-      "lat": 34.752486,
-      "lng": 136.481832
+      "date_found": "2026-03-09",
+      "lat": 34.752631,
+      "lng": 136.482329
     },
     {
       "source": "Suumo",
@@ -1165,6 +1165,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka 1151-4PR",
+      "address": "Used detached house 1151-4 Shiratsuka, Tsu City PR price 11,990,000 yen",
+      "price": "1,199万円",
+      "size": "174.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000025/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F25%2F2%2F1%2F0z03.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,990,000  (~$79,933 USD)",
+      "size_en": "174 m² land",
+      "date_found": "2026-03-09",
+      "lat": 34.773928,
+      "lng": 136.535681
+    },
+    {
+      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1343,7 +1359,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1469,7 +1485,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
