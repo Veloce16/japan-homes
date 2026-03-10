@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-10T05:16:49",
+  "generated": "2026-03-10T08:13:25",
   "listings": [
     {
       "source": "AtHome",
@@ -163,7 +163,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -687,6 +687,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Handa (Ako Station) 2-story 2LDK",
+      "address": "Tsu City Handa (Ako Station) 2-story 2LDK",
+      "price": "1,280万円",
+      "size": "348.92m² / 109.23m²",
+      "url": "https://www.athome.co.jp/kodate/1034362393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/OS1qe0TeEFqF0pKfQr6O6A==",
+      "area": "Tsu, Mie",
+      "build_year": "1993",
+      "price_en": "¥12,800,000  (~$85,333 USD)",
+      "size_en": "109 m² building  /  349 m² land",
+      "date_found": "2026-03-10",
+      "lat": 34.701792,
+      "lng": 136.50322
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Isshindacho (Takada Motoyama Station) 2-story 8DK",
       "address": "Tsu City Isshindacho (Takada Motoyama Station) 2-story 8DK",
       "price": "1,300万円",
@@ -847,17 +863,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1299万円",
+      "price": "1398万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥12,990,000  (~$86,600 USD)",
+      "price_en": "¥13,980,000  (~$93,200 USD)",
       "size_en": "",
       "date_found": "2026-03-10",
-      "lat": 35.203334,
-      "lng": 138.646305
+      "lat": 35.193481,
+      "lng": 138.695817
     },
     {
       "source": "Suumo",
@@ -895,17 +911,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "1280万円",
+      "price": "1450万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_77904994/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F994%2F77904994%2F77904994_0212.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥12,800,000  (~$85,333 USD)",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "",
       "date_found": "2026-03-10",
-      "lat": 34.956816,
-      "lng": 136.539069
+      "lat": 34.752486,
+      "lng": 136.481832
     },
     {
       "source": "Suumo",
@@ -1021,8 +1037,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1066,22 +1082,6 @@
       "date_found": "2026-03-03",
       "lat": 34.664442,
       "lng": 136.539435
-    },
-    {
-      "source": "Suumo",
-      "title": "Recommended properties from real estate companies",
-      "address": "Tsu City",
-      "price": "1499万円",
-      "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "",
-      "date_found": "2026-03-10",
-      "lat": 34.653024,
-      "lng": 136.131939
     },
     {
       "source": "Yahoo RE",
@@ -1130,22 +1130,6 @@
       "date_found": "2026-03-03",
       "lat": 35.325296,
       "lng": 138.935884
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
-      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
-      "price": "1,400万円",
-      "size": "219.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-03-08",
-      "lat": 34.893343,
-      "lng": 136.624456
     },
     {
       "source": "Lifull Homes",
@@ -1306,7 +1290,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Properties in Kawashimada, Gotemba City",
+      "address": "Property in Kawashimada, Gotemba City",
       "price": "2,290万円",
       "size": "222.56 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-39242/",
@@ -1375,7 +1359,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1501,7 +1485,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
