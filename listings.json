@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-09T20:10:30",
+  "generated": "2026-03-10T05:16:49",
   "listings": [
     {
       "source": "AtHome",
@@ -847,17 +847,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Gotemba City",
-      "price": "1398万円",
+      "price": "1299万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20183663/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F663%2F20183663%2F20183663_0014.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/shizuoka/sc_fuji/nc_20236859/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F859%2F20236859%2F20236859_0018.jpg&w=70&h=50",
       "area": "Gotemba, Shizuoka",
       "build_year": "",
-      "price_en": "¥13,980,000  (~$93,200 USD)",
+      "price_en": "¥12,990,000  (~$86,600 USD)",
       "size_en": "",
-      "date_found": "2026-03-09",
-      "lat": 35.193481,
-      "lng": 138.695817
+      "date_found": "2026-03-10",
+      "lat": 35.203334,
+      "lng": 138.646305
     },
     {
       "source": "Suumo",
@@ -895,17 +895,17 @@
       "source": "Suumo",
       "title": "Recommended properties from real estate companies",
       "address": "Suzuka City",
-      "price": "880万円",
+      "price": "1280万円",
       "size": "",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_77144158/?fmlg=bo001",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F158%2F77144158%2F77144158_0001.jpg&w=70&h=50",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_yokkaichi/nc_78724361/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F361%2F78724361%2F78724361_0001.jpg&w=70&h=50",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "price_en": "¥12,800,000  (~$85,333 USD)",
       "size_en": "",
-      "date_found": "2026-03-09",
-      "lat": 34.98322,
-      "lng": 136.590676
+      "date_found": "2026-03-10",
+      "lat": 34.956816,
+      "lng": 136.539069
     },
     {
       "source": "Suumo",
@@ -1068,6 +1068,22 @@
       "lng": 136.539435
     },
     {
+      "source": "Suumo",
+      "title": "Recommended properties from real estate companies",
+      "address": "Tsu City",
+      "price": "1499万円",
+      "size": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_nabari/nc_78233729/?fmlg=bo001",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F729%2F78233729%2F78233729_0068.jpg&w=70&h=50",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥14,990,000  (~$99,933 USD)",
+      "size_en": "",
+      "date_found": "2026-03-10",
+      "lat": 34.653024,
+      "lng": 136.131939
+    },
+    {
       "source": "Yahoo RE",
       "title": "Kamitaki, Misugi-machi, Tsu City",
       "address": "Kamitaki, Misugi-machi, Tsu City",
@@ -1162,6 +1178,22 @@
       "date_found": "2026-03-03",
       "lat": 34.831075,
       "lng": 136.584066
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
+      "price": "500万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "215 m² land",
+      "date_found": "2026-03-10",
+      "lat": 34.762742,
+      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
