@@ -166,6 +166,7 @@ TARGETS = [
         "suumo_urls": [
             "https://suumo.jp/jj/bukken/ichiran/JJ010FJ001/?ar=050&bs=021&ta=22&jspIdFlg=patternShikugun&sc=22215&kb=1&kt=1500&tb=150&tt=9999999&hb=100&ht=9999999&ekTjCd=&ekTjNm=&tj=0&cnb=0&cn=9999999&srch_navi=1",
         ],
+        "suumo_city_slug": "sc_gotemba",  # detail URL must contain this — catches city bleed
         # Lifull Homes: grnd_m_low=land>=300, bld_m_low=building>=100, pricemax=1500 (万円)
         "homes_url": "https://www.homes.co.jp/kodate/chuko/shizuoka/gotemba-city/list/?grnd_m_low=300&bld_m_low=100&pricemax=1600",
         "city_ja_list": ["御殿場"],
@@ -176,6 +177,10 @@ TARGETS = [
         # regular listings. No size/price filters in URL (akiya pages don't support them);
         # passes_price() and passes_size() enforce limits client-side.
         "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/gotemba/",
+        # Shizuoka Prefecture Akiya Bank — run by local real estate association, completely
+        # separate database from Lifull. Properties that expire on AtHome/Suumo often move here.
+        # URL: /一覧/買う/地域/御殿場市 — city-filtered for-sale listings.
+        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E8%B2%B7%E3%81%86/%E5%9C%B0%E5%9F%9F/%E5%BE%A1%E6%AE%BF%E5%A0%B4%E5%B8%82",
     },
     {
         "name_en":    "Oyama, Shizuoka",
@@ -191,6 +196,8 @@ TARGETS = [
         # Yahoo: geo=22344 = Oyama town (Sunto District). Same filter logic as other cities.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/22/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=22&geo=22344",
         "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/oyama/",
+        # Shizuoka Prefecture Akiya Bank — Oyama town. Same platform as Gotemba above.
+        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E8%B2%B7%E3%81%86/%E5%9C%B0%E5%9F%9F/%E5%B0%8F%E5%B1%B1%E7%94%BA",
     },
     {
         "name_en":    "Suzuka, Mie",
@@ -200,6 +207,7 @@ TARGETS = [
         "suumo_urls": [
             "https://suumo.jp/jj/bukken/ichiran/JJ012FC001/?ar=050&bs=021&cn=9999999&cnb=0&ekTjCd=&ekTjNm=&hb=100&ht=9999999&kb=1&kt=1500&sc=24207&ta=24&tb=150&tj=0&tt=9999999&pc=50&po=0&pj=1",
         ],
+        "suumo_city_slug": "sc_suzuka",
         "homes_url": "https://www.homes.co.jp/kodate/chuko/mie/suzuka-city/list/?grnd_m_low=300&bld_m_low=100&pricemax=1600",
         "city_ja_list": ["鈴鹿"],
         # Yahoo: geo=24207 = Suzuka city.
@@ -214,11 +222,15 @@ TARGETS = [
         "suumo_urls": [
             "https://suumo.jp/jj/bukken/ichiran/JJ012FC001/?ar=050&bs=021&cn=9999999&cnb=0&ekTjCd=&ekTjNm=&hb=100&ht=9999999&kb=1&kt=1500&sc=24201&ta=24&tb=150&tj=0&tt=9999999&po=0&pj=1&pc=50",
         ],
+        "suumo_city_slug": "sc_tsu",
         "homes_url": "https://www.homes.co.jp/kodate/chuko/mie/tsu-city/list/?grnd_m_low=300&bld_m_low=100&pricemax=1600",
         "city_ja_list": ["津市", "津　"],
         # Yahoo: geo=24201 = Tsu city.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/24/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=24&geo=24201",
         "homes_akiya_url": "https://www.homes.co.jp/akiyabank/mie/tsu/",
+        # Tsu City official akiya bank — municipal database separate from Lifull/AtHome.
+        # Suzuka's equivalent appears to be PDF-based and cannot be scraped automatically.
+        "tsu_akiya_url": "https://www.info.city.tsu.mie.jp/www/akiya/index.html",
     },
 ]
 
@@ -690,11 +702,25 @@ async def scrape_suumo(pw, cfg):
 
             raw = await page.evaluate(EXTRACT_JS, "suumo.jp")
             print(f"     Candidates: {len(raw)}")
-            # NOTE: No city keyword check for Suumo. The URL already restricts results
-            # to the correct city via the sc= parameter. Suumo listing cards often show
-            # abbreviated addresses (neighbourhood only, no 市 prefix), so a keyword
-            # check would silently drop valid large-lot listings. sc= is sufficient.
+            # City validation for Suumo uses two layers:
+            # 1. URL slug — Suumo detail URLs contain sc_<city> (e.g. sc_gotemba, sc_suzuka).
+            #    This is the most reliable check since card addresses are often neighbourhood-only.
+            # 2. city_ok() — catches any remaining address-based mismatches.
+            city_slug = t.get("suumo_city_slug", "")
+            # Sponsored "recommended by agent" rows: Suumo injects these with titles like
+            # 「不動産会社のおすすめ物件」 — they have no size data and are often wrong-city.
+            SUUMO_AD_TITLES = ["おすすめ物件", "不動産会社のおすすめ", "recommended properties"]
             for item in raw:
+                item_url = item.get("url", "").lower()
+                item_title = item.get("title", "").lower()
+                # Drop sponsored rows by title pattern
+                if any(ad in item_title for ad in SUUMO_AD_TITLES):
+                    print(f"     Skipping sponsored row: {item.get('title','')[:60]}")
+                    continue
+                # Drop listings whose URL places them in a different city
+                if city_slug and city_slug not in item_url:
+                    print(f"     Skipping wrong-city URL ({item_url[item_url.find('sc_'):item_url.find('sc_')+12]}): {item.get('title','')[:50]}")
+                    continue
                 if not passes_price(item["price"], cfg):
                     continue
                 if not passes_size(item["sizes"], cfg):
@@ -964,6 +990,189 @@ async def scrape_homes_akiya(pw, cfg):
     return listings
 
 
+# ── Shizuoka Prefecture Akiya Bank (akiya-bank.shizuoka.fudohsan.jp) ─────────
+# Operated by the Shizuoka local real estate association — completely separate
+# from Lifull/AtHome/Suumo. Properties often land here after expiring on those
+# sites. Property detail page URLs follow /物件/NNNNN/ format.
+# No price/size filter — take every listing city_ok() approves.
+async def scrape_shizuoka_akiya(pw, cfg):
+    listings = []
+    seen_urls = set()
+
+    for t in TARGETS:
+        base_url = t.get("shizuoka_akiya_url")
+        if not base_url:
+            continue
+        print(f"   Shizuoka Akiya -> {t['name_en']}")
+        browser = await pw.chromium.launch(headless=True, args=browser_args())
+        try:
+            ctx  = await make_context(browser)
+            page = await ctx.new_page()
+            await page.add_init_script(
+                "Object.defineProperty(navigator,'webdriver',{get:()=>undefined})"
+            )
+
+            for pg in range(1, 6):
+                # Try /page/N/ suffix first (common Japanese CMS style), fall back to ?page=N
+                url = base_url if pg == 1 else f"{base_url}/page/{pg}/"
+                try:
+                    resp = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                    await asyncio.sleep(4)
+                    status = resp.status if resp else 0
+                    title  = await page.title()
+                    print(f"     p{pg} status={status}  title={title[:60]}")
+
+                    if status in (404, 403):
+                        if pg == 1:
+                            print("     City search URL not found — skipping")
+                        else:
+                            print("     No more pages — stopping")
+                        break
+
+                    if any(k in title.lower() for k in ["captcha", "robot", "blocked", "認証"]):
+                        print("     Blocked — skipping")
+                        break
+
+                    await page.evaluate(GENTLE_SCROLL_JS)
+                    await asyncio.sleep(1.5)
+                    await page.evaluate(LAZY_LOAD_JS)
+                    await asyncio.sleep(0.5)
+
+                    raw = await page.evaluate(EXTRACT_JS, "akiya-bank.shizuoka.fudohsan.jp")
+                    # Keep only property detail pages — URLs contain /物件/ (or encoded /%E7%89%A9%E4%BB%B6/)
+                    raw = [item for item in raw
+                           if "/物件/" in item.get("url", "") or "/%E7%89%A9%E4%BB%B6/" in item.get("url", "")]
+                    print(f"     p{pg} candidates: {len(raw)}")
+
+                    if not raw:
+                        # EXTRACT_JS may miss this site's card format — fall back to direct link harvest
+                        prop_urls = await page.evaluate(
+                            "(()=>{"
+                            "  const seen = new Set();"
+                            "  const out = [];"
+                            "  for (const a of document.querySelectorAll('a[href]')) {"
+                            "    const h = a.href || '';"
+                            "    if ((h.includes('/\u7269\u4ef6/') || h.includes('/%E7%89%A9%E4%BB%B6/')) && !seen.has(h)) {"
+                            "      seen.add(h); out.push(h);"
+                            "    }"
+                            "  }"
+                            "  return out;"
+                            "})()"
+                        )
+                        print(f"     p{pg} direct property links: {len(prop_urls)}")
+                        if not prop_urls:
+                            print(f"     No listings found on page {pg} — stopping")
+                            break
+                        # Build minimal raw items from links only; detail will fill in the rest
+                        raw = [{"url": u, "title": "", "address": "", "price": "", "sizes": "", "image": ""} for u in prop_urls]
+
+                    new_on_page = 0
+                    for item in raw:
+                        url_base = item["url"].split("?")[0].split("#")[0].rstrip("/")
+                        if url_base in seen_urls:
+                            continue
+                        seen_urls.add(url_base)
+                        new_on_page += 1
+                        if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                            print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                            continue
+                        listings.append({
+                            "source":     "Shizuoka Akiya",
+                            "title":      item["title"],
+                            "address":    item["address"] or t["city_ja"],
+                            "price":      item["price"],
+                            "size":       item["sizes"],
+                            "url":        url_base,
+                            "image":      item.get("image", ""),
+                            "area":       t["name_en"],
+                            "build_year": item.get("build_year", ""),
+                        })
+
+                    print(f"     p{pg} new unique: {new_on_page}")
+                    if new_on_page == 0:
+                        print(f"     No new results on page {pg} — stopping")
+                        break
+
+                    await asyncio.sleep(3)
+
+                except Exception as e:
+                    print(f"     Error on page {pg}: {e}")
+                    break
+
+        finally:
+            await browser.close()
+        await asyncio.sleep(7)
+    return listings
+
+
+# ── Tsu City Official Akiya Bank (info.city.tsu.mie.jp) ──────────────────────
+# Tsu's municipal akiya bank is a standalone city-run database.
+# Suzuka's equivalent is PDF-based and cannot be automatically scraped.
+# No price/size filter — take everything city_ok() approves.
+async def scrape_tsu_akiya(pw, cfg):
+    listings = []
+    seen_urls = set()
+
+    tsu_target = next((t for t in TARGETS if t.get("tsu_akiya_url")), None)
+    if not tsu_target:
+        return listings
+
+    base_url = tsu_target["tsu_akiya_url"]
+    print(f"   Tsu City Akiya -> {tsu_target['name_en']}")
+    browser = await pw.chromium.launch(headless=True, args=browser_args())
+    try:
+        ctx  = await make_context(browser)
+        page = await ctx.new_page()
+        await page.add_init_script(
+            "Object.defineProperty(navigator,'webdriver',{get:()=>undefined})"
+        )
+
+        try:
+            resp = await page.goto(base_url, wait_until="domcontentloaded", timeout=30000)
+            await asyncio.sleep(4)
+            status = resp.status if resp else 0
+            title  = await page.title()
+            print(f"     status={status}  title={title[:60]}")
+
+            if status in (404, 403):
+                print("     Tsu akiya page not found — skipping")
+            else:
+                await page.evaluate(GENTLE_SCROLL_JS)
+                await asyncio.sleep(1.5)
+                await page.evaluate(LAZY_LOAD_JS)
+                await asyncio.sleep(0.5)
+
+                raw = await page.evaluate(EXTRACT_JS, "info.city.tsu.mie.jp")
+                print(f"     candidates: {len(raw)}")
+
+                for item in raw:
+                    url_base = item["url"].split("?")[0].rstrip("/")
+                    if url_base in seen_urls:
+                        continue
+                    seen_urls.add(url_base)
+                    if not city_ok(item.get("address", ""), item.get("title", ""), tsu_target):
+                        continue
+                    listings.append({
+                        "source":     "Tsu Akiya",
+                        "title":      item["title"],
+                        "address":    item["address"] or tsu_target["city_ja"],
+                        "price":      item["price"],
+                        "size":       item["sizes"],
+                        "url":        url_base,
+                        "image":      item.get("image", ""),
+                        "area":       tsu_target["name_en"],
+                        "build_year": item.get("build_year", ""),
+                    })
+
+        except Exception as e:
+            print(f"     Error: {e}")
+
+    finally:
+        await browser.close()
+    await asyncio.sleep(7)
+    return listings
+
+
 # ── HTML dashboard ────────────────────────────────────────────
 def generate_html(listings, cfg):
     ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -1103,8 +1312,25 @@ def send_email(listings, cfg):
         "</div></div>"
     )
 
-    # ── Listing rows grouped by city with separator headers ─────────────────
+    # ── Load saved property IDs so we can badge them in the email ────────────
     import datetime as _dt
+    saved_ids = set()
+    saved_json_path = DOCS_DIR / "saved.json"
+    if saved_json_path.exists():
+        try:
+            with open(saved_json_path, encoding="utf-8") as sf:
+                sd = json.load(sf)
+            for sv in sd.get("saved", []):
+                pid = (sv.get("id") or sv.get("url") or "").split("?")[0].rstrip("/")
+                if pid:
+                    saved_ids.add(pid)
+        except Exception:
+            pass
+
+    def prop_id_py(l):
+        return (l.get("id") or l.get("url") or "").split("?")[0].rstrip("/")
+
+    # ── Listing rows grouped by city with separator headers ─────────────────
     CITY_ORDER_EMAIL = ["Gotemba, Shizuoka", "Oyama, Shizuoka", "Suzuka, Mie", "Tsu, Mie"]
     by_area = {}
     for l in listings:
@@ -1123,8 +1349,18 @@ def send_email(listings, cfg):
             f"&#127968; {area} &nbsp;&mdash;&nbsp; {len(group)} listing{'s' if len(group)!=1 else ''}"
             f"</div></td></tr>"
         )
-        for i, l in enumerate(group):
-            bg    = "#f9f9f9" if i % 2 == 0 else "#fff"
+        # Saved properties float to the top of each city group
+        group_sorted = sorted(group, key=lambda l: (0 if prop_id_py(l) in saved_ids else 1))
+        for i, l in enumerate(group_sorted):
+            is_saved = prop_id_py(l) in saved_ids
+            bg    = "#fff8e7" if is_saved else ("#f9f9f9" if i % 2 == 0 else "#fff")
+            border_left = "border-left:4px solid #f0b429;" if is_saved else ""
+            saved_badge = (
+                "<span style='background:#f0b429;color:#1a3a5c;font-size:10px;"
+                "font-weight:800;padding:2px 7px;border-radius:10px;"
+                "margin-left:6px;vertical-align:middle;letter-spacing:0.5px'>"
+                "&#9733; SAVED</span>"
+            ) if is_saved else ""
             title = l.get("title", "Property")
             t     = (title[:48] + "…") if len(title) > 48 else title
             price = l.get("price_en") or l.get("price", "")
@@ -1145,11 +1381,12 @@ def send_email(listings, cfg):
                 "color:#ccc;font-size:11px;text-align:center'>no photo</td>"
             )
             rows += (
-                f"<tr style='background:{bg};border-bottom:1px solid #e8eaf0'>"
+                f"<tr style='background:{bg};{border_left}border-bottom:1px solid #e8eaf0'>"
                 f"{thumb_td}"
                 f"<td style='padding:7px 10px;vertical-align:top'>"
                 f"<div style='font-size:13px;font-weight:600;margin-bottom:3px'>"
-                f"<a href='{l['url']}' style='color:#1a3a5c;text-decoration:none'>{t}</a></div>"
+                f"<a href='{l['url']}' style='color:#1a3a5c;text-decoration:none'>{t}</a>"
+                f"{saved_badge}</div>"
                 f"<div style='font-size:12px;color:#666;margin-bottom:2px'>"
                 f"{l.get('source','')} &bull; {l.get('area','')}</div>"
                 f"<div style='font-size:14px;color:#c0392b;font-weight:bold;margin-bottom:2px'>{price}</div>"
@@ -1254,6 +1491,16 @@ async def main():
         print(f"  -> {len(r)} listings\n")
         all_listings.extend(r)
 
+        print("Scraping Shizuoka Prefecture Akiya Bank...")
+        r = await scrape_shizuoka_akiya(pw, cfg)
+        print(f"  -> {len(r)} listings\n")
+        all_listings.extend(r)
+
+        print("Scraping Tsu City Akiya Bank...")
+        r = await scrape_tsu_akiya(pw, cfg)
+        print(f"  -> {len(r)} listings\n")
+        all_listings.extend(r)
+
     # De-duplicate by URL
     seen, unique = set(), []
     for l in all_listings:
@@ -1295,7 +1542,8 @@ async def main():
 
     # Fetch exact coordinates for all four sources
     athome_no_coords = [l for l in unique
-                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE", "Lifull Homes", "Akiya Bank")
+                        if l.get("source") in ("AtHome", "Suumo", "Yahoo RE", "Lifull Homes",
+                                               "Akiya Bank", "Shizuoka Akiya", "Tsu Akiya")
                         and "lat" not in l
                         and l.get("url", "").startswith("http")]
     if athome_no_coords:

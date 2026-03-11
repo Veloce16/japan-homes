@@ -276,7 +276,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <label><input type="checkbox" class="chk-src" value="Suumo"        checked onchange="updateSourceFilter()"> Suumo</label>
       <label><input type="checkbox" class="chk-src" value="Lifull Homes" checked onchange="updateSourceFilter()"> Lifull Homes</label>
       <label><input type="checkbox" class="chk-src" value="Yahoo RE"     checked onchange="updateSourceFilter()"> Yahoo RE</label>
-      <label><input type="checkbox" class="chk-src" value="Akiya Bank"   checked onchange="updateSourceFilter()"> Akiya Bank</label>
+      <label><input type="checkbox" class="chk-src" value="Akiya Bank"      checked onchange="updateSourceFilter()"> Akiya Bank</label>
+      <label><input type="checkbox" class="chk-src" value="Shizuoka Akiya" checked onchange="updateSourceFilter()"> Shizuoka Akiya</label>
+      <label><input type="checkbox" class="chk-src" value="Tsu Akiya"      checked onchange="updateSourceFilter()"> Tsu Akiya</label>
     </div>
   </div>
 
@@ -380,7 +382,26 @@ const GITHUB_OWNER = 'veloce16';
 const GITHUB_REPO  = 'japan-homes';
 const SAVED_PATH   = 'docs/saved.json';
 // Token is stored privately in your browser (never in the code)
-function getGithubToken() { return localStorage.getItem('jhs_gh_token') || ''; }
+function getGithubToken() {
+  // localStorage is primary; cookie is a durable fallback in case localStorage gets cleared
+  let t = localStorage.getItem('jhs_gh_token') || '';
+  if (!t) {
+    const m = document.cookie.match(/(?:^|;\s*)jhs_gh_token=([^;]+)/);
+    if (m) { t = decodeURIComponent(m[1]); localStorage.setItem('jhs_gh_token', t); }
+  }
+  return t;
+}
+function setGithubToken(t) {
+  if (t) {
+    localStorage.setItem('jhs_gh_token', t);
+    // Cookie expires in 5 years — survives localStorage clears
+    const exp = new Date(); exp.setFullYear(exp.getFullYear() + 5);
+    document.cookie = `jhs_gh_token=${encodeURIComponent(t)};expires=${exp.toUTCString()};path=/;SameSite=Strict`;
+  } else {
+    localStorage.removeItem('jhs_gh_token');
+    document.cookie = 'jhs_gh_token=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+  }
+}
 
 // GitHub Actions config
 const GITHUB_WORKFLOW = "scrape.yml";
@@ -543,6 +564,14 @@ async function loadListings() {
           savedIds.add(id);
           if (!listingsById[id]) listingsById[id] = l; // keep ghosts in lookup
         });
+        // Restore notes from GitHub backup — merge without overwriting any notes
+        // the user has already typed in this session (local beats remote)
+        const remoteNotes = sd.notes || {};
+        let notesUpdated = false;
+        for (const [id, note] of Object.entries(remoteNotes)) {
+          if (note && !notesMap[id]) { notesMap[id] = note; notesUpdated = true; }
+        }
+        if (notesUpdated) localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
       }
     } catch(se) { /* saved.json doesn't exist yet — that's fine */ }
 
@@ -823,11 +852,7 @@ function setupSyncToken() {
     : '🔑 Enter your GitHub Personal Access Token to sync saved listings across all your devices.\n\nYou only need to do this once per browser/device:';
   const token = prompt(msg, current || '');
   if (token === null) return; // user hit Cancel — do nothing
-  if (token.trim() === '') {
-    localStorage.removeItem('jhs_gh_token');
-  } else {
-    localStorage.setItem('jhs_gh_token', token.trim());
-  }
+  setGithubToken(token.trim() || null);
   updateSyncBtn();
 }
 
@@ -836,7 +861,7 @@ async function writeSavedToGitHub() {
   const token = getGithubToken();
   if (!token) return; // no token set — just save locally, no sync
   try {
-    const content = JSON.stringify({ saved: Object.values(savedData) }, null, 2);
+    const content = JSON.stringify({ saved: Object.values(savedData), notes: notesMap }, null, 2);
     const b64 = btoa(unescape(encodeURIComponent(content)));
     const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${SAVED_PATH}`;
     const headers = { Authorization: `token ${token}`, 'Content-Type': 'application/json' };
@@ -853,9 +878,16 @@ async function writeSavedToGitHub() {
     if (putResp.ok) {
       if (btn) { btn.textContent = '✅'; setTimeout(() => { btn.textContent = '🔗'; }, 3000); }
     } else {
-      if (btn) { btn.textContent = '❌'; btn.title = 'Sync failed — click to update your token'; }
-      localStorage.removeItem('jhs_gh_token'); // clear bad token
-      updateSyncBtn();
+      if (btn) { btn.textContent = '❌'; setTimeout(() => { btn.textContent = '🔗'; }, 8000); }
+      if (putResp.status === 401) {
+        // Only wipe token on a definitive "unauthorized" — bad token, not a network blip
+        setGithubToken(null);
+        if (btn) btn.title = 'Token invalid — click to re-enter';
+        updateSyncBtn();
+      } else {
+        // Temporary failure (network, rate limit, etc.) — keep the token, just warn
+        if (btn) btn.title = `Sync failed (${putResp.status}) — will retry next save`;
+      }
     }
   } catch(e) {
     console.warn('Could not sync saved listings to GitHub:', e);
@@ -866,6 +898,7 @@ function saveNote(id, val) {
   if (val.trim()) { notesMap[id] = val; }
   else { delete notesMap[id]; }
   localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
+  writeSavedToGitHub(); // back up notes to GitHub immediately
 }
 
 // ══════════════════════════════════════════════════════════════
