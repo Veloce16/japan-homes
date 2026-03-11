@@ -179,8 +179,8 @@ TARGETS = [
         "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/gotemba/",
         # Shizuoka Prefecture Akiya Bank — run by local real estate association, completely
         # separate database from Lifull. Properties that expire on AtHome/Suumo often move here.
-        # URL: /一覧/買う/地域/御殿場市 — city-filtered for-sale listings.
-        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E8%B2%B7%E3%81%86/%E5%9C%B0%E5%9F%9F/%E5%BE%A1%E6%AE%BF%E5%A0%B4%E5%B8%82",
+        # Navigate: Homepage → Gotemba → "Vacant house for sale". Town ID = 4990.
+        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E8%B2%B7%E3%81%86/%E4%B8%8D%E5%8B%95%E7%94%A3%E4%BC%9A%E7%A4%BE/4990",
     },
     {
         "name_en":    "Oyama, Shizuoka",
@@ -196,8 +196,10 @@ TARGETS = [
         # Yahoo: geo=22344 = Oyama town (Sunto District). Same filter logic as other cities.
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/22/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=22&geo=22344",
         "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/oyama/",
-        # Shizuoka Prefecture Akiya Bank — Oyama town. Same platform as Gotemba above.
-        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E5%9C%B0%E5%9F%9F/%E5%B0%8F%E5%B1%B1%E7%94%BA",
+        # Shizuoka Prefecture Akiya Bank — Oyama town. Navigate: Homepage → Oyama town →
+        # "Vacant house for sale". The site uses /不動産会社/5234 (Oyama's town ID), NOT
+        # the /地域/ (region) path which doesn't index small towns.
+        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E8%B2%B7%E3%81%86/%E4%B8%8D%E5%8B%95%E7%94%A3%E4%BC%9A%E7%A4%BE/5234",
     },
     {
         "name_en":    "Suzuka, Mie",
@@ -1095,6 +1097,12 @@ async def scrape_shizuoka_akiya(pw, cfg):
                         new_on_page += 1
                         if not city_ok(item.get("address", ""), item.get("title", ""), t):
                             print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                            continue
+                        if not passes_price(item.get("price", ""), cfg):
+                            print(f"     Skipping over-budget: {item.get('price','')[:30]}")
+                            continue
+                        if not passes_size(item.get("sizes", ""), cfg):
+                            print(f"     Skipping too-small: {item.get('sizes','')[:40]}")
                             continue
                         listings.append({
                             "source":     "Shizuoka Akiya",
