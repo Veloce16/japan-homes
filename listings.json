@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-11T08:15:19",
+  "generated": "2026-03-11T14:54:41",
   "listings": [
     {
       "source": "AtHome",
@@ -877,7 +877,7 @@
     },
     {
       "source": "Suumo",
-      "title": "☆On-site parking for 3 or more cars ♪ ☆ With an expanded warehouse, you can safely park your bikes and bicycles ♪",
+      "title": "☆3 or more parking spaces available on site♪☆With an expanded warehouse, you can rest assured that you can use your motorcycle or bicycle♪",
       "address": "87 Ishiyakushicho, Suzuka City, Mie Prefecture",
       "price": "1200万円",
       "size": "465.67m2 / 242.04m2",
@@ -1037,8 +1037,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1133,22 +1133,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
-      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
-      "price": "1,400万円",
-      "size": "219.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-03-11",
-      "lat": 34.893343,
-      "lng": 136.624456
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Nishi-Shonai Town",
       "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
       "price": "880万円",
@@ -1182,7 +1166,7 @@
     {
       "source": "Lifull Homes",
       "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
+      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
       "price": "500万円",
       "size": "215.16m²",
       "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
@@ -1306,7 +1290,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Property in Kawashimada, Gotemba City",
+      "address": "Properties in Kawashimada, Gotemba City",
       "price": "2,290万円",
       "size": "222.56 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-39242/",
@@ -1375,7 +1359,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1501,7 +1485,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1600,7 +1584,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Anomachi Kusao",
+      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
@@ -1614,7 +1598,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
+      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
