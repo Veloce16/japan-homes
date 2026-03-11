@@ -197,7 +197,7 @@ TARGETS = [
         "yahoo_url": "https://realestate.yahoo.co.jp/used/house/search/05/22/?min_st=99&ba_from=100&la_from=300&p_und_flg=0&group_with_cond=0&sort=-buy_default+p_from+-area&lc=05&pf=22&geo=22344",
         "homes_akiya_url": "https://www.homes.co.jp/akiyabank/shizuoka/oyama/",
         # Shizuoka Prefecture Akiya Bank — Oyama town. Same platform as Gotemba above.
-        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E8%B2%B7%E3%81%86/%E5%9C%B0%E5%9F%9F/%E5%B0%8F%E5%B1%B1%E7%94%BA",
+        "shizuoka_akiya_url": "https://akiya-bank.shizuoka.fudohsan.jp/%E4%B8%80%E8%A6%A7/%E5%9C%B0%E5%9F%9F/%E5%B0%8F%E5%B1%B1%E7%94%BA",
     },
     {
         "name_en":    "Suzuka, Mie",
