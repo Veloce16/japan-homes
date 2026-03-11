@@ -1016,8 +1016,9 @@ async def scrape_shizuoka_akiya(pw, cfg):
                 # Try /page/N/ suffix first (common Japanese CMS style), fall back to ?page=N
                 url = base_url if pg == 1 else f"{base_url}/page/{pg}/"
                 try:
-                    resp = await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                    await asyncio.sleep(4)
+                    # Use networkidle so AJAX-rendered listing cards have time to load
+                    resp = await page.goto(url, wait_until="networkidle", timeout=45000)
+                    await asyncio.sleep(6)
                     status = resp.status if resp else 0
                     title  = await page.title()
                     print(f"     p{pg} status={status}  title={title[:60]}")
@@ -1033,10 +1034,11 @@ async def scrape_shizuoka_akiya(pw, cfg):
                         print("     Blocked — skipping")
                         break
 
+                    # Scroll slowly to trigger any IntersectionObserver / lazy-load
                     await page.evaluate(GENTLE_SCROLL_JS)
-                    await asyncio.sleep(1.5)
+                    await asyncio.sleep(2)
                     await page.evaluate(LAZY_LOAD_JS)
-                    await asyncio.sleep(0.5)
+                    await asyncio.sleep(1)
 
                     raw = await page.evaluate(EXTRACT_JS, "akiya-bank.shizuoka.fudohsan.jp")
                     # Keep only property detail pages — URLs contain /物件/ (or encoded /%E7%89%A9%E4%BB%B6/)
@@ -1060,6 +1062,24 @@ async def scrape_shizuoka_akiya(pw, cfg):
                             "})()"
                         )
                         print(f"     p{pg} direct property links: {len(prop_urls)}")
+                        if not prop_urls:
+                            # Give the page one more chance — AJAX may still be loading
+                            print(f"     0 links found — waiting 8s for late AJAX...")
+                            await asyncio.sleep(8)
+                            prop_urls = await page.evaluate(
+                                "(()=>{"
+                                "  const seen = new Set();"
+                                "  const out = [];"
+                                "  for (const a of document.querySelectorAll('a[href]')) {"
+                                "    const h = a.href || '';"
+                                "    if ((h.includes('/\u7269\u4ef6/') || h.includes('/%E7%89%A9%E4%BB%B6/')) && !seen.has(h)) {"
+                                "      seen.add(h); out.push(h);"
+                                "    }"
+                                "  }"
+                                "  return out;"
+                                "})()"
+                            )
+                            print(f"     p{pg} retry links: {len(prop_urls)}")
                         if not prop_urls:
                             print(f"     No listings found on page {pg} — stopping")
                             break
@@ -1128,8 +1148,8 @@ async def scrape_tsu_akiya(pw, cfg):
         )
 
         try:
-            resp = await page.goto(base_url, wait_until="domcontentloaded", timeout=30000)
-            await asyncio.sleep(4)
+            resp = await page.goto(base_url, wait_until="networkidle", timeout=45000)
+            await asyncio.sleep(6)
             status = resp.status if resp else 0
             title  = await page.title()
             print(f"     status={status}  title={title[:60]}")
@@ -1138,12 +1158,19 @@ async def scrape_tsu_akiya(pw, cfg):
                 print("     Tsu akiya page not found — skipping")
             else:
                 await page.evaluate(GENTLE_SCROLL_JS)
-                await asyncio.sleep(1.5)
+                await asyncio.sleep(2)
                 await page.evaluate(LAZY_LOAD_JS)
-                await asyncio.sleep(0.5)
+                await asyncio.sleep(1)
 
                 raw = await page.evaluate(EXTRACT_JS, "info.city.tsu.mie.jp")
                 print(f"     candidates: {len(raw)}")
+
+                # If EXTRACT_JS finds nothing, try a direct link harvest with a retry wait
+                if not raw:
+                    print("     0 candidates — waiting 8s for late AJAX...")
+                    await asyncio.sleep(8)
+                    raw = await page.evaluate(EXTRACT_JS, "info.city.tsu.mie.jp")
+                    print(f"     retry candidates: {len(raw)}")
 
                 for item in raw:
                     url_base = item["url"].split("?")[0].rstrip("/")
