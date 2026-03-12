@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-12T08:17:44",
+  "generated": "2026-03-12T14:55:45",
   "listings": [
     {
       "source": "AtHome",
@@ -1197,22 +1197,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Kumoide Ikuratsu Town",
-      "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
-      "price": "1,480万円",
-      "size": "568.59m² / 163.74m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319090000170/",
-      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131909%2Fsale%2F170%2F2%2F2%2Fw000.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "1999",
-      "price_en": "¥14,800,000  (~$98,666 USD)",
-      "size_en": "164 m² building  /  569 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.665984,
-      "lng": 136.536732
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Tsu City Ichimida Town detached house PR",
       "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
       "price": "500万円",
@@ -1226,6 +1210,22 @@
       "date_found": "2026-03-12",
       "lat": 34.762742,
       "lng": 136.508373
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Kumoide Ikuratsu Town",
+      "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
+      "price": "1,480万円",
+      "size": "568.59m² / 163.74m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319090000170/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131909%2Fsale%2F170%2F2%2F2%2Fw000.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "1999",
+      "price_en": "¥14,800,000  (~$98,666 USD)",
+      "size_en": "164 m² building  /  569 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.665984,
+      "lng": 136.536732
     },
     {
       "source": "Lifull Homes",
@@ -1290,22 +1290,6 @@
       "date_found": "2026-03-03",
       "lat": 34.693551,
       "lng": 136.411568
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Honmachi",
-      "address": "Used detached house Honmachi<img src=\"https://im",
-      "price": "490万円",
-      "size": "172.58m² / 109.83m² / 390.28m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319110000052/",
-      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131911%2Fsale%2F52%2F2%2F2%2Ftreu.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "1949",
-      "price_en": "¥4,900,000  (~$32,666 USD)",
-      "size_en": "110 m² building  /  173 m² land  /  390 m² other",
-      "date_found": "2026-03-12",
-      "lat": 34.709343,
-      "lng": 136.50933
     },
     {
       "source": "Akiya Bank",
