@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-11T20:11:22",
+  "generated": "2026-03-12T05:17:23",
   "listings": [
     {
       "source": "AtHome",
@@ -80,6 +80,22 @@
       "date_found": "2026-03-03",
       "lat": 34.853257,
       "lng": 136.607897
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
+      "address": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
+      "price": "730万円",
+      "size": "332.39m² / 175.93m²",
+      "url": "https://www.athome.co.jp/kodate/1191622419/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/ZQxKdW2Mg3Jw85jEjo5aXA==",
+      "area": "Suzuka, Mie",
+      "build_year": "1964",
+      "price_en": "¥7,300,000  (~$48,666 USD)",
+      "size_en": "176 m² building  /  332 m² land",
+      "date_found": "2026-03-12",
+      "lat": 34.851794,
+      "lng": 136.610371
     },
     {
       "source": "AtHome",
@@ -877,7 +893,7 @@
     },
     {
       "source": "Suumo",
-      "title": "☆3 or more parking spaces available on site♪☆With an expanded warehouse, you can rest assured that you can use your motorcycle or bicycle♪",
+      "title": "☆On-site parking for 3 or more cars ♪ ☆ With an expanded warehouse, you can safely park your bikes and bicycles ♪",
       "address": "87 Ishiyakushicho, Suzuka City, Mie Prefecture",
       "price": "1200万円",
       "size": "465.67m2 / 242.04m2",
@@ -1037,7 +1053,7 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
@@ -1181,22 +1197,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-11",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1306,7 +1306,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Properties in Kawashimada, Gotemba City",
+      "address": "Property in Kawashimada, Gotemba City",
       "price": "2,290万円",
       "size": "222.56 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-39242/",
@@ -1348,6 +1348,20 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
+      "address": "Wakamatsu Higashi 2-chome, Suzuka City, Mie Prefecture",
+      "price": "100万円",
+      "size": "181 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-46494/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-0736739143be196bebcede21679873e23f3e7bbd.jpg",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥1,000,000  (~$6,666 USD)",
+      "size_en": "181 m² land",
+      "date_found": "2026-03-12"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
       "address": "Mie Prefecture Suzuka City Kokufu Town",
       "price": "700万円",
       "size": "202.02 m²",
@@ -1375,7 +1389,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1600,7 +1614,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
@@ -1614,7 +1628,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
+      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
