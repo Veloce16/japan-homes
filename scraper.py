@@ -1014,9 +1014,14 @@ async def scrape_shizuoka_akiya(pw, cfg):
                 "Object.defineProperty(navigator,'webdriver',{get:()=>undefined})"
             )
 
+            pagination_style = None  # auto-detect: "path" = /page/N/, "query" = ?page=N
             for pg in range(1, 6):
-                # Try /page/N/ suffix first (common Japanese CMS style), fall back to ?page=N
-                url = base_url if pg == 1 else f"{base_url}/page/{pg}/"
+                if pg == 1:
+                    url = base_url
+                elif pagination_style == "query":
+                    url = f"{base_url}?page={pg}"
+                else:
+                    url = f"{base_url}/page/{pg}/"
                 try:
                     # Use networkidle so AJAX-rendered listing cards have time to load
                     resp = await page.goto(url, wait_until="networkidle", timeout=45000)
@@ -1118,8 +1123,55 @@ async def scrape_shizuoka_akiya(pw, cfg):
 
                     print(f"     p{pg} new unique: {new_on_page}")
                     if new_on_page == 0:
+                        # If /page/N/ returned 0 new, try ?page=N before giving up
+                        if pg > 1 and pagination_style is None:
+                            print(f"     /page/{pg}/ returned dupes — retrying with ?page={pg}")
+                            pagination_style = "query"
+                            retry_url = f"{base_url}?page={pg}"
+                            resp2 = await page.goto(retry_url, wait_until="networkidle", timeout=45000)
+                            await asyncio.sleep(6)
+                            await page.evaluate(GENTLE_SCROLL_JS)
+                            await asyncio.sleep(2)
+                            await page.evaluate(LAZY_LOAD_JS)
+                            await asyncio.sleep(1)
+                            raw2 = await page.evaluate(EXTRACT_JS, "akiya-bank.shizuoka.fudohsan.jp")
+                            raw2 = [item for item in raw2
+                                    if "/物件/" in item.get("url", "") or "/%E7%89%A9%E4%BB%B6/" in item.get("url", "")]
+                            new2 = 0
+                            for item in raw2:
+                                url_base = item["url"].split("?")[0].split("#")[0].rstrip("/")
+                                if url_base in seen_urls:
+                                    continue
+                                seen_urls.add(url_base)
+                                new2 += 1
+                                if not city_ok(item.get("address", ""), item.get("title", ""), t):
+                                    print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                                    continue
+                                if not passes_price(item.get("price", ""), cfg):
+                                    print(f"     Skipping over-budget: {item.get('price','')[:30]}")
+                                    continue
+                                if not passes_size(item.get("sizes", ""), cfg):
+                                    print(f"     Skipping too-small: {item.get('sizes','')[:40]}")
+                                    continue
+                                listings.append({
+                                    "source":     "Shizuoka Akiya",
+                                    "title":      item["title"],
+                                    "address":    item["address"] or t["city_ja"],
+                                    "price":      item["price"],
+                                    "size":       item["sizes"],
+                                    "url":        url_base,
+                                    "image":      item.get("image", ""),
+                                    "area":       t["name_en"],
+                                    "build_year": item.get("build_year", ""),
+                                })
+                            print(f"     ?page={pg} new unique: {new2}")
+                            if new2 > 0:
+                                continue  # keep paginating with ?page=N
                         print(f"     No new results on page {pg} — stopping")
                         break
+                    else:
+                        if pg > 1 and pagination_style is None:
+                            pagination_style = "path"  # /page/N/ worked
 
                     await asyncio.sleep(3)
 

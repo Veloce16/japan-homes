@@ -396,7 +396,7 @@ function setGithubToken(t) {
     localStorage.setItem('jhs_gh_token', t);
     // Cookie expires in 5 years — survives localStorage clears
     const exp = new Date(); exp.setFullYear(exp.getFullYear() + 5);
-    document.cookie = `jhs_gh_token=${encodeURIComponent(t)};expires=${exp.toUTCString()};path=/;SameSite=Strict`;
+    document.cookie = `jhs_gh_token=${encodeURIComponent(t)};expires=${exp.toUTCString()};path=/;SameSite=Lax;Secure`;
   } else {
     localStorage.removeItem('jhs_gh_token');
     document.cookie = 'jhs_gh_token=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
@@ -552,28 +552,46 @@ async function loadListings() {
     listingsById = {};
     allListings.forEach(l => { listingsById[propId(l)] = l; });
 
-    // Load saved listings from GitHub
+    // Load saved listings from GitHub (saved.json is public — no PAT needed to read)
+    let localHadExtras = false;
+    const localSavedCount = savedIds.size;
+    const localNotesCount = Object.keys(notesMap).length;
     try {
       const sr = await fetch('./saved.json?_=' + Date.now());
       if (sr.ok) {
         const sd = await sr.json();
-        savedData = {};
+        // Merge remote INTO local (don't overwrite — union of both)
         (sd.saved || []).forEach(l => {
           const id = propId(l);
-          savedData[id] = l;
-          savedIds.add(id);
+          if (!savedIds.has(id)) {
+            savedData[id] = l;
+            savedIds.add(id);
+          } else if (!savedData[id] || !savedData[id].url) {
+            savedData[id] = l; // remote has richer data
+          }
           if (!listingsById[id]) listingsById[id] = l; // keep ghosts in lookup
         });
-        // Restore notes from GitHub backup — merge without overwriting any notes
-        // the user has already typed in this session (local beats remote)
+        // Restore notes from GitHub backup — remote fills gaps, local overrides
         const remoteNotes = sd.notes || {};
         let notesUpdated = false;
         for (const [id, note] of Object.entries(remoteNotes)) {
           if (note && !notesMap[id]) { notesMap[id] = note; notesUpdated = true; }
         }
         if (notesUpdated) localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
+        // Persist merged state to localStorage
+        localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
+        localStorage.setItem('jhs_saved_data', JSON.stringify(savedData));
       }
     } catch(se) { /* saved.json doesn't exist yet — that's fine */ }
+
+    // If local had saves/notes that weren't in remote, push merged data back
+    localHadExtras = (savedIds.size > localSavedCount) ||
+                     (Object.keys(notesMap).length > localNotesCount) ||
+                     (localSavedCount > 0 || localNotesCount > 0);
+    if (localHadExtras && getGithubToken()) {
+      // Defer push slightly so the page renders first
+      setTimeout(() => writeSavedToGitHub(), 2000);
+    }
 
     updateStats();
     renderAll();
@@ -845,7 +863,7 @@ function updateSyncBtn() {
   btn.title = getGithubToken() ? 'Sync active — click to update token' : 'Click to set up cross-device sync';
 }
 
-function setupSyncToken() {
+async function setupSyncToken() {
   const current = getGithubToken();
   const msg = current
     ? 'Update your GitHub Personal Access Token for cross-device sync:\n(Leave blank to clear it)'
@@ -854,6 +872,43 @@ function setupSyncToken() {
   if (token === null) return; // user hit Cancel — do nothing
   setGithubToken(token.trim() || null);
   updateSyncBtn();
+  // Immediately sync: pull remote data, merge with local, push merged result
+  if (token && token.trim()) {
+    await pullAndMergeRemote();
+    await writeSavedToGitHub();
+  }
+}
+
+// ── Pull remote saved.json and merge into local state ────────────
+async function pullAndMergeRemote() {
+  try {
+    const sr = await fetch('./saved.json?_=' + Date.now());
+    if (!sr.ok) return;
+    const sd = await sr.json();
+    let changed = false;
+    // Merge remote saved listings into local
+    (sd.saved || []).forEach(l => {
+      const id = propId(l);
+      if (!savedIds.has(id)) {
+        savedIds.add(id);
+        savedData[id] = l;
+        if (!listingsById[id]) listingsById[id] = l;
+        changed = true;
+      }
+    });
+    // Merge remote notes — remote fills gaps, local overrides
+    const remoteNotes = sd.notes || {};
+    for (const [id, note] of Object.entries(remoteNotes)) {
+      if (note && !notesMap[id]) { notesMap[id] = note; changed = true; }
+    }
+    if (changed) {
+      localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
+      localStorage.setItem('jhs_saved_data', JSON.stringify(savedData));
+      localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
+      updateStats();
+      renderAll();
+    }
+  } catch(e) { console.warn('pullAndMergeRemote failed:', e); }
 }
 
 // ── Write saved.json to GitHub ──────────────────────────────────
