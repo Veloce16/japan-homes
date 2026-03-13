@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-12T05:17:23",
+  "generated": "2026-03-13T08:17:34",
   "listings": [
     {
       "source": "AtHome",
@@ -925,22 +925,6 @@
     },
     {
       "source": "Suumo",
-      "title": "☆A residence with a warehouse in a quiet residential area ☆A lot of storage in the warehouse ♪☆Unique!",
-      "address": "1405-5 Korasucho, Tsu City, Mie Prefecture",
-      "price": "498万円",
-      "size": "206.1m2 / 312.28m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78423475/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F475%2F78423475%2F78423475_0001.jpg&w=192&h=144",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥4,980,000  (~$33,200 USD)",
-      "size_en": "312 m² building  /  206 m² land",
-      "date_found": "2026-03-09",
-      "lat": 34.653085,
-      "lng": 136.533181
-    },
-    {
-      "source": "Suumo",
       "title": "Kurima Nakayamacho (Takada Motoyama Station) 5.52 million yen",
       "address": "Kurima Nakayamacho (Takada Motoyama Station) 5.52 million yen",
       "price": "552万円",
@@ -1053,7 +1037,7 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
@@ -1146,22 +1130,6 @@
       "date_found": "2026-03-03",
       "lat": 35.325296,
       "lng": 138.935884
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
-      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
-      "price": "1,400万円",
-      "size": "219.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-03-11",
-      "lat": 34.893343,
-      "lng": 136.624456
     },
     {
       "source": "Lifull Homes",
@@ -1515,7 +1483,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
