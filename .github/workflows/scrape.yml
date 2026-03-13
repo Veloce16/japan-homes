@@ -57,4 +57,7 @@ jobs:
           git add listings.json docs/listings.json
           # Only commit if there are changes
           git diff --cached --quiet || git commit -m "chore: update listings [skip ci]"
+          # Pull any changes pushed while the scraper was running (e.g. manual pushes,
+          # saved.json updates from the dashboard) then push
+          git pull --rebase origin main || true
           git push

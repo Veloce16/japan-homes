@@ -924,28 +924,37 @@ async function writeSavedToGitHub() {
     // Get current SHA (needed for update)
     let sha = null;
     const getResp = await fetch(apiUrl, { headers });
-    if (getResp.ok) { const f = await getResp.json(); sha = f.sha; }
+    if (getResp.ok) {
+      const f = await getResp.json(); sha = f.sha;
+    } else if (getResp.status === 401 || getResp.status === 403) {
+      // Token doesn't have write access — warn but DON'T wipe token
+      console.warn(`Sync GET failed: HTTP ${getResp.status} — token may lack repo/public_repo scope`);
+      const btn = document.getElementById('syncSetupBtn');
+      if (btn) { btn.textContent = '⚠️'; btn.title = `Token error (${getResp.status}) — may need repo scope. Click to update.`; }
+      return;  // Don't attempt PUT, it'll fail too
+    }
 
     const body = { message: 'Update saved listings', content: b64 };
     if (sha) body.sha = sha;
     const putResp = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
     const btn = document.getElementById('syncSetupBtn');
     if (putResp.ok) {
-      if (btn) { btn.textContent = '✅'; setTimeout(() => { btn.textContent = '🔗'; }, 3000); }
+      if (btn) { btn.textContent = '✅'; btn.title = 'Sync successful'; setTimeout(() => { btn.textContent = '🔗'; btn.title = 'Sync active — click to update token'; }, 3000); }
     } else {
-      if (btn) { btn.textContent = '❌'; setTimeout(() => { btn.textContent = '🔗'; }, 8000); }
-      if (putResp.status === 401) {
-        // Only wipe token on a definitive "unauthorized" — bad token, not a network blip
-        setGithubToken(null);
-        if (btn) btn.title = 'Token invalid — click to re-enter';
-        updateSyncBtn();
-      } else {
-        // Temporary failure (network, rate limit, etc.) — keep the token, just warn
-        if (btn) btn.title = `Sync failed (${putResp.status}) — will retry next save`;
+      // NEVER auto-wipe the token — the user entered it manually.
+      // Show the error status so the user knows what happened.
+      const status = putResp.status;
+      console.warn(`Sync PUT failed: HTTP ${status}`);
+      if (btn) {
+        btn.textContent = '⚠️';
+        btn.title = `Sync failed (HTTP ${status}) — click to re-enter token if needed`;
+        // Don't auto-reset the icon — keep ⚠️ visible until next successful sync
       }
     }
   } catch(e) {
     console.warn('Could not sync saved listings to GitHub:', e);
+    const btn = document.getElementById('syncSetupBtn');
+    if (btn) { btn.textContent = '⚠️'; btn.title = 'Sync failed (network error) — will retry next save'; }
   }
 }
 
