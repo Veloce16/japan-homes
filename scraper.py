@@ -1033,12 +1033,23 @@ SHIZUOKA_DETAIL_JS = """() => {
 async def fetch_shizuoka_detail(ctx, url):
     """Visit a Shizuoka Akiya Bank detail page and return extracted data.
     Keys: price, building (e.g. '110㎡ (-)'), land (e.g. '200.81㎡公簿'),
-          build_year, address, title, image.  Any key may be '' if not found."""
+          build_year, address, title, image.  Any key may be '' if not found.
+    Uses networkidle (same as list pages) because the detail table is AJAX-rendered."""
     page = await ctx.new_page()
     try:
-        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        await asyncio.sleep(3)
-        return await page.evaluate(SHIZUOKA_DETAIL_JS)
+        await page.add_init_script(
+            "Object.defineProperty(navigator,'webdriver',{get:()=>undefined})"
+        )
+        await page.goto(url, wait_until="networkidle", timeout=45000)
+        await asyncio.sleep(5)
+        # Wait for the detail table to appear (price/size live in <th>/<td> rows)
+        try:
+            await page.wait_for_selector("table th", timeout=8000)
+        except Exception:
+            pass  # proceed anyway — evaluate will return whatever is loaded
+        d = await page.evaluate(SHIZUOKA_DETAIL_JS)
+        print(f"       Detail got: price={d.get('price','?')!r} bld={d.get('building','?')!r} land={d.get('land','?')!r}")
+        return d
     except Exception as e:
         print(f"       Detail fetch error {url.split('/')[-2]}: {e}")
         return {}

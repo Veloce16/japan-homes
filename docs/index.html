@@ -1270,15 +1270,16 @@ async function populateMap() {
 // ── SEARCH NOW (GitHub Actions trigger)
 // ══════════════════════════════════════════════════════════════
 function triggerScrape() {
-  const owner = GITHUB_OWNER || gitCfg.owner;
-  const repo  = GITHUB_REPO  || gitCfg.repo;
-  const token = gitCfg.token;
+  const owner = GITHUB_OWNER;
+  const repo  = GITHUB_REPO;
+  // Use dedicated workflow token if set, otherwise fall back to the sync PAT
+  // (both are stored in the same browser — no need to re-enter it twice)
+  const token = gitCfg.token || getGithubToken();
 
-  if (!owner || !repo || !token) {
+  if (!token) {
     document.getElementById('modalBg').classList.remove('hidden');
-    if (owner) document.getElementById('cfgOwner').value = owner;
-    if (repo)  document.getElementById('cfgRepo').value  = repo;
-    if (token) document.getElementById('cfgToken').value = token;
+    document.getElementById('cfgOwner').value = owner;
+    document.getElementById('cfgRepo').value  = repo;
     return;
   }
   runScrape(owner, repo, token);
@@ -1304,7 +1305,7 @@ async function runScrape(owner, repo, token) {
         headers:{'Authorization':'token '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
         body: JSON.stringify({ref:'main'}) });
 
-    if (r.status === 204) {
+    if (r.status === 204 || r.status === 200) {
       lbl.textContent = 'Search Now';
       document.getElementById('scrapeIcon').outerHTML = '<span id="scrapeIcon">🔍</span>';
       status.className = 'scrape-status done';
@@ -1330,6 +1331,8 @@ async function runScrape(owner, repo, token) {
           }
         } catch(_){}
       }, 30000);
+    } else if (r.status === 403 || r.status === 422) {
+      throw new Error('PAT needs "workflow" scope — go to GitHub → Settings → Tokens and add it');
     } else {
       throw new Error('HTTP ' + r.status);
     }
@@ -1338,8 +1341,8 @@ async function runScrape(owner, repo, token) {
     lbl.textContent = 'Search Now';
     btn.disabled = false;
     status.className = 'scrape-status running';
-    status.textContent = '❌ Error: ' + err.message + ' — check config';
-    setTimeout(()=>{ status.style.display='none'; }, 6000);
+    status.textContent = '❌ ' + err.message;
+    setTimeout(()=>{ status.style.display='none'; }, 8000);
   }
 }
 
