@@ -808,7 +808,10 @@ function parseSizes(s) {
   if (!s) return {building:null,land:null};
   const nums = [...s.matchAll(/([\d.]+)\s*(?:㎡|m²|m2)/g)].map(m=>parseFloat(m[1]));
   if (!nums.length) return {building:null,land:null};
-  if (nums.length === 1) return {building:nums[0],land:null};
+  if (nums.length === 1) {
+    if (/land/i.test(s)) return {building:null, land:nums[0]};
+    return {building:nums[0], land:null};
+  }
   const sorted = [...nums].sort((a,b)=>b-a);
   return {land:sorted[0], building:sorted[1]};
 }

@@ -315,11 +315,18 @@ def passes_size(size_text, cfg):
     if not size_text:
         return True   # no size info — don't discard
     nums = re.findall(r"([\d.]+)\s*(?:\u33a1|m[\u00b2\xb2]|m2)", size_text)
-    if len(nums) < 2:
-        return True   # can't determine, keep it
-    vals = sorted([float(n) for n in nums], reverse=True)  # all values, largest=land
     min_land = cfg["filters"].get("min_land_sqm", 300)
     min_bld  = cfg["filters"].get("min_building_sqm", 100)
+    if len(nums) == 1:
+        # Single value — check if the text says "land" (e.g. Akiya Bank land-only listings)
+        # If so, treat it as land area and check against min_land_sqm
+        val = float(nums[0])
+        if re.search(r"land|土地", size_text, re.IGNORECASE):
+            return val >= min_land
+        return True   # single value, no label — can't determine, keep it
+    if len(nums) == 0:
+        return True   # no size info — don't discard
+    vals = sorted([float(n) for n in nums], reverse=True)  # all values, largest=land
     return vals[0] >= min_land and vals[1] >= min_bld
 
 def browser_args():
