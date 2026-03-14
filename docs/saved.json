@@ -197,6 +197,22 @@
       "date_found": "2026-03-05",
       "lat": 35.36008,
       "lng": 138.979586
+    },
+    {
+      "source": "AtHome",
+      "title": "Gotemba City Yamanojiri (Gotenba Station) 2-story 4LDK",
+      "address": "Gotemba City Yamanojiri (Gotenba Station) 2-story 4LDK",
+      "price": "1,190万円",
+      "size": "352.01m² / 145.86m²",
+      "url": "https://www.athome.co.jp/kodate/6983530939/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/VPMGYbklZlUgsI60QZPslg==",
+      "area": "Gotemba, Shizuoka",
+      "build_year": "1994",
+      "price_en": "¥11,900,000  (~$79,333 USD)",
+      "size_en": "146 m² building  /  352 m² land",
+      "date_found": "2026-03-03",
+      "lat": 35.32529,
+      "lng": 138.935895
     }
   ],
   "notes": {
