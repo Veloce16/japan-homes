@@ -245,6 +245,22 @@
       "date_found": "2026-03-03",
       "lat": 34.754397,
       "lng": 136.523904
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
+      "address": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
+      "price": "730万円",
+      "size": "332.39m² / 175.93m²",
+      "url": "https://www.athome.co.jp/kodate/1191622419/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/ZQxKdW2Mg3Jw85jEjo5aXA==",
+      "area": "Suzuka, Mie",
+      "build_year": "1964",
+      "price_en": "¥7,300,000  (~$48,666 USD)",
+      "size_en": "176 m² building  /  332 m² land",
+      "date_found": "2026-03-12",
+      "lat": 34.851794,
+      "lng": 136.610371
     }
   ],
   "notes": {
@@ -267,6 +283,7 @@
     "https://www.homes.co.jp/akiyabank/b-31442": "142/209",
     "https://www.homes.co.jp/akiyabank/b-31395": "127/202",
     "https://www.athome.co.jp/kodate/6982115934": "Old , nasty, Dirt hallways",
-    "https://www.athome.co.jp/kodate/1191622419": "Road ok. Extension could be used as a garage 2 blocks from beach. 2 blocks Family mart. Chiyozaki station 5 min walk"
+    "https://www.athome.co.jp/kodate/1191622419": "Road ok. Extension could be used as a garage 2 blocks from beach. 2 blocks Family mart. Chiyozaki station 5 min walk",
+    "https://www.athome.co.jp/kodate/1037353798": "Don't have address. There is no map. in same neiborhood somewhere at the north east Shonai valley in between 5 golf courses. "
   }
 }
