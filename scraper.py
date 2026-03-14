@@ -1003,7 +1003,48 @@ async def scrape_homes_akiya(pw, cfg):
 # Operated by the Shizuoka local real estate association — completely separate
 # from Lifull/AtHome/Suumo. Properties often land here after expiring on those
 # sites. Property detail page URLs follow /物件/NNNNN/ format.
-# No price/size filter — take every listing city_ok() approves.
+# List pages don't expose price/size in card HTML, so we fetch each detail page
+# to get actual price (価格), building area (建物面積), and land area (土地面積).
+
+SHIZUOKA_DETAIL_JS = """() => {
+  const r = {};
+  for (const th of document.querySelectorAll('th')) {
+    const k = th.textContent.trim();
+    const td = th.nextElementSibling;
+    if (!td || td.tagName !== 'TD') continue;
+    const v = td.textContent.replace(/\\s+/g, ' ').trim();
+    if (k.includes('\u4fa1\u683c') && !r.price) r.price = v;
+    if (k.includes('\u5efa\u7269\u9762\u7a4d') && !r.building) r.building = v;
+    if (k.includes('\u571f\u5730\u9762\u7a4d') && !r.land) r.land = v;
+    if (k.includes('\u7b51\u5e74\u6708') && !r.build_year) r.build_year = v;
+    if (k.includes('\u6240\u5728\u5730') && !r.address) r.address = v;
+  }
+  const h = document.querySelector('h1,h2');
+  if (h) r.title = h.textContent.trim().substring(0, 80);
+  for (const img of document.querySelectorAll('img[src]')) {
+    const s = img.src || '';
+    if (s && !s.includes('icon') && !s.includes('logo') && img.width > 80) {
+      r.image = s; break;
+    }
+  }
+  return r;
+}"""
+
+async def fetch_shizuoka_detail(ctx, url):
+    """Visit a Shizuoka Akiya Bank detail page and return extracted data.
+    Keys: price, building (e.g. '110㎡ (-)'), land (e.g. '200.81㎡公簿'),
+          build_year, address, title, image.  Any key may be '' if not found."""
+    page = await ctx.new_page()
+    try:
+        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        await asyncio.sleep(3)
+        return await page.evaluate(SHIZUOKA_DETAIL_JS)
+    except Exception as e:
+        print(f"       Detail fetch error {url.split('/')[-2]}: {e}")
+        return {}
+    finally:
+        await page.close()
+
 async def scrape_shizuoka_akiya(pw, cfg):
     listings = []
     seen_urls = set()
@@ -1107,6 +1148,25 @@ async def scrape_shizuoka_akiya(pw, cfg):
                             continue
                         seen_urls.add(url_base)
                         new_on_page += 1
+                        # Enrich from detail page if list page didn't expose price/sizes
+                        if not item.get("price") or not item.get("sizes"):
+                            prop_id = [p for p in url_base.split("/") if p][-1]
+                            print(f"       -> detail fetch #{prop_id}")
+                            det = await fetch_shizuoka_detail(ctx, url_base)
+                            if not item.get("price"):
+                                item["price"] = det.get("price", "")
+                            if not item.get("sizes"):
+                                bld = det.get("building", "")
+                                lnd = det.get("land", "")
+                                item["sizes"] = " ".join(p for p in [bld, lnd] if p)
+                            if not item.get("title"):
+                                item["title"] = det.get("title", "")
+                            if not item.get("address"):
+                                item["address"] = det.get("address", "")
+                            if not item.get("image"):
+                                item["image"] = det.get("image", "")
+                            if not item.get("build_year"):
+                                item["build_year"] = det.get("build_year", "")
                         if not city_ok(item.get("address", ""), item.get("title", ""), t):
                             print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
                             continue
@@ -1151,6 +1211,25 @@ async def scrape_shizuoka_akiya(pw, cfg):
                                     continue
                                 seen_urls.add(url_base)
                                 new2 += 1
+                                # Enrich from detail page if list page didn't expose price/sizes
+                                if not item.get("price") or not item.get("sizes"):
+                                    prop_id = [p for p in url_base.split("/") if p][-1]
+                                    print(f"       -> detail fetch #{prop_id}")
+                                    det = await fetch_shizuoka_detail(ctx, url_base)
+                                    if not item.get("price"):
+                                        item["price"] = det.get("price", "")
+                                    if not item.get("sizes"):
+                                        bld = det.get("building", "")
+                                        lnd = det.get("land", "")
+                                        item["sizes"] = " ".join(p for p in [bld, lnd] if p)
+                                    if not item.get("title"):
+                                        item["title"] = det.get("title", "")
+                                    if not item.get("address"):
+                                        item["address"] = det.get("address", "")
+                                    if not item.get("image"):
+                                        item["image"] = det.get("image", "")
+                                    if not item.get("build_year"):
+                                        item["build_year"] = det.get("build_year", "")
                                 if not city_ok(item.get("address", ""), item.get("title", ""), t):
                                     print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
                                     continue
