@@ -293,6 +293,22 @@
       "date_found": "2026-03-03",
       "lat": 34.69356,
       "lng": 136.411577
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
+      "address": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
+      "price": "980万円",
+      "size": "508.28m² / 253.74m²",
+      "url": "https://www.athome.co.jp/kodate/1171153309/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/dEiB1EN31PEHdgWgdeh-Ag==",
+      "area": "Tsu, Mie",
+      "build_year": "1960",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "254 m² building  /  508 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.692214,
+      "lng": 136.496756
     }
   ],
   "notes": {
@@ -326,6 +342,7 @@
     "https://www.athome.co.jp/kodate/1120886005": "Main house size?, guest house, garage maybe 12*24, really NARROW private road. Near Zenia (Ano) Yumi found on map. 24min to track",
     "https://www.athome.co.jp/kodate/6989681183": "Junk",
     "https://www.athome.co.jp/kodate/1003637698": "193/571 4 buildings great property, great road access. Unfortunately VERY south and West in Tsu",
-    "https://www.athome.co.jp/kodate/1171153309": "Huge house in Fujikata by Tsu boat race. Can't find it. No Map "
+    "https://www.athome.co.jp/kodate/1171153309": "Huge house in Fujikata by Tsu boat race. Can't find it. No Map ",
+    "https://www.athome.co.jp/kodate/1064668493": "Tandem cover parking spaces. No room for garage"
   }
 }
