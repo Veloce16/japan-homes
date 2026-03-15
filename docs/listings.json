@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-15T08:16:49",
+  "generated": "2026-03-15T14:20:24",
   "listings": [
     {
       "source": "AtHome",
@@ -128,22 +128,6 @@
       "date_found": "2026-03-03",
       "lat": 34.9092,
       "lng": 136.468997
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Ishiyakushicho (Kawamagi Station) 2-story 7LDK",
-      "address": "Suzuka City Ishiyakushicho (Kawamagi Station) 2-story 7LDK",
-      "price": "1,200万円",
-      "size": "465.67m² / 242.04m²",
-      "url": "https://www.athome.co.jp/kodate/6987134731/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/wCrBtrKt8MP_Mu6F_Eit_g==",
-      "area": "Suzuka, Mie",
-      "build_year": "1973",
-      "price_en": "¥12,000,000  (~$80,000 USD)",
-      "size_en": "242 m² building  /  466 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.897012,
-      "lng": 136.550586
     },
     {
       "source": "AtHome",
@@ -1210,6 +1194,22 @@
       "date_found": "2026-03-03",
       "lat": 34.831075,
       "lng": 136.584066
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
+      "price": "500万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "215 m² land",
+      "date_found": "2026-03-15",
+      "lat": 34.762742,
+      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
