@@ -59,22 +59,6 @@
       "lng": 138.979586
     },
     {
-      "source": "Lifull Homes",
-      "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
-      "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
-      "price": "1,190万円",
-      "size": "352.01m² / 145.86m²",
-      "url": "https://www.homes.co.jp/kodate/b-33323360000920/",
-      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3332336%2Fsale%2F920%2F2%2F2%2Fgk6p.jpg&width=208&height=138",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "1993",
-      "price_en": "¥11,900,000  (~$79,333 USD)",
-      "size_en": "146 m² building  /  352 m² land",
-      "date_found": "2026-03-03",
-      "lat": 35.325296,
-      "lng": 138.935884
-    },
-    {
       "source": "AtHome",
       "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
       "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
@@ -89,6 +73,22 @@
       "date_found": "2026-03-03",
       "lat": 34.853257,
       "lng": 136.607897
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
+      "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
+      "price": "1,190万円",
+      "size": "352.01m² / 145.86m²",
+      "url": "https://www.homes.co.jp/kodate/b-33323360000920/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3332336%2Fsale%2F920%2F2%2F2%2Fgk6p.jpg&width=208&height=138",
+      "area": "Gotemba, Shizuoka",
+      "build_year": "1993",
+      "price_en": "¥11,900,000  (~$79,333 USD)",
+      "size_en": "146 m² building  /  352 m² land",
+      "date_found": "2026-03-03",
+      "lat": 35.325296,
+      "lng": 138.935884
     },
     {
       "source": "Suumo",
@@ -312,9 +312,6 @@
     }
   ],
   "notes": {
-    "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
-    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "WAY west of Matsusaka NO",
-    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "GO SEE PROPERTY",
     "https://www.athome.co.jp/kodate/1033902993": "VERY BIG property. don't know boundries. close to water. CONTACT REALTOR",
@@ -326,7 +323,7 @@
     "https://www.homes.co.jp/kodate/b-33323360000920": "See property when in town.\n",
     "https://www.athome.co.jp/kodate/6989336556": "See property when in town.",
     "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there.",
-    "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
+    "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "Maybe sold disappeared from another listing.",
     "https://www.homes.co.jp/akiyabank/b-43376": "2 houses plus long barn WIDE road. Way north in valley around 5 golf courses. 1993 old style house",
     "https://www.homes.co.jp/akiyabank/b-41714": "98.12/201.11",
     "https://www.homes.co.jp/akiyabank/b-41619": "110/200",
@@ -338,6 +335,9 @@
     "https://www.athome.co.jp/kodate/1037353798": "Don't have address. There is no map. in same neiborhood somewhere at the north east Shonai valley in between 5 golf courses. ",
     "https://www.athome.co.jp/kodate/6989062801": "south end of the 5 golf course valley pricey. Main house guest house storehouse not big enough for garage but back area big enough for for garage maybe",
     "https://www.athome.co.jp/kodate/6987134731": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
+    "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "WAY west of Matsusaka NO",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/kodate/b-1319110000021": "Don't have address. There is no map. in same neiborhood somewhere at the north east Shonai valley in between 5 golf courses. ",
     "https://www.athome.co.jp/kodate/1120886005": "Main house size?, guest house, garage maybe 12*24, really NARROW private road. Near Zenia (Ano) Yumi found on map. 24min to track",
     "https://www.athome.co.jp/kodate/6989681183": "Junk",
