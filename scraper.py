@@ -1159,25 +1159,27 @@ async def scrape_shizuoka_akiya(pw, cfg):
                             continue
                         seen_urls.add(url_base)
                         new_on_page += 1
-                        # Enrich from detail page if list page didn't expose price/sizes
-                        if not item.get("price") or not item.get("sizes"):
-                            prop_id = [p for p in url_base.split("/") if p][-1]
-                            print(f"       -> detail fetch #{prop_id}")
-                            det = await fetch_shizuoka_detail(ctx, url_base)
-                            if not item.get("price"):
-                                item["price"] = det.get("price", "")
-                            if not item.get("sizes"):
-                                bld = det.get("building", "")
-                                lnd = det.get("land", "")
-                                item["sizes"] = " ".join(p for p in [bld, lnd] if p)
-                            if not item.get("title"):
-                                item["title"] = det.get("title", "")
-                            if not item.get("address"):
-                                item["address"] = det.get("address", "")
-                            if not item.get("image"):
-                                item["image"] = det.get("image", "")
-                            if not item.get("build_year"):
-                                item["build_year"] = det.get("build_year", "")
+                        # ALWAYS fetch detail page — list page cards never have building
+                        # area (only land area), so we must visit each detail page for the
+                        # authoritative price (価格), building area (建物面積), land area (土地面積).
+                        prop_id = [p for p in url_base.split("/") if p][-1]
+                        print(f"       -> detail fetch #{prop_id}")
+                        det = await fetch_shizuoka_detail(ctx, url_base)
+                        # Override with detail-page data (always more accurate than card)
+                        if det.get("price"):
+                            item["price"] = det["price"]
+                        if det.get("building") or det.get("land"):
+                            bld = det.get("building", "")
+                            lnd = det.get("land", "")
+                            item["sizes"] = " ".join(p for p in [bld, lnd] if p)
+                        if det.get("title"):
+                            item["title"] = det["title"]
+                        if det.get("address"):
+                            item["address"] = det["address"]
+                        if det.get("image"):
+                            item["image"] = det["image"]
+                        if det.get("build_year"):
+                            item["build_year"] = det["build_year"]
                         if not city_ok(item.get("address", ""), item.get("title", ""), t):
                             print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
                             continue
@@ -1222,25 +1224,24 @@ async def scrape_shizuoka_akiya(pw, cfg):
                                     continue
                                 seen_urls.add(url_base)
                                 new2 += 1
-                                # Enrich from detail page if list page didn't expose price/sizes
-                                if not item.get("price") or not item.get("sizes"):
-                                    prop_id = [p for p in url_base.split("/") if p][-1]
-                                    print(f"       -> detail fetch #{prop_id}")
-                                    det = await fetch_shizuoka_detail(ctx, url_base)
-                                    if not item.get("price"):
-                                        item["price"] = det.get("price", "")
-                                    if not item.get("sizes"):
-                                        bld = det.get("building", "")
-                                        lnd = det.get("land", "")
-                                        item["sizes"] = " ".join(p for p in [bld, lnd] if p)
-                                    if not item.get("title"):
-                                        item["title"] = det.get("title", "")
-                                    if not item.get("address"):
-                                        item["address"] = det.get("address", "")
-                                    if not item.get("image"):
-                                        item["image"] = det.get("image", "")
-                                    if not item.get("build_year"):
-                                        item["build_year"] = det.get("build_year", "")
+                                # ALWAYS fetch detail page for accurate price + building/land sizes
+                                prop_id = [p for p in url_base.split("/") if p][-1]
+                                print(f"       -> detail fetch #{prop_id}")
+                                det = await fetch_shizuoka_detail(ctx, url_base)
+                                if det.get("price"):
+                                    item["price"] = det["price"]
+                                if det.get("building") or det.get("land"):
+                                    bld = det.get("building", "")
+                                    lnd = det.get("land", "")
+                                    item["sizes"] = " ".join(p for p in [bld, lnd] if p)
+                                if det.get("title"):
+                                    item["title"] = det["title"]
+                                if det.get("address"):
+                                    item["address"] = det["address"]
+                                if det.get("image"):
+                                    item["image"] = det["image"]
+                                if det.get("build_year"):
+                                    item["build_year"] = det["build_year"]
                                 if not city_ok(item.get("address", ""), item.get("title", ""), t):
                                     print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
                                     continue
