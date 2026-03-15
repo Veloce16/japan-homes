@@ -965,10 +965,14 @@ async def scrape_homes_akiya(pw, cfg):
                             continue
                         seen_urls.add(url_base)
                         new_on_page += 1
-                        # No price or size filter for akiya — municipalities list few properties
-                        # and often omit size data; we want every one that belongs to the city.
                         if not city_ok(item.get("address", ""), item.get("title", ""), t):
                             print(f"     Skipping wrong-city: {item.get('title','')[:60]}")
+                            continue
+                        if not passes_price(item.get("price", ""), cfg):
+                            print(f"     Skipping over-budget: {item.get('price','')[:30]}")
+                            continue
+                        if not passes_size(item.get("sizes", ""), cfg):
+                            print(f"     Skipping too-small: {item.get('sizes','')[:40]}")
                             continue
                         listings.append({
                             "source":     "Akiya Bank",
