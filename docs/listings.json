@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-15T01:29:23",
+  "generated": "2026-03-15T03:15:37",
   "listings": [
     {
       "source": "AtHome",
@@ -660,7 +660,7 @@
       "price": "1,080万円",
       "size": "362.82m² / 143.40m²",
       "url": "https://www.athome.co.jp/kodate/6985406622/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/qDSpFUS4xNEQVbDl8yk07A==",
+      "image": "",
       "area": "Tsu, Mie",
       "build_year": "1983",
       "price_en": "¥10,800,000  (~$72,000 USD)",
@@ -1165,19 +1165,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
-      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
-      "price": "1,400万円",
-      "size": "219.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
+      "title": "Used detached house Used detached house Koriyama Town PR",
+      "address": "Used detached house Koriyama Town PR price 8.5 million yen Location Koriyama, Suzuka City, Mie Prefecture",
+      "price": "850万円",
+      "size": "201.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1515070000361/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151507%2Fsale%2F361%2F2%2F1%2Fj5gc.jpg&width=208&height=138",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-03-13",
-      "lat": 34.893343,
-      "lng": 136.624456
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "201 m² land",
+      "date_found": "2026-03-15",
+      "lat": 34.813904,
+      "lng": 136.537073
     },
     {
       "source": "Lifull Homes",
@@ -1194,6 +1194,22 @@
       "date_found": "2026-03-08",
       "lat": 34.925589,
       "lng": 136.453997
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
+      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
+      "price": "1,400万円",
+      "size": "219.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "219 m² land",
+      "date_found": "2026-03-13",
+      "lat": 34.893343,
+      "lng": 136.624456
     },
     {
       "source": "Lifull Homes",
@@ -1290,76 +1306,6 @@
       "date_found": "2026-03-03",
       "lat": 34.693551,
       "lng": 136.411568
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Properties in Nishitanaka, Gotemba City",
-      "price": "2,480万円",
-      "size": "201.11 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-41714/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-5d4d3957e543cb5e7702ae7620c6e292795ab044.jpg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥24,800,000  (~$165,333 USD)",
-      "size_en": "201 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Property in Higashitanaka 1-chome, Gotemba City",
-      "price": "2,480万円",
-      "size": "200.81 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-41619/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-66b99e7074d1ca02adf0b065fd7d7db565a5c567.jpg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥24,800,000  (~$165,333 USD)",
-      "size_en": "201 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Property in Kawashimada, Gotemba City",
-      "price": "2,290万円",
-      "size": "222.56 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-39242/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-6c54abe30dd748901a99f31425d4a262e8f893fc.jpg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥22,900,000  (~$152,666 USD)",
-      "size_en": "223 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Property in Fujimihara 1-chome, Gotemba City",
-      "price": "3,300万円",
-      "size": "208.73 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-31442/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-0768d5d0e42bc72db82f3385838f65771338b989.jpg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥33,000,000  (~$220,000 USD)",
-      "size_en": "209 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Property in Nimaibashi, Gotemba City",
-      "price": "2,980万円",
-      "size": "201.67 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-31395/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-c5426588d3a576d873706825a23010b7518fcc30.jpg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥29,800,000  (~$198,666 USD)",
-      "size_en": "202 m² land",
-      "date_found": "2026-03-06"
     },
     {
       "source": "Akiya Bank",
@@ -1471,20 +1417,6 @@
       "build_year": "",
       "price_en": "¥8,800,000  (~$58,666 USD)",
       "size_en": "194 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Isoyama 2-chome, Suzuka City, Mie Prefecture",
-      "price": "1,800万円",
-      "size": "469.41 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-39104/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-9c828a7bdcf42ea1583ced1665d11f9b89c5c378.jpg",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥18,000,000  (~$120,000 USD)",
-      "size_en": "469 m² land",
       "date_found": "2026-03-06"
     },
     {
@@ -1751,20 +1683,6 @@
       "build_year": "",
       "price_en": "¥9,500,000  (~$63,333 USD)",
       "size_en": "250 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusancho Furuichi",
-      "price": "1,560万円",
-      "size": "156.96 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-36451/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-77570cdbe7810bb74ef63267073a93c3595d01e9.jpg",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥15,600,000  (~$104,000 USD)",
-      "size_en": "157 m² land",
       "date_found": "2026-03-06"
     },
     {
