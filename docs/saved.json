@@ -325,6 +325,22 @@
       "date_found": "2026-03-03",
       "lat": 34.74833,
       "lng": 136.450146
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11SLDK",
+      "address": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11",
+      "price": "1,198万円",
+      "size": "371.03m² / 193.15m²",
+      "url": "https://www.athome.co.jp/kodate/1190419919/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/nNg4rkp0siC2O8gQkY4Rhw==",
+      "area": "Tsu, Mie",
+      "build_year": "1978",
+      "price_en": "¥11,980,000  (~$79,866 USD)",
+      "size_en": "193 m² building  /  371 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.679294,
+      "lng": 136.510357
     }
   ],
   "notes": {
@@ -366,6 +382,7 @@
     "https://www.homes.co.jp/kodate/b-1319090000007": "No.     Tandem cover parking spaces. No room for garage",
     "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302": "Kuma house.",
     "https://www.athome.co.jp/kodate/6989274148": "Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit",
-    "https://www.athome.co.jp/kodate/1190419919": "BIG house with garage workshop tight nice neiborhood close to Boat race Tsu"
+    "https://www.athome.co.jp/kodate/1190419919": "BIG house with garage workshop tight nice neiborhood close to Boat race Tsu",
+    "https://www.athome.co.jp/kodate/6980469810": "2 mins from beach maybe space for garage"
   }
 }
