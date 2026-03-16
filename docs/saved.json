@@ -280,22 +280,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Inabacho (Hisui Station) 2-story 11LDK",
-      "address": "Tsu City Inabacho (Hisui Station) 2-story 11LDK",
-      "price": "880万円",
-      "size": "571.90m² / 193.85m²",
-      "url": "https://www.athome.co.jp/kodate/1003637698/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/1jJ7ix1BKS-hP5ZbF64opg==",
-      "area": "Tsu, Mie",
-      "build_year": "1990",
-      "price_en": "¥8,800,000  (~$58,666 USD)",
-      "size_en": "194 m² building  /  572 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.69356,
-      "lng": 136.411577
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "address": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "price": "980万円",
@@ -357,6 +341,22 @@
       "date_found": "2026-03-03",
       "lat": 34.760023,
       "lng": 136.533219
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Inabacho (Hisui Station) 2-story 11LDK",
+      "address": "Tsu City Inabacho (Hisui Station) 2-story 11LDK",
+      "price": "880万円",
+      "size": "571.90m² / 193.85m²",
+      "url": "https://www.athome.co.jp/kodate/1003637698/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/1jJ7ix1BKS-hP5ZbF64opg==",
+      "area": "Tsu, Mie",
+      "build_year": "1990",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "size_en": "194 m² building  /  572 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.69356,
+      "lng": 136.411577
     }
   ],
   "notes": {
