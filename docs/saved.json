@@ -415,5 +415,10 @@
     "https://www.athome.co.jp/kodate/6968511943": "WAY Southwest of Tsu",
     "https://www.athome.co.jp/kodate/6979578415": "NO. 3k south of boat race Tsu. To far away and 100m from MEGA solar field."
   },
-  "manualCoords": {}
+  "manualCoords": {
+    "https://www.homes.co.jp/akiyabank/b-44661": {
+      "lat": 34.868639985750974,
+      "lng": 136.5916818380356
+    }
+  }
 }
