@@ -309,6 +309,22 @@
       "date_found": "2026-03-03",
       "lat": 34.692214,
       "lng": 136.496756
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Anomachi Renbu (Ichimida Station) 2-story 8K",
+      "address": "Tsu City Anomachi Renbu (Ichimida Station) 2-story 8K",
+      "price": "500万円",
+      "size": "734.89m² / 161.31m²",
+      "url": "https://www.athome.co.jp/kodate/6989274148/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/-oBw7xIyORMX0L9Ydx5fTw==",
+      "area": "Tsu, Mie",
+      "build_year": "1927",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "161 m² building  /  735 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.74833,
+      "lng": 136.450146
     }
   ],
   "notes": {
@@ -349,6 +365,7 @@
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045": "VERY BIG property. don't know boundries. close to water. CONTACT REALTOR",
     "https://www.homes.co.jp/kodate/b-1319090000007": "No.     Tandem cover parking spaces. No room for garage",
     "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302": "Kuma house.",
-    "https://www.athome.co.jp/kodate/6989274148": "Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit"
+    "https://www.athome.co.jp/kodate/6989274148": "Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit",
+    "https://www.athome.co.jp/kodate/1190419919": "BIG house with garage workshop tight nice neiborhood close to Boat race Tsu"
   }
 }
