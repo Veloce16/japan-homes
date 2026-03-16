@@ -128,6 +128,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .map-popup-gmaps{display:block;background:#4285F4;color:#fff;text-align:center;padding:5px 12px;
   border-radius:6px;text-decoration:none;font-size:12px;font-weight:700;margin-top:5px}
 .map-popup-gmaps:hover{background:#2b6fd9}
+.btn-map-pin{background:#1a1a4e;color:#fff;border:none;border-radius:6px;padding:8px 10px;
+  cursor:pointer;font-size:12px;font-weight:700;white-space:nowrap;flex-shrink:0}
+.btn-map-pin:hover{background:#2a2a7e}
+.btn-map-pin.located{background:#5a4000;color:#FFD700;border:1px solid #FFD700}
+.btn-map-pin.located:hover{background:#3d2b00}
 .btn-map{background:#1a1a4e;color:#fff;border:none;border-radius:6px;padding:8px 16px;
   font-size:13px;font-weight:600;cursor:pointer;margin-left:8px}
 .btn-map:hover{background:#2a2a7e}
@@ -500,6 +505,12 @@ let filterSources = [];  // [] = all
 let filterCities  = [];  // [] = all
 let filterView    = 'all';
 
+// Manual pin placement — stored in localStorage + synced to saved.json
+let manualCoords  = JSON.parse(localStorage.getItem('jhs_manual_coords') || '{}');
+// Map state
+let markersByPropId = {};   // propId → Leaflet marker, rebuilt each populateMap()
+let pendingFlyTo    = null; // propId to fly to after map finishes loading
+
 const CITY_ORDER  = ['Gotemba, Shizuoka','Oyama, Shizuoka','Suzuka, Mie','Tsu, Mie'];
 const CITY_LABELS = {
   'Gotemba, Shizuoka':'Gotemba — Shizuoka Prefecture',
@@ -763,6 +774,12 @@ function cardHTML(l, cutoff) {
   // Source label
   const srcLabel = escHtml(l.source || '') + ' · ' + escHtml(l.area || '');
 
+  // Map button — gold "📌 Pinned" if manually located, plain "📍 Map" otherwise
+  const hasManualPin = !!manualCoords[id];
+  const mapBtnClass  = 'btn-map-pin' + (hasManualPin ? ' located' : '');
+  const mapBtnLabel  = hasManualPin ? '📌 Pinned' : '📍 Map';
+  const mapBtnTitle  = hasManualPin ? 'Manually located — click to view on map' : 'View on map';
+
   // Photo
   const photoHtml = l.image
     ? `<img src="${escHtml(l.image)}" alt="${title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'card-photo-none\\'>🏠</div>'">`
@@ -795,6 +812,8 @@ function cardHTML(l, cutoff) {
     <div class="card-footer">
       <a class="btn-view" href="${escHtml(l.url||'#')}" target="_blank" rel="noopener"
          onclick="markViewed('${escAttr(id)}',this)">VIEW LISTING</a>
+      <button class="${mapBtnClass}" title="${mapBtnTitle}"
+              onclick="openOnMap('${escAttr(id)}')">${mapBtnLabel}</button>
       <button class="btn-fav${isSaved?' active':''}"
               onclick="toggleSave('${escAttr(id)}',this)">
         ${isSaved ? '★ SAVED' : '☆ SAVE'}
@@ -904,10 +923,16 @@ async function pullAndMergeRemote() {
     for (const [id, note] of Object.entries(remoteNotes)) {
       if (note && !notesMap[id]) { notesMap[id] = note; changed = true; }
     }
+    // Merge remote manual coords — remote fills gaps, local takes precedence
+    const remoteManual = sd.manualCoords || {};
+    for (const [id, mc] of Object.entries(remoteManual)) {
+      if (mc && !manualCoords[id]) { manualCoords[id] = mc; changed = true; }
+    }
     if (changed) {
       localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
       localStorage.setItem('jhs_saved_data', JSON.stringify(savedData));
       localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
+      localStorage.setItem('jhs_manual_coords', JSON.stringify(manualCoords));
       updateStats();
       renderAll();
     }
@@ -919,7 +944,7 @@ async function writeSavedToGitHub() {
   const token = getGithubToken();
   if (!token) return; // no token set — just save locally, no sync
   try {
-    const content = JSON.stringify({ saved: Object.values(savedData), notes: notesMap }, null, 2);
+    const content = JSON.stringify({ saved: Object.values(savedData), notes: notesMap, manualCoords }, null, 2);
     const b64 = btoa(unescape(encodeURIComponent(content)));
     const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${SAVED_PATH}`;
     const headers = { Authorization: `token ${token}`, 'Content-Type': 'application/json' };
@@ -1076,6 +1101,34 @@ function makeMarkerIcon(color, exact = false, saved = false) {
   });
 }
 
+// Open map and fly to a specific property pin, opening its popup.
+// Called from card "📍 Map" buttons.
+function openOnMap(id) {
+  pendingFlyTo = id;
+  if (!mapVisible) {
+    // Open map — initMap() → populateMap() will handle the flyTo at the end
+    mapVisible = true;
+    const container = document.getElementById('map-container');
+    const btn = document.getElementById('mapToggleBtn');
+    container.classList.add('visible');
+    btn.classList.add('active');
+    btn.textContent = '✕ Close Map';
+    initMap();
+  } else {
+    // Map already open — fly immediately if marker is already placed
+    const m = markersByPropId[id];
+    if (m) {
+      mapInstance.flyTo(m.getLatLng(), 16, { duration: 1.0 });
+      setTimeout(() => m.openPopup(), 1100);
+      pendingFlyTo = null;
+    } else {
+      // Markers may be mid-load (geocoding) — populateMap end-check will handle it
+    }
+  }
+  // Scroll map into view
+  document.getElementById('map-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function toggleMapView() {
   mapVisible = !mapVisible;
   const container = document.getElementById('map-container');
@@ -1137,6 +1190,33 @@ function initMap() {
   populateMap();
 }
 
+// Build popup HTML — shared by initial render and after manual drag
+function buildPopupHTML(l, coords, isExact, usedFallback, isManual) {
+  const price = escHtml(l.price_en || l.price || '—');
+  const title = escHtml((l.title_en || l.title || 'Property').substring(0, 55));
+  const age   = l.build_year ? `Built ${l.build_year} · ${new Date().getFullYear() - parseInt(l.build_year)} yrs old` : '';
+  const imgHtml = l.image
+    ? `<img src="${escHtml(l.image)}" class="map-popup-img" onerror="this.style.display='none'">`
+    : '';
+  const locNote = isManual
+    ? '<div style="font-size:10px;color:#b8860b;margin-bottom:4px">📌 Manually placed — drag to adjust</div>'
+    : isExact
+      ? '<div style="font-size:10px;color:#b8860b;margin-bottom:4px">📍 Exact location</div>'
+      : usedFallback
+        ? '<div style="font-size:10px;color:#e67e22;margin-bottom:4px">📍 Approximate — drag pin to set exact location</div>'
+        : '<div style="font-size:10px;color:#888;margin-bottom:4px">📍 Geocoded — drag pin to adjust</div>';
+  const mapsLink = `<a href="https://www.google.com/maps?q=${coords.lat},${coords.lng}" target="_blank" class="map-popup-gmaps">📍 Open in Google Maps</a>`;
+  return `
+    ${imgHtml}
+    ${locNote}
+    <div class="map-popup-title">${title}</div>
+    <div class="map-popup-price">${price}</div>
+    <div class="map-popup-meta">${escHtml(l.area || '')} · ${escHtml(l.source || '')}${age ? '<br>' + age : ''}</div>
+    <a href="${escHtml(l.url || '#')}" target="_blank" class="map-popup-btn">View Listing →</a>
+    ${mapsLink}
+  `;
+}
+
 async function populateMap() {
   // Get visible listings based on current filters
   const today = new Date();
@@ -1150,13 +1230,15 @@ async function populateMap() {
   const status = document.getElementById('mapStatus');
   status.textContent = `Locating ${listings.length} properties…`;
 
-  let placed = 0, exactScraper = 0, cityFallback = 0, fromCache = 0;
+  markersByPropId = {}; // reset for this render
+  let placed = 0, exactScraper = 0, cityFallback = 0, fromCache = 0, manualCount = 0;
   // Clear bad cached entries from previous run
   localStorage.removeItem('jhs_geocache');
   geocodeCache = {};
 
   for (let i = 0; i < listings.length; i++) {
     const l = listings[i];
+    const id      = propId(l);
     const area    = l.area || '';
     const addrJa  = (l.address || '').trim();   // original Japanese — most accurate
     const addrEn  = (l.address_en || '').trim(); // translated English — fallback
@@ -1164,9 +1246,17 @@ async function populateMap() {
     let coords = null;
     let usedFallback = false;
     let isExact = false;
+    let isManual = false;
 
-    // ── Priority 0: Exact coordinates from scraper (AtHome detail page extraction)
-    if (typeof l.lat === 'number' && typeof l.lng === 'number') {
+    // ── Priority 0: Manually placed pin (user dragged to exact location)
+    if (manualCoords[id]) {
+      coords = { lat: manualCoords[id].lat, lng: manualCoords[id].lng };
+      isExact = true;
+      isManual = true;
+      manualCount++;
+    }
+    // ── Priority 1: Exact coordinates from scraper (AtHome detail page extraction)
+    else if (typeof l.lat === 'number' && typeof l.lng === 'number') {
       coords = { lat: l.lat, lng: l.lng };
       isExact = true;
       exactScraper++;
@@ -1227,43 +1317,47 @@ async function populateMap() {
     if (!coords) continue;
     if (usedFallback) cityFallback++;
 
-    // Bigger jitter for city-center fallbacks so pins spread out and don't all stack
-    // No jitter for exact scraper coordinates — those are precise
-    const spread = isExact ? 0 : (usedFallback ? 0.025 : 0.003);
+    // No jitter for exact/manual coords; small jitter for geocoded; big jitter for city fallback
+    const spread = (isExact || isManual) ? 0 : (usedFallback ? 0.025 : 0.003);
     const jitter = () => spread > 0 ? (Math.random() - 0.5) * spread * 2 : 0;
-    const isSavedPin = savedIds.has(propId(l));
+    const isSavedPin = savedIds.has(id);
     const marker = L.marker([coords.lat + jitter(), coords.lng + jitter()], {
-      icon: makeMarkerIcon(cityColor(l.area || ''), isExact, isSavedPin)
+      icon: makeMarkerIcon(cityColor(l.area || ''), isExact || isManual, isSavedPin),
+      draggable: true,   // all pins are draggable — drag to set/correct location
     }).addTo(mapInstance);
 
-    const price = escHtml(l.price_en || l.price || '—');
-    const title = escHtml((l.title_en || l.title || 'Property').substring(0, 55));
-    const age   = l.build_year ? `Built ${l.build_year} · ${new Date().getFullYear() - parseInt(l.build_year)} yrs old` : '';
-    const imgHtml = l.image
-      ? `<img src="${escHtml(l.image)}" class="map-popup-img" onerror="this.style.display='none'">`
-      : '';
-    const locNote = isExact
-      ? '<div style="font-size:10px;color:#b8860b;margin-bottom:4px">📍 Exact location</div>'
-      : usedFallback
-        ? '<div style="font-size:10px;color:#e67e22;margin-bottom:4px">📍 Approximate location</div>'
-        : '';
+    marker.bindPopup(buildPopupHTML(l, coords, isExact, usedFallback, isManual), { maxWidth: 260 });
 
-    marker.bindPopup(`
-      ${imgHtml}
-      ${locNote}
-      <div class="map-popup-title">${title}</div>
-      <div class="map-popup-price">${price}</div>
-      <div class="map-popup-meta">${escHtml(l.area || '')} · ${escHtml(l.source || '')}${age ? '<br>' + age : ''}</div>
-      <a href="${escHtml(l.url || '#')}" target="_blank" class="map-popup-btn">View Listing →</a>
-      ${isExact ? `<a href="https://www.google.com/maps?q=${coords.lat},${coords.lng}" target="_blank" class="map-popup-gmaps">📍 Open in Google Maps</a>` : ''}
-    `, { maxWidth: 260 });
+    // ── Drag to set exact location ──────────────────────────────
+    marker.on('dragend', function(e) {
+      const ll = e.target.getLatLng();
+      manualCoords[id] = { lat: ll.lat, lng: ll.lng };
+      localStorage.setItem('jhs_manual_coords', JSON.stringify(manualCoords));
+      // Upgrade icon to gold ring
+      e.target.setIcon(makeMarkerIcon(cityColor(l.area || ''), true, isSavedPin));
+      // Update popup to show "Manually placed"
+      e.target.getPopup().setContent(buildPopupHTML(l, ll, false, false, true));
+      e.target.openPopup();
+      // Sync to GitHub + refresh card buttons
+      writeSavedToGitHub();
+      renderAll();
+    });
 
+    markersByPropId[id] = marker;
     placed++;
     status.textContent = `Mapped ${placed} of ${listings.length}…`;
   }
 
-  const geocodedCount = placed - cityFallback - exactScraper;
-  status.textContent = `${placed} properties mapped · ${exactScraper} exact (gold ring) · ${geocodedCount} geocoded · ${cityFallback} approximate · ${fromCache} from cache`;
+  const geocodedCount = placed - cityFallback - exactScraper - manualCount;
+  status.textContent = `${placed} mapped · ${exactScraper} exact · ${manualCount} manually placed · ${geocodedCount} geocoded · ${cityFallback} approximate`;
+
+  // ── Fly to pending card → map click ────────────────────────────
+  if (pendingFlyTo && markersByPropId[pendingFlyTo]) {
+    const m = markersByPropId[pendingFlyTo];
+    mapInstance.flyTo(m.getLatLng(), 16, { duration: 1.0 });
+    setTimeout(() => m.openPopup(), 1100);
+    pendingFlyTo = null;
+  }
 }
 
 // ══════════════════════════════════════════════════════════════
