@@ -774,11 +774,15 @@ function cardHTML(l, cutoff) {
   // Source label
   const srcLabel = escHtml(l.source || '') + ' · ' + escHtml(l.area || '');
 
-  // Map button — gold "📌 Pinned" if manually located, plain "📍 Map" otherwise
-  const hasManualPin = !!manualCoords[id];
-  const mapBtnClass  = 'btn-map-pin' + (hasManualPin ? ' located' : '');
-  const mapBtnLabel  = hasManualPin ? '📌 Pinned' : '📍 Map';
-  const mapBtnTitle  = hasManualPin ? 'Manually located — click to view on map' : 'View on map';
+  // Map button — gold ring if confirmed location (exact scraper coords or manually placed)
+  const hasManualPin  = !!manualCoords[id];
+  const hasExactCoord = typeof l.lat === 'number' && typeof l.lng === 'number';
+  const isConfirmed   = hasManualPin || hasExactCoord;
+  const mapBtnClass   = 'btn-map-pin' + (isConfirmed ? ' located' : '');
+  const mapBtnLabel   = hasManualPin ? '📌 Pinned' : isConfirmed ? '📍 Located' : '📍 Map';
+  const mapBtnTitle   = hasManualPin ? 'Manually located — click to view on map'
+                      : isConfirmed  ? 'Exact location confirmed — click to view on map'
+                      :                'View on map (approximate location)';
 
   // Photo
   const photoHtml = l.image
