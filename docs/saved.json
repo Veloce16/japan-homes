@@ -448,5 +448,10 @@
     "https://www.athome.co.jp/kodate/6979578415": "NO. 3k south of boat race Tsu. To far away and 100m from MEGA solar field.",
     "https://www.athome.co.jp/kodate/6986017757": "No. Big property. Trash buildings and businesses next door. Looks like 2nd house on property recently demolished."
   },
-  "manualCoords": {}
+  "manualCoords": {
+    "https://www.homes.co.jp/akiyabank/b-44661": {
+      "lat": 34.83797029516083,
+      "lng": 136.53018283187828
+    }
+  }
 }
