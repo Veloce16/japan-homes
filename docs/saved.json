@@ -417,6 +417,22 @@
       "date_found": "2026-03-03",
       "lat": 34.757805,
       "lng": 136.526934
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
+      "address": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
+      "price": "498万円",
+      "size": "364.33m² / 179.18m²",
+      "url": "https://www.athome.co.jp/kodate/6984577883/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/JF486J2hguQZ_Jl8d6cv4g==",
+      "area": "Tsu, Mie",
+      "build_year": "1971",
+      "price_en": "¥4,980,000  (~$33,200 USD)",
+      "size_en": "179 m² building  /  364 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.697399,
+      "lng": 136.516441
     }
   ],
   "notes": {
