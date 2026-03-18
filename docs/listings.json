@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-17T20:24:55",
+  "generated": "2026-03-18T08:24:59",
   "listings": [
     {
       "source": "AtHome",
@@ -163,7 +163,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -288,22 +288,6 @@
       "date_found": "2026-03-03",
       "lat": 34.742753,
       "lng": 136.410614
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City, Sakakibara-cho, one-story building, 4DK",
-      "address": "Tsu City, Sakakibara-cho, one-story building, 4DK",
-      "price": "430万円",
-      "size": "943.95m² / 121.52m²",
-      "url": "https://www.athome.co.jp/kodate/6989948815/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/jy3QgfyPGWAvvisNPiKEAA==",
-      "area": "Tsu, Mie",
-      "build_year": "1960",
-      "price_en": "¥4,300,000  (~$28,666 USD)",
-      "size_en": "122 m² building  /  944 m² land",
-      "date_found": "2026-03-16",
-      "lat": 34.707678,
-      "lng": 136.364275
     },
     {
       "source": "AtHome",
@@ -1085,8 +1069,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1194,6 +1178,22 @@
       "date_found": "2026-03-08",
       "lat": 34.925589,
       "lng": 136.453997
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
+      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
+      "price": "1,400万円",
+      "size": "219.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "219 m² land",
+      "date_found": "2026-03-18",
+      "lat": 34.893343,
+      "lng": 136.624456
     },
     {
       "source": "Lifull Homes",
@@ -1351,7 +1351,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1463,7 +1463,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1505,7 +1505,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
@@ -1604,7 +1604,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
+      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
