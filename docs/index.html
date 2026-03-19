@@ -1359,6 +1359,20 @@ async function populateMap() {
   let listings = allListings.filter(l => {
     if (filterSources.length && !filterSources.includes(l.source)) return false;
     if (filterCities.length  && !filterCities.includes(l.area))   return false;
+    if (filterViewTypes.length > 0) {
+      const id2         = propId(l);
+      const isDisliked2 = dislikedIds.has(id2);
+      const isSaved2    = savedIds.has(id2);
+      const isNew2      = l.date_found && new Date(l.date_found) >= cutoff;
+      const passes = filterViewTypes.some(t => {
+        if (t === 'regular')  return !isDisliked2;
+        if (t === 'new7')     return isNew2 && !isDisliked2;
+        if (t === 'saved')    return isSaved2;
+        if (t === 'disliked') return isDisliked2;
+        return false;
+      });
+      if (!passes) return false;
+    }
     return true;
   });
 
