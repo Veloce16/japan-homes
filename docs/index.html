@@ -125,6 +125,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .map-popup-btn{display:block;background:#8b1a1a;color:#fff;text-align:center;padding:6px 12px;
   border-radius:6px;text-decoration:none;font-size:12px;font-weight:700}
 .map-popup-btn:hover{background:#6a1414}
+.map-popup-dash{display:block;width:100%;background:#f0ece6;color:#1a0a0a;border:1px solid #ccc;
+  text-align:center;padding:5px 12px;border-radius:5px;margin-top:5px;font-size:12px;
+  font-weight:700;cursor:pointer}
+.map-popup-dash:hover{background:#e0d8ce}
 .map-popup-gmaps{display:block;background:#4285F4;color:#fff;text-align:center;padding:5px 12px;
   border-radius:6px;text-decoration:none;font-size:12px;font-weight:700;margin-top:5px}
 .map-popup-gmaps:hover{background:#2b6fd9}
@@ -1194,6 +1198,18 @@ function initMap() {
   populateMap();
 }
 
+// Scroll dashboard back to a specific card and briefly highlight it
+function goToCard(cardEncId) {
+  if (mapInstance) mapInstance.closePopup();
+  const cardEl = document.getElementById('card-' + cardEncId);
+  if (cardEl) {
+    cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    cardEl.style.outline = '3px solid #FFD700';
+    cardEl.style.transition = 'outline 0.3s';
+    setTimeout(() => { cardEl.style.outline = ''; }, 1800);
+  }
+}
+
 // Build popup HTML — shared by initial render and after manual drag
 function buildPopupHTML(l, coords, isExact, usedFallback, isManual) {
   const price = escHtml(l.price_en || l.price || '—');
@@ -1210,6 +1226,7 @@ function buildPopupHTML(l, coords, isExact, usedFallback, isManual) {
         ? '<div style="font-size:10px;color:#e67e22;margin-bottom:4px">📍 Approximate — drag pin to set exact location</div>'
         : '<div style="font-size:10px;color:#888;margin-bottom:4px">📍 Geocoded — drag pin to adjust</div>';
   const mapsLink = `<a href="https://www.google.com/maps?q=${coords.lat},${coords.lng}" target="_blank" class="map-popup-gmaps">📍 Open in Google Maps</a>`;
+  const cardEncId = btoa(propId(l)).replace(/[^a-z0-9]/gi,'').slice(0,16);
   return `
     ${imgHtml}
     ${locNote}
@@ -1218,6 +1235,7 @@ function buildPopupHTML(l, coords, isExact, usedFallback, isManual) {
     <div class="map-popup-meta">${escHtml(l.area || '')} · ${escHtml(l.source || '')}${age ? '<br>' + age : ''}</div>
     <a href="${escHtml(l.url || '#')}" target="_blank" class="map-popup-btn">View Listing →</a>
     ${mapsLink}
+    <button class="map-popup-dash" onclick="goToCard('${cardEncId}')">← Back to Dashboard Card</button>
   `;
 }
 
