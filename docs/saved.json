@@ -433,6 +433,20 @@
       "date_found": "2026-03-03",
       "lat": 34.697399,
       "lng": 136.516441
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Takanoo Town",
+      "price": "700万円",
+      "size": "",
+      "url": "https://www.homes.co.jp/akiyabank/b-46378/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-aab50c4867c42b0e5028ff7e3f0494d920030d7a.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥7,000,000  (~$46,666 USD)",
+      "size_en": "",
+      "date_found": "2026-03-09"
     }
   ],
   "notes": {
@@ -569,8 +583,8 @@
       "lng": 136.54206633567813
     },
     "https://www.homes.co.jp/akiyabank/b-46378": {
-      "lat": 34.79660733149717,
-      "lng": 136.46427154541018
+      "lat": 34.78772603272144,
+      "lng": 136.46910488605502
     }
   },
   "disliked": [
