@@ -447,6 +447,20 @@
       "price_en": "¥7,000,000  (~$46,666 USD)",
       "size_en": "",
       "date_found": "2026-03-09"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Hakusan-cho Mikeno",
+      "price": "500万円",
+      "size": "571.96 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-44182/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-15be7e710aa00355ea52fc31e19fd53b7729f5c3.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "572 m² land",
+      "date_found": "2026-03-06"
     }
   ],
   "notes": {
@@ -520,7 +534,7 @@
     "https://www.homes.co.jp/akiyabank/b-41278": "No. 61/113 got thru filters",
     "https://www.homes.co.jp/akiyabank/b-37269": "No. 165/290 got thru filters",
     "https://www.homes.co.jp/akiyabank/b-42583": "NO. Tinny house WAAAY west",
-    "https://www.homes.co.jp/akiyabank/b-36517": "Contact city. don't know where it is at. not enough pictures ",
+    "https://www.homes.co.jp/akiyabank/b-36517": "not enough pictures ",
     "https://www.athome.co.jp/kodate/1192693717": "Nice house, renovated, 6 car parking + 1 car garage.",
     "https://www.athome.co.jp/kodate/1028899093": "No. Trashy area 25yds to train tracks",
     "https://www.athome.co.jp/kodate/6984577883": "there are no interior photos. only sketch of floor plan. 2 min walk to beach. Gotemba coast.",
@@ -533,7 +547,8 @@
     "https://www.homes.co.jp/akiyabank/b-46560": "NO. To small. got thru filters",
     "https://www.homes.co.jp/akiyabank/b-46440": "NO. To small. got thru filters",
     "https://www.homes.co.jp/akiyabank/b-46378": "Huge house and buildings. don't know how big lot is.",
-    "https://www.homes.co.jp/akiyabank/b-46406": "NO. Rental house"
+    "https://www.homes.co.jp/akiyabank/b-46406": "NO. Rental house",
+    "https://www.homes.co.jp/akiyabank/b-44182": "Huge. can't find 368/1,571"
   },
   "manualCoords": {
     "https://www.homes.co.jp/akiyabank/b-44661": {
