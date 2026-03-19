@@ -63,12 +63,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .filter-group{display:flex;flex-direction:column;gap:3px}
 .filter-label{font-size:10px;font-weight:700;color:rgba(255,255,255,.55);
   text-transform:uppercase;letter-spacing:.7px;padding-left:2px}
-/* single-select view dropdown items */
-.ms-view-opt{display:block;width:100%;text-align:left;background:none;border:none;
-  padding:7px 14px;color:#fff;font-size:13px;cursor:pointer;transition:background .12s;
-  white-space:nowrap}
-.ms-view-opt:hover{background:rgba(255,255,255,.1)}
-.ms-view-opt.ms-view-active{color:#d4a017;font-weight:700}
 
 /* ── Stats bar ───────────────────────────────────────────────── */
 .stats-bar{
@@ -332,13 +326,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <span class="arrow">▼</span>
       </button>
       <div class="ms-drop" id="dropView">
-        <button class="ms-view-opt" data-val="show_all" onclick="setViewFilter(this)">Show All</button>
-        <button class="ms-view-opt ms-view-active" data-val="all" onclick="setViewFilter(this)">All Regular</button>
+        <label class="ms-all"><input type="checkbox" id="chkViewAll" onchange="toggleAllViewTypes(this)"> Show All</label>
         <div class="ms-divider"></div>
-        <button class="ms-view-opt" data-val="new7" onclick="setViewFilter(this)">New (Last 7 Days)</button>
-        <button class="ms-view-opt" data-val="saved" onclick="setViewFilter(this)">Favorites</button>
+        <label><input type="checkbox" class="chk-view" value="regular" checked onchange="updateViewFilter()"> All Regular</label>
+        <label><input type="checkbox" class="chk-view" value="new7"    onchange="updateViewFilter()"> New (Last 7 Days)</label>
+        <label><input type="checkbox" class="chk-view" value="saved"   onchange="updateViewFilter()"> Favorites</label>
         <div class="ms-divider"></div>
-        <button class="ms-view-opt" data-val="disliked" onclick="setViewFilter(this)">Disliked 👎</button>
+        <label><input type="checkbox" class="chk-view" value="disliked" onchange="updateViewFilter()"> Disliked 👎</label>
       </div>
     </div>
   </div>
@@ -546,9 +540,9 @@ let listingsById  = {};          // id → listing (all known, including ghosts)
 let notesMap      = JSON.parse(localStorage.getItem('jhs_notes')  || '{}');
 let gitCfg        = JSON.parse(localStorage.getItem('jhs_github') || '{}');
 
-let filterSources = [];  // [] = all
-let filterCities  = [];  // [] = all
-let filterView    = 'all';
+let filterSources    = [];           // [] = all
+let filterCities     = [];           // [] = all
+let filterViewTypes  = ['regular'];  // checked view types; ['regular'] = default (hides disliked)
 
 // Manual pin placement — stored in localStorage + synced to saved.json
 let manualCoords  = JSON.parse(localStorage.getItem('jhs_manual_coords') || '{}');
@@ -707,24 +701,27 @@ function renderAll() {
   let visible = allListings.filter(l => {
     if (filterSources.length && !filterSources.includes(l.source)) return false;
     if (filterCities.length  && !filterCities.includes(l.area))   return false;
-    const isDisliked = dislikedIds.has(propId(l));
-    if (filterView === 'disliked') {
-      if (!isDisliked) return false;           // show only disliked
-    } else if (filterView !== 'show_all') {
-      if (isDisliked) return false;            // hide disliked in all regular views
-    }
-    if (filterView === 'new7') {
-      if (!l.date_found || new Date(l.date_found) < cutoff) return false;
-    }
-    if (filterView === 'saved') {
-      if (!savedIds.has(propId(l))) return false;
+    // Property Types: listing passes if it matches ANY checked type (OR logic)
+    if (filterViewTypes.length > 0) {
+      const id2     = propId(l);
+      const isDisliked2 = dislikedIds.has(id2);
+      const isSaved2    = savedIds.has(id2);
+      const isNew2      = l.date_found && new Date(l.date_found) >= cutoff;
+      const passes = filterViewTypes.some(t => {
+        if (t === 'regular')  return !isDisliked2;
+        if (t === 'new7')     return isNew2 && !isDisliked2;
+        if (t === 'saved')    return isSaved2;
+        if (t === 'disliked') return isDisliked2;
+        return false;
+      });
+      if (!passes) return false;
     }
     return true;
   });
 
   // In saved view, also show ghost listings (saved but no longer in feed)
   let ghosts = [];
-  if (filterView === 'saved') {
+  if (filterViewTypes.includes('saved')) {
     const liveIds = new Set(allListings.map(l => propId(l)));
     ghosts = Object.values(savedData)
       .filter(l => !liveIds.has(propId(l)))
@@ -732,7 +729,8 @@ function renderAll() {
   }
 
   if (!visible.length && !ghosts.length) {
-    const noResultsMsg = filterView === 'disliked'
+    const onlyDisliked = filterViewTypes.length === 1 && filterViewTypes[0] === 'disliked';
+    const noResultsMsg = onlyDisliked
       ? { icon: '👎', h: 'No disliked listings', p: 'Click 👎 Dislike on any card to add it here.' }
       : { icon: '🔍', h: 'No listings match your filters', p: 'Try adjusting the city, source, or view filters above.' };
     main.innerHTML = `
@@ -1137,16 +1135,22 @@ function updateCityFilter() {
   renderAll();
 }
 
-function setViewFilter(btn) {
-  const val = btn.dataset.val;
-  filterView = val;
-  // Update active highlight
-  document.querySelectorAll('#dropView .ms-view-opt').forEach(b => b.classList.remove('ms-view-active'));
-  btn.classList.add('ms-view-active');
-  // Update button label
-  document.getElementById('lblView').textContent = btn.textContent.trim();
-  // Close dropdown
-  document.getElementById('dropView').classList.remove('open');
+function toggleAllViewTypes(master) {
+  document.querySelectorAll('.chk-view').forEach(c => c.checked = master.checked);
+  updateViewFilter();
+}
+function updateViewFilter() {
+  const all     = document.querySelectorAll('.chk-view');
+  const checked = [...all].filter(c => c.checked).map(c => c.value);
+  const allChecked = checked.length === all.length;
+  document.getElementById('chkViewAll').checked = allChecked;
+  const labels = { regular:'All Regular', new7:'New (7d)', saved:'Favorites', disliked:'Disliked 👎' };
+  document.getElementById('lblView').textContent =
+    allChecked          ? 'Show All' :
+    checked.length === 0 ? 'None' :
+    checked.length === 1 ? labels[checked[0]] :
+    checked.map(v => labels[v]).join(', ');
+  filterViewTypes = checked;
   renderAll();
 }
 
