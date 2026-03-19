@@ -28,22 +28,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
-      "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
-      "price": "1,500万円",
-      "size": "761.66m² / 174.90m²",
-      "url": "https://www.athome.co.jp/kodate/6986017757/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/K37UtBvNqKz5QRIVuOzZHg==",
-      "area": "Tsu, Mie",
-      "build_year": "1979",
-      "price_en": "¥15,000,000  (~$100,000 USD)",
-      "size_en": "175 m² building  /  762 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.757805,
-      "lng": 136.526934
-    },
-    {
-      "source": "AtHome",
       "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
       "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
       "price": "900万円",
@@ -357,6 +341,98 @@
       "date_found": "2026-03-03",
       "lat": 34.69356,
       "lng": 136.411577
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Nishi-Shonai Town",
+      "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
+      "price": "880万円",
+      "size": "690.9m² / 129.09m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319110000021/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131911%2Fsale%2F21%2F2%2F2%2Fijsb.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "1993",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "size_en": "129 m² building  /  691 m² land",
+      "date_found": "2026-03-08",
+      "lat": 34.925589,
+      "lng": 136.453997
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Nishi-Shonai-cho (Kasato Station) One-story building 5DK",
+      "address": "Suzuka City Nishi-Shonai-cho (Kasato Station) One-story building 5DK",
+      "price": "880万円",
+      "size": "690.90m² / 129.09m²",
+      "url": "https://www.athome.co.jp/kodate/1037353798/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/UP5z2jcGTe0E0XEycTQZmA==",
+      "area": "Suzuka, Mie",
+      "build_year": "1994",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "size_en": "129 m² building  /  691 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.89033,
+      "lng": 136.530017
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Suzuka City Chohoji Town",
+      "price": "300万円",
+      "size": "852.89 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-34948/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-13fd7d6e727674686c1fb363ae666bec0220f92a.jpg",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥3,000,000  (~$20,000 USD)",
+      "size_en": "853 m² land",
+      "date_found": "2026-03-06"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Toyogaoka 3-chome, Tsu City, Mie Prefecture",
+      "price": "900万円",
+      "size": "463.29 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-36517/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-79563f596eb89164f0d7cd3358c7fc44314bcf38.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥9,000,000  (~$60,000 USD)",
+      "size_en": "463 m² land",
+      "date_found": "2026-03-06"
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
+      "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
+      "price": "1,500万円",
+      "size": "761.66m² / 174.90m²",
+      "url": "https://www.athome.co.jp/kodate/6986017757/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/K37UtBvNqKz5QRIVuOzZHg==",
+      "area": "Tsu, Mie",
+      "build_year": "1979",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "175 m² building  /  762 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.757805,
+      "lng": 136.526934
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
+      "address": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
+      "price": "498万円",
+      "size": "364.33m² / 179.18m²",
+      "url": "https://www.athome.co.jp/kodate/6984577883/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/JF486J2hguQZ_Jl8d6cv4g==",
+      "area": "Tsu, Mie",
+      "build_year": "1971",
+      "price_en": "¥4,980,000  (~$33,200 USD)",
+      "size_en": "179 m² building  /  364 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.697399,
+      "lng": 136.516441
     }
   ],
   "notes": {
@@ -365,7 +441,7 @@
     "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "GO SEE PROPERTY #1 Favorite",
-    "https://www.athome.co.jp/kodate/1033902993": "VERY BIG property. don't know boundries. close to water. CONTACT REALTOR",
+    "https://www.athome.co.jp/kodate/1033902993": "GO SEE. VERY BIG property. don't know boundries. close to water. On Suumo also. CONTACT REALTOR",
     "https://www.homes.co.jp/kodate/b-1561470000030": "Expensive but just fully renovated. MAYBE enough space (60% rule) for garage. great wide street",
     "https://www.homes.co.jp/kodate/b-1319120000101": "116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860": "116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n",
@@ -375,7 +451,7 @@
     "https://www.athome.co.jp/kodate/6989336556": "See property when in town.",
     "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there. up against train tracks. weird lot maybe. close to water\n",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
-    "https://www.homes.co.jp/akiyabank/b-43376": "2 houses plus long barn WIDE road. Way north in valley around 5 golf courses. 1993 old style house",
+    "https://www.homes.co.jp/akiyabank/b-43376": "2 houses plus long barn WIDE road. Way north in valley around 5 golf courses. 1993 old style house. Also Liful listed regular site at 8.8 Mil.",
     "https://www.homes.co.jp/akiyabank/b-41714": "98.12/201.11",
     "https://www.homes.co.jp/akiyabank/b-41619": "110/200",
     "https://www.homes.co.jp/akiyabank/b-39242": "114/223",
@@ -386,22 +462,22 @@
     "https://www.athome.co.jp/kodate/1037353798": "Don't have address. There is no map. in same neiborhood somewhere at the north east Shonai valley in between 5 golf courses. ",
     "https://www.athome.co.jp/kodate/6989062801": "south end of the 5 golf course valley pricey. Main house guest house storehouse not big enough for garage but back area big enough for for garage maybe",
     "https://www.athome.co.jp/kodate/6987134731": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
-    "https://www.homes.co.jp/kodate/b-1319110000021": "Don't have address. There is no map. in same neiborhood somewhere at the north east Shonai valley in between 5 golf courses. ",
-    "https://www.athome.co.jp/kodate/1120886005": "Main house size?, guest house, garage maybe 12*24, really NARROW private road. Near Zenia (Ano) Yumi found on map. 24min to track",
+    "https://www.homes.co.jp/kodate/b-1319110000021": "Found Property and pinned location. House listed TWICE once under the Lilful Akiya bank for 9.8 mil and this one.",
+    "https://www.athome.co.jp/kodate/1120886005": "GO SEE. Main house size?, guest house, garage maybe 12*24, really NARROW private road. 24min to track.",
     "https://www.athome.co.jp/kodate/6989681183": "Junk",
-    "https://www.athome.co.jp/kodate/1003637698": "No 193/571 4 buildings great property, great road access. Unfortunately VERY south and West in Tsu. west of Boat race",
-    "https://www.athome.co.jp/kodate/1171153309": "Huge house in Fujikata by Tsu boat race. Found and manually placed",
+    "https://www.athome.co.jp/kodate/1003637698": "No 193/571 4 buildings great property, great road access. NEXT to TEA feild. Unfortunately VERY south and West in Tsu. west of Boat race",
+    "https://www.athome.co.jp/kodate/1171153309": "GO SEE. Huge house in Fujikata by Tsu boat race. Found and manually placed",
     "https://www.athome.co.jp/kodate/1064668493": "Tandem cover parking spaces. No room for garage",
     "https://www.athome.co.jp/kodate/6986688790": "Very close to Tsu boat race. used to have a 2 story metal shop on property. now all rock ",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_75535636": "No.     Tandem cover parking spaces. No room for garage",
-    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045": "VERY BIG property. don't know boundries. close to water. CONTACT REALTOR",
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045": "GO SEE. VERY BIG property. don't know boundries. close to water. Also on Athome. CONTACT REALTOR ",
     "https://www.homes.co.jp/kodate/b-1319090000007": "No.     Tandem cover parking spaces. No room for garage",
     "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302": "Kuma house.",
-    "https://www.athome.co.jp/kodate/6989274148": "Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit. Some dirt floors. Second house also convert to garage.",
-    "https://www.athome.co.jp/kodate/1190419919": "BIG house with garage workshop tight nice neiborhood close to Boat race Tsu",
+    "https://www.athome.co.jp/kodate/6989274148": "Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit. Some dirt floors. Second house also convert to garage. Was another connected house that was demolished. Where is farm lot?",
+    "https://www.athome.co.jp/kodate/1190419919": "GO SEE. BIG house with garage workshop tight nice neiborhood close to Boat race Tsu",
     "https://www.athome.co.jp/kodate/6980469810": "2 mins from beach maybe space for garage",
     "https://www.athome.co.jp/kodate/6987766143": "Junk NO",
-    "https://www.athome.co.jp/kodate/6989153818": "Junk NO",
+    "https://www.athome.co.jp/kodate/6989153818": "NO Junk",
     "https://www.homes.co.jp/akiyabank/b-46494": "NO 104/181 Snuck thru filters\n",
     "https://www.homes.co.jp/akiyabank/b-46356": "NO 104/181 Snuck thru filters",
     "https://www.homes.co.jp/akiyabank/b-44184": "NO ?/190 Snuck thru\n ",
@@ -409,16 +485,37 @@
     "https://www.homes.co.jp/akiyabank/b-41431": "NO dirt hallways",
     "https://www.homes.co.jp/akiyabank/b-35344": "NO. Junk and to small land. ",
     "https://www.homes.co.jp/akiyabank/b-41048": "NO. Junk and to small land",
-    "https://www.athome.co.jp/kodate/6988307286": "No Way far away",
+    "https://www.athome.co.jp/kodate/6988307286": "NO Way far away",
     "https://www.athome.co.jp/kodate/6973388146": "NO. Way southwest of Tsu in valleys",
     "https://www.athome.co.jp/kodate/1191594919": "NO. Way west of Tsu in valleys.",
     "https://www.athome.co.jp/kodate/6968511943": "WAY Southwest of Tsu",
-    "https://www.athome.co.jp/kodate/6979578415": "NO. 3k south of boat race Tsu. To far away and 100m from MEGA solar field."
+    "https://www.athome.co.jp/kodate/6979578415": "NO. 3k south of boat race Tsu. To far away and 100m from MEGA solar field.",
+    "https://www.athome.co.jp/kodate/6986017757": "No. Big property. Trash buildings and businesses next door. Looks like 2nd house on property recently demolished.",
+    "https://www.homes.co.jp/akiyabank/b-34948": "Go See when there. Massive building structure 5 min s to Suzuka Raceway. 13 mins to Aeon mall.",
+    "https://www.homes.co.jp/akiyabank/b-28723": "NO. 100/212 got thru filters",
+    "https://www.homes.co.jp/akiyabank/b-28319": "NO. To small got thru filters",
+    "https://www.athome.co.jp/kodate/6986538751": "No. Trashed",
+    "https://www.athome.co.jp/kodate/1152587614": "NO. To small to old, needs full reno. Does have 2nd building /garage",
+    "https://www.athome.co.jp/kodate/6989948815": "NO. WAAY west of Tsu in valley. Huge property on river. Just to far away",
+    "https://www.athome.co.jp/kodate/6985809926": "NO. WAY west of Tsu in valley. to far away. needs lots of work\n",
+    "https://www.athome.co.jp/kodate/6981917848": "NO. looks great but can't find except general area valley way to far West of Tsu.",
+    "https://www.homes.co.jp/akiyabank/b-32062": "NO. WAAAY west of Matsusaka",
+    "https://www.homes.co.jp/akiyabank/b-32138": "No. 183/173 got thru filters",
+    "https://www.homes.co.jp/akiyabank/b-34890": "No. 61/700 got thru filters",
+    "https://www.homes.co.jp/akiyabank/b-36480": "No. 79/249 got thru filters",
+    "https://www.homes.co.jp/akiyabank/b-41278": "No. 61/113 got thru filters",
+    "https://www.homes.co.jp/akiyabank/b-37269": "No. 165/290 got thru filters",
+    "https://www.homes.co.jp/akiyabank/b-42583": "NO. Tinny house WAAAY west",
+    "https://www.homes.co.jp/akiyabank/b-36517": "Contact city. don't know where it is at. not enough pictures ",
+    "https://www.athome.co.jp/kodate/1192693717": "Nice house, renovated, 6 car parking + 1 car garage.",
+    "https://www.athome.co.jp/kodate/1028899093": "No. Trashy area 25yds to train tracks",
+    "https://www.athome.co.jp/kodate/6984577883": "there are no interior photos. only sketch of floor plan. 2 min walk to beach. Gotemba coast.",
+    "https://www.athome.co.jp/kodate/6987517044": "NO. SW of Tsu in the mountains. To far away"
   },
   "manualCoords": {
     "https://www.homes.co.jp/akiyabank/b-44661": {
-      "lat": 34.868639985750974,
-      "lng": 136.5916818380356
+      "lat": 34.82871475774456,
+      "lng": 136.53023242950442
     },
     "https://www.athome.co.jp/kodate/1192693717": {
       "lat": 34.68643988069559,
@@ -431,6 +528,30 @@
     "https://www.athome.co.jp/kodate/1171153309": {
       "lat": 34.6835373609273,
       "lng": 136.5095901489258
+    },
+    "https://www.homes.co.jp/akiyabank/b-43376": {
+      "lat": 34.92565686306648,
+      "lng": 136.454154253006
+    },
+    "https://www.athome.co.jp/kodate/1037353798": {
+      "lat": 34.92548093237075,
+      "lng": 136.45410597324374
+    },
+    "https://www.athome.co.jp/kodate/1192959917": {
+      "lat": 34.71741727592316,
+      "lng": 136.47092342376712
+    },
+    "https://www.athome.co.jp/kodate/1120886005": {
+      "lat": 34.75112023461461,
+      "lng": 136.46348834037784
+    },
+    "https://www.homes.co.jp/akiyabank/b-36517": {
+      "lat": 34.8045803016497,
+      "lng": 136.46783351898196
+    },
+    "https://www.homes.co.jp/akiyabank/b-34948": {
+      "lat": 34.827556641534954,
+      "lng": 136.50273978710177
     }
   }
 }
