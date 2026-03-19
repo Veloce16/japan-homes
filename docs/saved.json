@@ -59,22 +59,6 @@
       "lng": 138.979586
     },
     {
-      "source": "AtHome",
-      "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "price": "580万円",
-      "size": "380.16m² / 202.63m²",
-      "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/4QwjK9ozOy1lMMG0ibjtjg==",
-      "area": "Suzuka, Mie",
-      "build_year": "1966",
-      "price_en": "¥5,800,000  (~$38,666 USD)",
-      "size_en": "203 m² building  /  380 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.853257,
-      "lng": 136.607897
-    },
-    {
       "source": "Lifull Homes",
       "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
       "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
@@ -89,6 +73,22 @@
       "date_found": "2026-03-03",
       "lat": 35.325296,
       "lng": 138.935884
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "price": "580万円",
+      "size": "380.16m² / 202.63m²",
+      "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/4QwjK9ozOy1lMMG0ibjtjg==",
+      "area": "Suzuka, Mie",
+      "build_year": "1966",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "203 m² building  /  380 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.853257,
+      "lng": 136.607897
     },
     {
       "source": "Suumo",
@@ -436,6 +436,9 @@
     }
   ],
   "notes": {
+    "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "WAY west of Matsusaka NO",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "GO SEE PROPERTY",
     "https://www.athome.co.jp/kodate/1033902993": "VERY BIG property. don't know boundries. close to water. CONTACT REALTOR",
@@ -446,12 +449,9 @@
     "https://www.athome.co.jp/kodate/6983530939": "See property when in town.",
     "https://www.homes.co.jp/kodate/b-33323360000920": "See property when in town.\n",
     "https://www.athome.co.jp/kodate/6989336556": "See property when in town.",
-    "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there.",
-    "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "Maybe sold disappeared from another listing.",
+    "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there. up against train tracks. weird lot maybe. close to water\n",
+    "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
     "https://www.homes.co.jp/akiyabank/b-43376": "2 houses plus long barn WIDE road. Way north in valley around 5 golf courses. 1993 old style house",
-    "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
-    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "WAY west of Matsusaka NO",
-    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/akiyabank/b-41714": "98.12/201.11",
     "https://www.homes.co.jp/akiyabank/b-41619": "110/200",
     "https://www.homes.co.jp/akiyabank/b-39242": "114/223",
@@ -517,6 +517,11 @@
     "https://www.athome.co.jp/kodate/6983880604": "NO. SW of Matsusaka in mountains",
     "https://www.athome.co.jp/kodate/6989555214": "South dellta area by boat race. Yumi says dangerous. "
   },
-  "manualCoords": {},
+  "manualCoords": {
+    "https://www.athome.co.jp/kodate/6989555214": {
+      "lat": 34.64616164142739,
+      "lng": 136.54206633567813
+    }
+  },
   "disliked": []
 }
