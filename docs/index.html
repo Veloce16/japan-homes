@@ -29,7 +29,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .controls-bar{
   background:#1a1a4e;padding:10px 24px;
   display:flex;align-items:center;gap:10px;flex-wrap:wrap;
-  position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+  position:sticky;top:0;z-index:1100;box-shadow:0 2px 10px rgba(0,0,0,.35)}
 .btn-scrape{
   background:#8b1a1a;color:#fff;border:none;padding:8px 16px;border-radius:6px;
   font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:7px;
@@ -49,7 +49,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .ms-drop{
   position:absolute;top:calc(100% + 5px);left:0;background:#1e2060;
   border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:5px 0;
-  min-width:170px;z-index:300;box-shadow:0 6px 20px rgba(0,0,0,.45);display:none}
+  min-width:170px;z-index:1200;box-shadow:0 6px 20px rgba(0,0,0,.45);display:none}
 .ms-drop.open{display:block}
 .ms-drop label{
   display:flex;align-items:center;gap:9px;padding:7px 14px;color:#fff;
@@ -59,14 +59,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .ms-drop .ms-divider{height:1px;background:rgba(255,255,255,.12);margin:4px 0}
 .ms-drop .ms-all{font-weight:700;color:#d4a017}
 
-/* view select */
-.view-sel{
-  background:rgba(255,255,255,.12);color:#fff;
-  border:1px solid rgba(255,255,255,.28);padding:7px 13px;border-radius:6px;
-  font-size:13px;cursor:pointer;appearance:none;min-width:150px;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23ffffff80'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
-.view-sel option{background:#1a1a4e;color:#fff}
+/* filter group label + dropdown */
+.filter-group{display:flex;flex-direction:column;gap:3px}
+.filter-label{font-size:10px;font-weight:700;color:rgba(255,255,255,.55);
+  text-transform:uppercase;letter-spacing:.7px;padding-left:2px}
+/* single-select view dropdown items */
+.ms-view-opt{display:block;width:100%;text-align:left;background:none;border:none;
+  padding:7px 14px;color:#fff;font-size:13px;cursor:pointer;transition:background .12s;
+  white-space:nowrap}
+.ms-view-opt:hover{background:rgba(255,255,255,.1)}
+.ms-view-opt.ms-view-active{color:#d4a017;font-weight:700}
 
 /* ── Stats bar ───────────────────────────────────────────────── */
 .stats-bar{
@@ -281,47 +283,65 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   </button>
 
   <!-- Source filter -->
-  <div class="ms-wrap" id="wrapSource">
-    <button class="ms-btn" onclick="toggleDrop('dropSource')">
-      <span id="lblSource">All Sources</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="ms-drop" id="dropSource">
-      <label class="ms-all"><input type="checkbox" id="chkSrcAll" checked onchange="toggleAllSources(this)"> All Sources</label>
-      <div class="ms-divider"></div>
-      <label><input type="checkbox" class="chk-src" value="AtHome"       checked onchange="updateSourceFilter()"> AtHome</label>
-      <label><input type="checkbox" class="chk-src" value="Suumo"        checked onchange="updateSourceFilter()"> Suumo</label>
-      <label><input type="checkbox" class="chk-src" value="Lifull Homes" checked onchange="updateSourceFilter()"> Lifull Homes</label>
-      <label><input type="checkbox" class="chk-src" value="Yahoo RE"     checked onchange="updateSourceFilter()"> Yahoo RE</label>
-      <label><input type="checkbox" class="chk-src" value="Akiya Bank"      checked onchange="updateSourceFilter()"> Akiya Bank</label>
-      <label><input type="checkbox" class="chk-src" value="Shizuoka Akiya" checked onchange="updateSourceFilter()"> Shizuoka Akiya</label>
-      <label><input type="checkbox" class="chk-src" value="Tsu Akiya"      checked onchange="updateSourceFilter()"> Tsu Akiya</label>
+  <div class="filter-group">
+    <span class="filter-label">Sources</span>
+    <div class="ms-wrap" id="wrapSource">
+      <button class="ms-btn" onclick="toggleDrop('dropSource')">
+        <span id="lblSource">All Sources</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="ms-drop" id="dropSource">
+        <label class="ms-all"><input type="checkbox" id="chkSrcAll" checked onchange="toggleAllSources(this)"> All Sources</label>
+        <div class="ms-divider"></div>
+        <label><input type="checkbox" class="chk-src" value="AtHome"         checked onchange="updateSourceFilter()"> AtHome</label>
+        <label><input type="checkbox" class="chk-src" value="Suumo"          checked onchange="updateSourceFilter()"> Suumo</label>
+        <label><input type="checkbox" class="chk-src" value="Lifull Homes"   checked onchange="updateSourceFilter()"> Lifull Homes</label>
+        <label><input type="checkbox" class="chk-src" value="Yahoo RE"       checked onchange="updateSourceFilter()"> Yahoo RE</label>
+        <label><input type="checkbox" class="chk-src" value="Akiya Bank"     checked onchange="updateSourceFilter()"> Akiya Bank</label>
+        <label><input type="checkbox" class="chk-src" value="Shizuoka Akiya" checked onchange="updateSourceFilter()"> Shizuoka Akiya</label>
+        <label><input type="checkbox" class="chk-src" value="Tsu Akiya"      checked onchange="updateSourceFilter()"> Tsu Akiya</label>
+      </div>
     </div>
   </div>
 
   <!-- City filter -->
-  <div class="ms-wrap" id="wrapCity">
-    <button class="ms-btn" onclick="toggleDrop('dropCity')">
-      <span id="lblCity">All Cities</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="ms-drop" id="dropCity">
-      <label class="ms-all"><input type="checkbox" id="chkCityAll" checked onchange="toggleAllCities(this)"> All Cities</label>
-      <div class="ms-divider"></div>
-      <label><input type="checkbox" class="chk-city" value="Gotemba, Shizuoka" checked onchange="updateCityFilter()"> Gotemba</label>
-      <label><input type="checkbox" class="chk-city" value="Oyama, Shizuoka"   checked onchange="updateCityFilter()"> Oyama</label>
-      <label><input type="checkbox" class="chk-city" value="Suzuka, Mie"       checked onchange="updateCityFilter()"> Suzuka</label>
-      <label><input type="checkbox" class="chk-city" value="Tsu, Mie"          checked onchange="updateCityFilter()"> Tsu</label>
+  <div class="filter-group">
+    <span class="filter-label">Cities</span>
+    <div class="ms-wrap" id="wrapCity">
+      <button class="ms-btn" onclick="toggleDrop('dropCity')">
+        <span id="lblCity">All Cities</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="ms-drop" id="dropCity">
+        <label class="ms-all"><input type="checkbox" id="chkCityAll" checked onchange="toggleAllCities(this)"> All Cities</label>
+        <div class="ms-divider"></div>
+        <label><input type="checkbox" class="chk-city" value="Gotemba, Shizuoka" checked onchange="updateCityFilter()"> Gotemba</label>
+        <label><input type="checkbox" class="chk-city" value="Oyama, Shizuoka"   checked onchange="updateCityFilter()"> Oyama</label>
+        <label><input type="checkbox" class="chk-city" value="Suzuka, Mie"       checked onchange="updateCityFilter()"> Suzuka</label>
+        <label><input type="checkbox" class="chk-city" value="Tsu, Mie"          checked onchange="updateCityFilter()"> Tsu</label>
+      </div>
     </div>
   </div>
 
-  <!-- View filter -->
-  <select class="view-sel" id="viewSel" onchange="updateViewFilter()">
-    <option value="all">Show All</option>
-    <option value="new7">New (Last 7 Days)</option>
-    <option value="saved">Favorites Only</option>
-    <option value="disliked">Disliked 👎</option>
-  </select>
+  <!-- Property Types filter -->
+  <div class="filter-group">
+    <span class="filter-label">Property Types</span>
+    <div class="ms-wrap" id="wrapView">
+      <button class="ms-btn" onclick="toggleDrop('dropView')">
+        <span id="lblView">All Regular</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="ms-drop" id="dropView">
+        <button class="ms-view-opt" data-val="show_all" onclick="setViewFilter(this)">Show All</button>
+        <button class="ms-view-opt ms-view-active" data-val="all" onclick="setViewFilter(this)">All Regular</button>
+        <div class="ms-divider"></div>
+        <button class="ms-view-opt" data-val="new7" onclick="setViewFilter(this)">New (Last 7 Days)</button>
+        <button class="ms-view-opt" data-val="saved" onclick="setViewFilter(this)">Favorites</button>
+        <div class="ms-divider"></div>
+        <button class="ms-view-opt" data-val="disliked" onclick="setViewFilter(this)">Disliked 👎</button>
+      </div>
+    </div>
+  </div>
 
   <button class="btn-map" id="mapToggleBtn" onclick="toggleMapView()">🗺️ Map</button>
 
@@ -689,9 +709,9 @@ function renderAll() {
     if (filterCities.length  && !filterCities.includes(l.area))   return false;
     const isDisliked = dislikedIds.has(propId(l));
     if (filterView === 'disliked') {
-      if (!isDisliked) return false;  // show only disliked
-    } else {
-      if (isDisliked) return false;   // hide disliked in all other views
+      if (!isDisliked) return false;           // show only disliked
+    } else if (filterView !== 'show_all') {
+      if (isDisliked) return false;            // hide disliked in all regular views
     }
     if (filterView === 'new7') {
       if (!l.date_found || new Date(l.date_found) < cutoff) return false;
@@ -1117,8 +1137,16 @@ function updateCityFilter() {
   renderAll();
 }
 
-function updateViewFilter() {
-  filterView = document.getElementById('viewSel').value;
+function setViewFilter(btn) {
+  const val = btn.dataset.val;
+  filterView = val;
+  // Update active highlight
+  document.querySelectorAll('#dropView .ms-view-opt').forEach(b => b.classList.remove('ms-view-active'));
+  btn.classList.add('ms-view-active');
+  // Update button label
+  document.getElementById('lblView').textContent = btn.textContent.trim();
+  // Close dropdown
+  document.getElementById('dropView').classList.remove('open');
   renderAll();
 }
 
