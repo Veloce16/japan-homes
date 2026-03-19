@@ -320,6 +320,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <option value="all">Show All</option>
     <option value="new7">New (Last 7 Days)</option>
     <option value="saved">Favorites Only</option>
+    <option value="disliked">Disliked 👎</option>
   </select>
 
   <button class="btn-map" id="mapToggleBtn" onclick="toggleMapView()">🗺️ Map</button>
@@ -673,6 +674,12 @@ function renderAll() {
   let visible = allListings.filter(l => {
     if (filterSources.length && !filterSources.includes(l.source)) return false;
     if (filterCities.length  && !filterCities.includes(l.area))   return false;
+    const isDisliked = dislikedIds.has(propId(l));
+    if (filterView === 'disliked') {
+      if (!isDisliked) return false;  // show only disliked
+    } else {
+      if (isDisliked) return false;   // hide disliked in all other views
+    }
     if (filterView === 'new7') {
       if (!l.date_found || new Date(l.date_found) < cutoff) return false;
     }
@@ -692,11 +699,14 @@ function renderAll() {
   }
 
   if (!visible.length && !ghosts.length) {
+    const noResultsMsg = filterView === 'disliked'
+      ? { icon: '👎', h: 'No disliked listings', p: 'Click 👎 Dislike on any card to add it here.' }
+      : { icon: '🔍', h: 'No listings match your filters', p: 'Try adjusting the city, source, or view filters above.' };
     main.innerHTML = `
       <div class="no-results">
-        <div class="no-results-icon">🔍</div>
-        <h3>No listings match your filters</h3>
-        <p>Try adjusting the city, source, or view filters above.</p>
+        <div class="no-results-icon">${noResultsMsg.icon}</div>
+        <h3>${noResultsMsg.h}</h3>
+        <p>${noResultsMsg.p}</p>
       </div>`;
     return;
   }
