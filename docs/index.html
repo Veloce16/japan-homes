@@ -369,6 +369,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <!-- ═══════════════════════════════════════════════════════════
      GITHUB SETUP MODAL
 ════════════════════════════════════════════════════════════ -->
+<!-- Pin-move confirmation modal -->
+<div class="modal-bg hidden" id="pinConfirmBg">
+  <div class="modal" style="max-width:340px">
+    <h3>📌 Confirm Pin Move</h3>
+    <p id="pinConfirmMsg" style="margin-bottom:16px"></p>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="cancelPinMove()">↩ Snap Back</button>
+      <button class="btn-save-cfg" onclick="confirmPinMove()">✓ Save Location</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-bg hidden" id="modalBg">
   <div class="modal">
     <h3>⚙️ Search Now — Setup</h3>
@@ -524,6 +536,7 @@ let dislikedIds   = new Set(JSON.parse(localStorage.getItem('jhs_disliked') || '
 // Map state
 let markersByPropId = {};   // propId → Leaflet marker, rebuilt each populateMap()
 let pendingFlyTo    = null; // propId to fly to after map finishes loading
+let pendingPinMove  = null; // context for pin-move confirmation modal
 
 const CITY_ORDER  = ['Gotemba, Shizuoka','Oyama, Shizuoka','Suzuka, Mie','Tsu, Mie'];
 const CITY_LABELS = {
@@ -1406,18 +1419,29 @@ async function populateMap() {
     marker.bindPopup(buildPopupHTML(l, coords, isExact, usedFallback, isManual), { maxWidth: 260 });
 
     // ── Drag to set exact location ──────────────────────────────
+    let preDragLatLng = null;
+    marker.on('dragstart', function(e) {
+      preDragLatLng = e.target.getLatLng();  // snapshot position before drag
+    });
     marker.on('dragend', function(e) {
-      const ll = e.target.getLatLng();
-      manualCoords[id] = { lat: ll.lat, lng: ll.lng };
-      localStorage.setItem('jhs_manual_coords', JSON.stringify(manualCoords));
-      // Upgrade icon to gold ring
-      e.target.setIcon(makeMarkerIcon(cityColor(l.area || ''), true, isSavedPin, isDislikedPin));
-      // Update popup to show "Manually placed"
-      e.target.getPopup().setContent(buildPopupHTML(l, ll, false, false, true));
-      e.target.openPopup();
-      // Sync to GitHub + refresh card buttons
-      writeSavedToGitHub();
-      renderAll();
+      const newLL  = e.target.getLatLng();
+      const oldLL  = preDragLatLng;
+      const title  = (l.title_en || l.title || 'this property').slice(0, 50);
+      // Show confirmation modal — store context for confirm/cancel
+      pendingPinMove = {
+        marker: e.target,
+        id,
+        newLL,
+        oldLL,
+        isExact: isExact,
+        isManual: true,
+        isSavedPin,
+        isDislikedPin,
+        l,
+      };
+      document.getElementById('pinConfirmMsg').textContent =
+        `Move pin for "${title}" to new location? This cannot be easily undone.`;
+      document.getElementById('pinConfirmBg').classList.remove('hidden');
     });
 
     markersByPropId[id] = marker;
@@ -1529,6 +1553,32 @@ function saveGitConfig() {
   runScrape(owner, repo, token);
 }
 function closeModal() { document.getElementById('modalBg').classList.add('hidden'); }
+
+function confirmPinMove() {
+  document.getElementById('pinConfirmBg').classList.add('hidden');
+  if (!pendingPinMove) return;
+  const { marker, id, newLL, isSavedPin, isDislikedPin, l } = pendingPinMove;
+  pendingPinMove = null;
+  // Commit new location
+  manualCoords[id] = { lat: newLL.lat, lng: newLL.lng };
+  localStorage.setItem('jhs_manual_coords', JSON.stringify(manualCoords));
+  marker.setLatLng(newLL);
+  marker.setIcon(makeMarkerIcon(cityColor(l.area || ''), true, isSavedPin, isDislikedPin));
+  marker.getPopup().setContent(buildPopupHTML(l, newLL, false, false, true));
+  marker.openPopup();
+  writeSavedToGitHub();
+  renderAll();
+}
+
+function cancelPinMove() {
+  document.getElementById('pinConfirmBg').classList.add('hidden');
+  if (!pendingPinMove) return;
+  const { marker, oldLL, isExact, isManual, isSavedPin, isDislikedPin, l } = pendingPinMove;
+  pendingPinMove = null;
+  // Snap back to original position
+  marker.setLatLng(oldLL);
+  marker.setIcon(makeMarkerIcon(cityColor(l.area || ''), isExact || isManual, isSavedPin, isDislikedPin));
+}
 
 // ── Helpers ────────────────────────────────────────────────────
 function escHtml(s) {
