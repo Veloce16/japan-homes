@@ -797,7 +797,7 @@ function cardHTML(l, cutoff) {
   const note = escHtml(notesMap[id] || '');
 
   return `
-  <div class="card${isSaved?' is-saved':''}${isViewed?' is-viewed':''}${isGhost?' is-ghost':''}" id="card-${btoa(id).replace(/[^a-z0-9]/gi,'').slice(0,16)}">
+  <div class="card${isSaved?' is-saved':''}${isViewed?' is-viewed':''}${isGhost?' is-ghost':''}" id="card-${btoa(id).replace(/[^a-z0-9]/gi,'').slice(0,16)}" data-lid="${escAttr(id)}">
     ${isGhost ? '<div class="ghost-banner">🔴 No longer listed — may be sold or relisted</div>' : ''}
     <div class="card-photo">
       ${photoHtml}
@@ -1199,9 +1199,9 @@ function initMap() {
 }
 
 // Scroll dashboard back to a specific card and briefly highlight it
-function goToCard(cardEncId) {
+function goToCard(lid) {
   if (mapInstance) mapInstance.closePopup();
-  const cardEl = document.getElementById('card-' + cardEncId);
+  const cardEl = document.querySelector('[data-lid="' + lid.replace(/"/g, '\\"') + '"]');
   if (cardEl) {
     cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
     cardEl.style.outline = '3px solid #FFD700';
@@ -1226,7 +1226,7 @@ function buildPopupHTML(l, coords, isExact, usedFallback, isManual) {
         ? '<div style="font-size:10px;color:#e67e22;margin-bottom:4px">📍 Approximate — drag pin to set exact location</div>'
         : '<div style="font-size:10px;color:#888;margin-bottom:4px">📍 Geocoded — drag pin to adjust</div>';
   const mapsLink = `<a href="https://www.google.com/maps?q=${coords.lat},${coords.lng}" target="_blank" class="map-popup-gmaps">📍 Open in Google Maps</a>`;
-  const cardEncId = btoa(propId(l)).replace(/[^a-z0-9]/gi,'').slice(0,16);
+  const lid = escAttr(propId(l));
   return `
     ${imgHtml}
     ${locNote}
@@ -1235,7 +1235,7 @@ function buildPopupHTML(l, coords, isExact, usedFallback, isManual) {
     <div class="map-popup-meta">${escHtml(l.area || '')} · ${escHtml(l.source || '')}${age ? '<br>' + age : ''}</div>
     <a href="${escHtml(l.url || '#')}" target="_blank" class="map-popup-btn">View Listing →</a>
     ${mapsLink}
-    <button class="map-popup-dash" onclick="goToCard('${cardEncId}')">← Back to Dashboard Card</button>
+    <button class="map-popup-dash" onclick="goToCard('${lid}')">← Back to Dashboard Card</button>
   `;
 }
 
