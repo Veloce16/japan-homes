@@ -630,16 +630,30 @@ async function loadListings() {
           if (note && !notesMap[id]) { notesMap[id] = note; notesUpdated = true; }
         }
         if (notesUpdated) localStorage.setItem('jhs_notes', JSON.stringify(notesMap));
+        // Restore manual coords from GitHub backup — remote fills gaps, local takes precedence
+        const remoteManual2 = sd.manualCoords || {};
+        let coordsUpdated = false;
+        for (const [id, mc] of Object.entries(remoteManual2)) {
+          if (mc && !manualCoords[id]) { manualCoords[id] = mc; coordsUpdated = true; }
+        }
+        if (coordsUpdated) localStorage.setItem('jhs_manual_coords', JSON.stringify(manualCoords));
+        // Restore disliked from GitHub backup — union merge
+        const remoteDisliked2 = sd.disliked || [];
+        let dislikedUpdated = false;
+        for (const id of remoteDisliked2) {
+          if (!dislikedIds.has(id)) { dislikedIds.add(id); dislikedUpdated = true; }
+        }
+        if (dislikedUpdated) localStorage.setItem('jhs_disliked', JSON.stringify([...dislikedIds]));
         // Persist merged state to localStorage
         localStorage.setItem('jhs_saved', JSON.stringify([...savedIds]));
         localStorage.setItem('jhs_saved_data', JSON.stringify(savedData));
       }
     } catch(se) { /* saved.json doesn't exist yet — that's fine */ }
 
-    // If local had saves/notes that weren't in remote, push merged data back
+    // If local had saves/notes/dislikes that weren't in remote, push merged data back
     localHadExtras = (savedIds.size > localSavedCount) ||
                      (Object.keys(notesMap).length > localNotesCount) ||
-                     (localSavedCount > 0 || localNotesCount > 0);
+                     (localSavedCount > 0 || localNotesCount > 0 || dislikedIds.size > 0);
     if (localHadExtras && getGithubToken()) {
       // Defer push slightly so the page renders first
       setTimeout(() => writeSavedToGitHub(), 2000);
