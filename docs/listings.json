@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-20T05:28:40",
+  "generated": "2026-03-20T14:51:24",
   "listings": [
     {
       "source": "AtHome",
@@ -719,6 +719,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Kumoidehongocho (Hisai Station) 2-story 4LDK",
+      "address": "Tsu City Kumoidehongocho (Hisai Station) 2-story 4LDK",
+      "price": "1,250万円",
+      "size": "601.52m² / 156.46m²",
+      "url": "https://www.athome.co.jp/kodate/1036401498/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/7PrE-jhpAIom-lJM-eOh0A==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥12,500,000  (~$83,333 USD)",
+      "size_en": "156 m² building  /  602 m² land",
+      "date_found": "2026-03-20",
+      "lat": 34.66693,
+      "lng": 136.5244
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Handa (Ako Station) 2-story 2LDK",
       "address": "Tsu City Handa (Ako Station) 2-story 2LDK",
       "price": "1,280万円",
@@ -874,22 +890,6 @@
       "date_found": "2026-03-03",
       "lat": 34.757805,
       "lng": 136.526934
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LDK",
-      "address": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LD",
-      "price": "1,500万円",
-      "size": "417.66m² / 170.00m²",
-      "url": "https://www.athome.co.jp/kodate/6985453065/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/GWc0Laqrcs2ZNMwYZSXyyA==",
-      "area": "Tsu, Mie",
-      "build_year": "1991",
-      "price_en": "¥15,000,000  (~$100,000 USD)",
-      "size_en": "170 m² building  /  418 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.662944,
-      "lng": 136.364937
     },
     {
       "source": "Suumo",
@@ -1306,6 +1306,22 @@
       "date_found": "2026-03-03",
       "lat": 34.693551,
       "lng": 136.411568
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Kumoide Hongo-cho",
+      "address": "Detached house Kumoide Hongocho<img src=\"https://im",
+      "price": "1,250万円",
+      "size": "601.52m² / 156.46m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319090000056/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131909%2Fsale%2F56%2F2%2F2%2F2ly9.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "1982",
+      "price_en": "¥12,500,000  (~$83,333 USD)",
+      "size_en": "156 m² building  /  602 m² land",
+      "date_found": "2026-03-20",
+      "lat": 34.666929,
+      "lng": 136.524421
     },
     {
       "source": "Akiya Bank",
