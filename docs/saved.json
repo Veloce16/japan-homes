@@ -561,7 +561,8 @@
     "https://www.homes.co.jp/kodate/b-1276000002057": "193/??? big 3 buildings. find location",
     "https://www.homes.co.jp/kodate/b-1507580000016": "NO. To small 95/??? second building. ",
     "https://www.homes.co.jp/kodate/b-1319090000170": "Delta area below Boat Race Tsu.163/??? Covered parking for 6 small cars and garage for 1. ",
-    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771": "NO. 112/307 Not big enough for garage."
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771": "NO. 112/307 Not big enough for garage.",
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78051576": "143/464 pin location wrong. Big 1 story nice lot"
   },
   "manualCoords": {
     "https://www.homes.co.jp/akiyabank/b-44661": {
@@ -668,6 +669,7 @@
     "https://www.homes.co.jp/kodate/b-1319090000022",
     "https://www.homes.co.jp/kodate/b-1319090000184",
     "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335",
-    "https://www.homes.co.jp/kodate/b-1507580000016"
+    "https://www.homes.co.jp/kodate/b-1507580000016",
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771"
   ]
 }
