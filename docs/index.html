@@ -756,9 +756,12 @@ function renderAll() {
     return;
   }
 
+  // Sort by price (ascending) within each group — unknowns go last
+  const byPrice = (a, b) => parsePrice(a) - parsePrice(b);
+
   let html = '';
   for (const city of CITY_ORDER) {
-    const cityListings = visible.filter(l => l.area === city);
+    const cityListings = visible.filter(l => l.area === city).sort(byPrice);
     if (!cityListings.length) continue;
     html += `
       <div class="city-section">
@@ -774,7 +777,7 @@ function renderAll() {
 
   // Any cities not in the order list
   const knownCities = new Set(CITY_ORDER);
-  const otherListings = visible.filter(l => !knownCities.has(l.area));
+  const otherListings = visible.filter(l => !knownCities.has(l.area)).sort(byPrice);
   if (otherListings.length) {
     html += `
       <div class="city-section">
@@ -897,6 +900,17 @@ function cardHTML(l, cutoff) {
       </button>
     </div>
   </div>`;
+}
+
+// ── Parse price string → numeric yen value (for sorting) ──────
+function parsePrice(l) {
+  const s = l.price_en || l.price || '';
+  const m = s.match(/¥([\d,]+)/);
+  if (m) return parseInt(m[1].replace(/,/g, ''), 10);
+  // Fallback: try raw Japanese price like "790万円"
+  const man = s.match(/([\d.]+)万円/);
+  if (man) return parseFloat(man[1]) * 10000;
+  return Infinity; // unknown price goes last
 }
 
 // ── Parse size string → {building, land} ──────────────────────
