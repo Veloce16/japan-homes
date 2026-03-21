@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-18T20:16:42",
+  "generated": "2026-03-21T05:14:50",
   "listings": [
     {
       "source": "AtHome",
@@ -385,6 +385,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Anomachi Renbu (Ichimida Station) 2-story 8K",
+      "address": "Tsu City Anomachi Renbu (Ichimida Station) 2-story 8K",
+      "price": "500万円",
+      "size": "734.89m² / 161.31m²",
+      "url": "https://www.athome.co.jp/kodate/6989274148/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/-oBw7xIyORMX0L9Ydx5fTw==",
+      "area": "Tsu, Mie",
+      "build_year": "1927",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "161 m² building  /  735 m² land",
+      "date_found": "2026-03-19",
+      "lat": 34.74833,
+      "lng": 136.450146
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Kurima Nakayamacho (Takada Motoyama Station) 2-story 5SLDK",
       "address": "Tsu City Kurima Nakayamacho (Takada Motoyama Station) 2-story 5S",
       "price": "552万円",
@@ -446,6 +462,22 @@
       "date_found": "2026-03-03",
       "lat": 34.646799,
       "lng": 136.5388
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City, Osato Noda-cho, one-story building, 5DK",
+      "address": "Tsu City, Osato Noda-cho, one-story building, 5DK",
+      "price": "600万円",
+      "size": "320.08m² / 102.84m²",
+      "url": "https://www.athome.co.jp/kodate/6988869146/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/9MrDziF6VV27yXeBDA9D-w==",
+      "area": "Tsu, Mie",
+      "build_year": "1952",
+      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "size_en": "103 m² building  /  320 m² land",
+      "date_found": "2026-03-19",
+      "lat": 34.782554,
+      "lng": 136.485566
     },
     {
       "source": "AtHome",
@@ -687,6 +719,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Kumoidehongocho (Hisai Station) 2-story 4LDK",
+      "address": "Tsu City Kumoidehongocho (Hisai Station) 2-story 4LDK",
+      "price": "1,250万円",
+      "size": "601.52m² / 156.46m²",
+      "url": "https://www.athome.co.jp/kodate/1036401498/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/7PrE-jhpAIom-lJM-eOh0A==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥12,500,000  (~$83,333 USD)",
+      "size_en": "156 m² building  /  602 m² land",
+      "date_found": "2026-03-20",
+      "lat": 34.66693,
+      "lng": 136.5244
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Handa (Ako Station) 2-story 2LDK",
       "address": "Tsu City Handa (Ako Station) 2-story 2LDK",
       "price": "1,280万円",
@@ -842,22 +890,6 @@
       "date_found": "2026-03-03",
       "lat": 34.757805,
       "lng": 136.526934
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LDK",
-      "address": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LD",
-      "price": "1,500万円",
-      "size": "417.66m² / 170.00m²",
-      "url": "https://www.athome.co.jp/kodate/6985453065/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/GWc0Laqrcs2ZNMwYZSXyyA==",
-      "area": "Tsu, Mie",
-      "build_year": "1991",
-      "price_en": "¥15,000,000  (~$100,000 USD)",
-      "size_en": "170 m² building  /  418 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.662944,
-      "lng": 136.364937
     },
     {
       "source": "Suumo",
@@ -1021,6 +1053,22 @@
     },
     {
       "source": "Suumo",
+      "title": "Kumoide Hongo Town 12.5 million yen",
+      "address": "Kumoide Hongo Town 12.5 million yen",
+      "price": "1250万円",
+      "size": "601.52m2 / 156.46m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_75599308/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F308%2F75599308%2F75599308_0015.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥12,500,000  (~$83,333 USD)",
+      "size_en": "156 m² building  /  602 m² land",
+      "date_found": "2026-03-21",
+      "lat": 34.667163,
+      "lng": 136.522934
+    },
+    {
+      "source": "Suumo",
       "title": "Handa (Ako Station) 12.8 million yen",
       "address": "Handa, Tsu City, Mie Prefecture",
       "price": "1280万円",
@@ -1037,8 +1085,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1260,6 +1308,22 @@
       "lng": 136.411568
     },
     {
+      "source": "Lifull Homes",
+      "title": "Used detached house Kumoide Hongo-cho",
+      "address": "Detached house Kumoide Hongocho<img src=\"https://im",
+      "price": "1,250万円",
+      "size": "601.52m² / 156.46m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319090000056/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131909%2Fsale%2F56%2F2%2F2%2F2ly9.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "1982",
+      "price_en": "¥12,500,000  (~$83,333 USD)",
+      "size_en": "156 m² building  /  602 m² land",
+      "date_found": "2026-03-20",
+      "lat": 34.666929,
+      "lng": 136.524421
+    },
+    {
       "source": "Akiya Bank",
       "title": "For sale and residence",
       "address": "Wakamatsu Higashi 2-chome, Suzuka City, Mie Prefecture",
@@ -1303,7 +1367,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1415,7 +1479,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1457,7 +1521,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
@@ -1556,7 +1620,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
+      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
