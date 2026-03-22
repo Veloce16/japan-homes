@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-22T14:16:22",
+  "generated": "2026-03-22T19:27:15",
   "listings": [
     {
       "source": "AtHome",
@@ -813,8 +813,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korazu-cho 2-story 7DK",
-      "address": "Tsu City Korazu-cho 2-story 7DK",
+      "title": "Tsu City Korasu Town 2-story 7DK",
+      "address": "Tsu City Korasu Town 2-story 7DK",
       "price": "1,400万円",
       "size": "756.93m² / 208.15m²",
       "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -1229,22 +1229,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Nishi-Shonai Town",
-      "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
-      "price": "880万円",
-      "size": "690.9m² / 129.09m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319110000021/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131911%2Fsale%2F21%2F2%2F2%2Fijsb.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1993",
-      "price_en": "¥8,800,000  (~$58,666 USD)",
-      "size_en": "129 m² building  /  691 m² land",
-      "date_found": "2026-03-08",
-      "lat": 34.925589,
-      "lng": 136.453997
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Shirako 3-chome",
       "address": "10 minutes Shirako 3-chome, Suzuka City, Mie Prefecture Built year: December 1972",
       "price": "1,380万円",
@@ -1654,7 +1638,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Anomachi Kusao",
+      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
