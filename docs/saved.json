@@ -664,6 +664,10 @@
     "https://www.homes.co.jp/akiyabank/b-46255": {
       "lat": 34.709197753744725,
       "lng": 136.49774551391604
+    },
+    "https://www.homes.co.jp/akiyabank/b-45044": {
+      "lat": 34.78335551870688,
+      "lng": 136.4158630371094
     }
   },
   "disliked": [
@@ -743,6 +747,7 @@
     "https://www.athome.co.jp/kodate/1156412810",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_79218844",
     "https://www.athome.co.jp/kodate/6988687891",
-    "https://www.athome.co.jp/kodate/6987265116"
+    "https://www.athome.co.jp/kodate/6987265116",
+    "https://www.athome.co.jp/kodate/6986708794"
   ]
 }
