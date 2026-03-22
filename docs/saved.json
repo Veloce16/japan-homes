@@ -477,6 +477,20 @@
       "date_found": "2026-03-19",
       "lat": 34.782554,
       "lng": 136.485566
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
+      "price": "500万円",
+      "size": "555.08 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-45044/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-29bd3bdc0ce781214b002ee7ae5a1a9e81e0894c.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "555 m² land",
+      "date_found": "2026-03-06"
     }
   ],
   "notes": {
