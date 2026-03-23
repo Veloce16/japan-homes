@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-22T19:27:15",
+  "generated": "2026-03-23T06:08:34",
   "listings": [
     {
       "source": "AtHome",
@@ -1229,6 +1229,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "Used detached house Nishi-Shonai Town",
+      "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
+      "price": "880万円",
+      "size": "690.9m² / 129.09m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319110000021/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131911%2Fsale%2F21%2F2%2F2%2Fijsb.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "1993",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "size_en": "129 m² building  /  691 m² land",
+      "date_found": "2026-03-23",
+      "lat": 34.925589,
+      "lng": 136.453997
+    },
+    {
+      "source": "Lifull Homes",
       "title": "Used detached house Shirako 3-chome",
       "address": "10 minutes Shirako 3-chome, Suzuka City, Mie Prefecture Built year: December 1972",
       "price": "1,380万円",
@@ -1242,22 +1258,6 @@
       "date_found": "2026-03-03",
       "lat": 34.831075,
       "lng": 136.584066
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-22",
-      "lat": 34.762742,
-      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
@@ -1354,6 +1354,20 @@
       "date_found": "2026-03-20",
       "lat": 34.666929,
       "lng": 136.524421
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Suzuka City Shirako Town",
+      "price": "850万円",
+      "size": "181.81 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-46597/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-d4709c058061bf4fd82fe571498f087e186b2104.jpg",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "182 m² land",
+      "date_found": "2026-03-23"
     },
     {
       "source": "Akiya Bank",
