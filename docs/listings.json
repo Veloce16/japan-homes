@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-23T06:08:34",
+  "generated": "2026-03-23T09:00:52",
   "listings": [
     {
       "source": "AtHome",
@@ -179,7 +179,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -813,8 +813,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korasu Town 2-story 7DK",
-      "address": "Tsu City Korasu Town 2-story 7DK",
+      "title": "Tsu City Korazu-cho 2-story 7DK",
+      "address": "Tsu City Korazu-cho 2-story 7DK",
       "price": "1,400万円",
       "size": "756.93m² / 208.15m²",
       "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -1101,8 +1101,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1540,6 +1540,34 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Hakusan Town Minamide",
+      "price": "700万円",
+      "size": "230.27 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-46652/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-d053ac139863b50c6534d67c0c459757baae100c.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥7,000,000  (~$46,666 USD)",
+      "size_en": "230 m² land",
+      "date_found": "2026-03-23"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Anonomachi Imantoku",
+      "price": "500万円",
+      "size": "601.65 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-46564/",
+      "image": "https://www.homes.co.jp/akiyabank/images/no-image.svg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "602 m² land",
+      "date_found": "2026-03-23"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
       "address": "Mie Prefecture Tsu City South Central",
       "price": "550万円",
       "size": "",
@@ -1652,7 +1680,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
