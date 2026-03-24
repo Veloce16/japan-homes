@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-24T16:08:17",
+  "generated": "2026-03-24T20:24:05",
   "listings": [
     {
       "source": "AtHome",
@@ -179,7 +179,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -259,22 +259,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Misato Machiyadokoro 2-story 6LDK",
-      "address": "Tsu City Misato Machiyadokoro 2-story 6LDK",
-      "price": "398万円",
-      "size": "629.03m² / 203.34m²",
-      "url": "https://www.athome.co.jp/kodate/6987766143/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/9npEZOqhbI9X3_KGXt3pMQ==",
-      "area": "Tsu, Mie",
-      "build_year": "1982",
-      "price_en": "¥3,980,000  (~$26,533 USD)",
-      "size_en": "203 m² building  /  629 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.742927,
-      "lng": 136.410681
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) 2-story 6DK",
       "address": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) 2-story 6DK",
       "price": "398万円",
@@ -288,6 +272,22 @@
       "date_found": "2026-03-03",
       "lat": 34.742753,
       "lng": 136.410614
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Misato Machiyadokoro 2-story 6LDK",
+      "address": "Tsu City Misato Machiyadokoro 2-story 6LDK",
+      "price": "398万円",
+      "size": "629.03m² / 203.34m²",
+      "url": "https://www.athome.co.jp/kodate/6987766143/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/9npEZOqhbI9X3_KGXt3pMQ==",
+      "area": "Tsu, Mie",
+      "build_year": "1982",
+      "price_en": "¥3,980,000  (~$26,533 USD)",
+      "size_en": "203 m² building  /  629 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.742927,
+      "lng": 136.410681
     },
     {
       "source": "AtHome",
@@ -813,8 +813,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korasu Town 2-story 7DK",
-      "address": "Tsu City Korasu Town 2-story 7DK",
+      "title": "Tsu City Korazu-cho 2-story 7DK",
+      "address": "Tsu City Korazu-cho 2-story 7DK",
       "price": "1,400万円",
       "size": "756.93m² / 208.15m²",
       "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -1101,7 +1101,7 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
@@ -1696,7 +1696,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
