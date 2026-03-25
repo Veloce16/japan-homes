@@ -59,22 +59,6 @@
       "lng": 138.935884
     },
     {
-      "source": "AtHome",
-      "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "price": "580万円",
-      "size": "380.16m² / 202.63m²",
-      "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/4QwjK9ozOy1lMMG0ibjtjg==",
-      "area": "Suzuka, Mie",
-      "build_year": "1966",
-      "price_en": "¥5,800,000  (~$38,666 USD)",
-      "size_en": "203 m² building  /  380 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.853257,
-      "lng": 136.607897
-    },
-    {
       "source": "Suumo",
       "title": "☆On-site parking for 3 or more cars ♪ ☆ With an expanded warehouse, you can safely park your bikes and bicycles ♪",
       "address": "87 Ishiyakushicho, Suzuka City, Mie Prefecture",
@@ -567,7 +551,7 @@
     "https://www.homes.co.jp/akiyabank/b-36517": "not enough pictures ",
     "https://www.athome.co.jp/kodate/1192693717": "Delta area below Boat Race Tsu.163/??? Covered parking for 6 small cars and garage for 1. TOO MUCH",
     "https://www.athome.co.jp/kodate/1028899093": "No. Trashy area 25yds to train tracks",
-    "https://www.athome.co.jp/kodate/6984577883": "there are no interior photos. only sketch of floor plan. 2 min walk to beach. Gotemba coast. Has 1 car garage. Maybe could do 2 car garage based on 60/200 need to calculate",
+    "https://www.athome.co.jp/kodate/6984577883": "there are no interior photos. only sketch of floor plan. 2 min walk to beach. Gotemba coast. Has 1 car garage. Maybe could do 2 car garage based on 60/200 need to calculate. looled at from outside Cheapo apartment behind house.",
     "https://www.athome.co.jp/kodate/6987517044": "NO. SW of Tsu in the mountains. To far away",
     "https://www.athome.co.jp/kodate/6989901072": "NO. Cool valley way west of Tsu BUT below a huge dam.",
     "https://www.athome.co.jp/kodate/6985453065": "NO. Way west of Tsu",
@@ -771,6 +755,7 @@
     "https://www.athome.co.jp/kodate/1064668493",
     "https://www.athome.co.jp/kodate/1192726417",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860",
-    "https://www.homes.co.jp/kodate/b-1319120000101"
+    "https://www.homes.co.jp/kodate/b-1319120000101",
+    "https://www.athome.co.jp/kodate/6989018130"
   ]
 }
