@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-25T08:27:05",
+  "generated": "2026-03-25T16:11:14",
   "listings": [
     {
       "source": "AtHome",
@@ -179,7 +179,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -908,6 +908,22 @@
       "lng": 136.526934
     },
     {
+      "source": "AtHome",
+      "title": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LDK",
+      "address": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LD",
+      "price": "1,500万円",
+      "size": "417.66m² / 170.00m²",
+      "url": "https://www.athome.co.jp/kodate/6985453065/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/GWc0Laqrcs2ZNMwYZSXyyA==",
+      "area": "Tsu, Mie",
+      "build_year": "1991",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "170 m² building  /  418 m² land",
+      "date_found": "2026-03-25",
+      "lat": 34.662944,
+      "lng": 136.364937
+    },
+    {
       "source": "Suumo",
       "title": "Shirako 3 (Shiroko Station) 13.8 million yen",
       "address": "3 Shirako, Suzuka City, Mie Prefecture",
@@ -1356,22 +1372,6 @@
       "lng": 136.524421
     },
     {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-24",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
       "source": "Akiya Bank",
       "title": "For sale and residence",
       "address": "Mie Prefecture Suzuka City Shirako Town",
@@ -1541,7 +1541,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1611,7 +1611,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
@@ -1710,7 +1710,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
+      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
@@ -1724,7 +1724,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusan-cho Mikeno",
+      "address": "Mie Prefecture, Tsu City, Hakusan Town, Mikano",
       "price": "500万円",
       "size": "571.96 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44182/",
@@ -1850,7 +1850,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "・Equipped with a combined treatment septic tank, which is rare for a property in Misugi Town",
+      "address": "・Equipped with a combined treatment septic tank, which is rare for properties in Misugi Town",
       "price": "500万円",
       "size": "297.52 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-32062/",
