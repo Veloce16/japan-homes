@@ -234,20 +234,6 @@
       "lng": 136.530017
     },
     {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Suzuka City Chohoji Town",
-      "price": "300万円",
-      "size": "852.89 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-34948/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-13fd7d6e727674686c1fb363ae666bec0220f92a.jpg",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥3,000,000  (~$20,000 USD)",
-      "size_en": "853 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
       "source": "AtHome",
       "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
       "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
@@ -406,7 +392,7 @@
     "https://www.homes.co.jp/akiyabank/b-31442": "142/209",
     "https://www.homes.co.jp/akiyabank/b-31395": "127/202",
     "https://www.athome.co.jp/kodate/6982115934": "NO. Old , nasty, Dirt hallways",
-    "https://www.athome.co.jp/kodate/1191622419": "Road ok. Extension could be used as a garage 2 blocks from beach. 2 blocks Family mart. Chiyozaki station 5 min walk",
+    "https://www.athome.co.jp/kodate/1191622419": "Kinda nasty Road ok. Extension could be used as a garage 2 blocks from beach. 2 blocks Family mart. Chiyozaki station 5 min walk",
     "https://www.athome.co.jp/kodate/1037353798": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
     "https://www.athome.co.jp/kodate/6989062801": "No. not enough room To easily build garage. to $$$. south end of the 5 golf course valley pricey. Main house guest house storehouse is trash replace w/garage if ok by 70/200",
     "https://www.athome.co.jp/kodate/6987134731": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
@@ -681,6 +667,7 @@
     "https://www.homes.co.jp/akiyabank/b-46652",
     "https://www.athome.co.jp/kodate/1192959917",
     "https://www.homes.co.jp/kodate/b-1276000002057",
-    "https://www.homes.co.jp/akiyabank/b-36517"
+    "https://www.homes.co.jp/akiyabank/b-36517",
+    "https://www.homes.co.jp/akiyabank/b-34948"
   ]
 }
