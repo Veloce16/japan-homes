@@ -403,22 +403,6 @@
       "lng": 136.526934
     },
     {
-      "source": "AtHome",
-      "title": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
-      "address": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
-      "price": "498万円",
-      "size": "364.33m² / 179.18m²",
-      "url": "https://www.athome.co.jp/kodate/6984577883/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/JF486J2hguQZ_Jl8d6cv4g==",
-      "area": "Tsu, Mie",
-      "build_year": "1971",
-      "price_en": "¥4,980,000  (~$33,200 USD)",
-      "size_en": "179 m² building  /  364 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.697399,
-      "lng": 136.516441
-    },
-    {
       "source": "Akiya Bank",
       "title": "For sale and residence",
       "address": "Mie Prefecture Tsu City Takanoo Town",
@@ -461,20 +445,6 @@
       "date_found": "2026-03-19",
       "lat": 34.782554,
       "lng": 136.485566
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Anomachi Kusao",
-      "price": "500万円",
-      "size": "555.08 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-45044/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-29bd3bdc0ce781214b002ee7ae5a1a9e81e0894c.jpg",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "555 m² land",
-      "date_found": "2026-03-06"
     }
   ],
   "notes": {
@@ -568,7 +538,7 @@
     "https://www.homes.co.jp/akiyabank/b-45527": "NO. To small. got thru filters",
     "https://www.homes.co.jp/akiyabank/b-44183": "NO. Junk and to small 143/200",
     "https://www.homes.co.jp/akiyabank/b-45141": "NO. To small 144/185. Got thru filters",
-    "https://www.homes.co.jp/akiyabank/b-45044": "GO SEE   153/555 found it looks goood clooose to forest maybe great view over teraced rice fields",
+    "https://www.homes.co.jp/akiyabank/b-45044": "Look at from outside. very nice but road less that 8ft in places. NO  153/555 found it looks goood clooose to forest maybe great view over teraced rice fields. ",
     "https://www.homes.co.jp/akiyabank/b-45526": "100/640 Wall, garage?, We couldn't find outside bathroom. To much for outdide bath house.",
     "https://www.homes.co.jp/kodate/b-1319090000022": "NO. 112/93 to small",
     "https://www.homes.co.jp/kodate/b-1319090000184": "NO. 159/120 to small",
@@ -756,6 +726,7 @@
     "https://www.athome.co.jp/kodate/1192726417",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860",
     "https://www.homes.co.jp/kodate/b-1319120000101",
-    "https://www.athome.co.jp/kodate/6989018130"
+    "https://www.athome.co.jp/kodate/6989018130",
+    "https://www.athome.co.jp/kodate/6984577883"
   ]
 }
