@@ -170,22 +170,6 @@
       "lng": 138.935895
     },
     {
-      "source": "Suumo",
-      "title": "Kurima Machiyacho (Takada Motoyama Station) 7.9 million yen",
-      "address": "Kurima Machiyacho (Takada Motoyama Station) 7.9 million yen",
-      "price": "790万円",
-      "size": "667.87m2 / 141.6m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F045%2F20222045%2F20222045_0005.jpg&w=192&h=144",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥7,900,000  (~$52,666 USD)",
-      "size_en": "142 m² building  /  668 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.754397,
-      "lng": 136.523904
-    },
-    {
       "source": "AtHome",
       "title": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
       "address": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
@@ -341,22 +325,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City, Osato Noda-cho, one-story building, 5DK",
-      "address": "Tsu City, Osato Noda-cho, one-story building, 5DK",
-      "price": "600万円",
-      "size": "320.08m² / 102.84m²",
-      "url": "https://www.athome.co.jp/kodate/6988869146/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/9MrDziF6VV27yXeBDA9D-w==",
-      "area": "Tsu, Mie",
-      "build_year": "1952",
-      "price_en": "¥6,000,000  (~$40,000 USD)",
-      "size_en": "103 m² building  /  320 m² land",
-      "date_found": "2026-03-19",
-      "lat": 34.782554,
-      "lng": 136.485566
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11SLDK",
       "address": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11",
       "price": "1,198万円",
@@ -413,6 +381,38 @@
       "price_en": "¥7,900,000  (~$52,666 USD)",
       "size_en": "142 m² building  /  668 m² land",
       "date_found": "2026-03-03"
+    },
+    {
+      "source": "Suumo",
+      "title": "Kurima Machiyacho (Takada Motoyama Station) 7.9 million yen",
+      "address": "Kurima Machiyacho (Takada Motoyama Station) 7.9 million yen",
+      "price": "790万円",
+      "size": "667.87m2 / 141.6m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F045%2F20222045%2F20222045_0005.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥7,900,000  (~$52,666 USD)",
+      "size_en": "142 m² building  /  668 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.754397,
+      "lng": 136.523904
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City, Osato Noda-cho, one-story building, 5DK",
+      "address": "Tsu City, Osato Noda-cho, one-story building, 5DK",
+      "price": "600万円",
+      "size": "320.08m² / 102.84m²",
+      "url": "https://www.athome.co.jp/kodate/6988869146/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/9MrDziF6VV27yXeBDA9D-w==",
+      "area": "Tsu, Mie",
+      "build_year": "1952",
+      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "size_en": "103 m² building  /  320 m² land",
+      "date_found": "2026-03-19",
+      "lat": 34.782554,
+      "lng": 136.485566
     }
   ],
   "notes": {
@@ -450,7 +450,7 @@
     "https://www.athome.co.jp/kodate/1064668493": "NO. Nice house but, Tandem cover parking spaces. No room for garage",
     "https://www.athome.co.jp/kodate/6986688790": "NO. To much because would need to build garage. Very close to Tsu boat race. used to have a 2 story metal shop on property. now all rock ",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_75535636": "No.     Tandem cover parking spaces. No room for garage",
-    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045": "GO SEE. VERY BIG property. don't know boundries. close to water. Also on Athome. CONTACT REALTOR ",
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045": "NO. bad roads. went there.  don't know boundries. close to water. Also on Athome. CONTACT REALTOR ",
     "https://www.homes.co.jp/kodate/b-1319090000007": "No.     Tandem cover parking spaces. No room for garage",
     "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302": "Kuma house.",
     "https://www.athome.co.jp/kodate/6989274148": "Drove by. To narrow road to access. NO. Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit. Some dirt floors. Second house also convert to garage. Was another connected house that was demolished. Where is farm lot? next to mini cemetary",
@@ -702,6 +702,8 @@
     "https://www.athome.co.jp/kodate/6987974187",
     "https://www.athome.co.jp/kodate/1120886005",
     "https://www.homes.co.jp/akiyabank/b-46378",
-    "https://www.athome.co.jp/kodate/1033902993"
+    "https://www.athome.co.jp/kodate/1033902993",
+    "https://www.athome.co.jp/kodate/6988869146",
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045"
   ]
 }
