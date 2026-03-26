@@ -158,38 +158,6 @@
       "lng": 136.411577
     },
     {
-      "source": "Lifull Homes",
-      "title": "Used detached house Nishi-Shonai Town",
-      "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
-      "price": "880万円",
-      "size": "690.9m² / 129.09m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319110000021/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131911%2Fsale%2F21%2F2%2F2%2Fijsb.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1993",
-      "price_en": "¥8,800,000  (~$58,666 USD)",
-      "size_en": "129 m² building  /  691 m² land",
-      "date_found": "2026-03-08",
-      "lat": 34.925589,
-      "lng": 136.453997
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Nishi-Shonai-cho (Kasato Station) One-story building 5DK",
-      "address": "Suzuka City Nishi-Shonai-cho (Kasato Station) One-story building 5DK",
-      "price": "880万円",
-      "size": "690.90m² / 129.09m²",
-      "url": "https://www.athome.co.jp/kodate/1037353798/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/UP5z2jcGTe0E0XEycTQZmA==",
-      "area": "Suzuka, Mie",
-      "build_year": "1994",
-      "price_en": "¥8,800,000  (~$58,666 USD)",
-      "size_en": "129 m² building  /  691 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.89033,
-      "lng": 136.530017
-    },
-    {
       "source": "AtHome",
       "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
       "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
@@ -204,20 +172,6 @@
       "date_found": "2026-03-03",
       "lat": 34.757805,
       "lng": 136.526934
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusan-cho Mikeno",
-      "price": "500万円",
-      "size": "571.96 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-44182/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-15be7e710aa00355ea52fc31e19fd53b7729f5c3.jpg",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "572 m² land",
-      "date_found": "2026-03-06"
     },
     {
       "source": "AtHome",
@@ -353,6 +307,52 @@
       "date_found": "2026-03-12",
       "lat": 34.851794,
       "lng": 136.610371
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Suzuka City Nishi-Shonai Town",
+      "price": "980万円",
+      "size": "690.90 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-43376/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-9f0fcdab176e748eecaed2412f26337cb1c226ea.jpg",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "691 m² land",
+      "date_found": "2026-03-06"
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Nishi-Shonai Town",
+      "address": "Old detached house Nishi-Shonai Town<img src=\"https://im",
+      "price": "880万円",
+      "size": "690.9m² / 129.09m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319110000021/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131911%2Fsale%2F21%2F2%2F2%2Fijsb.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "1993",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "size_en": "129 m² building  /  691 m² land",
+      "date_found": "2026-03-08",
+      "lat": 34.925589,
+      "lng": 136.453997
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Nishi-Shonai-cho (Kasato Station) One-story building 5DK",
+      "address": "Suzuka City Nishi-Shonai-cho (Kasato Station) One-story building 5DK",
+      "price": "880万円",
+      "size": "690.90m² / 129.09m²",
+      "url": "https://www.athome.co.jp/kodate/1037353798/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/UP5z2jcGTe0E0XEycTQZmA==",
+      "area": "Suzuka, Mie",
+      "build_year": "1994",
+      "price_en": "¥8,800,000  (~$58,666 USD)",
+      "size_en": "129 m² building  /  691 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.89033,
+      "lng": 136.530017
     }
   ],
   "notes": {
@@ -379,10 +379,10 @@
     "https://www.homes.co.jp/akiyabank/b-31395": "127/202",
     "https://www.athome.co.jp/kodate/6982115934": "NO. Old , nasty, Dirt hallways",
     "https://www.athome.co.jp/kodate/1191622419": "Kinda nasty Road ok. Extension could be used as a garage 2 blocks from beach. 2 blocks Family mart. Chiyozaki station 5 min walk",
-    "https://www.athome.co.jp/kodate/1037353798": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
+    "https://www.athome.co.jp/kodate/1037353798": "NO. To Narrow road. Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
     "https://www.athome.co.jp/kodate/6989062801": "No. not enough room To easily build garage. to $$$. south end of the 5 golf course valley pricey. Main house guest house storehouse is trash replace w/garage if ok by 70/200",
     "https://www.athome.co.jp/kodate/6987134731": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
-    "https://www.homes.co.jp/kodate/b-1319110000021": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
+    "https://www.homes.co.jp/kodate/b-1319110000021": "NO. To Narrow road. Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
     "https://www.athome.co.jp/kodate/1120886005": "To narrow to turn into house NO. . Main house size?, guest house, garage maybe 12*24, really NARROW private road. 24min to track.",
     "https://www.athome.co.jp/kodate/6989681183": "Junk",
     "https://www.athome.co.jp/kodate/1003637698": "No 193/571 4 buildings great property, great road access. NEXT to TEA feild. Unfortunately VERY south and West in Tsu. west of Boat race",
@@ -440,7 +440,7 @@
     "https://www.homes.co.jp/akiyabank/b-46440": "NO. To small. got thru filters",
     "https://www.homes.co.jp/akiyabank/b-46378": "NO. needs total demolish and start over Great lot on wide street. Huge house and buildings. don't know how big lot is. Some exterior renovated.",
     "https://www.homes.co.jp/akiyabank/b-46406": "NO. Rental house",
-    "https://www.homes.co.jp/akiyabank/b-44182": "Huge. can't find 368/1,571",
+    "https://www.homes.co.jp/akiyabank/b-44182": "WAAY west of boat race. found area  only.  Huge. can't find 368/1,571",
     "https://www.homes.co.jp/akiyabank/b-42579": "NO. Waay SW of TSU. small mountain town",
     "https://www.homes.co.jp/akiyabank/b-46255": "NO. To small and trashed. Someone started full gut and quit.",
     "https://www.homes.co.jp/akiyabank/b-45527": "NO. To small. got thru filters",
@@ -656,6 +656,9 @@
     "https://www.homes.co.jp/akiyabank/b-36517",
     "https://www.homes.co.jp/akiyabank/b-34948",
     "https://www.athome.co.jp/kodate/1191622419",
-    "https://www.homes.co.jp/akiyabank/b-44661"
+    "https://www.homes.co.jp/akiyabank/b-44661",
+    "https://www.homes.co.jp/akiyabank/b-43376",
+    "https://www.athome.co.jp/kodate/1037353798",
+    "https://www.homes.co.jp/kodate/b-1319110000021"
   ]
 }
