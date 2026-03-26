@@ -15,19 +15,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story 7DK",
-      "address": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story building 7D",
-      "price": "790万円",
-      "size": "667.87m² / 141.60m²",
-      "url": "https://www.athome.co.jp/kodate/1033902993/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/LrmQRjUoXbD3WWkxZJhnSA==",
-      "area": "Tsu, Mie",
-      "price_en": "¥7,900,000  (~$52,666 USD)",
-      "size_en": "142 m² building  /  668 m² land",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "AtHome",
       "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
       "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
       "price": "900万円",
@@ -413,6 +400,19 @@
       "price_en": "¥5,000,000  (~$33,333 USD)",
       "size_en": "555 m² land",
       "date_found": "2026-03-06"
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story 7DK",
+      "address": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story building 7D",
+      "price": "790万円",
+      "size": "667.87m² / 141.60m²",
+      "url": "https://www.athome.co.jp/kodate/1033902993/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/LrmQRjUoXbD3WWkxZJhnSA==",
+      "area": "Tsu, Mie",
+      "price_en": "¥7,900,000  (~$52,666 USD)",
+      "size_en": "142 m² building  /  668 m² land",
+      "date_found": "2026-03-03"
     }
   ],
   "notes": {
@@ -421,7 +421,7 @@
     "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka. looks great though. couldn't find exact location",
     "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "Drove to house. To narrow streets got stuck in Note. ARGH",
-    "https://www.athome.co.jp/kodate/1033902993": "GO SEE. VERY BIG property. don't know boundries. close to water. On Suumo also. CONTACT REALTOR",
+    "https://www.athome.co.jp/kodate/1033902993": "To narrow bad roads. . don't know boundries. close to water. On Suumo also. CONTACT REALTOR",
     "https://www.homes.co.jp/kodate/b-1561470000030": "Expensive but just fully renovated. MAYBE enough space (60% rule) for garage. great wide street",
     "https://www.homes.co.jp/kodate/b-1319120000101": "NO. to $$$ would need to build garage.116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860": "NO. to $$$ would need to build garage.116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n",
@@ -701,6 +701,7 @@
     "https://www.athome.co.jp/kodate/6989274148",
     "https://www.athome.co.jp/kodate/6987974187",
     "https://www.athome.co.jp/kodate/1120886005",
-    "https://www.homes.co.jp/akiyabank/b-46378"
+    "https://www.homes.co.jp/akiyabank/b-46378",
+    "https://www.athome.co.jp/kodate/1033902993"
   ]
 }
