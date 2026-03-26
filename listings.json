@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-25T20:18:28",
+  "generated": "2026-03-26T06:13:20",
   "listings": [
     {
       "source": "AtHome",
@@ -275,7 +275,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) 2-story 6DK",
+      "title": "津市 美里町家所（津新町駅） 2階建 ６ＤＫ",
       "address": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) 2-story 6DK",
       "price": "398万円",
       "size": "629.03m² / 203.34m²",
@@ -1117,8 +1117,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1274,22 +1274,6 @@
       "date_found": "2026-03-03",
       "lat": 34.831075,
       "lng": 136.584066
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-25",
-      "lat": 34.762742,
-      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
@@ -1726,7 +1710,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
+      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
@@ -1796,7 +1780,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Kumoide Ikurazu Town",
+      "address": "三重県 津市 雲出伊倉津町",
       "price": "850万円",
       "size": "290.9 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-37269/",
