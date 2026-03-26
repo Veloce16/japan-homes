@@ -108,22 +108,6 @@
       "lng": 138.973558
     },
     {
-      "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
-      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
-      "price": "1,400万円",
-      "size": "219.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fdgb0.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-03-11",
-      "lat": 34.893343,
-      "lng": 136.624456
-    },
-    {
       "source": "AtHome",
       "title": "Suzuka City Shirako 3-chome (Shiroko Station) 2-story 7DK",
       "address": "Suzuka City Shirako 3-chome (Shiroko Station) 2-story 7DK",
@@ -422,7 +406,7 @@
     "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "Drove to house. To narrow streets got stuck in Note. ARGH",
     "https://www.athome.co.jp/kodate/1033902993": "To narrow bad roads. . don't know boundries. close to water. On Suumo also. CONTACT REALTOR",
-    "https://www.homes.co.jp/kodate/b-1561470000030": "Expensive but just fully renovated. MAYBE enough space (60% rule) for garage. great wide street",
+    "https://www.homes.co.jp/kodate/b-1561470000030": "No. too much. Expensive but just fully renovated. MAYBE enough space (60% rule) for garage. great wide street",
     "https://www.homes.co.jp/kodate/b-1319120000101": "NO. to $$$ would need to build garage.116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860": "NO. to $$$ would need to build garage.116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n",
     "https://www.athome.co.jp/kodate/1192726417": "NO. to $$$ would need to build garage.116/3000 expensive but MAYBE (60% rule) enough room for garage. Close to water and Shiroko station (10 min walk)\n\n",
@@ -440,7 +424,7 @@
     "https://www.athome.co.jp/kodate/6982115934": "NO. Old , nasty, Dirt hallways",
     "https://www.athome.co.jp/kodate/1191622419": "Road ok. Extension could be used as a garage 2 blocks from beach. 2 blocks Family mart. Chiyozaki station 5 min walk",
     "https://www.athome.co.jp/kodate/1037353798": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
-    "https://www.athome.co.jp/kodate/6989062801": "south end of the 5 golf course valley pricey. Main house guest house storehouse is trash replace w/garage if ok by 70/200",
+    "https://www.athome.co.jp/kodate/6989062801": "No. not enough room To easily build garage. to $$$. south end of the 5 golf course valley pricey. Main house guest house storehouse is trash replace w/garage if ok by 70/200",
     "https://www.athome.co.jp/kodate/6987134731": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
     "https://www.homes.co.jp/kodate/b-1319110000021": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
     "https://www.athome.co.jp/kodate/1120886005": "To narrow to turn into house NO. . Main house size?, guest house, garage maybe 12*24, really NARROW private road. 24min to track.",
@@ -704,6 +688,7 @@
     "https://www.homes.co.jp/akiyabank/b-46378",
     "https://www.athome.co.jp/kodate/1033902993",
     "https://www.athome.co.jp/kodate/6988869146",
-    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045"
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20222045",
+    "https://www.homes.co.jp/kodate/b-1561470000030"
   ]
 }
