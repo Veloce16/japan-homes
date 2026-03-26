@@ -155,22 +155,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
-      "address": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
-      "price": "730万円",
-      "size": "332.39m² / 175.93m²",
-      "url": "https://www.athome.co.jp/kodate/1191622419/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/ZQxKdW2Mg3Jw85jEjo5aXA==",
-      "area": "Suzuka, Mie",
-      "build_year": "1964",
-      "price_en": "¥7,300,000  (~$48,666 USD)",
-      "size_en": "176 m² building  /  332 m² land",
-      "date_found": "2026-03-12",
-      "lat": 34.851794,
-      "lng": 136.610371
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "address": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "price": "980万円",
@@ -373,7 +357,7 @@
     "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
     "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "NO. WAY west of Matsusaka",
     "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka. looks great though. couldn't find exact location",
-    "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
+    "https://www.homes.co.jp/akiyabank/b-44661": "To Narrow road and needs a lot of work. 2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "Drove to house. To narrow streets got stuck in Note. ARGH",
     "https://www.athome.co.jp/kodate/1033902993": "To narrow bad roads. . don't know boundries. close to water. On Suumo also. CONTACT REALTOR",
     "https://www.homes.co.jp/kodate/b-1561470000030": "No. too much. Expensive but just fully renovated. MAYBE enough space (60% rule) for garage. great wide street",
@@ -668,6 +652,7 @@
     "https://www.athome.co.jp/kodate/1192959917",
     "https://www.homes.co.jp/kodate/b-1276000002057",
     "https://www.homes.co.jp/akiyabank/b-36517",
-    "https://www.homes.co.jp/akiyabank/b-34948"
+    "https://www.homes.co.jp/akiyabank/b-34948",
+    "https://www.athome.co.jp/kodate/1191622419"
   ]
 }
