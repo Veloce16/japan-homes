@@ -78,20 +78,6 @@
       "lng": 136.550615
     },
     {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Suzuka City Misono Town",
-      "price": "800万円",
-      "size": "688.08 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-44661/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-56fc19b391c4bc000fa7793c1e70c2477b0c0814.jpg",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥8,000,000  (~$53,333 USD)",
-      "size_en": "688 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
       "source": "Shizuoka Akiya",
       "title": "house for sale",
       "address": "919-1 Fujimagari, Oyama-machi, Sunto-gun",
@@ -122,20 +108,6 @@
       "date_found": "2026-03-03",
       "lat": 34.831088,
       "lng": 136.584061
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Suzuka City Nishi-Shonai Town",
-      "price": "980万円",
-      "size": "690.90 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-43376/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-9f0fcdab176e748eecaed2412f26337cb1c226ea.jpg",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "691 m² land",
-      "date_found": "2026-03-06"
     },
     {
       "source": "AtHome",
@@ -351,6 +323,36 @@
       "price_en": "¥9,000,000  (~$60,000 USD)",
       "size_en": "463 m² land",
       "date_found": "2026-03-06"
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Suzuka City Misono Town",
+      "price": "800万円",
+      "size": "688.08 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-44661/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-56fc19b391c4bc000fa7793c1e70c2477b0c0814.jpg",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,000,000  (~$53,333 USD)",
+      "size_en": "688 m² land",
+      "date_found": "2026-03-06"
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
+      "address": "Suzuka City Minamiwakamatsucho (Chiyozaki Station) 2-story 10DK",
+      "price": "730万円",
+      "size": "332.39m² / 175.93m²",
+      "url": "https://www.athome.co.jp/kodate/1191622419/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/ZQxKdW2Mg3Jw85jEjo5aXA==",
+      "area": "Suzuka, Mie",
+      "build_year": "1964",
+      "price_en": "¥7,300,000  (~$48,666 USD)",
+      "size_en": "176 m² building  /  332 m² land",
+      "date_found": "2026-03-12",
+      "lat": 34.851794,
+      "lng": 136.610371
     }
   ],
   "notes": {
@@ -369,7 +371,7 @@
     "https://www.athome.co.jp/kodate/6989336556": "See property when in town.",
     "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there. up against train tracks. weird lot maybe. close to water\n",
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
-    "https://www.homes.co.jp/akiyabank/b-43376": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
+    "https://www.homes.co.jp/akiyabank/b-43376": "NO. To Narrow road. Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
     "https://www.homes.co.jp/akiyabank/b-41714": "98.12/201.11",
     "https://www.homes.co.jp/akiyabank/b-41619": "110/200",
     "https://www.homes.co.jp/akiyabank/b-39242": "114/223",
@@ -653,6 +655,7 @@
     "https://www.homes.co.jp/kodate/b-1276000002057",
     "https://www.homes.co.jp/akiyabank/b-36517",
     "https://www.homes.co.jp/akiyabank/b-34948",
-    "https://www.athome.co.jp/kodate/1191622419"
+    "https://www.athome.co.jp/kodate/1191622419",
+    "https://www.homes.co.jp/akiyabank/b-44661"
   ]
 }
