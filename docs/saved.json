@@ -280,22 +280,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11SLDK",
-      "address": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11",
-      "price": "1,198万円",
-      "size": "371.03m² / 193.15m²",
-      "url": "https://www.athome.co.jp/kodate/1190419919/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/nNg4rkp0siC2O8gQkY4Rhw==",
-      "area": "Tsu, Mie",
-      "build_year": "1978",
-      "price_en": "¥11,980,000  (~$79,866 USD)",
-      "size_en": "193 m² building  /  371 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.679294,
-      "lng": 136.510357
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Shiratsuka-cho (Shiratsuka Station) 2-story 4DK",
       "address": "Tsu City Shiratsuka-cho (Shiratsuka Station) 2-story 4DK",
       "price": "480万円",
@@ -445,6 +429,52 @@
       "date_found": "2026-03-19",
       "lat": 34.782554,
       "lng": 136.485566
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11SLDK",
+      "address": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11",
+      "price": "1,198万円",
+      "size": "371.03m² / 193.15m²",
+      "url": "https://www.athome.co.jp/kodate/1190419919/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/nNg4rkp0siC2O8gQkY4Rhw==",
+      "area": "Tsu, Mie",
+      "build_year": "1978",
+      "price_en": "¥11,980,000  (~$79,866 USD)",
+      "size_en": "193 m² building  /  371 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.679294,
+      "lng": 136.510357
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
+      "address": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
+      "price": "498万円",
+      "size": "364.33m² / 179.18m²",
+      "url": "https://www.athome.co.jp/kodate/6984577883/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/JF486J2hguQZ_Jl8d6cv4g==",
+      "area": "Tsu, Mie",
+      "build_year": "1971",
+      "price_en": "¥4,980,000  (~$33,200 USD)",
+      "size_en": "179 m² building  /  364 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.697399,
+      "lng": 136.516441
+    },
+    {
+      "source": "Akiya Bank",
+      "title": "For sale and residence",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
+      "price": "500万円",
+      "size": "555.08 m²",
+      "url": "https://www.homes.co.jp/akiyabank/b-45044/",
+      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-29bd3bdc0ce781214b002ee7ae5a1a9e81e0894c.jpg",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "555 m² land",
+      "date_found": "2026-03-06"
     }
   ],
   "notes": {
@@ -486,7 +516,7 @@
     "https://www.homes.co.jp/kodate/b-1319090000007": "No.     Tandem cover parking spaces. No room for garage",
     "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302": "Kuma house.",
     "https://www.athome.co.jp/kodate/6989274148": "Awesome view. access road questions. Lot boundry questions. 24m2 farming lot included need permit. Some dirt floors. Second house also convert to garage. Was another connected house that was demolished. Where is farm lot? next to mini cemetary",
-    "https://www.athome.co.jp/kodate/1190419919": "GO SEE. BIG house with garage workshop tight nice neiborhood close to Boat race Tsu",
+    "https://www.athome.co.jp/kodate/1190419919": "To much. saw from outside. . BIG house with garage workshop tight nice neiborhood close to Boat race Tsu",
     "https://www.athome.co.jp/kodate/6980469810": "2 mins from beach. Needs a lot of reno.  maybe space for garage??",
     "https://www.athome.co.jp/kodate/6987766143": "Junk NO",
     "https://www.athome.co.jp/kodate/6989153818": "NO Junk",
@@ -727,6 +757,8 @@
     "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860",
     "https://www.homes.co.jp/kodate/b-1319120000101",
     "https://www.athome.co.jp/kodate/6989018130",
-    "https://www.athome.co.jp/kodate/6984577883"
+    "https://www.athome.co.jp/kodate/6984577883",
+    "https://www.homes.co.jp/akiyabank/b-45044",
+    "https://www.athome.co.jp/kodate/1190419919"
   ]
 }
