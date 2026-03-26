@@ -487,7 +487,7 @@
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20250728": "NO. Delta area High water zone.",
     "https://www.athome.co.jp/kodate/6987579731": "NO. only single garage. Too expensive",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78137571": "Camping area out in the mountains.",
-    "https://www.athome.co.jp/kodate/1029446393": "can't find. 143/464 pin location wrong. Big 1 story nice lot",
+    "https://www.athome.co.jp/kodate/1029446393": "No. too much.  can't find. 143/464 pin location wrong. Big 1 story nice lot",
     "https://www.athome.co.jp/kodate/1034362393": "NO.  Weird property single concrete cave parking",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20418305": "NO.  Weird property single concrete cave parking",
     "https://www.athome.co.jp/kodate/6988936788": "NO. to expensive to small. not impresive next to hospital and coffee shop",
@@ -499,7 +499,9 @@
     "https://www.athome.co.jp/kodate/6986708794": "NICE but NO. to expensive 2 mins from track in new nice neiborhood. Couldn't find it",
     "https://www.homes.co.jp/akiyabank/b-46652": "No. No land",
     "https://www.athome.co.jp/kodate/1192959917": "6 ft entry driveway.Can't find",
-    "https://www.athome.co.jp/kodate/1070233198": "NO. TOO narrow road"
+    "https://www.athome.co.jp/kodate/1070233198": "NO. TOO narrow road",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0024747682": "NO. TOO narrow road",
+    "https://www.homes.co.jp/akiyabank/b-46597": "NO. Too Small land"
   },
   "manualCoords": {
     "https://www.homes.co.jp/akiyabank/b-44661": {
@@ -676,6 +678,9 @@
     "https://www.athome.co.jp/kodate/1037353798",
     "https://www.homes.co.jp/kodate/b-1319110000021",
     "https://www.homes.co.jp/akiyabank/b-44182",
-    "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302"
+    "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302",
+    "https://www.athome.co.jp/kodate/1070233198",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0024747682",
+    "https://www.homes.co.jp/akiyabank/b-46597"
   ]
 }
