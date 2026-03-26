@@ -183,22 +183,6 @@
       "lng": 138.935895
     },
     {
-      "source": "AtHome",
-      "title": "Tsu City Kawagei-cho Higashisenri (Senri Station) One-story building 9DK",
-      "address": "Tsu City Kawagei-cho Higashisenri (Senri Station) One-story building 9DK",
-      "price": "600万円",
-      "size": "636.68m² / 138.95m²",
-      "url": "https://www.athome.co.jp/kodate/6987974187/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/TQk_aUDF74HWYXhQdszBIg==",
-      "area": "Tsu, Mie",
-      "build_year": "1975",
-      "price_en": "¥6,000,000  (~$40,000 USD)",
-      "size_en": "139 m² building  /  637 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.800889,
-      "lng": 136.561363
-    },
-    {
       "source": "Suumo",
       "title": "Kurima Machiyacho (Takada Motoyama Station) 7.9 million yen",
       "address": "Kurima Machiyacho (Takada Motoyama Station) 7.9 million yen",
@@ -229,22 +213,6 @@
       "date_found": "2026-03-12",
       "lat": 34.851794,
       "lng": 136.610371
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Anomachi Sone (Tsushinmachi Station) 2-story 7SDK",
-      "address": "Tsu City Anomachi Sone (Tsushinmachi Station) 2-story 7SD",
-      "price": "780万円",
-      "size": "706.45m² / 202.00m²",
-      "url": "https://www.athome.co.jp/kodate/1120886005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/SCuKvG-3ZeK6g0qCfvEjHg==",
-      "area": "Tsu, Mie",
-      "build_year": "1970",
-      "price_en": "¥7,800,000  (~$52,000 USD)",
-      "size_en": "202 m² building  /  706 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.715621,
-      "lng": 136.499955
     },
     {
       "source": "AtHome",
@@ -373,20 +341,6 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Takanoo Town",
-      "price": "700万円",
-      "size": "",
-      "url": "https://www.homes.co.jp/akiyabank/b-46378/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-aab50c4867c42b0e5028ff7e3f0494d920030d7a.jpg",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥7,000,000  (~$46,666 USD)",
-      "size_en": "",
-      "date_found": "2026-03-09"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
       "address": "Mie Prefecture Tsu City Hakusan-cho Mikeno",
       "price": "500万円",
       "size": "571.96 m²",
@@ -489,7 +443,7 @@
     "https://www.athome.co.jp/kodate/6989062801": "south end of the 5 golf course valley pricey. Main house guest house storehouse is trash replace w/garage if ok by 70/200",
     "https://www.athome.co.jp/kodate/6987134731": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
     "https://www.homes.co.jp/kodate/b-1319110000021": "Found Property and pinned location. House listed THREE times once under the Lilful Akiya bank for 9.8 mil and this one. Shonai valley 5 golf courses. 25 min to track or mall. looks like partial exterior renovation.",
-    "https://www.athome.co.jp/kodate/1120886005": "GO SEE. Main house size?, guest house, garage maybe 12*24, really NARROW private road. 24min to track.",
+    "https://www.athome.co.jp/kodate/1120886005": "To narrow to turn into house NO. . Main house size?, guest house, garage maybe 12*24, really NARROW private road. 24min to track.",
     "https://www.athome.co.jp/kodate/6989681183": "Junk",
     "https://www.athome.co.jp/kodate/1003637698": "No 193/571 4 buildings great property, great road access. NEXT to TEA feild. Unfortunately VERY south and West in Tsu. west of Boat race",
     "https://www.athome.co.jp/kodate/1171153309": "GO SEE. Huge house in Fujikata by Tsu boat race. Found and manually placed",
@@ -544,7 +498,7 @@
     "https://www.athome.co.jp/kodate/6989555214": "South dellta area by boat race. Yumi says dangerous. solar next to property",
     "https://www.homes.co.jp/akiyabank/b-46560": "NO. To small. got thru filters",
     "https://www.homes.co.jp/akiyabank/b-46440": "NO. To small. got thru filters",
-    "https://www.homes.co.jp/akiyabank/b-46378": "Huge house and buildings. don't know how big lot is. Some exterior renovated.",
+    "https://www.homes.co.jp/akiyabank/b-46378": "NO. needs total demolish and start over Great lot on wide street. Huge house and buildings. don't know how big lot is. Some exterior renovated.",
     "https://www.homes.co.jp/akiyabank/b-46406": "NO. Rental house",
     "https://www.homes.co.jp/akiyabank/b-44182": "Huge. can't find 368/1,571",
     "https://www.homes.co.jp/akiyabank/b-42579": "NO. Waay SW of TSU. small mountain town",
@@ -744,6 +698,9 @@
     "https://www.athome.co.jp/kodate/6984577883",
     "https://www.homes.co.jp/akiyabank/b-45044",
     "https://www.athome.co.jp/kodate/1190419919",
-    "https://www.athome.co.jp/kodate/6989274148"
+    "https://www.athome.co.jp/kodate/6989274148",
+    "https://www.athome.co.jp/kodate/6987974187",
+    "https://www.athome.co.jp/kodate/1120886005",
+    "https://www.homes.co.jp/akiyabank/b-46378"
   ]
 }
