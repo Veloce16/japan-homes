@@ -351,6 +351,22 @@
       "price_en": "¥5,000,000  (~$33,333 USD)",
       "size_en": "572 m² land",
       "date_found": "2026-03-06"
+    },
+    {
+      "source": "Shizuoka Akiya",
+      "title": "house for sale",
+      "address": "919-1 Fujimagari, Oyama-machi, Sunto-gun",
+      "price": "1,380万円",
+      "size": "173.61m² / 450.08m² / 173.61m²",
+      "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302",
+      "image": "https://akiya-bank.shizuoka.fudohsan.jp/img/161302/2M/1772075431",
+      "area": "Oyama, Shizuoka",
+      "build_year": "",
+      "price_en": "¥13,800,000  (~$92,000 USD)",
+      "size_en": "450 m² building  /  174 m² land  /  174 m² other",
+      "date_found": "2026-03-11",
+      "lat": 35.359072,
+      "lng": 138.973558
     }
   ],
   "notes": {
@@ -482,7 +498,8 @@
     "https://www.athome.co.jp/kodate/6987265116": "NO. too expensive and trashy apt next door",
     "https://www.athome.co.jp/kodate/6986708794": "NICE but NO. to expensive 2 mins from track in new nice neiborhood. Couldn't find it",
     "https://www.homes.co.jp/akiyabank/b-46652": "No. No land",
-    "https://www.athome.co.jp/kodate/1192959917": "6 ft entry driveway.Can't find"
+    "https://www.athome.co.jp/kodate/1192959917": "6 ft entry driveway.Can't find",
+    "https://www.athome.co.jp/kodate/1070233198": "NO. TOO narrow road"
   },
   "manualCoords": {
     "https://www.homes.co.jp/akiyabank/b-44661": {
@@ -658,6 +675,7 @@
     "https://www.homes.co.jp/akiyabank/b-43376",
     "https://www.athome.co.jp/kodate/1037353798",
     "https://www.homes.co.jp/kodate/b-1319110000021",
-    "https://www.homes.co.jp/akiyabank/b-44182"
+    "https://www.homes.co.jp/akiyabank/b-44182",
+    "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302"
   ]
 }
