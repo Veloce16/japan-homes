@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-28T14:22:10",
+  "generated": "2026-03-28T19:45:18",
   "listings": [
     {
       "source": "AtHome",
@@ -989,6 +989,22 @@
     },
     {
       "source": "Suumo",
+      "title": "Korazu Town 5.9 million yen",
+      "address": "Korazu Town 5.9 million yen",
+      "price": "590万円",
+      "size": "792m2 / 109.09m2 / 14.87m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78824651/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F651%2F78824651%2F78824651_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,900,000  (~$39,333 USD)",
+      "size_en": "109 m² building  /  792 m² land  /  15 m² other",
+      "date_found": "2026-03-28",
+      "lat": 34.653085,
+      "lng": 136.533181
+    },
+    {
+      "source": "Suumo",
       "title": "Hisai Myojin Town 7.5 million yen",
       "address": "Hisai Myojin Town 7.5 million yen",
       "price": "750万円",
@@ -1324,22 +1340,6 @@
       "lng": 136.524421
     },
     {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-27",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
       "source": "Akiya Bank",
       "title": "For sale and residence",
       "address": "Mie Prefecture Suzuka City Shirako Town",
@@ -1636,7 +1636,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Anomachi Kusao",
+      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
