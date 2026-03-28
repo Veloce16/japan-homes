@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-27T20:15:02",
+  "generated": "2026-03-28T05:35:45",
   "listings": [
     {
       "source": "AtHome",
@@ -192,22 +192,6 @@
       "date_found": "2026-03-03",
       "lat": 34.621249,
       "lng": 136.389707
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) One-story building 6LDK",
-      "address": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) One-story building 6LD",
-      "price": "190万円",
-      "size": "309.35m² / 118.80m²",
-      "url": "https://www.athome.co.jp/kodate/1191594919/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/gXMqF0P4OBoQ8KNbonzruw==",
-      "area": "Tsu, Mie",
-      "build_year": "1981",
-      "price_en": "¥1,900,000  (~$12,666 USD)",
-      "size_en": "119 m² building  /  309 m² land",
-      "date_found": "2026-03-11",
-      "lat": 34.728299,
-      "lng": 136.421152
     },
     {
       "source": "AtHome",
@@ -1277,22 +1261,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-03-27",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1306,6 +1274,22 @@
       "date_found": "2026-03-03",
       "lat": 34.665984,
       "lng": 136.536732
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
+      "price": "500万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "215 m² land",
+      "date_found": "2026-03-27",
+      "lat": 34.762742,
+      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
