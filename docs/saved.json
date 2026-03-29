@@ -2,6 +2,19 @@
   "saved": [
     {
       "source": "AtHome",
+      "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 6DK",
+      "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 6DK",
+      "price": "1,500万円",
+      "size": "498.28m² / 142.11m²",
+      "url": "https://www.athome.co.jp/kodate/6987579731/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/rQKWTbmjwHFP6JVtUxiP4Q==",
+      "area": "Oyama, Shizuoka",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "142 m² building  /  498 m² land",
+      "date_found": "2026-03-03"
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story 7DK",
       "address": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story building 7D",
       "price": "790万円",
@@ -46,22 +59,6 @@
       "lng": 138.979586
     },
     {
-      "source": "AtHome",
-      "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "price": "580万円",
-      "size": "380.16m² / 202.63m²",
-      "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/4QwjK9ozOy1lMMG0ibjtjg==",
-      "area": "Suzuka, Mie",
-      "build_year": "1966",
-      "price_en": "¥5,800,000  (~$38,666 USD)",
-      "size_en": "203 m² building  /  380 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.853257,
-      "lng": 136.607897
-    },
-    {
       "source": "Lifull Homes",
       "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
       "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
@@ -76,6 +73,22 @@
       "date_found": "2026-03-03",
       "lat": 35.325296,
       "lng": 138.935884
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "price": "580万円",
+      "size": "380.16m² / 202.63m²",
+      "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/4QwjK9ozOy1lMMG0ibjtjg==",
+      "area": "Suzuka, Mie",
+      "build_year": "1966",
+      "price_en": "¥5,800,000  (~$38,666 USD)",
+      "size_en": "203 m² building  /  380 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.853257,
+      "lng": 136.607897
     },
     {
       "source": "Suumo",
@@ -122,6 +135,22 @@
       "price_en": "¥8,000,000  (~$53,333 USD)",
       "size_en": "688 m² land",
       "date_found": "2026-03-06"
+    },
+    {
+      "source": "Shizuoka Akiya",
+      "title": "house for sale",
+      "address": "919-1 Fujimagari, Oyama-machi, Sunto-gun",
+      "price": "1,380万円",
+      "size": "173.61m² / 450.08m² / 173.61m²",
+      "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302",
+      "image": "https://akiya-bank.shizuoka.fudohsan.jp/img/161302/2M/1772075431",
+      "area": "Oyama, Shizuoka",
+      "build_year": "",
+      "price_en": "¥13,800,000  (~$92,000 USD)",
+      "size_en": "450 m² building  /  174 m² land  /  174 m² other",
+      "date_found": "2026-03-11",
+      "lat": 35.359072,
+      "lng": 138.973558
     },
     {
       "source": "Lifull Homes",
@@ -462,22 +491,12 @@
       "price_en": "¥5,000,000  (~$33,333 USD)",
       "size_en": "555 m² land",
       "date_found": "2026-03-06"
-    },
-    {
-      "source": "AtHome",
-      "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 6DK",
-      "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 6DK",
-      "price": "1,500万円",
-      "size": "498.28m² / 142.11m²",
-      "url": "https://www.athome.co.jp/kodate/6987579731/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/rQKWTbmjwHFP6JVtUxiP4Q==",
-      "area": "Oyama, Shizuoka",
-      "price_en": "¥15,000,000  (~$100,000 USD)",
-      "size_en": "142 m² building  /  498 m² land",
-      "date_found": "2026-03-03"
     }
   ],
   "notes": {
+    "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "WAY west of Matsusaka NO",
+    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/akiyabank/b-44661": "2 car garage 2 story with work area. Big  small road. GO SEE PROPERTY.  3 min from track. 100 from Amana elementary School, suzuka",
     "https://www.athome.co.jp/kodate/6987974187": "GO SEE PROPERTY",
     "https://www.athome.co.jp/kodate/1033902993": "VERY BIG property. don't know boundries. close to water. CONTACT REALTOR",
@@ -488,12 +507,9 @@
     "https://www.athome.co.jp/kodate/6983530939": "See property when in town.",
     "https://www.homes.co.jp/kodate/b-33323360000920": "See property when in town.\n",
     "https://www.athome.co.jp/kodate/6989336556": "See property when in town.",
-    "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there.",
-    "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "Maybe sold disappeared from another listing.",
+    "https://www.athome.co.jp/kodate/6989018130": "At least drive by when there. up against train tracks. weird lot maybe. close to water\n",
+    "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78060780": "has 2 story shop but old 70's and rusting thru. same house on Suumo and Athome",
     "https://www.homes.co.jp/akiyabank/b-43376": "2 houses plus long barn WIDE road. Way north in valley around 5 golf courses. 1993 old style house",
-    "https://www.athome.co.jp/kodate/6988687896": "Surrounded by solar fields and power lines. Nooo",
-    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0023500280": "WAY west of Matsusaka NO",
-    "https://realestate.yahoo.co.jp/used/house/detail_corp/b0021958335": "WAY west of Matsusaka NO",
     "https://www.homes.co.jp/akiyabank/b-41714": "98.12/201.11",
     "https://www.homes.co.jp/akiyabank/b-41619": "110/200",
     "https://www.homes.co.jp/akiyabank/b-39242": "114/223",
@@ -568,17 +584,17 @@
     "https://www.homes.co.jp/akiyabank/b-45527": "NO. To small. got thru filters",
     "https://www.homes.co.jp/akiyabank/b-44183": "NO. Junk and to small 143/200",
     "https://www.homes.co.jp/akiyabank/b-45141": "NO. To small 144/185. Got thru filters",
-    "https://www.homes.co.jp/akiyabank/b-45044": "GO SEE   153/555 found it looks goood clooose to forest maybe great view over teraced rice fields",
-    "https://www.homes.co.jp/akiyabank/b-45526": "100/640 Wall, garage?, We couldn't find outside bathroom. To much for outdide bath house.",
+    "https://www.homes.co.jp/akiyabank/b-45044": "153/555 # buildings. can't find location",
+    "https://www.homes.co.jp/akiyabank/b-45526": "100/640 Wall, garage?, need to find",
     "https://www.homes.co.jp/kodate/b-1319090000022": "NO. 112/93 to small",
     "https://www.homes.co.jp/kodate/b-1319090000184": "NO. 159/120 to small",
     "https://www.homes.co.jp/kodate/b-1276000002057": "193/??? big 3 buildings. find location",
     "https://www.homes.co.jp/kodate/b-1507580000016": "NO. To small 95/??? second building. ",
-    "https://www.homes.co.jp/kodate/b-1319090000170": "Delta area below Boat Race Tsu.163/??? Covered parking for 6 small cars and garage for 1. renovated TOO MUCH",
+    "https://www.homes.co.jp/kodate/b-1319090000170": "Delta area below Boat Race Tsu.163/??? Covered parking for 6 small cars and garage for 1. ",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771": "NO. 112/307 Not big enough for garage.",
     "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78051576": "143/464 pin location wrong. Big 1 story nice lot",
-    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_79218844": "Delta area below Boat Race Tsu.163/??? Covered parking for 6 small cars and garage for 1. TOO MUCH",
-    "https://www.athome.co.jp/kodate/6988869146": "NEW huge two story garage and shop. 103/1,320 HUGE lot. Big questions. Property disclosures and Rural sewer system?? outside reno done. owner lives in property.",
+    "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_79218844": "Listed on Athome with photos. House with 6 covered parking spacesNice house, renovated, 6 car parking + 1 car garage.",
+    "https://www.athome.co.jp/kodate/6988869146": "NEW huge two story garage and shop. 103/1,320 HUGE lot",
     "https://www.athome.co.jp/kodate/6987430775": "NO. To small lot for garage",
     "https://www.athome.co.jp/kodate/1033169593": "Need map location. KInda nasty outside. OLD garage",
     "https://www.athome.co.jp/kodate/6989769732": "NO. To small to have 2 car garage",
@@ -612,6 +628,10 @@
     "https://www.homes.co.jp/akiyabank/b-46597": "NO. Too Small land"
   },
   "manualCoords": {
+    "https://www.athome.co.jp/kodate/6989555214": {
+      "lat": 34.64616164142739,
+      "lng": 136.54206633567813
+    },
     "https://www.homes.co.jp/akiyabank/b-44661": {
       "lat": 34.82871475774456,
       "lng": 136.53023242950442
@@ -655,10 +675,6 @@
     "https://www.athome.co.jp/kodate/6989681183": {
       "lat": 34.76153473161102,
       "lng": 136.53216361999515
-    },
-    "https://www.athome.co.jp/kodate/6989555214": {
-      "lat": 34.64616164142739,
-      "lng": 136.54206633567813
     },
     "https://www.homes.co.jp/akiyabank/b-46378": {
       "lat": 34.78772603272144,
