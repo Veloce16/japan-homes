@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-28T19:45:18",
+  "generated": "2026-03-29T06:14:33",
   "listings": [
     {
       "source": "AtHome",
@@ -192,6 +192,22 @@
       "date_found": "2026-03-03",
       "lat": 34.621249,
       "lng": 136.389707
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) One-story building 6LDK",
+      "address": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) One-story building 6LD",
+      "price": "190万円",
+      "size": "309.35m² / 118.80m²",
+      "url": "https://www.athome.co.jp/kodate/1191594919/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/gXMqF0P4OBoQ8KNbonzruw==",
+      "area": "Tsu, Mie",
+      "build_year": "1981",
+      "price_en": "¥1,900,000  (~$12,666 USD)",
+      "size_en": "119 m² building  /  309 m² land",
+      "date_found": "2026-03-29",
+      "lat": 34.728299,
+      "lng": 136.421152
     },
     {
       "source": "AtHome",
@@ -1636,7 +1652,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
