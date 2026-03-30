@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-30T16:17:06",
+  "generated": "2026-03-30T20:28:09",
   "listings": [
     {
       "source": "AtHome",
@@ -797,8 +797,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korazu-cho 2-story 7DK",
-      "address": "Tsu City Korazu-cho 2-story 7DK",
+      "title": "Tsu City Korasu Town 2-story 7DK",
+      "address": "Tsu City Korasu Town 2-story 7DK",
       "price": "1,400万円",
       "size": "756.93m² / 208.15m²",
       "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -1261,22 +1261,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Kumoide Ikuratsu Town",
-      "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
-      "price": "1,480万円",
-      "size": "568.59m² / 163.74m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319090000170/",
-      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131909%2Fsale%2F170%2F2%2F2%2Fw000.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "1999",
-      "price_en": "¥14,800,000  (~$98,666 USD)",
-      "size_en": "164 m² building  /  569 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.665984,
-      "lng": 136.536732
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Tsu City Ichimida Town detached house PR",
       "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
       "price": "500万円",
@@ -1290,6 +1274,22 @@
       "date_found": "2026-03-30",
       "lat": 34.762742,
       "lng": 136.508373
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Kumoide Ikuratsu Town",
+      "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
+      "price": "1,480万円",
+      "size": "568.59m² / 163.74m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319090000170/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131909%2Fsale%2F170%2F2%2F2%2Fw000.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "1999",
+      "price_en": "¥14,800,000  (~$98,666 USD)",
+      "size_en": "164 m² building  /  569 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.665984,
+      "lng": 136.536732
     },
     {
       "source": "Lifull Homes",
@@ -1528,7 +1528,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusan Town Minamide",
+      "address": "Mie Prefecture Tsu City Hakusan-cho Minamide",
       "price": "700万円",
       "size": "230.27 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-46652/",
@@ -1668,7 +1668,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
