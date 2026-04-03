@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-03T12:59:26",
+  "generated": "2026-04-03T18:53:49",
   "listings": [
     {
       "source": "AtHome",
@@ -167,22 +167,6 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,450万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/1120694005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/IY_KKt8_6oyOWSKRWxSlTQ==",
-      "area": "Suzuka, Mie",
-      "build_year": "1994",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
-      "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-04-02",
-      "lat": 34.853229,
-      "lng": 136.549347
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2-story 3SLDK",
-      "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
-      "price": "1,450万円",
-      "size": "367.70m² / 113.80m²",
       "url": "https://www.athome.co.jp/kodate/1032789193/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/yJ5dzbTIu6WnxeQ5i7y3mQ==",
       "area": "Suzuka, Mie",
@@ -201,6 +185,22 @@
       "size": "367.70m² / 113.80m²",
       "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
+      "area": "Suzuka, Mie",
+      "build_year": "1994",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "size_en": "114 m² building  /  368 m² land",
+      "date_found": "2026-04-02",
+      "lat": 34.853229,
+      "lng": 136.549347
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2-story 3SLDK",
+      "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
+      "price": "1,450万円",
+      "size": "367.70m² / 113.80m²",
+      "url": "https://www.athome.co.jp/kodate/1120694005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/IY_KKt8_6oyOWSKRWxSlTQ==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -1370,22 +1370,6 @@
       "date_found": "2026-03-31",
       "lat": 34.925589,
       "lng": 136.453997
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Hirano town used house",
-      "address": "Used detached house Hirano-cho used house<img src=\"https:",
-      "price": "1,280万円",
-      "size": "566.64m² / 102.42m²",
-      "url": "https://www.homes.co.jp/kodate/b-1119090000719/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111909%2Fsale%2F719%2F2%2F2%2Fzicr.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1979",
-      "price_en": "¥12,800,000  (~$85,333 USD)",
-      "size_en": "102 m² building  /  567 m² land",
-      "date_found": "2026-04-03",
-      "lat": 34.870289,
-      "lng": 136.513892
     },
     {
       "source": "Lifull Homes",
