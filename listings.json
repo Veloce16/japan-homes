@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-03T07:18:46",
+  "generated": "2026-04-03T12:59:26",
   "listings": [
     {
       "source": "AtHome",
@@ -577,22 +577,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Misugi-cho Kamitaki (Ise-Okutsu Station) 2-story building 8SDK",
-      "address": "Tsu City Misugi-cho Kamitaki (Ise-Okutsu Station) 2-story building 8",
-      "price": "700万円",
-      "size": "653.85m² / 211.56m²",
-      "url": "https://www.athome.co.jp/kodate/6983880604/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/u9Dkralzz-XwQTezNAuB6A==",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥7,000,000  (~$46,666 USD)",
-      "size_en": "212 m² building  /  654 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.512148,
-      "lng": 136.260018
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Shiroyama 2-chome (Takachaya Station) One-story building 6DK",
       "address": "Tsu City Shiroyama 2-chome (Takachaya Station) One-story building 6DK",
       "price": "750万円",
@@ -700,6 +684,22 @@
       "date_found": "2026-03-03",
       "lat": 34.69356,
       "lng": 136.411577
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
+      "address": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
+      "price": "980万円",
+      "size": "508.28m² / 253.74m²",
+      "url": "https://www.athome.co.jp/kodate/1171153309/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/dEiB1EN31PEHdgWgdeh-Ag==",
+      "area": "Tsu, Mie",
+      "build_year": "1960",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "254 m² building  /  508 m² land",
+      "date_found": "2026-04-03",
+      "lat": 34.692214,
+      "lng": 136.496756
     },
     {
       "source": "AtHome",
@@ -1405,38 +1405,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Higashiejima Town",
-      "address": "Old detached house Higashiejima-cho<img src=\"https://im",
-      "price": "350万円",
-      "size": "108.59m² / 89.54m² / 679.37m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319120000125/",
-      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F125%2F2%2F2%2Fk63i.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1970",
-      "price_en": "¥3,500,000  (~$23,333 USD)",
-      "size_en": "90 m² building  /  109 m² land  /  679 m² other",
-      "date_found": "2026-04-03",
-      "lat": 34.839591,
-      "lng": 136.597379
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-04-03",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1844,7 +1812,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
+      "address": "Mie Prefecture Tsu City Anomachi Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
