@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-04T07:07:41",
+  "generated": "2026-04-04T12:53:25",
   "listings": [
     {
       "source": "AtHome",
@@ -414,22 +414,6 @@
       "date_found": "2026-03-03",
       "lat": 34.573991,
       "lng": 136.278406
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
-      "address": "Tsu City Fujikata (Ako Station) 2-story 9LDK",
-      "price": "498万円",
-      "size": "364.33m² / 179.18m²",
-      "url": "https://www.athome.co.jp/kodate/6984577883/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/JF486J2hguQZ_Jl8d6cv4g==",
-      "area": "Tsu, Mie",
-      "build_year": "1971",
-      "price_en": "¥4,980,000  (~$33,200 USD)",
-      "size_en": "179 m² building  /  364 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.697399,
-      "lng": 136.516441
     },
     {
       "source": "AtHome",
@@ -1086,7 +1070,7 @@
     {
       "source": "Suumo",
       "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
-      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting to school ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
@@ -1437,6 +1421,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
+      "price": "500万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "215 m² land",
+      "date_found": "2026-04-04",
+      "lat": 34.762742,
+      "lng": 136.508373
+    },
+    {
+      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1605,7 +1605,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1689,7 +1689,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1759,7 +1759,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
