@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-03T18:53:49",
+  "generated": "2026-04-04T01:31:01",
   "listings": [
     {
       "source": "AtHome",
@@ -1085,6 +1085,22 @@
     },
     {
       "source": "Suumo",
+      "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
+      "price": "500万円",
+      "size": "734.89m2 / 161.31m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F158%2F20577158%2F20577158_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "161 m² building  /  735 m² land",
+      "date_found": "2026-04-04",
+      "lat": 34.749173,
+      "lng": 136.449965
+    },
+    {
+      "source": "Suumo",
       "title": "Kurima Nakayamacho (Takada Motoyama Station) 5.52 million yen",
       "address": "Kurima Nakayamacho (Takada Motoyama Station) 5.52 million yen",
       "price": "552万円",
@@ -1324,6 +1340,22 @@
       "lng": 136.262127
     },
     {
+      "source": "Yahoo RE",
+      "title": "If you change the conditions a little, you can find a property!",
+      "address": "Shiratsuka-cho, Tsu City",
+      "price": "899万円",
+      "size": "290m2",
+      "url": "https://realestate.yahoo.co.jp/used/house/detail_corp/b0024805974/",
+      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2480/5974/0001/26aacbadc5acb34df172a9e03ebed0b3_01_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥8,990,000  (~$59,933 USD)",
+      "size_en": "290 m² land",
+      "date_found": "2026-04-04",
+      "lat": 34.757834,
+      "lng": 136.530708
+    },
+    {
       "source": "Lifull Homes",
       "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
       "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
@@ -1450,6 +1482,22 @@
       "date_found": "2026-03-03",
       "lat": 34.699798,
       "lng": 136.440428
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Ichimida Town detached house PR",
+      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
+      "price": "500万円",
+      "size": "215.16m²",
+      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "215 m² land",
+      "date_found": "2026-04-04",
+      "lat": 34.762742,
+      "lng": 136.508373
     },
     {
       "source": "Lifull Homes",
