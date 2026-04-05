@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-04T18:47:47",
+  "generated": "2026-04-05T01:40:07",
   "listings": [
     {
       "source": "AtHome",
@@ -989,12 +989,12 @@
     },
     {
       "source": "Suumo",
-      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
+      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -1005,12 +1005,12 @@
     },
     {
       "source": "Suumo",
-      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
+      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -1354,6 +1354,22 @@
       "date_found": "2026-03-03",
       "lat": 35.325296,
       "lng": 138.935884
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Used detached house Koriyama Town PR",
+      "address": "Used detached house Koriyama Town PR price 8.5 million yen Location Koriyama, Suzuka City, Mie Prefecture",
+      "price": "850万円",
+      "size": "201.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1515070000361/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151507%2Fsale%2F361%2F2%2F1%2Fj5gc.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "201 m² land",
+      "date_found": "2026-04-05",
+      "lat": 34.813904,
+      "lng": 136.537073
     },
     {
       "source": "Lifull Homes",
