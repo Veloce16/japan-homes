@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-05T01:40:07",
+  "generated": "2026-04-05T07:16:12",
   "listings": [
     {
       "source": "AtHome",
@@ -227,7 +227,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -510,22 +510,6 @@
       "date_found": "2026-03-19",
       "lat": 34.782554,
       "lng": 136.485566
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Kawagei-cho Higashisenri (Senri Station) One-story building 9DK",
-      "address": "Tsu City Kawagei-cho Higashisenri (Senri Station) One-story building 9DK",
-      "price": "600万円",
-      "size": "636.68m² / 138.95m²",
-      "url": "https://www.athome.co.jp/kodate/6987974187/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/TQk_aUDF74HWYXhQdszBIg==",
-      "area": "Tsu, Mie",
-      "build_year": "1975",
-      "price_en": "¥6,000,000  (~$40,000 USD)",
-      "size_en": "139 m² building  /  637 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.800889,
-      "lng": 136.561363
     },
     {
       "source": "AtHome",
@@ -1070,7 +1054,7 @@
     {
       "source": "Suumo",
       "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
-      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting to school ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
@@ -1357,22 +1341,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Used detached house Koriyama Town PR",
-      "address": "Used detached house Koriyama Town PR price 8.5 million yen Location Koriyama, Suzuka City, Mie Prefecture",
-      "price": "850万円",
-      "size": "201.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1515070000361/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151507%2Fsale%2F361%2F2%2F1%2Fj5gc.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥8,500,000  (~$56,666 USD)",
-      "size_en": "201 m² land",
-      "date_found": "2026-04-05",
-      "lat": 34.813904,
-      "lng": 136.537073
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Used detached house Suzuka Heights, Suzuka City",
       "address": "Used detached house Suzuka Heights, Suzuka City<img src=\"https",
       "price": "1,450万円",
@@ -1402,6 +1370,22 @@
       "date_found": "2026-03-31",
       "lat": 34.925589,
       "lng": 136.453997
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Used detached house Koriyama Town PR",
+      "address": "Used detached house Koriyama Town PR price 8.5 million yen Location Koriyama, Suzuka City, Mie Prefecture",
+      "price": "850万円",
+      "size": "201.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1515070000361/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151507%2Fsale%2F361%2F2%2F1%2Fj5gc.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "201 m² land",
+      "date_found": "2026-04-05",
+      "lat": 34.813904,
+      "lng": 136.537073
     },
     {
       "source": "Lifull Homes",
@@ -1621,7 +1605,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1705,7 +1689,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1775,7 +1759,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
