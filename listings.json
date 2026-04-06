@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-06T07:38:36",
+  "generated": "2026-04-06T13:05:57",
   "listings": [
     {
       "source": "AtHome",
@@ -227,7 +227,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -591,22 +591,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Handa (Ako Station) 2-story 6SDK",
-      "address": "Tsu City Handa (Ako Station) 2-story 6SDK",
-      "price": "780万円",
-      "size": "395.37m² / 159.20m²",
-      "url": "https://www.athome.co.jp/kodate/1192959917/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/tsxm9fw3wLCi8i5dSL_alg==",
-      "area": "Tsu, Mie",
-      "build_year": "1996",
-      "price_en": "¥7,800,000  (~$52,000 USD)",
-      "size_en": "159 m² building  /  395 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.715621,
-      "lng": 136.499955
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story 7DK",
       "address": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story building 7D",
       "price": "790万円",
@@ -938,6 +922,22 @@
       "date_found": "2026-03-25",
       "lat": 34.662944,
       "lng": 136.364937
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Hakusancho Minamide (Sakakibara Onsenguchi Station) 2-story 5LDK",
+      "address": "Tsu City Hakusancho Minamide (Sakakibara Onsenguchi Station) 2-story building 5",
+      "price": "1,500万円",
+      "size": "911.00m² / 148.23m²",
+      "url": "https://www.athome.co.jp/kodate/6987950696/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/dJSdEhg_TDXzyDCBm6VPnA==",
+      "area": "Tsu, Mie",
+      "build_year": "1982",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "148 m² building  /  911 m² land",
+      "date_found": "2026-04-06",
+      "lat": 34.662869,
+      "lng": 136.338323
     },
     {
       "source": "Suumo",
@@ -1559,7 +1559,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1643,7 +1643,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1713,7 +1713,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
@@ -1798,7 +1798,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Anomachi Kusao",
+      "address": "Mie Prefecture, Tsu City, Ano-cho, Kusao",
       "price": "500万円",
       "size": "555.08 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45044/",
