@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-05T18:51:36",
+  "generated": "2026-04-06T01:40:25",
   "listings": [
     {
       "source": "AtHome",
@@ -1054,7 +1054,7 @@
     {
       "source": "Suumo",
       "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
-      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting to school ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
@@ -1405,22 +1405,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-04-05",
-      "lat": 34.762742,
-      "lng": 136.508373
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Kumoide Ikuratsu Town",
       "address": "Detached house Kumoide Ikuratsucho<img src=\"https://im",
       "price": "1,480万円",
@@ -1571,20 +1555,6 @@
       "build_year": "",
       "price_en": "¥7,000,000  (~$46,666 USD)",
       "size_en": "202 m² land",
-      "date_found": "2026-03-06"
-    },
-    {
-      "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Suzuka City Misono Town",
-      "price": "800万円",
-      "size": "688.08 m²",
-      "url": "https://www.homes.co.jp/akiyabank/b-44661/",
-      "image": "https://akiyabank-image.akiyabank.homes.co.jp/resized-bukken-259x190-56fc19b391c4bc000fa7793c1e70c2477b0c0814.jpg",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥8,000,000  (~$53,333 USD)",
-      "size_en": "688 m² land",
       "date_found": "2026-03-06"
     },
     {
