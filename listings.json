@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-06T19:02:54",
+  "generated": "2026-04-07T01:38:07",
   "listings": [
     {
       "source": "AtHome",
@@ -213,13 +213,13 @@
       "source": "AtHome",
       "title": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2-story 3SLDK",
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
-      "price": "1,500万円",
+      "price": "1,450万円",
       "size": "367.70m² / 113.80m²",
       "url": "https://www.athome.co.jp/kodate/6986708794/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/hb6cBLI1KbZXsTuMiXHd0A==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
-      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-03-09",
       "lat": 34.841105,
@@ -797,22 +797,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korazu-cho 2-story 7DK",
-      "address": "Tsu City Korazu-cho 2-story 7DK",
-      "price": "1,400万円",
-      "size": "756.93m² / 208.15m²",
-      "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/Hkc7O_7aOvSaI8JDJASJQA==",
-      "area": "Tsu, Mie",
-      "build_year": "1992",
-      "price_en": "¥14,000,000  (~$93,333 USD)",
-      "size_en": "208 m² building  /  757 m² land",
-      "date_found": "2026-03-07",
-      "lat": 34.65274,
-      "lng": 136.543442
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7DK",
       "address": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7D",
       "price": "1,435万円",
@@ -1386,22 +1370,6 @@
       "date_found": "2026-04-04",
       "lat": 34.870289,
       "lng": 136.513892
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Shirako 3-chome",
-      "address": "10 minutes Shirako 3-chome, Suzuka City, Mie Prefecture Built year: December 1972",
-      "price": "1,380万円",
-      "size": "304.06m² / 116.07m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319120000101/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F101%2F2%2F2%2Fm0u7.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1972",
-      "price_en": "¥13,800,000  (~$92,000 USD)",
-      "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.831075,
-      "lng": 136.584066
     },
     {
       "source": "Lifull Homes",
