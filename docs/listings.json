@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-09T01:29:16",
+  "generated": "2026-04-09T07:31:10",
   "listings": [
     {
       "source": "AtHome",
@@ -984,6 +984,22 @@
       "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-04-03",
+      "lat": 34.855351,
+      "lng": 136.551634
+    },
+    {
+      "source": "Suumo",
+      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
+      "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
+      "price": "1450万円",
+      "size": "367.7m2 / 113.8m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77790884/",
+      "image": "",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "size_en": "114 m² building  /  368 m² land",
+      "date_found": "2026-04-09",
       "lat": 34.855351,
       "lng": 136.551634
     },
