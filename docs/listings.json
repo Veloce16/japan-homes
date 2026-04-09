@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-09T07:31:10",
+  "generated": "2026-04-09T13:19:10",
   "listings": [
     {
       "source": "AtHome",
@@ -227,7 +227,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -703,6 +703,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/6987265116/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/8IZhiCWaLHYRDL5N2hsqaA==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.702293,
+      "lng": 136.440657
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11SLDK",
       "address": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11",
       "price": "1,198万円",
@@ -826,22 +842,6 @@
       "date_found": "2026-03-03",
       "lat": 34.752992,
       "lng": 136.518967
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
-      "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
-      "price": "1,480万円",
-      "size": "335.02m² / 101.62m²",
-      "url": "https://www.athome.co.jp/kodate/6987265116/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/8IZhiCWaLHYRDL5N2hsqaA==",
-      "area": "Tsu, Mie",
-      "build_year": "1983",
-      "price_en": "¥14,800,000  (~$98,666 USD)",
-      "size_en": "102 m² building  /  335 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.702293,
-      "lng": 136.440657
     },
     {
       "source": "AtHome",
@@ -1054,7 +1054,7 @@
     {
       "source": "Suumo",
       "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
-      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting to school ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
@@ -1213,8 +1213,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1406,7 +1406,7 @@
     {
       "source": "Lifull Homes",
       "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
+      "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
       "price": "500万円",
       "size": "215.16m²",
       "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
