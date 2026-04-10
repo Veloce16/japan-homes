@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-10T07:37:21",
+  "generated": "2026-04-10T13:02:41",
   "listings": [
     {
       "source": "AtHome",
@@ -414,6 +414,22 @@
       "date_found": "2026-03-19",
       "lat": 34.74833,
       "lng": 136.450146
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Geinomachi Kawachi 2-story 4LDK",
+      "address": "Tsu City Geinomachi Kawachi 2-story 4LDK",
+      "price": "500万円",
+      "size": "519.00m² / 154.04m²",
+      "url": "https://www.athome.co.jp/kodate/6990268676/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/6EYS2KUwS_kyeMxr3SPdag==",
+      "area": "Tsu, Mie",
+      "build_year": "2001",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "154 m² building  /  519 m² land",
+      "date_found": "2026-04-10",
+      "lat": 34.804608,
+      "lng": 136.365947
     },
     {
       "source": "AtHome",
