@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-09T19:05:27",
+  "generated": "2026-04-10T01:37:16",
   "listings": [
     {
       "source": "AtHome",
@@ -227,7 +227,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Hase (Kawai Takaoka Station) 2-story 7DK",
+      "title": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story 7DK",
       "address": "Tsu City Isshi-cho Hase (Kawai Takaoka Station) 2-story building 7D",
       "price": "190万円",
       "size": "443.85m² / 177.27m²",
@@ -1054,7 +1054,7 @@
     {
       "source": "Suumo",
       "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
-      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting to school ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
@@ -1213,8 +1213,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1402,6 +1402,22 @@
       "date_found": "2026-04-08",
       "lat": 34.831075,
       "lng": 136.584066
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Jike 3-chome",
+      "address": "9 minutes walk Jike 3-chome, Suzuka City, Mie Prefecture Built year: April 1970",
+      "price": "980万円",
+      "size": "558.26m² / 91.65m² / 210.8m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319120000081/",
+      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F81%2F2%2F2%2Feoum.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "1969",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "92 m² building  /  558 m² land  /  211 m² other",
+      "date_found": "2026-04-10",
+      "lat": 34.822123,
+      "lng": 136.578109
     },
     {
       "source": "Lifull Homes",
