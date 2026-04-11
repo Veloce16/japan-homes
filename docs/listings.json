@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-11T01:34:34",
+  "generated": "2026-04-11T07:06:44",
   "listings": [
     {
       "source": "AtHome",
@@ -639,6 +639,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
+      "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
+      "price": "980万円",
+      "size": "761.66m² / 174.90m²",
+      "url": "https://www.athome.co.jp/kodate/6986017757/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/K37UtBvNqKz5QRIVuOzZHg==",
+      "area": "Tsu, Mie",
+      "build_year": "1979",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "175 m² building  /  762 m² land",
+      "date_found": "2026-03-03",
+      "lat": 34.757805,
+      "lng": 136.526934
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "address": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "price": "980万円",
@@ -716,6 +732,20 @@
       "date_found": "2026-03-03",
       "lat": 34.702293,
       "lng": 136.440657
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/t_t3fWFrfoD7sbQi6S0FNw==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-04-11"
     },
     {
       "source": "AtHome",
@@ -877,22 +907,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
-      "address": "Tsu City Shiratsukacho (Takada Motoyama Station) 2-story 7SDK",
-      "price": "1,500万円",
-      "size": "761.66m² / 174.90m²",
-      "url": "https://www.athome.co.jp/kodate/6986017757/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/K37UtBvNqKz5QRIVuOzZHg==",
-      "area": "Tsu, Mie",
-      "build_year": "1979",
-      "price_en": "¥15,000,000  (~$100,000 USD)",
-      "size_en": "175 m² building  /  762 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.757805,
-      "lng": 136.526934
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LDK",
       "address": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LD",
       "price": "1,500万円",
@@ -957,12 +971,12 @@
     },
     {
       "source": "Suumo",
-      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
+      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -973,11 +987,11 @@
     },
     {
       "source": "Suumo",
-      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
+      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
       "image": "",
       "area": "Suzuka, Mie",
       "build_year": "",
@@ -1054,7 +1068,7 @@
     {
       "source": "Suumo",
       "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
-      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting to school ◇ Tsui",
+      "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20577158/",
@@ -1176,6 +1190,22 @@
       "price_en": "¥10,900,000  (~$72,666 USD)",
       "size_en": "131 m² building  /  310 m² land",
       "date_found": "2026-03-03",
+      "lat": 34.701941,
+      "lng": 136.437265
+    },
+    {
+      "source": "Suumo",
+      "title": "Katada Shinmachi 11.2 million yen",
+      "address": "Katada Shinmachi 11.2 million yen",
+      "price": "1120万円",
+      "size": "335.02m2 / 101.62m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20633271/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F271%2F20633271%2F20633271_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-04-11",
       "lat": 34.701941,
       "lng": 136.437265
     },
