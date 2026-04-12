@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-11T18:49:48",
+  "generated": "2026-04-12T01:42:22",
   "listings": [
     {
       "source": "AtHome",
@@ -240,22 +240,6 @@
       "date_found": "2026-03-03",
       "lat": 34.621249,
       "lng": 136.389707
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) One-story building 6LDK",
-      "address": "Tsu City Misato Machiyadokoro (Tsushinmachi Station) One-story building 6LD",
-      "price": "190万円",
-      "size": "309.35m² / 118.80m²",
-      "url": "https://www.athome.co.jp/kodate/1191594919/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/gXMqF0P4OBoQ8KNbonzruw==",
-      "area": "Tsu, Mie",
-      "build_year": "1981",
-      "price_en": "¥1,900,000  (~$12,666 USD)",
-      "size_en": "119 m² building  /  309 m² land",
-      "date_found": "2026-03-29",
-      "lat": 34.728299,
-      "lng": 136.421152
     },
     {
       "source": "AtHome",
@@ -971,12 +955,12 @@
     },
     {
       "source": "Suumo",
-      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
+      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -987,11 +971,11 @@
     },
     {
       "source": "Suumo",
-      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
+      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
       "image": "",
       "area": "Suzuka, Mie",
       "build_year": "",
@@ -1288,20 +1272,6 @@
       "date_found": "2026-03-03",
       "lat": 34.664442,
       "lng": 136.539435
-    },
-    {
-      "source": "Yahoo RE",
-      "title": "Yahoo! Real Estate",
-      "address": "It also damages your health. Increasing urban microbial diversity",
-      "price": "1000万円",
-      "size": "",
-      "url": "https://account.edit.yahoo.co.jp/signup?.intl=jp&.done=https%3A%2F%2Frealestate.yahoo.co.jp%2Fused%2Fhouse%2Fsearch%2F05%2F22%2F%3Fmin_st%3D99%26ba_from%3D100%26la_from%3D300%26p_und_flg%3D0%26group_with_cond%3D0%26sort%3D-buy_default%2Bp_from%2B-area%26lc%3D05%26pf%3D22%26geo%3D22215&.src=yre",
-      "image": "https://s.yimg.jp/images/templa/mhd/v2/images/boost_14_xsmall.svg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥10,000,000  (~$66,666 USD)",
-      "size_en": "",
-      "date_found": "2026-04-11"
     },
     {
       "source": "Yahoo RE",
