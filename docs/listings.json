@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-12T18:51:26",
+  "generated": "2026-04-13T01:44:14",
   "listings": [
     {
       "source": "AtHome",
@@ -671,22 +671,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Tarumi (Minamigaoka Station) 2-story 4LDK",
-      "address": "Tsu City Tarumi (Minamigaoka Station) 2-story 4LDK",
-      "price": "1,080万円",
-      "size": "362.82m² / 143.40m²",
-      "url": "https://www.athome.co.jp/kodate/6985406622/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/qDSpFUS4xNEQVbDl8yk07A==",
-      "area": "Tsu, Mie",
-      "build_year": "1983",
-      "price_en": "¥10,800,000  (~$72,000 USD)",
-      "size_en": "143 m² building  /  363 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.692214,
-      "lng": 136.496756
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Katada Shinmachi (Hisui Station) 2-story 4LDK",
       "address": "Tsu City Katada Shinmachi (Hisui Station) 2-story 4LDK",
       "price": "1,090万円",
@@ -1243,8 +1227,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
