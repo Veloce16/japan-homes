@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T08:07:34",
+  "generated": "2026-04-13T13:20:17",
   "listings": [
     {
       "source": "AtHome",
@@ -558,6 +558,20 @@
       "date_found": "2026-03-03",
       "lat": 34.679674,
       "lng": 136.508897
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Tonomura One-story building 6SDK",
+      "address": "Tsu City Tonomura One-story building 6SDK",
+      "price": "750万円",
+      "size": "636.09m² / 165.28m²",
+      "url": "https://www.athome.co.jp/kodate/1035065293/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/bHk6u9YNtmCZJTvmNV_abA==",
+      "area": "Tsu, Mie",
+      "build_year": "1960",
+      "price_en": "¥7,500,000  (~$50,000 USD)",
+      "size_en": "165 m² building  /  636 m² land",
+      "date_found": "2026-04-13"
     },
     {
       "source": "AtHome",
@@ -1419,22 +1433,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Jike 3-chome",
-      "address": "9 minutes walk Jike 3-chome, Suzuka City, Mie Prefecture Built year: 1970 04",
-      "price": "980万円",
-      "size": "558.26m² / 91.65m² / 210.8m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319120000081/",
-      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F81%2F2%2F2%2Feoum.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1969",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "92 m² building  /  558 m² land  /  211 m² other",
-      "date_found": "2026-04-13",
-      "lat": 34.822123,
-      "lng": 136.578109
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Tsu City Ichimida Town detached house PR",
       "address": "Used detached house Tsu City Ichimida Town detached house PR price 5 million yen Location 3",
       "price": "500万円",
@@ -1814,7 +1812,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Isshicho Daiyo",
+      "address": "三重県 津市 一志町大仰",
       "price": "350万円",
       "size": "185.12 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-45141/",
@@ -1828,7 +1826,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
+      "address": "三重県 津市 船頭町津興",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
@@ -1841,8 +1839,8 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusan-cho Mikeno",
+      "title": "売買居住用",
+      "address": "三重県 津市 白山町三ケ野",
       "price": "500万円",
       "size": "571.96 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44182/",
@@ -1855,8 +1853,8 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Kawakami, Misugi-cho, Tsu City, Mie Prefecture",
+      "title": "売買居住用",
+      "address": "三重県 津市 美杉町川上",
       "price": "150万円",
       "size": "",
       "url": "https://www.homes.co.jp/akiyabank/b-42583/",
@@ -1869,8 +1867,8 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Misugi Town Taro",
+      "title": "売買居住用",
+      "address": "三重県 津市 美杉町太郎生",
       "price": "500万円",
       "size": "674㎡",
       "url": "https://www.homes.co.jp/akiyabank/b-42579/",
@@ -1883,8 +1881,8 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Kumoide Ikurazu Town",
+      "title": "売買居住用",
+      "address": "三重県 津市 雲出伊倉津町",
       "price": "850万円",
       "size": "290.9 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-37269/",
@@ -1897,8 +1895,8 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Toyogaoka 3-chome, Tsu City, Mie Prefecture",
+      "title": "売買居住用",
+      "address": "三重県 津市 豊が丘三丁目",
       "price": "900万円",
       "size": "463.29 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-36517/",
@@ -1912,7 +1910,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Isshinda Toyono",
+      "address": "三重県 津市 一身田豊野",
       "price": "950万円",
       "size": "249.75 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-36480/",
@@ -1925,8 +1923,8 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusan Town Kitagajo",
+      "title": "売買居住用",
+      "address": "三重県 津市 白山町北家城",
       "price": "480万円",
       "size": "703.2 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-34890/",
@@ -1939,7 +1937,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
+      "title": "売買居住用",
       "address": "Mie Prefecture Tsu City Misugi Town Taro",
       "price": "500万円",
       "size": "173.55 m²",
@@ -1953,7 +1951,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For sale and residence",
+      "title": "売買居住用",
       "address": "・Equipped with a combined treatment septic tank, which is rare for a property in Misugi Town",
       "price": "500万円",
       "size": "297.52 m²",
@@ -1967,7 +1965,7 @@
     },
     {
       "source": "Shizuoka Akiya",
-      "title": "house for sale",
+      "title": "売住宅",
       "address": "919-1 Fujimagari, Oyama-machi, Sunto-gun",
       "price": "1,380万円",
       "size": "173.61m² / 450.08m² / 173.61m²",
