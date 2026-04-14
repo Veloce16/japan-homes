@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-13T19:21:59",
+  "generated": "2026-04-14T01:42:39",
   "listings": [
     {
       "source": "AtHome",
@@ -992,6 +992,22 @@
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "size_en": "114 m² building  /  368 m² land",
+      "date_found": "2026-04-03",
+      "lat": 34.855351,
+      "lng": 136.551634
+    },
+    {
+      "source": "Suumo",
+      "title": "■Lightweight steel frame constructed by PanaHome ■Sunlit with access roads in both north and south directions◎■Site over 100 tsubo!",
+      "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
+      "price": "1450万円",
+      "size": "367.7m2 / 113.8m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77452412/",
       "image": "",
       "area": "Suzuka, Mie",
       "build_year": "",
@@ -1014,22 +1030,6 @@
       "price_en": "¥14,500,000  (~$96,666 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-04-09",
-      "lat": 34.855351,
-      "lng": 136.551634
-    },
-    {
-      "source": "Suumo",
-      "title": "■Lightweight steel frame constructed by PanaHome ■Sunlit with access roads in both north and south directions◎■Site over 100 tsubo!",
-      "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
-      "price": "1450万円",
-      "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77452412/",
-      "image": "",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
-      "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-04-03",
       "lat": 34.855351,
       "lng": 136.551634
     },
@@ -1160,6 +1160,22 @@
       "date_found": "2026-03-03",
       "lat": 34.683274,
       "lng": 136.468639
+    },
+    {
+      "source": "Suumo",
+      "title": "Tonomura 7.5 million yen",
+      "address": "Tonomura 7.5 million yen",
+      "price": "750万円",
+      "size": "636.09m2 / 165.28m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20651184/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F184%2F20651184%2F20651184_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥7,500,000  (~$50,000 USD)",
+      "size_en": "165 m² building  /  636 m² land",
+      "date_found": "2026-04-14",
+      "lat": 34.724232,
+      "lng": 136.461289
     },
     {
       "source": "Suumo",
@@ -1355,22 +1371,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Gotemba City Nakayama Used detached house PR",
-      "address": "Old detached house Gotemba City Nakayama Used detached house PR price 9.8 million yen Location Shizuoka",
-      "price": "980万円",
-      "size": "199.49m²",
-      "url": "https://www.homes.co.jp/kodate/b-89420000371/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F8942%2Fsale%2F371%2F2%2F2%2Fo12o.jpg&width=208&height=138",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "199 m² land",
-      "date_found": "2026-04-13",
-      "lat": 35.257594,
-      "lng": 138.920397
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
       "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
       "price": "1,190万円",
@@ -1384,6 +1384,22 @@
       "date_found": "2026-04-08",
       "lat": 35.325296,
       "lng": 138.935884
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Used detached house Koriyama Town PR",
+      "address": "Used detached house Koriyama Town PR price 8.5 million yen Location Koriyama, Suzuka City, Mie Prefecture",
+      "price": "850万円",
+      "size": "201.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1515070000361/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151507%2Fsale%2F361%2F2%2F1%2F3xu5.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "201 m² land",
+      "date_found": "2026-04-14",
+      "lat": 34.813904,
+      "lng": 136.537073
     },
     {
       "source": "Lifull Homes",
