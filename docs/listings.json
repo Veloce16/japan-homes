@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-15T01:39:52",
+  "generated": "2026-04-15T07:36:33",
   "listings": [
     {
       "source": "AtHome",
@@ -1371,22 +1371,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Used detached house Koriyama Town PR",
-      "address": "Used detached house Koriyama Town PR price 8.5 million yen Location Koriyama, Suzuka City, Mie Prefecture",
-      "price": "850万円",
-      "size": "201.06m²",
-      "url": "https://www.homes.co.jp/kodate/b-1515070000361/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151507%2Fsale%2F361%2F2%2F1%2F3xu5.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥8,500,000  (~$56,666 USD)",
-      "size_en": "201 m² land",
-      "date_found": "2026-04-15",
-      "lat": 34.813904,
-      "lng": 136.537073
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Used detached house Suzuka Heights, Suzuka City",
       "address": "Used detached house Suzuka Heights, Suzuka City<img src=\"https",
       "price": "1,450万円",
@@ -1448,6 +1432,22 @@
       "date_found": "2026-04-08",
       "lat": 34.831075,
       "lng": 136.584066
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Jike 3-chome",
+      "address": "9 minutes walk Jike 3-chome, Suzuka City, Mie Prefecture Built year: 1970 04",
+      "price": "980万円",
+      "size": "558.26m² / 91.65m² / 210.8m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319120000081/",
+      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F81%2F2%2F2%2Feoum.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "1969",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "92 m² building  /  558 m² land  /  211 m² other",
+      "date_found": "2026-04-15",
+      "lat": 34.822123,
+      "lng": 136.578109
     },
     {
       "source": "Lifull Homes",
