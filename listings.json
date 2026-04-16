@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-15T19:20:00",
+  "generated": "2026-04-16T01:45:57",
   "listings": [
     {
       "source": "AtHome",
@@ -738,7 +738,7 @@
       "price": "1,120万円",
       "size": "335.02m² / 101.62m²",
       "url": "https://www.athome.co.jp/kodate/6990305666/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/PtrHjdLFUYfkuljT_xfNjEsMwxfDHFBY",
+      "image": "https://www.athome.co.jp/image_files/path/PtrHjdLFUYdj8iGPByvTzg==",
       "area": "Tsu, Mie",
       "build_year": "1983",
       "price_en": "¥11,200,000  (~$74,666 USD)",
@@ -1264,7 +1264,7 @@
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F771%2F78134771%2F78134771_0001.jpg&w=192&h=144",
+      "image": "",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥13,500,000  (~$90,000 USD)",
@@ -1280,7 +1280,7 @@
       "price": "1380万円",
       "size": "464.45m2 / 143.83m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78051576/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F576%2F78051576%2F78051576_0001.jpg&w=192&h=144",
+      "image": "",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥13,800,000  (~$92,000 USD)",
@@ -1307,20 +1307,6 @@
     },
     {
       "source": "Yahoo RE",
-      "title": "Yahoo! Real Estate",
-      "address": "Gotemba City",
-      "price": "40万円",
-      "size": "",
-      "url": "https://account.edit.yahoo.co.jp/signup?.intl=jp&.done=https%3A%2F%2Frealestate.yahoo.co.jp%2Fused%2Fhouse%2Fsearch%2F05%2F22%2F%3Fmin_st%3D99%26ba_from%3D100%26la_from%3D300%26p_und_flg%3D0%26group_with_cond%3D0%26sort%3D-buy_default%2Bp_from%2B-area%26lc%3D05%26pf%3D22%26geo%3D22215&.src=yre",
-      "image": "https://s.yimg.jp/images/templa/mhd/v2/images/boost_14_xsmall.svg",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥400,000  (~$2,666 USD)",
-      "size_en": "",
-      "date_found": "2026-04-15"
-    },
-    {
-      "source": "Yahoo RE",
       "title": "Hirano-cho, Suzuka City",
       "address": "Hirano-cho, Suzuka City",
       "price": "1,280万円",
@@ -1334,20 +1320,6 @@
       "date_found": "2026-03-22",
       "lat": 34.867252,
       "lng": 136.521436
-    },
-    {
-      "source": "Yahoo RE",
-      "title": "Yahoo! Real Estate",
-      "address": "Tsu City",
-      "price": "40万円",
-      "size": "",
-      "url": "https://account.edit.yahoo.co.jp/signup?.intl=jp&.done=https%3A%2F%2Frealestate.yahoo.co.jp%2Fused%2Fhouse%2Fsearch%2F05%2F24%2F%3Fmin_st%3D99%26ba_from%3D100%26la_from%3D300%26p_und_flg%3D0%26group_with_cond%3D0%26sort%3D-buy_default%2Bp_from%2B-area%26lc%3D05%26pf%3D24%26geo%3D24201&.src=yre",
-      "image": "https://s.yimg.jp/images/templa/mhd/v2/images/boost_14_xsmall.svg",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥400,000  (~$2,666 USD)",
-      "size_en": "",
-      "date_found": "2026-04-15"
     },
     {
       "source": "Yahoo RE",
@@ -1396,22 +1368,6 @@
       "date_found": "2026-04-04",
       "lat": 34.757834,
       "lng": 136.530708
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Gotemba City Nakayama Used detached house PR",
-      "address": "Old detached house Gotemba City Nakayama Used detached house PR price 9.8 million yen Location Shizuoka",
-      "price": "980万円",
-      "size": "199.49m²",
-      "url": "https://www.homes.co.jp/kodate/b-89420000371/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F8942%2Fsale%2F371%2F2%2F2%2Fo12o.jpg&width=208&height=138",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "199 m² land",
-      "date_found": "2026-04-15",
-      "lat": 35.257594,
-      "lng": 138.920397
     },
     {
       "source": "Lifull Homes",
@@ -1495,19 +1451,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-04-15",
-      "lat": 34.762742,
-      "lng": 136.508373
+      "title": "Used detached house Jike 3-chome",
+      "address": "9 minutes walk Jike 3-chome, Suzuka City, Mie Prefecture Built year: April 1970",
+      "price": "980万円",
+      "size": "558.26m² / 91.65m² / 210.8m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319120000081/",
+      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F81%2F2%2F2%2Feoum.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "1969",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "92 m² building  /  558 m² land  /  211 m² other",
+      "date_found": "2026-04-16",
+      "lat": 34.822123,
+      "lng": 136.578109
     },
     {
       "source": "Lifull Homes",
@@ -1649,7 +1605,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Chotaasahicho 4-chome",
       "price": "5万円",
       "size": "",
@@ -1733,7 +1689,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Mie Prefecture Suzuka City Kitaejima Town",
       "price": "34万円",
       "size": "",
@@ -1803,7 +1759,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "For rental residence",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
