@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T13:15:27",
+  "generated": "2026-04-17T19:02:10",
   "listings": [
     {
       "source": "AtHome",
@@ -183,22 +183,6 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,450万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
-      "area": "Suzuka, Mie",
-      "build_year": "1994",
-      "price_en": "¥14,500,000  (~$96,666 USD)",
-      "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-04-02",
-      "lat": 34.853229,
-      "lng": 136.549347
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2-story 3SLDK",
-      "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
-      "price": "1,450万円",
-      "size": "367.70m² / 113.80m²",
       "url": "https://www.athome.co.jp/kodate/6986708794/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/hb6cBLI1KbZXsTuMiXHd0A==",
       "area": "Suzuka, Mie",
@@ -224,6 +208,22 @@
       "date_found": "2026-04-02",
       "lat": 34.875062,
       "lng": 136.542377
+    },
+    {
+      "source": "AtHome",
+      "title": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2-story 3SLDK",
+      "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
+      "price": "1,450万円",
+      "size": "367.70m² / 113.80m²",
+      "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
+      "area": "Suzuka, Mie",
+      "build_year": "1994",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "size_en": "114 m² building  /  368 m² land",
+      "date_found": "2026-04-02",
+      "lat": 34.853229,
+      "lng": 136.549347
     },
     {
       "source": "AtHome",
@@ -703,20 +703,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
-      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
-      "price": "1,120万円",
-      "size": "335.02m² / 101.62m²",
-      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/t_t3fWFrfoD7sbQi6S0FNw==",
-      "area": "Tsu, Mie",
-      "build_year": "1983",
-      "price_en": "¥11,200,000  (~$74,666 USD)",
-      "size_en": "102 m² building  /  335 m² land",
-      "date_found": "2026-04-11"
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "price": "1,120万円",
@@ -746,6 +732,20 @@
       "date_found": "2026-03-03",
       "lat": 34.702293,
       "lng": 136.440657
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/t_t3fWFrfoD7sbQi6S0FNw==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-04-11"
     },
     {
       "source": "AtHome",
@@ -1371,6 +1371,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "Used detached house Gotemba City Nakayama Used detached house PR",
+      "address": "Old detached house Gotemba City Nakayama Used detached house PR price 9.8 million yen Location Shizuoka",
+      "price": "980万円",
+      "size": "199.49m²",
+      "url": "https://www.homes.co.jp/kodate/b-89420000371/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F8942%2Fsale%2F371%2F2%2F2%2Fo12o.jpg&width=208&height=138",
+      "area": "Gotemba, Shizuoka",
+      "build_year": "",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "199 m² land",
+      "date_found": "2026-04-17",
+      "lat": 35.257594,
+      "lng": 138.920397
+    },
+    {
+      "source": "Lifull Homes",
       "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
       "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
       "price": "1,190万円",
@@ -1384,6 +1400,22 @@
       "date_found": "2026-04-08",
       "lat": 35.325296,
       "lng": 138.935884
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Gotemba City Kamba Used house",
+      "address": "Old detached house Gotemba City Kamba used housing<img src=\"http",
+      "price": "980万円",
+      "size": "290.16m² / 119.92m² / 449.33m²",
+      "url": "https://www.homes.co.jp/kodate/b-1265050002397/",
+      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F126505%2Fsale%2F2397%2F2%2F2%2Fbynh.jpg&width=208&height=138",
+      "area": "Gotemba, Shizuoka",
+      "build_year": "1980",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "120 m² building  /  290 m² land  /  449 m² other",
+      "date_found": "2026-04-17",
+      "lat": 35.267233,
+      "lng": 138.912087
     },
     {
       "source": "Lifull Homes",
@@ -1448,22 +1480,6 @@
       "date_found": "2026-04-08",
       "lat": 34.831075,
       "lng": 136.584066
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Jike 3-chome",
-      "address": "9 minutes walk Jike 3-chome, Suzuka City, Mie Prefecture Built year: April 1970",
-      "price": "980万円",
-      "size": "558.26m² / 91.65m² / 210.8m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319120000081/",
-      "image": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F81%2F2%2F2%2Feoum.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1969",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "92 m² building  /  558 m² land  /  211 m² other",
-      "date_found": "2026-04-17",
-      "lat": 34.822123,
-      "lng": 136.578109
     },
     {
       "source": "Lifull Homes",
