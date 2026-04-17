@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T19:17:05",
+  "generated": "2026-04-17T01:42:08",
   "listings": [
     {
       "source": "AtHome",
@@ -955,12 +955,12 @@
     },
     {
       "source": "Suumo",
-      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
+      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -971,12 +971,12 @@
     },
     {
       "source": "Suumo",
-      "title": "Suzuka Heights (Inao Station) 14.5 million yen",
+      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1450万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥14,500,000  (~$96,666 USD)",
@@ -1339,22 +1339,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Gotemba City Nakayama Used detached house PR",
-      "address": "Old detached house Gotemba City Nakayama Used detached house PR price 9.8 million yen Location Shizuoka",
-      "price": "980万円",
-      "size": "199.49m²",
-      "url": "https://www.homes.co.jp/kodate/b-89420000371/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F8942%2Fsale%2F371%2F2%2F2%2Fo12o.jpg&width=208&height=138",
-      "area": "Gotemba, Shizuoka",
-      "build_year": "",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "199 m² land",
-      "date_found": "2026-04-16",
-      "lat": 35.257594,
-      "lng": 138.920397
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house JR Gotemba Line Gotemba Station 35 minutes walk",
       "address": "5 minutes 893-1 Yamanoshiri, Gotemba City, Shizuoka Prefecture Built year: 1993",
       "price": "1,190万円",
@@ -1528,22 +1512,6 @@
       "date_found": "2026-04-08",
       "lat": 34.666929,
       "lng": 136.524421
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Tsu City Ichimida Town detached house PR",
-      "address": "Used detached house Tsu city Ichimida town detached house PR price 5 million yen Location 3",
-      "price": "500万円",
-      "size": "215.16m²",
-      "url": "https://www.homes.co.jp/kodate/b-1507580000016/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F150758%2Fsale%2F16%2F2%2F1%2Fnpuo.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥5,000,000  (~$33,333 USD)",
-      "size_en": "215 m² land",
-      "date_found": "2026-04-16",
-      "lat": 34.762742,
-      "lng": 136.508373
     },
     {
       "source": "Akiya Bank",
