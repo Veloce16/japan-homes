@@ -1501,23 +1501,31 @@ def send_email(listings, cfg):
         "</div></div>"
     )
 
-    # ── Load saved property IDs so we can badge them in the email ────────────
+    # ── Load saved/disliked IDs from GitHub Pages (saved.json is API-managed,
+    #    not in the git checkout, so fetch it from the live URL) ──────────────
     import datetime as _dt
-    saved_ids = set()
-    saved_json_path = DOCS_DIR / "saved.json"
-    if saved_json_path.exists():
-        try:
-            with open(saved_json_path, encoding="utf-8") as sf:
-                sd = json.load(sf)
-            for sv in sd.get("saved", []):
-                pid = (sv.get("id") or sv.get("url") or "").split("?")[0].rstrip("/")
-                if pid:
-                    saved_ids.add(pid)
-        except Exception:
-            pass
+    import urllib.request as _urllib
+    saved_ids   = set()
+    disliked_ids = set()
+    _saved_url = "https://veloce16.github.io/japan-homes/saved.json"
+    try:
+        with _urllib.urlopen(_saved_url, timeout=10) as _r:
+            sd = json.loads(_r.read().decode("utf-8"))
+        for sv in sd.get("saved", []):
+            pid = (sv.get("id") or sv.get("url") or "").split("?")[0].rstrip("/")
+            if pid:
+                saved_ids.add(pid)
+        for did in sd.get("disliked", []):
+            if did:
+                disliked_ids.add(did)
+    except Exception as _e:
+        print(f"  [email] Could not fetch saved.json: {_e}")
 
     def prop_id_py(l):
         return (l.get("id") or l.get("url") or "").split("?")[0].rstrip("/")
+
+    # ── Filter out disliked listings before building the email ───────────────
+    listings = [l for l in listings if prop_id_py(l) not in disliked_ids]
 
     # ── Listing rows grouped by city with separator headers ─────────────────
     CITY_ORDER_EMAIL = ["Gotemba, Shizuoka", "Oyama, Shizuoka", "Suzuka, Mie", "Tsu, Mie"]
