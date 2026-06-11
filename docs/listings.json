@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-10T20:43:44",
+  "generated": "2026-06-11T20:38:24",
   "listings": [
     {
       "source": "AtHome",
@@ -167,15 +167,15 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
+      "url": "https://www.athome.co.jp/kodate/1032789193/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/yJ5dzbTIu6WnxeQ5i7y3mQ==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-04-02",
-      "lat": 34.853229,
-      "lng": 136.549347
+      "lat": 34.875062,
+      "lng": 136.542377
     },
     {
       "source": "AtHome",
@@ -199,15 +199,15 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/1032789193/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/yJ5dzbTIu6WnxeQ5i7y3mQ==",
+      "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-04-02",
-      "lat": 34.875062,
-      "lng": 136.542377
+      "lat": 34.853229,
+      "lng": 136.549347
     },
     {
       "source": "AtHome",
@@ -1085,22 +1085,6 @@
     },
     {
       "source": "Suumo",
-      "title": "■Lightweight steel frame constructed by PanaHome ■Sunlit with access roads in both north and south directions◎■Site over 100 tsubo!",
-      "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
-      "price": "1350万円",
-      "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77452412/",
-      "image": "",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥13,500,000  (~$90,000 USD)",
-      "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-04-03",
-      "lat": 34.855351,
-      "lng": 136.551634
-    },
-    {
-      "source": "Suumo",
       "title": "Suzuka Heights (Ino Station) 13.5 million yen",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1350万円",
@@ -1112,6 +1096,22 @@
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-05-07",
+      "lat": 34.855351,
+      "lng": 136.551634
+    },
+    {
+      "source": "Suumo",
+      "title": "■Lightweight steel frame constructed by PanaHome ■Sunlit with access roads in both north and south directions◎■Site over 100 tsubo!",
+      "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
+      "price": "1350万円",
+      "size": "367.7m2 / 113.8m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77452412/",
+      "image": "",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥13,500,000  (~$90,000 USD)",
+      "size_en": "114 m² building  /  368 m² land",
+      "date_found": "2026-04-03",
       "lat": 34.855351,
       "lng": 136.551634
     },
@@ -1346,7 +1346,7 @@
       "price": "1120万円",
       "size": "335.02m2 / 101.62m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20633271/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F271%2F20633271%2F20633271_0001.jpg&w=192&h=144",
+      "image": "",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥11,200,000  (~$74,666 USD)",
@@ -1405,8 +1405,8 @@
     },
     {
       "source": "Suumo",
-      "title": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
-      "address": "Hisai Sakuragaoka Town (Hisai Station) 13.5 million yen",
+      "title": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
+      "address": "Hisai Sakuragaoka Town (Hisui Station) 13.5 million yen",
       "price": "1350万円",
       "size": "307.89m2 / 112.28m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78134771/",
@@ -1418,22 +1418,6 @@
       "date_found": "2026-03-03",
       "lat": 34.681244,
       "lng": 136.490889
-    },
-    {
-      "source": "Suumo",
-      "title": "Anomachi Tabata Ueno 13.8 million yen",
-      "address": "Anomachi Tabata Ueno 13.8 million yen",
-      "price": "1380万円",
-      "size": "464.45m2 / 143.83m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78051576/",
-      "image": "",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥13,800,000  (~$92,000 USD)",
-      "size_en": "144 m² building  /  464 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.765901,
-      "lng": 136.435824
     },
     {
       "source": "Yahoo RE",
@@ -1450,6 +1434,22 @@
       "date_found": "2026-05-29",
       "lat": 35.318886,
       "lng": 138.899903
+    },
+    {
+      "source": "Yahoo RE",
+      "title": "Recommended land in this area",
+      "address": "Oyama Town",
+      "price": "400万円",
+      "size": "254.54m2 / 230.21m2 / 430.27m2",
+      "url": "https://realestate.yahoo.co.jp/land/detail_corp/b0024570655/?ult_out=uh_nhlist",
+      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2457/0655/0001/dcefca21287422973752985d2e554e46_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
+      "area": "Oyama, Shizuoka",
+      "build_year": "",
+      "price_en": "¥4,000,000  (~$26,666 USD)",
+      "size_en": "230 m² building  /  255 m² land  /  430 m² other",
+      "date_found": "2026-06-11",
+      "lat": 35.35851,
+      "lng": 138.978818
     },
     {
       "source": "Yahoo RE",
@@ -2130,6 +2130,38 @@
       "price_en": "¥5,000,000  (~$33,333 USD)",
       "size_en": "298 m² land",
       "date_found": "2026-03-06"
+    },
+    {
+      "source": "Shizuoka Akiya",
+      "title": "house for sale",
+      "address": "Fujimagari, Oyama-machi, Sunto-gun",
+      "price": "900万円",
+      "size": "117.58m² / 329.40m² / 117.58m²",
+      "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/174120",
+      "image": "https://akiya-bank.shizuoka.fudohsan.jp/img/174120/2M/1781160641",
+      "area": "Oyama, Shizuoka",
+      "build_year": "",
+      "price_en": "¥9,000,000  (~$60,000 USD)",
+      "size_en": "329 m² building  /  118 m² land  /  118 m² other",
+      "date_found": "2026-06-11",
+      "lat": 35.36008,
+      "lng": 138.979586
+    },
+    {
+      "source": "Shizuoka Akiya",
+      "title": "house for sale",
+      "address": "919-1 Fujimagari, Oyama-machi, Sunto-gun",
+      "price": "1,380万円",
+      "size": "173.61m² / 450.08m² / 173.61m²",
+      "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302",
+      "image": "https://akiya-bank.shizuoka.fudohsan.jp/img/161302/2M/1781153692",
+      "area": "Oyama, Shizuoka",
+      "build_year": "",
+      "price_en": "¥13,800,000  (~$92,000 USD)",
+      "size_en": "450 m² building  /  174 m² land  /  174 m² other",
+      "date_found": "2026-06-11",
+      "lat": 35.359072,
+      "lng": 138.973558
     }
   ]
 }
