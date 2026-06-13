@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T20:25:12",
+  "generated": "2026-06-13T19:39:16",
   "listings": [
     {
       "source": "AtHome",
@@ -167,15 +167,15 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/6986708794/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/hb6cBLI1KbZXsTuMiXHd0A==",
+      "url": "https://www.athome.co.jp/kodate/1120694005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/IY_KKt8_6oyOWSKRWxSlTQ==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-03-09",
-      "lat": 34.841105,
-      "lng": 136.555196
+      "date_found": "2026-04-02",
+      "lat": 34.853229,
+      "lng": 136.549347
     },
     {
       "source": "AtHome",
@@ -199,15 +199,15 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/1120694005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/IY_KKt8_6oyOWSKRWxSlTQ==",
+      "url": "https://www.athome.co.jp/kodate/6986708794/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hb6cBLI1KbZXsTuMiXHd0A==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-04-02",
-      "lat": 34.853229,
-      "lng": 136.549347
+      "date_found": "2026-03-09",
+      "lat": 34.841105,
+      "lng": 136.555196
     },
     {
       "source": "AtHome",
@@ -801,6 +801,20 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/t_t3fWFrfoD7sbQi6S0FNw==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-04-11"
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "price": "1,120万円",
@@ -814,20 +828,6 @@
       "date_found": "2026-06-12",
       "lat": 34.70227,
       "lng": 136.440666
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
-      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
-      "price": "1,120万円",
-      "size": "335.02m² / 101.62m²",
-      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/t_t3fWFrfoD7sbQi6S0FNw==",
-      "area": "Tsu, Mie",
-      "build_year": "1983",
-      "price_en": "¥11,200,000  (~$74,666 USD)",
-      "size_en": "102 m² building  /  335 m² land",
-      "date_found": "2026-04-11"
     },
     {
       "source": "AtHome",
@@ -1085,12 +1085,12 @@
     },
     {
       "source": "Suumo",
-      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
+      "title": "Suzuka Heights (Ino Station) 13.5 million yen",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1350万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F069%2F77108069%2F77108069_0001.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥13,500,000  (~$90,000 USD)",
@@ -1101,12 +1101,12 @@
     },
     {
       "source": "Suumo",
-      "title": "Suzuka Heights (Ino Station) 13.5 million yen",
+      "title": "■Custom-built house built by PanaHome■Number of rooms can be changed■There is a spacious garden on the north side",
       "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
       "price": "1350万円",
       "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
-      "image": "",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_78980661/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F661%2F78980661%2F78980661_0011.jpg&w=192&h=144",
       "area": "Suzuka, Mie",
       "build_year": "",
       "price_en": "¥13,500,000  (~$90,000 USD)",
@@ -1378,7 +1378,7 @@
       "price": "1120万円",
       "size": "335.02m2 / 101.62m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20633271/",
-      "image": "",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F271%2F20633271%2F20633271_0001.jpg&w=192&h=144",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥11,200,000  (~$74,666 USD)",
@@ -1452,6 +1452,22 @@
       "lng": 136.490889
     },
     {
+      "source": "Suumo",
+      "title": "Anomachi Tabata Ueno 13.8 million yen",
+      "address": "Anomachi Tabata Ueno 13.8 million yen",
+      "price": "1380万円",
+      "size": "464.45m2 / 143.83m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_78051576/",
+      "image": "",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥13,800,000  (~$92,000 USD)",
+      "size_en": "144 m² building  /  464 m² land",
+      "date_found": "2026-06-13",
+      "lat": 34.765901,
+      "lng": 136.435824
+    },
+    {
       "source": "Yahoo RE",
       "title": "Gotemba City Nakahata",
       "address": "Gotemba City Nakahata",
@@ -1466,22 +1482,6 @@
       "date_found": "2026-05-29",
       "lat": 35.318886,
       "lng": 138.899903
-    },
-    {
-      "source": "Yahoo RE",
-      "title": "Recommended land in this area",
-      "address": "Oyama Town",
-      "price": "400万円",
-      "size": "254.54m2 / 430.27m2 / 230.21m2",
-      "url": "https://realestate.yahoo.co.jp/land/detail_corp/b0024570655/?ult_out=uh_nhlist",
-      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2457/0655/0001/dcefca21287422973752985d2e554e46_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
-      "area": "Oyama, Shizuoka",
-      "build_year": "",
-      "price_en": "¥4,000,000  (~$26,666 USD)",
-      "size_en": "430 m² building  /  255 m² land  /  230 m² other",
-      "date_found": "2026-06-11",
-      "lat": 35.35851,
-      "lng": 138.978818
     },
     {
       "source": "Yahoo RE",
@@ -1565,19 +1565,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Suzuka City Jike 2-chome Used detached house PR",
-      "address": "Used detached house Suzuka City Jike 2-chome Used detached house PR price 1,35",
-      "price": "1,350万円",
-      "size": "234.14m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000267/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F267%2F2%2F1%2Fhyl3.jpg&width=208&height=138",
+      "title": "Used detached house Suzuka City Oike 2-chome Used detached house PR",
+      "address": "Used detached house Oike 2-chome, Suzuka City Used detached house PR price 9.8 million yen",
+      "price": "980万円",
+      "size": "189.22m² / 416.11m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000025/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F25%2F2%2F1%2Fw0nb.jpg&width=208&height=138",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥13,500,000  (~$90,000 USD)",
-      "size_en": "234 m² land",
-      "date_found": "2026-06-12",
-      "lat": 34.81923,
-      "lng": 136.577846
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "416 m² building  /  189 m² land",
+      "date_found": "2026-06-13",
+      "lat": 34.867544,
+      "lng": 136.538091
     },
     {
       "source": "Lifull Homes",
@@ -1658,6 +1658,22 @@
       "date_found": "2026-05-03",
       "lat": 34.881059,
       "lng": 136.616574
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house 3072-2PR Kawabecho, Tsu City",
+      "address": "Used detached house 3072-2 Kawabecho, Tsu City PR price 14.5 million yen",
+      "price": "1,450万円",
+      "size": "179.86m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000688/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F688%2F2%2F2%2Fcxpj.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥14,500,000  (~$96,666 USD)",
+      "size_en": "180 m² land",
+      "date_found": "2026-06-13",
+      "lat": 34.752543,
+      "lng": 136.482097
     },
     {
       "source": "Lifull Homes",
