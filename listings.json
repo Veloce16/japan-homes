@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-14T19:42:39",
+  "generated": "2026-06-15T21:14:40",
   "listings": [
     {
       "source": "AtHome",
@@ -151,15 +151,15 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/1032789193/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/yJ5dzbTIu6WnxeQ5i7y3mQ==",
+      "url": "https://www.athome.co.jp/kodate/1120694005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/IY_KKt8_6oyOWSKRWxSlTQ==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-04-02",
-      "lat": 34.875062,
-      "lng": 136.542377
+      "lat": 34.853229,
+      "lng": 136.549347
     },
     {
       "source": "AtHome",
@@ -167,8 +167,8 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/1120694005/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/IY_KKt8_6oyOWSKRWxSlTQ==",
+      "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
@@ -199,15 +199,15 @@
       "address": "Suzuka City Suzuka Heights (Suzuka Circuit Ino Station) 2",
       "price": "1,350万円",
       "size": "367.70m² / 113.80m²",
-      "url": "https://www.athome.co.jp/kodate/6985634459/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/hkHXGoHP03BQLqYs3O0hvg==",
+      "url": "https://www.athome.co.jp/kodate/1032789193/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/yJ5dzbTIu6WnxeQ5i7y3mQ==",
       "area": "Suzuka, Mie",
       "build_year": "1994",
       "price_en": "¥13,500,000  (~$90,000 USD)",
       "size_en": "114 m² building  /  368 m² land",
       "date_found": "2026-04-02",
-      "lat": 34.853229,
-      "lng": 136.549347
+      "lat": 34.875062,
+      "lng": 136.542377
     },
     {
       "source": "AtHome",
@@ -1469,6 +1469,22 @@
     },
     {
       "source": "Yahoo RE",
+      "title": "Recommended land in this area",
+      "address": "Oyama Town",
+      "price": "5万円",
+      "size": "231.32m2 / 230.21m2 / 430.27m2",
+      "url": "https://realestate.yahoo.co.jp/land/detail_corp/b0024574656/?ult_out=uh_nhlist",
+      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2457/4656/0008/019a4b5435d83a6c63409b29947033e4_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
+      "area": "Oyama, Shizuoka",
+      "build_year": "",
+      "price_en": "¥50,000  (~$333 USD)",
+      "size_en": "230 m² building  /  231 m² land  /  430 m² other",
+      "date_found": "2026-06-15",
+      "lat": 35.345017,
+      "lng": 138.974564
+    },
+    {
+      "source": "Yahoo RE",
       "title": "2-chome Mikkaichi, Suzuka City",
       "address": "2-chome Mikkaichi, Suzuka City",
       "price": "1,499万円",
@@ -1549,19 +1565,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house 2-chome Isoyama, Suzuka City Used detached house PR",
-      "address": "Used detached house 2-chome Isoyama, Suzuka City Used detached house PR price 8.5 million yen",
-      "price": "850万円",
-      "size": "188.91m²",
-      "url": "https://www.homes.co.jp/kodate/b-1574380000021/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F21%2F2%2F1%2Fdqes.jpg&width=208&height=138",
+      "title": "Used detached house Suzuka Mayor Taasahicho 3-chome Used detached house PR",
+      "address": "Used detached house Suzuka Nagata Asahicho 3-chome Used detached house PR price 1,",
+      "price": "1,400万円",
+      "size": "219.06m²",
+      "url": "https://www.homes.co.jp/kodate/b-1561470000030/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F30%2F2%2F1%2Fjsif.jpg&width=208&height=138",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥8,500,000  (~$56,666 USD)",
-      "size_en": "189 m² land",
-      "date_found": "2026-06-14",
-      "lat": 34.813447,
-      "lng": 136.565191
+      "price_en": "¥14,000,000  (~$93,333 USD)",
+      "size_en": "219 m² land",
+      "date_found": "2026-06-15",
+      "lat": 34.893343,
+      "lng": 136.624456
     },
     {
       "source": "Lifull Homes",
@@ -1582,7 +1598,7 @@
     {
       "source": "Lifull Homes",
       "title": "Used detached house Used detached house Suzuka Heights, Suzuka City",
-      "address": "Used detached house Suzuka Heights, Suzuka City <img src=\"https",
+      "address": "Used detached house Suzuka Heights, Suzuka City<img src=\"https",
       "price": "1,350万円",
       "size": "367.7m² / 113.8m²",
       "url": "https://www.homes.co.jp/kodate/b-1561620000094/",
@@ -1900,7 +1916,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Korazu Town",
+      "address": "Mie Prefecture Tsu City Korasu Town",
       "price": "180万円",
       "size": "409.9 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-47457/",
@@ -1914,7 +1930,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Hakusan-cho Minamide",
+      "address": "Mie Prefecture Tsu City Hakusan Town Minamide",
       "price": "700万円",
       "size": "230.27 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-46652/",
@@ -2026,7 +2042,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
+      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
