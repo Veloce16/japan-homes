@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12T19:22:04",
+  "generated": "2026-07-13T19:41:18",
   "listings": [
     {
       "source": "AtHome",
@@ -371,7 +371,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6DK",
+      "title": "津市 一志町小山（伊勢八太駅） 平屋建 ６ＤＫ",
       "address": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6D",
       "price": "490万円",
       "size": "327.00m² / 126.43m²",
@@ -643,8 +643,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korasu Town 2-story 7DK",
-      "address": "Tsu City Korasu Town 2-story 7DK",
+      "title": "Tsu City Korazu-cho 2-story 7DK",
+      "address": "Tsu City Korazu-cho 2-story 7DK",
       "price": "1,000万円",
       "size": "756.93m² / 208.15m²",
       "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -959,22 +959,6 @@
     },
     {
       "source": "Suumo",
-      "title": "Suzuka Heights (Ino Station) 13.5 million yen",
-      "address": "Suzuka Heights, Suzuka City, Mie Prefecture",
-      "price": "1350万円",
-      "size": "367.7m2 / 113.8m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_77108069/",
-      "image": "",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥13,500,000  (~$90,000 USD)",
-      "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-04-03",
-      "lat": 34.855351,
-      "lng": 136.551634
-    },
-    {
-      "source": "Suumo",
       "title": "Higashiasahigaoka 4 (Shiroko Station) 14 million yen",
       "address": "4 Higashiasahigaoka, Suzuka City, Mie Prefecture",
       "price": "1400万円",
@@ -1007,7 +991,7 @@
     },
     {
       "source": "Suumo",
-      "title": "☆A residence with a warehouse in a quiet residential area ☆A lot of storage in the warehouse ♪☆Unique!",
+      "title": "☆Residence with warehouse in a quiet residential area ☆Lots of storage in the warehouse ♪☆Unique!",
       "address": "1405-5 Korasucho, Tsu City, Mie Prefecture",
       "price": "498万円",
       "size": "206.1m2 / 312.28m2",
@@ -1279,35 +1263,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Suzuka City Jike 2-chome Used detached house PR",
-      "address": "Used detached house Suzuka City Jike 2-chome Used detached house PR price 1,35",
-      "price": "1,350万円",
-      "size": "234.14m²",
-      "url": "https://www.homes.co.jp/kodate/b-1561470000267/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F156147%2Fsale%2F267%2F2%2F1%2Fhyl3.jpg&width=208&height=138",
+      "title": "Used detached house Suzuka City Koriyama-cho Used detached house PR",
+      "address": "Used detached house Suzuka City Koriyama-cho Used detached house PR price 14.49 million",
+      "price": "1,449万円",
+      "size": "204.36m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000028/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F28%2F2%2F1%2Fa6mq.jpg&width=208&height=138",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥13,500,000  (~$90,000 USD)",
-      "size_en": "234 m² land",
-      "date_found": "2026-07-12",
-      "lat": 34.81923,
-      "lng": 136.577846
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Suzuka Heights",
-      "address": "28 minutes Suzuka Heights, Suzuka City, Mie Prefecture Built year: 1993 08",
-      "price": "1,350万円",
-      "size": "367.7m² / 113.8m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319120000034/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F34%2F2%2F2%2F22dh.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1993",
-      "price_en": "¥13,500,000  (~$90,000 USD)",
-      "size_en": "114 m² building  /  368 m² land",
-      "date_found": "2026-07-04",
-      "lat": 34.853255,
-      "lng": 136.549341
+      "price_en": "¥14,490,000  (~$96,600 USD)",
+      "size_en": "204 m² land",
+      "date_found": "2026-07-13",
+      "lat": 34.81201,
+      "lng": 136.537037
     },
     {
       "source": "Lifull Homes",
@@ -1638,7 +1606,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "Mie Prefecture, Tsu City, Funamachi, Tsuko",
+      "address": "Mie Prefecture Tsu City Funamachi Tsuko",
       "price": "350万円",
       "size": "143.41 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-44183/",
