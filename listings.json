@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T19:25:09",
+  "generated": "2026-07-17T19:23:17",
   "listings": [
     {
       "source": "AtHome",
@@ -243,6 +243,22 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Kumoide Nagatsunecho (Takachaya Station) 2-story 7DK",
+      "address": "Tsu City Kumoide Nagatsunecho (Takachaya Station) 2-story 7DK",
+      "price": "300万円",
+      "size": "548.31m² / 160.01m²",
+      "url": "https://www.athome.co.jp/kodate/6991392583/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/qHhB4z2EjAdV8A48VW8BZA==",
+      "area": "Tsu, Mie",
+      "build_year": "1968",
+      "price_en": "¥3,000,000  (~$20,000 USD)",
+      "size_en": "160 m² building  /  548 m² land",
+      "date_found": "2026-07-17",
+      "lat": 34.665078,
+      "lng": 136.527853
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Shiratsukacho (Takada Motoyama Station) One-story building 6DK",
       "address": "Tsu City Shiratsukacho (Takada Motoyama Station) One-story building 6DK",
       "price": "345万円",
@@ -435,6 +451,38 @@
     },
     {
       "source": "AtHome",
+      "title": "Tsu City Tonomura One-story building 6SDK",
+      "address": "Tsu City Tonomura One-story building 6SDK",
+      "price": "550万円",
+      "size": "636.09m² / 165.28m²",
+      "url": "https://www.athome.co.jp/kodate/1035065293/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/RQSeuz0eca4agT0rX6wBSw==",
+      "area": "Tsu, Mie",
+      "build_year": "1960",
+      "price_en": "¥5,500,000  (~$36,666 USD)",
+      "size_en": "165 m² building  /  636 m² land",
+      "date_found": "2026-05-26",
+      "lat": 34.724235,
+      "lng": 136.461299
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Morimachi (Kawai Takaoka Station) 2-story 5DK",
+      "address": "Tsu City Morimachi (Kawai Takaoka Station) 2-story 5DK",
+      "price": "550万円",
+      "size": "365.68m² / 132.86m²",
+      "url": "https://www.athome.co.jp/kodate/1034850693/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/D1zYiOUGKfHXyxToUMC1wg==",
+      "area": "Tsu, Mie",
+      "build_year": "1982",
+      "price_en": "¥5,500,000  (~$36,666 USD)",
+      "size_en": "133 m² building  /  366 m² land",
+      "date_found": "2026-07-17",
+      "lat": 34.656887,
+      "lng": 136.408548
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Kurima Nakayamacho (Takada Motoyama Station) 2-story 5SLDK",
       "address": "Tsu City Kurima Nakayamacho (Takada Motoyama Station) 2-story 5S",
       "price": "552万円",
@@ -480,22 +528,6 @@
       "date_found": "2026-06-04",
       "lat": 34.788931,
       "lng": 136.52227
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Tonomura One-story building 6SDK",
-      "address": "Tsu City Tonomura One-story building 6SDK",
-      "price": "650万円",
-      "size": "636.09m² / 165.28m²",
-      "url": "https://www.athome.co.jp/kodate/1035065293/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/RQSeuz0eca4agT0rX6wBSw==",
-      "area": "Tsu, Mie",
-      "build_year": "1960",
-      "price_en": "¥6,500,000  (~$43,333 USD)",
-      "size_en": "165 m² building  /  636 m² land",
-      "date_found": "2026-05-26",
-      "lat": 34.724235,
-      "lng": 136.461299
     },
     {
       "source": "AtHome",
@@ -583,22 +615,6 @@
       "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
       "price": "980万円",
       "size": "390.28m² / 150.08m²",
-      "url": "https://www.athome.co.jp/kodate/6985685427/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/hjXH3QDGZMi3F7BZLKw2zA==",
-      "area": "Tsu, Mie",
-      "build_year": "1936",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "150 m² building  /  390 m² land",
-      "date_found": "2026-06-25",
-      "lat": 34.740275,
-      "lng": 136.482811
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
-      "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
-      "price": "980万円",
-      "size": "390.28m² / 150.08m²",
       "url": "https://www.athome.co.jp/kodate/1120888205/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/X5_Zqjpt31GaZvKxXvbDuA==",
       "area": "Tsu, Mie",
@@ -608,6 +624,22 @@
       "date_found": "2026-05-14",
       "lat": 34.734508,
       "lng": 136.510493
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
+      "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
+      "price": "980万円",
+      "size": "390.28m² / 150.08m²",
+      "url": "https://www.athome.co.jp/kodate/6985685427/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hjXH3QDGZMi3F7BZLKw2zA==",
+      "area": "Tsu, Mie",
+      "build_year": "1936",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "150 m² building  /  390 m² land",
+      "date_found": "2026-06-25",
+      "lat": 34.740275,
+      "lng": 136.482811
     },
     {
       "source": "AtHome",
@@ -704,6 +736,22 @@
       "date_found": "2026-03-03",
       "lat": 34.650488,
       "lng": 136.420789
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/6987265116/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/8IZhiCWaLHYRDL5N2hsqaA==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-07-17",
+      "lat": 34.702293,
+      "lng": 136.440657
     },
     {
       "source": "AtHome",
@@ -1324,6 +1372,22 @@
       "date_found": "2026-04-08",
       "lat": 34.666929,
       "lng": 136.524421
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Used detached house Morimachi, Tsu City",
+      "address": "Used detached house Morimachi, Tsu City <img src=\"https://",
+      "price": "550万円",
+      "size": "365.68m² / 132.86m²",
+      "url": "https://www.homes.co.jp/kodate/b-1523490000403/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152349%2Fsale%2F403%2F2%2F1%2Ftlsp.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "1981",
+      "price_en": "¥5,500,000  (~$36,666 USD)",
+      "size_en": "133 m² building  /  366 m² land",
+      "date_found": "2026-07-17",
+      "lat": 34.684423,
+      "lng": 136.423492
     },
     {
       "source": "Lifull Homes",
