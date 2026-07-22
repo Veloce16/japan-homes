@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T19:34:20",
+  "generated": "2026-07-22T19:27:08",
   "listings": [
     {
       "source": "AtHome",
@@ -599,22 +599,6 @@
       "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
       "price": "980万円",
       "size": "390.28m² / 150.08m²",
-      "url": "https://www.athome.co.jp/kodate/1120888205/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/X5_Zqjpt31GaZvKxXvbDuA==",
-      "area": "Tsu, Mie",
-      "build_year": "1936",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "150 m² building  /  390 m² land",
-      "date_found": "2026-05-14",
-      "lat": 34.734508,
-      "lng": 136.510493
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
-      "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
-      "price": "980万円",
-      "size": "390.28m² / 150.08m²",
       "url": "https://www.athome.co.jp/kodate/6985685427/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/hjXH3QDGZMi3F7BZLKw2zA==",
       "area": "Tsu, Mie",
@@ -624,6 +608,22 @@
       "date_found": "2026-06-25",
       "lat": 34.740275,
       "lng": 136.482811
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
+      "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
+      "price": "980万円",
+      "size": "390.28m² / 150.08m²",
+      "url": "https://www.athome.co.jp/kodate/1120888205/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/X5_Zqjpt31GaZvKxXvbDuA==",
+      "area": "Tsu, Mie",
+      "build_year": "1936",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "150 m² building  /  390 m² land",
+      "date_found": "2026-05-14",
+      "lat": 34.734508,
+      "lng": 136.510493
     },
     {
       "source": "AtHome",
@@ -766,6 +766,22 @@
       "price_en": "¥11,200,000  (~$74,666 USD)",
       "size_en": "102 m² building  /  335 m² land",
       "date_found": "2026-04-11"
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "price": "1,180万円",
+      "size": "306.56m² / 136.00m²",
+      "url": "https://www.athome.co.jp/kodate/6986114287/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/AyXVqViRmeU5wq6dw4JKgg==",
+      "area": "Tsu, Mie",
+      "build_year": "1990",
+      "price_en": "¥11,800,000  (~$78,666 USD)",
+      "size_en": "136 m² building  /  307 m² land",
+      "date_found": "2026-07-22",
+      "lat": 34.700476,
+      "lng": 136.439752
     },
     {
       "source": "AtHome",
@@ -1151,22 +1167,6 @@
     },
     {
       "source": "Suumo",
-      "title": "Handa (Ako Station) 11.8 million yen",
-      "address": "Handa, Tsu City, Mie Prefecture",
-      "price": "1180万円",
-      "size": "348.92m2 / 109.23m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20418305/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F305%2F20418305%2F20418305_0001.jpg&w=192&h=144",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥11,800,000  (~$78,666 USD)",
-      "size_en": "109 m² building  /  349 m² land",
-      "date_found": "2026-03-10",
-      "lat": 34.70179,
-      "lng": 136.503208
-    },
-    {
-      "source": "Suumo",
       "title": "Katada Shinmachi 11.8 million yen",
       "address": "Katada Shinmachi 11.8 million yen",
       "price": "1180万円",
@@ -1180,6 +1180,22 @@
       "date_found": "2026-07-21",
       "lat": 34.701941,
       "lng": 136.437265
+    },
+    {
+      "source": "Suumo",
+      "title": "Handa (Ako Station) 11.8 million yen",
+      "address": "Handa, Tsu City, Mie Prefecture",
+      "price": "1180万円",
+      "size": "348.92m2 / 109.23m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_20418305/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F305%2F20418305%2F20418305_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,800,000  (~$78,666 USD)",
+      "size_en": "109 m² building  /  349 m² land",
+      "date_found": "2026-03-10",
+      "lat": 34.70179,
+      "lng": 136.503208
     },
     {
       "source": "Suumo",
@@ -1407,22 +1423,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Used detached house Morimachi, Tsu City",
-      "address": "Used detached house Morimachi, Tsu City <img src=\"https://",
-      "price": "550万円",
-      "size": "365.68m² / 132.86m²",
-      "url": "https://www.homes.co.jp/kodate/b-1523490000403/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F152349%2Fsale%2F403%2F2%2F1%2Ftlsp.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "1981",
-      "price_en": "¥5,500,000  (~$36,666 USD)",
-      "size_en": "133 m² building  /  366 m² land",
-      "date_found": "2026-07-17",
-      "lat": 34.684423,
-      "lng": 136.423492
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house in Takano-cho, Tsu City, Mie Prefecture ~ One-story house with garage and large storage space ~",
       "address": "Detached house in Takano-cho, Tsu City, Mie Prefecture - one-story house with garage and large storage space",
       "price": "350万円",
@@ -1440,7 +1440,7 @@
     {
       "source": "Lifull Homes",
       "title": "Used detached house JR Kisei Main Line Takachaya Station 4.3km",
-      "address": ".3kmKorazu-cho, Tsu City, Mie PrefectureConstruction year: May 1970",
+      "address": ".3kmKarazu-cho, Tsu City, Mie PrefectureConstruction year: May 1970",
       "price": "450万円",
       "size": "569.94m² / 145.34m²",
       "url": "https://www.homes.co.jp/kodate/b-1319130000121/",
