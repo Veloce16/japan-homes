@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T19:40:26",
+  "generated": "2026-07-25T19:23:18",
   "listings": [
     {
       "source": "AtHome",
@@ -19,7 +19,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
+      "title": "駿東郡小山町 藤曲（駿河小山駅） 2階建 ５ＬＤＫ",
       "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
       "price": "900万円",
       "size": "329.40m² / 117.58m²",
@@ -68,7 +68,7 @@
     {
       "source": "AtHome",
       "title": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
-      "address": "Suzuka City Kishioka-cho (Chiyozaki Station) 2-story 8DK",
+      "address": "鈴鹿市 岸岡町（千代崎駅） 2階建 ８ＤＫ",
       "price": "490万円",
       "size": "380.16m² / 202.63m²",
       "url": "https://www.athome.co.jp/kodate/6989018130/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -99,7 +99,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Suzuka City Nakaminota 1-chome (Minota Station) 2-story 6SLDK",
+      "title": "鈴鹿市 中箕田１丁目（箕田駅） 2階建 ６ＳＬＤＫ",
       "address": "Suzuka City Nakaminota 1-chome (Minota Station) 2-story 6SL",
       "price": "950万円",
       "size": "314.04m² / 134.96m²",
@@ -144,22 +144,6 @@
       "date_found": "2026-07-10",
       "lat": 34.843349,
       "lng": 136.598398
-    },
-    {
-      "source": "AtHome",
-      "title": "Suzuka City Shirako 3-chome (Shiroko Station) 2-story 7DK",
-      "address": "Suzuka City Shirako 3-chome (Shiroko Station) 2-story 7DK",
-      "price": "1,220万円",
-      "size": "304.06m² / 116.07m²",
-      "url": "https://www.athome.co.jp/kodate/1192726417/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/iQoAJI3TMS7TDaQgrzTPDg==",
-      "area": "Suzuka, Mie",
-      "build_year": "1973",
-      "price_en": "¥12,200,000  (~$81,333 USD)",
-      "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.831088,
-      "lng": 136.584061
     },
     {
       "source": "AtHome",
@@ -355,7 +339,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Misugi-cho Yachi (Ise-Kamakura Station) One-story building 5LDK",
+      "title": "Tsu City Misugimachi Yachi (Ise-Kamakura Station) One-story building 5LDK",
       "address": "Tsu City Misugimachi Yachi (Ise-Kamakura Station) One-story building 5L",
       "price": "480万円",
       "size": "596.19m² / 158.08m²",
@@ -372,7 +356,7 @@
     {
       "source": "AtHome",
       "title": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6DK",
-      "address": "Tsu City Isshicho Koyama (Isehatta Station) One-story building 6D",
+      "address": "津市 一志町小山（伊勢八太駅） 平屋建 ６Ｄ",
       "price": "490万円",
       "size": "327.00m² / 126.43m²",
       "url": "https://www.athome.co.jp/kodate/6989769732/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -387,7 +371,23 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korazucho Jie (Hisui Station) 2-story 6DK",
+      "title": "Tsu City Anomachi Renbu (Ichimida Station) 2-story 8K",
+      "address": "津市 安濃町連部（一身田駅） 2階建 ８Ｋ",
+      "price": "500万円",
+      "size": "734.89m² / 161.31m²",
+      "url": "https://www.athome.co.jp/kodate/6989274148/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/-oBw7xIyORMX0L9Ydx5fTw==",
+      "area": "Tsu, Mie",
+      "build_year": "1927",
+      "price_en": "¥5,000,000  (~$33,333 USD)",
+      "size_en": "161 m² building  /  735 m² land",
+      "date_found": "2026-07-25",
+      "lat": 34.74833,
+      "lng": 136.450146
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 香良洲町地家（久居駅） 2階建 ６ＤＫ",
       "address": "Tsu City Korazucho Jie (Hisui Station) 2-story 6DK",
       "price": "500万円",
       "size": "309.49m² / 133.95m²",
@@ -403,8 +403,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Kumoide Ikuratsu Town 2-story 8LDK",
-      "address": "Tsu City Kumoide Ikuratsu Town 2-story 8LDK",
+      "title": "津市 雲出伊倉津町 2階建 ８ＬＤＫ",
+      "address": "津市 雲出伊倉津町 2階建 ８ＬＤＫ",
       "price": "500万円",
       "size": "344.59m² / 165.16m²",
       "url": "https://www.athome.co.jp/kodate/6991543631/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -451,8 +451,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Morimachi (Kawai Takaoka Station) 2-story 5DK",
-      "address": "Tsu City Morimachi (Kawai Takaoka Station) 2-story 5DK",
+      "title": "津市 森町（川合高岡駅） 2階建 ５ＤＫ",
+      "address": "津市 森町（川合高岡駅） 2階建 ５ＤＫ",
       "price": "550万円",
       "size": "365.68m² / 132.86m²",
       "url": "https://www.athome.co.jp/kodate/1034850693/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -531,8 +531,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story 7DK",
-      "address": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story building 7D",
+      "title": "津市 栗真町屋町（高田本山駅） 2階建 ７ＤＫ",
+      "address": "津市 栗真町屋町（高田本山駅） 2階建 ７Ｄ",
       "price": "790万円",
       "size": "667.87m² / 141.60m²",
       "url": "https://www.athome.co.jp/kodate/1033902993/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -548,7 +548,7 @@
     {
       "source": "AtHome",
       "title": "Tsu City Yanagiya Tsuko One-story building 5DK",
-      "address": "Tsu City Yanagiya Tsuko One-story building 5DK",
+      "address": "津市 柳山津興 平屋建 ５ＤＫ",
       "price": "790万円",
       "size": "349.85m² / 109.30m²",
       "url": "https://www.athome.co.jp/kodate/1035873393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -579,6 +579,22 @@
     },
     {
       "source": "AtHome",
+      "title": "津市 河辺町（津駅） 平屋建 ５ＤＫ",
+      "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
+      "price": "980万円",
+      "size": "390.28m² / 150.08m²",
+      "url": "https://www.athome.co.jp/kodate/6985685427/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/hjXH3QDGZMi3F7BZLKw2zA==",
+      "area": "Tsu, Mie",
+      "build_year": "1936",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "150 m² building  /  390 m² land",
+      "date_found": "2026-06-25",
+      "lat": 34.740275,
+      "lng": 136.482811
+    },
+    {
+      "source": "AtHome",
       "title": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
       "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
       "price": "980万円",
@@ -592,22 +608,6 @@
       "date_found": "2026-05-14",
       "lat": 34.734508,
       "lng": 136.510493
-    },
-    {
-      "source": "AtHome",
-      "title": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
-      "address": "Tsu City Kawabecho (Tsu Station) One-story building 5DK",
-      "price": "980万円",
-      "size": "390.28m² / 150.08m²",
-      "url": "https://www.athome.co.jp/kodate/6985685427/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/hjXH3QDGZMi3F7BZLKw2zA==",
-      "area": "Tsu, Mie",
-      "build_year": "1936",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "150 m² building  /  390 m² land",
-      "date_found": "2026-06-25",
-      "lat": 34.740275,
-      "lng": 136.482811
     },
     {
       "source": "AtHome",
@@ -627,8 +627,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korazu-cho 2-story 7DK",
-      "address": "Tsu City Korazu-cho 2-story 7DK",
+      "title": "津市 香良洲町 2階建 ７ＤＫ",
+      "address": "Tsu City Korasu Town 2-story 7DK",
       "price": "1,000万円",
       "size": "756.93m² / 208.15m²",
       "url": "https://www.athome.co.jp/kodate/6988687891/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -659,7 +659,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Geinomachi Unrinin (Seki Station) One-story building 5DK",
+      "title": "津市 芸濃町雲林院（関駅） 平屋建 ５ＤＫ",
       "address": "Tsu City Geinomachi Unrinin (Seki Station) One-story building 5DK",
       "price": "1,000万円",
       "size": "821.14m² / 118.97m²",
@@ -676,7 +676,7 @@
     {
       "source": "AtHome",
       "title": "Tsu City Katada Shinmachi (Hisui Station) 2-story 4LDK",
-      "address": "Tsu City Katada Shinmachi (Hisui Station) 2-story 4LDK",
+      "address": "津市 片田新町（久居駅） 2階建 ４ＬＤＫ",
       "price": "1,090万円",
       "size": "309.87m² / 131.24m²",
       "url": "https://www.athome.co.jp/kodate/1064668493/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -692,7 +692,7 @@
     {
       "source": "AtHome",
       "title": "Tsu City Fujikata (Minamigaoka Station) 2-story 7DK",
-      "address": "Tsu City Fujikata (Minamigaoka Station) 2-story 7DK",
+      "address": "津市 藤方（南が丘駅） 2階建 ７ＤＫ",
       "price": "1,100万円",
       "size": "388.57m² / 162.50m²",
       "url": "https://www.athome.co.jp/kodate/6986688790/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -707,7 +707,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7DK",
+      "title": "津市 一志町井関（川合高岡駅） 平屋建 ７ＤＫ",
       "address": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7D",
       "price": "1,104万円",
       "size": "931.23m² / 184.62m²",
@@ -753,22 +753,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
-      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
-      "price": "1,180万円",
-      "size": "306.56m² / 136.00m²",
-      "url": "https://www.athome.co.jp/kodate/1199139224/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/zE7HA4mCotduLwzik3wB-A==",
-      "area": "Tsu, Mie",
-      "build_year": "1990",
-      "price_en": "¥11,800,000  (~$78,666 USD)",
-      "size_en": "136 m² building  /  307 m² land",
-      "date_found": "2026-07-18",
-      "lat": 34.70064,
-      "lng": 136.438735
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "price": "1,180万円",
@@ -782,6 +766,22 @@
       "date_found": "2026-07-22",
       "lat": 34.700476,
       "lng": 136.439752
+    },
+    {
+      "source": "AtHome",
+      "title": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "address": "Tsu City Katada Shinmachi 2-story 4LDK",
+      "price": "1,180万円",
+      "size": "306.56m² / 136.00m²",
+      "url": "https://www.athome.co.jp/kodate/1199139224/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/zE7HA4mCotduLwzik3wB-A==",
+      "area": "Tsu, Mie",
+      "build_year": "1990",
+      "price_en": "¥11,800,000  (~$78,666 USD)",
+      "size_en": "136 m² building  /  307 m² land",
+      "date_found": "2026-07-18",
+      "lat": 34.70064,
+      "lng": 136.438735
     },
     {
       "source": "AtHome",
@@ -801,7 +801,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11SLDK",
+      "title": "津市 高茶屋２丁目（高茶屋駅） 2階建 １１ＳＬＤＫ",
       "address": "Tsu City Takachaya 2-chome (Takachaya Station) 2-story building 11",
       "price": "1,198万円",
       "size": "371.03m² / 193.15m²",
@@ -817,8 +817,8 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Kumoidehongocho (Hisui Station) 2-story 4LDK",
-      "address": "Tsu City Kumoidehongocho (Hisui Station) 2-story 4LDK",
+      "title": "津市 雲出本郷町（久居駅） 2階建 ４ＬＤＫ",
+      "address": "Tsu City Kumoidehongocho (Hisai Station) 2-story 4LDK",
       "price": "1,250万円",
       "size": "601.52m² / 156.46m²",
       "url": "https://www.athome.co.jp/kodate/1036401498/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -849,20 +849,6 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City, Anomachi, Tabata Ueno, one-story building, 3LDK",
-      "address": "Tsu City, Anomachi, Tabata Ueno, one-story building, 3LDK",
-      "price": "1,380万円",
-      "size": "464.45m² / 143.83m²",
-      "url": "https://www.athome.co.jp/kodate/1029446393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/JTr7m3be6ow-z32jHGfbOQ==",
-      "area": "Tsu, Mie",
-      "build_year": "1991",
-      "price_en": "¥13,800,000  (~$92,000 USD)",
-      "size_en": "144 m² building  /  464 m² land",
-      "date_found": "2026-03-03"
-    },
-    {
-      "source": "AtHome",
       "title": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story 6DK",
       "address": "Tsu City Kurima Machiyacho (Takada Motoyama Station) 2-story building 6D",
       "price": "1,460万円",
@@ -880,7 +866,7 @@
     {
       "source": "AtHome",
       "title": "Tsu City Kannonjicho (Tsushinmachi Station) One-story building 7DK",
-      "address": "Tsu City Kannonjicho (Tsushinmachi Station) One-story building 7DK",
+      "address": "津市 観音寺町（津新町駅） 平屋建 ７ＤＫ",
       "price": "1,480万円",
       "size": "581.00m² / 153.17m²",
       "url": "https://www.athome.co.jp/kodate/6990127237/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -895,7 +881,7 @@
     },
     {
       "source": "Suumo",
-      "title": "A spacious Japanese-style house of 10 DKK, recommended for large families or two households.",
+      "title": "大家族や二世帯にもおすすめの、10DKKのゆとりの大型和風住宅",
       "address": "Main area of ​​Nakahata, Gotemba City, Shizuoka Prefecture",
       "price": "1350万円",
       "size": "493.37m2 / 225.07m2",
@@ -911,7 +897,7 @@
     },
     {
       "source": "Suumo",
-      "title": "Chohoji Town (Tokuda Station) 3.9 million yen",
+      "title": "長法寺町（徳田駅） 390万円",
       "address": "Chohoji Town (Tokuda Station) 3.9 million yen",
       "price": "390万円",
       "size": "385.53m2 / 101.01m2",
@@ -959,22 +945,6 @@
     },
     {
       "source": "Suumo",
-      "title": "Shirako 3 (Shiroko Station) 12.2 million yen",
-      "address": "3 Shirako, Suzuka City, Mie Prefecture",
-      "price": "1220万円",
-      "size": "304.06m2 / 116.07m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20022860/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F860%2F20022860%2F20022860_0001.jpg&w=192&h=144",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥12,200,000  (~$81,333 USD)",
-      "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-03-03",
-      "lat": 34.833401,
-      "lng": 136.585945
-    },
-    {
-      "source": "Suumo",
       "title": "Higashiasahigaoka 4 (Shiroko Station) 14 million yen",
       "address": "4 Higashiasahigaoka, Suzuka City, Mie Prefecture",
       "price": "1400万円",
@@ -1007,7 +977,7 @@
     },
     {
       "source": "Suumo",
-      "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long and a safe location for commuting to school ◇ Tsui",
+      "title": "◇ Spacious site with a land area of ​​approximately 222 tsubo ◇ Village Lord Elementary School is approximately 211 m long, a safe location for commuting to school ◇ Tsui",
       "address": "Spacious site of 2 tsubo ◇ Village Lord Elementary School approximately 211 m, safe location for commuting ◇ Tsui",
       "price": "500万円",
       "size": "734.89m2 / 161.31m2",
@@ -1120,7 +1090,7 @@
     {
       "source": "Suumo",
       "title": "Kawabe Town (Tsu Station) 9.8 million yen",
-      "address": "Kawabe Town (Tsu Station) 9.8 million yen",
+      "address": "河辺町（津駅） 980万円",
       "price": "980万円",
       "size": "1390.28m2 / 150.08m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_21012617/",
@@ -1167,22 +1137,6 @@
     },
     {
       "source": "Suumo",
-      "title": "Katada Shinmachi 11.8 million yen",
-      "address": "Katada Shinmachi 11.8 million yen",
-      "price": "1180万円",
-      "size": "306.56m2 / 136m2",
-      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_21334451/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F451%2F21334451%2F21334451_0001.jpg&w=192&h=144",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥11,800,000  (~$78,666 USD)",
-      "size_en": "136 m² building  /  307 m² land",
-      "date_found": "2026-07-21",
-      "lat": 34.701941,
-      "lng": 136.437265
-    },
-    {
-      "source": "Suumo",
       "title": "Handa (Ako Station) 11.8 million yen",
       "address": "Handa, Tsu City, Mie Prefecture",
       "price": "1180万円",
@@ -1196,6 +1150,22 @@
       "date_found": "2026-03-10",
       "lat": 34.70179,
       "lng": 136.503208
+    },
+    {
+      "source": "Suumo",
+      "title": "Katada Shinmachi 11.8 million yen",
+      "address": "Katada Shinmachi 11.8 million yen",
+      "price": "1180万円",
+      "size": "306.56m2 / 136m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_21334451/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F451%2F21334451%2F21334451_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥11,800,000  (~$78,666 USD)",
+      "size_en": "136 m² building  /  307 m² land",
+      "date_found": "2026-07-21",
+      "lat": 34.701941,
+      "lng": 136.437265
     },
     {
       "source": "Suumo",
@@ -1279,7 +1249,7 @@
     },
     {
       "source": "Yahoo RE",
-      "title": "Yachi, Misugi-cho, Tsu City",
+      "title": "津市美杉町八知",
       "address": "Yachi, Misugi-cho, Tsu City",
       "price": "480万円",
       "size": "596.19m2 / 596.19m2",
@@ -1296,7 +1266,7 @@
     {
       "source": "Yahoo RE",
       "title": "Takanoo Town, Tsu City",
-      "address": "Takanoo Town, Tsu City",
+      "address": "津市高野尾町",
       "price": "350万円",
       "size": "706.6m2 / 124.28m2",
       "url": "https://realestate.yahoo.co.jp/used/house/detail_corp/b0024942212/",
@@ -1343,22 +1313,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house Suzuka City Oike 2-chome Used detached house PR",
-      "address": "Used detached house Oike 2-chome, Suzuka City Used detached house PR price 9.8 million yen",
-      "price": "980万円",
-      "size": "189.22m²",
-      "url": "https://www.homes.co.jp/kodate/b-1574380000025/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F25%2F2%2F1%2Fw0nb.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "189 m² land",
-      "date_found": "2026-07-24",
-      "lat": 34.867544,
-      "lng": 136.538091
-    },
-    {
-      "source": "Lifull Homes",
       "title": "Used detached house Used detached house Koshacho, Suzuka City",
       "address": "Used detached house in Kosha-cho, Suzuka City <img src=\"https:/",
       "price": "850万円",
@@ -1375,35 +1329,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "Used detached house, Kida-cho, Suzuka City, detached house PR",
-      "address": "Used detached house in Kida-cho, Suzuka City, detached house PR price 13.99 million yen",
-      "price": "1,399万円",
-      "size": "199.79m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000706/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F706%2F2%2F1%2Fwzoh.jpg&width=208&height=138",
+      "title": "Used detached house Suzuka City Oike 2-chome Used detached house PR",
+      "address": "Used detached house Oike 2-chome, Suzuka City Used detached house PR price 9.8 million yen",
+      "price": "980万円",
+      "size": "189.22m² / 416.11m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000025/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F25%2F2%2F1%2Fw0nb.jpg&width=208&height=138",
       "area": "Suzuka, Mie",
       "build_year": "",
-      "price_en": "¥13,990,000  (~$93,266 USD)",
-      "size_en": "200 m² land",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "416 m² building  /  189 m² land",
       "date_found": "2026-07-24",
-      "lat": 34.898162,
-      "lng": 136.569027
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "Used detached house Shirako 3-chome",
-      "address": "10 minutes Shirako 3-chome, Suzuka City, Mie Prefecture Built year: December 1972",
-      "price": "1,220万円",
-      "size": "304.06m² / 116.07m²",
-      "url": "https://www.homes.co.jp/kodate/b-1319120000101/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F101%2F2%2F2%2Fm0u7.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1972",
-      "price_en": "¥12,200,000  (~$81,333 USD)",
-      "size_en": "116 m² building  /  304 m² land",
-      "date_found": "2026-07-07",
-      "lat": 34.831075,
-      "lng": 136.584066
+      "lat": 34.867544,
+      "lng": 136.538091
     },
     {
       "source": "Lifull Homes",
@@ -1420,6 +1358,22 @@
       "date_found": "2026-06-21",
       "lat": 34.881059,
       "lng": 136.616574
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "Used detached house Tsu City Shiratsuka-cho detached house PR",
+      "address": "Used detached house located in Shiratsuka-cho, Tsu City, detached house PR price 14.49 million yen",
+      "price": "1,449万円",
+      "size": "214.48m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000670/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F670%2F2%2F1%2Fgj3i.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥14,490,000  (~$96,600 USD)",
+      "size_en": "214 m² land",
+      "date_found": "2026-07-25",
+      "lat": 34.773656,
+      "lng": 136.531024
     },
     {
       "source": "Lifull Homes",
@@ -1472,7 +1426,7 @@
     {
       "source": "Lifull Homes",
       "title": "Used detached house JR Kisei Main Line Takachaya Station 4.3km",
-      "address": ".3kmKarazu-cho, Tsu City, Mie PrefectureConstruction year: May 1970",
+      "address": ".3kmKorazu-cho, Tsu City, Mie PrefectureConstruction year: May 1970",
       "price": "450万円",
       "size": "569.94m² / 145.34m²",
       "url": "https://www.homes.co.jp/kodate/b-1319130000121/",
@@ -1643,7 +1597,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residence",
+      "title": "For rental residential use",
       "address": "Minamiiejo, Hakusan Town, Tsu City, Mie Prefecture",
       "price": "5万円",
       "size": "",
@@ -1826,7 +1780,7 @@
     {
       "source": "Akiya Bank",
       "title": "For sale and residence",
-      "address": "・Equipped with a combined treatment septic tank, which is rare for a property in Misugi Town",
+      "address": "・美杉町の物件には珍しい合併処理浄化槽完備",
       "price": "500万円",
       "size": "297.52 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-32062/",
@@ -1871,7 +1825,7 @@
     },
     {
       "source": "Shizuoka Akiya",
-      "title": "house for sale",
+      "title": "売住宅",
       "address": "919-1 Fujimagari, Oyama-machi, Sunto-gun",
       "price": "1,380万円",
       "size": "173.61m² / 450.08m² / 173.61m²",
