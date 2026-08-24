@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T18:40:55",
+  "generated": "2026-08-24T18:51:18",
   "listings": [
     {
       "source": "AtHome",
@@ -36,7 +36,7 @@
     {
       "source": "AtHome",
       "title": "鈴鹿市 広瀬町（加佐登駅） 2階建 ６ＬＤＫ",
-      "address": "Suzuka City Hirose-cho (Kasato Station) 2-story 6LDK",
+      "address": "鈴鹿市 広瀬町（加佐登駅） 2階建 ６ＬＤＫ",
       "price": "380万円",
       "size": "790.07m² / 134.54m²",
       "url": "https://www.athome.co.jp/kodate/6991669027/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -51,7 +51,7 @@
     },
     {
       "source": "AtHome",
-      "title": "鈴鹿市 白子２丁目（白子駅） 2階建 ６Ｋ",
+      "title": "Suzuka City Shirako 2-chome (Shiroko Station) 2-story building 6K",
       "address": "鈴鹿市 白子２丁目（白子駅） 2階建 ６Ｋ",
       "price": "400万円",
       "size": "366.07m² / 117.28m²",
@@ -116,7 +116,7 @@
     {
       "source": "AtHome",
       "title": "鈴鹿市 東庄内町（加佐登駅） 平屋建 ８ＤＫ",
-      "address": "Suzuka City Higashi-Shonai-cho (Kasato Station) One-story building 8DK",
+      "address": "鈴鹿市 東庄内町（加佐登駅） 平屋建 ８ＤＫ",
       "price": "980万円",
       "size": "495.86m² / 213.41m²",
       "url": "https://www.athome.co.jp/kodate/6989062801/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -131,7 +131,7 @@
     },
     {
       "source": "AtHome",
-      "title": "鈴鹿市 北江島町（白子駅） 2階建 ８ＤＫ",
+      "title": "Suzuka City Kitaejima-cho (Shiroko Station) 2-story 8DK",
       "address": "鈴鹿市 北江島町（白子駅） 2階建 ８ＤＫ",
       "price": "1,200万円",
       "size": "512.49m² / 218.49m²",
@@ -177,7 +177,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Geinomachi Shinoda One-story building 8K",
+      "title": "津市 芸濃町忍田 平屋建 ８Ｋ",
       "address": "津市 芸濃町忍田 平屋建 ８Ｋ",
       "price": "195万円",
       "size": "571.63m² / 167.11m²",
@@ -305,7 +305,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Kawagei-cho Senrigaoka (Ise Ueno Station) 2-story 5DK",
+      "title": "津市 河芸町千里ヶ丘（伊勢上野駅） 2階建 ５ＤＫ",
       "address": "津市 河芸町千里ヶ丘（伊勢上野駅） 2階建",
       "price": "398万円",
       "size": "418.62m² / 109.72m²",
@@ -513,6 +513,22 @@
     },
     {
       "source": "AtHome",
+      "title": "津市 芸濃町雲林院（関駅） 平屋建 ５ＤＫ",
+      "address": "津市 芸濃町雲林院（関駅） 平屋建 ５ＤＫ",
+      "price": "600万円",
+      "size": "821.14m² / 118.97m²",
+      "url": "https://www.athome.co.jp/kodate/1162845426/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/8bxReXagoMBd3Tn3EF43yA==",
+      "area": "Tsu, Mie",
+      "build_year": "1984",
+      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "size_en": "119 m² building  /  821 m² land",
+      "date_found": "2026-05-28",
+      "lat": 34.849053,
+      "lng": 136.394734
+    },
+    {
+      "source": "AtHome",
       "title": "津市 白山町南家城（家城駅） 2階建 ８ＤＫ",
       "address": "津市 白山町南家城（家城駅） 2階建 ８ＤＫ",
       "price": "750万円",
@@ -593,7 +609,7 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 藤方（南が丘駅） 平屋建 １１ＤＫ",
+      "title": "Tsu City Fujikata (Minamigaoka Station) One-story building 11DK",
       "address": "津市 藤方（南が丘駅） 平屋建 １１ＤＫ",
       "price": "980万円",
       "size": "508.28m² / 253.74m²",
@@ -625,7 +641,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Korasu Town 2-story 7DK",
+      "title": "津市 香良洲町 2階建 ７ＤＫ",
       "address": "津市 香良洲町 2階建 ７ＤＫ",
       "price": "1,000万円",
       "size": "756.93m² / 208.15m²",
@@ -654,22 +670,6 @@
       "date_found": "2026-07-16",
       "lat": 34.786788,
       "lng": 136.540183
-    },
-    {
-      "source": "AtHome",
-      "title": "津市 芸濃町雲林院（関駅） 平屋建 ５ＤＫ",
-      "address": "津市 芸濃町雲林院（関駅） 平屋建 ５ＤＫ",
-      "price": "1,000万円",
-      "size": "821.14m² / 118.97m²",
-      "url": "https://www.athome.co.jp/kodate/1162845426/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/8bxReXagoMBd3Tn3EF43yA==",
-      "area": "Tsu, Mie",
-      "build_year": "1984",
-      "price_en": "¥10,000,000  (~$66,666 USD)",
-      "size_en": "119 m² building  /  821 m² land",
-      "date_found": "2026-05-28",
-      "lat": 34.849053,
-      "lng": 136.394734
     },
     {
       "source": "AtHome",
@@ -735,7 +735,7 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 一志町井関（川合高岡駅） 平屋建 ７ＤＫ",
+      "title": "Tsu City Isshicho Iseki (Kawai Takaoka Station) One-story building 7DK",
       "address": "津市 一志町井関（川合高岡駅） 平屋建 ７Ｄ",
       "price": "1,104万円",
       "size": "931.23m² / 184.62m²",
@@ -766,7 +766,7 @@
     {
       "source": "AtHome",
       "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
-      "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
+      "address": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "price": "1,120万円",
       "size": "335.02m² / 101.62m²",
       "url": "https://www.athome.co.jp/kodate/6990305666/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -781,7 +781,7 @@
     },
     {
       "source": "AtHome",
-      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
+      "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "price": "1,120万円",
       "size": "335.02m² / 101.62m²",
@@ -797,7 +797,7 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
+      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "price": "1,180万円",
       "size": "306.56m² / 136.00m²",
@@ -846,7 +846,7 @@
     {
       "source": "AtHome",
       "title": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LDK",
-      "address": "津市 白山町二本木（大三駅） 2階建 ５ＬＤ",
+      "address": "Tsu City Hakusancho Nihongi (Daisan Station) 2-story 5LD",
       "price": "1,280万円",
       "size": "417.66m² / 170.00m²",
       "url": "https://www.athome.co.jp/kodate/6985453065/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -989,7 +989,7 @@
     },
     {
       "source": "Suumo",
-      "title": "美里町家所 350万円",
+      "title": "Misato Machiyadokoro 3.5 million yen",
       "address": "美里町家所 350万円",
       "price": "350万円",
       "size": "309.35m2 / 118.8m2",
@@ -1165,7 +1165,7 @@
     },
     {
       "source": "Suumo",
-      "title": "片田新町（久居駅） 1090万円",
+      "title": "Katada Shinmachi (Hisui Station) 10.9 million yen",
       "address": "片田新町（久居駅） 1090万円",
       "price": "1090万円",
       "size": "309.87m2 / 131.24m2",
@@ -1278,7 +1278,7 @@
     {
       "source": "Yahoo RE",
       "title": "このエリアのおすすめ土地",
-      "address": "Oyama Town",
+      "address": "小山町",
       "price": "1,180万円",
       "size": "230.21m2 / 1991m2",
       "url": "https://realestate.yahoo.co.jp/land/detail_corp/b0022536535/?ult_out=uh_nhlist",
@@ -1326,7 +1326,7 @@
     {
       "source": "Lifull Homes",
       "title": "中古一戸建て御殿場市中畑　戸建て",
-      "address": "古一戸建て御殿場市中畑　戸建て<img src=\"http",
+      "address": "Old detached house Gotemba City Nakahata detached house<img src=\"http",
       "price": "1,350万円",
       "size": "493.37m² / 225.07m²",
       "url": "https://www.homes.co.jp/kodate/b-1564140000178/",
@@ -1389,35 +1389,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て北堀江2丁目平家住宅",
-      "address": "歩9分三重県鈴鹿市北堀江2丁目建築年（築年数）1971年0",
-      "price": "700万円",
-      "size": "210.8m² / 78.64m² / 495.66m²",
-      "url": "https://www.homes.co.jp/kodate/b-1119090000708/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111909%2Fsale%2F708%2F2%2F2%2F87dd.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1970",
-      "price_en": "¥7,000,000  (~$46,666 USD)",
-      "size_en": "79 m² building  /  211 m² land  /  496 m² other",
-      "date_found": "2026-08-23",
-      "lat": 34.883079,
-      "lng": 136.626038
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "中古一戸建て津市城山一丁目PR",
-      "address": "中古一戸建て津市城山一丁目PR価格800万円所在地三重県",
-      "price": "800万円",
-      "size": "146.2m²",
-      "url": "https://www.homes.co.jp/kodate/b-1310390000042/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131039%2Fsale%2F42%2F2%2F1%2F2vz0.jpg&width=208&height=138",
+      "title": "中古一戸建て津市白塚町　戸建てPR",
+      "address": "中古一戸建て津市白塚町　戸建てPR価格1,399万円所在",
+      "price": "1,399万円",
+      "size": "297.66m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000683/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F683%2F2%2F1%2Fu33i.jpg&width=208&height=138",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥8,000,000  (~$53,333 USD)",
-      "size_en": "146 m² land",
-      "date_found": "2026-08-23",
-      "lat": 34.676502,
-      "lng": 136.506409
+      "price_en": "¥13,990,000  (~$93,266 USD)",
+      "size_en": "298 m² land",
+      "date_found": "2026-08-24",
+      "lat": 34.772534,
+      "lng": 136.538452
     },
     {
       "source": "Lifull Homes",
@@ -1513,7 +1497,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "売買居住用",
+      "title": "For sale and residence",
       "address": "三重県 鈴鹿市 白子二丁目",
       "price": "800万円",
       "size": "247.66 m²",
@@ -1598,7 +1582,7 @@
     {
       "source": "Akiya Bank",
       "title": "売買居住用",
-      "address": "三重県 津市 芸濃町北神山",
+      "address": "Kitakamiyama, Geino Town, Tsu City, Mie Prefecture",
       "price": "480万円",
       "size": "",
       "url": "https://www.homes.co.jp/akiyabank/b-46440/",
@@ -1611,7 +1595,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "For rental residential use",
+      "title": "property",
       "address": "三重県 津市 白山町南家城",
       "price": "5万円",
       "size": "",
@@ -1752,7 +1736,7 @@
     {
       "source": "Akiya Bank",
       "title": "売買居住用",
-      "address": "三重県 津市 一身田豊野",
+      "address": "Mie Prefecture Tsu City Isshinda Toyono",
       "price": "950万円",
       "size": "249.75 m²",
       "url": "https://www.homes.co.jp/akiyabank/b-36480/",
@@ -1823,7 +1807,7 @@
     },
     {
       "source": "Shizuoka Akiya",
-      "title": "売土地",
+      "title": "land for sale",
       "address": "駿東郡小山町藤曲",
       "price": "820万円",
       "size": "368.73m² / 368.73m²",
