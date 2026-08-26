@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T18:52:25",
+  "generated": "2026-08-26T20:03:55",
   "listings": [
     {
       "source": "AtHome",
@@ -417,6 +417,20 @@
     },
     {
       "source": "AtHome",
+      "title": "津市 稲葉町（久居駅） 平屋建 ９ＤＫ",
+      "address": "津市 稲葉町（久居駅） 平屋建 ９ＤＫ",
+      "price": "499万円",
+      "size": "620.78m² / 143.37m²",
+      "url": "https://www.athome.co.jp/kodate/1186817430/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/awIQ89TPy9eE6Fe6nI2Fsg==",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥4,990,000  (~$33,266 USD)",
+      "size_en": "143 m² building  /  621 m² land",
+      "date_found": "2026-08-26"
+    },
+    {
+      "source": "AtHome",
       "title": "津市 香良洲町地家（久居駅） 2階建 ６ＤＫ",
       "address": "津市 香良洲町地家（久居駅） 2階建 ６ＤＫ",
       "price": "500万円",
@@ -673,6 +687,22 @@
     },
     {
       "source": "AtHome",
+      "title": "津市 片田町（津駅） 2階建 １１ＤＫ",
+      "address": "津市 片田町（津駅） 2階建 １１ＤＫ",
+      "price": "1,080万円",
+      "size": "644.21m² / 260.85m²",
+      "url": "https://www.athome.co.jp/kodate/6972034778/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/lpOnhV9EwJzSUZ8kvuQ7HQ==",
+      "area": "Tsu, Mie",
+      "build_year": "1973",
+      "price_en": "¥10,800,000  (~$72,000 USD)",
+      "size_en": "261 m² building  /  644 m² land",
+      "date_found": "2026-08-26",
+      "lat": 34.708375,
+      "lng": 136.432443
+    },
+    {
+      "source": "AtHome",
       "title": "津市 片田新町（久居駅） 2階建 ４ＬＤＫ",
       "address": "津市 片田新町（久居駅） 2階建 ４ＬＤＫ",
       "price": "1,090万円",
@@ -735,20 +765,6 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 片田新町 2階建 ４ＬＤＫ",
-      "address": "津市 片田新町 2階建 ４ＬＤＫ",
-      "price": "1,120万円",
-      "size": "335.02m² / 101.62m²",
-      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/eUUHLVSjEV2gJatG1bvhzg==",
-      "area": "Tsu, Mie",
-      "build_year": "1983",
-      "price_en": "¥11,200,000  (~$74,666 USD)",
-      "size_en": "102 m² building  /  335 m² land",
-      "date_found": "2026-08-20"
-    },
-    {
-      "source": "AtHome",
       "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "price": "1,120万円",
@@ -778,6 +794,20 @@
       "date_found": "2026-08-07",
       "lat": 34.70227,
       "lng": 136.440666
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 片田新町 2階建 ４ＬＤＫ",
+      "address": "津市 片田新町 2階建 ４ＬＤＫ",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/1035012393/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/eUUHLVSjEV2gJatG1bvhzg==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-08-20"
     },
     {
       "source": "AtHome",
@@ -1037,6 +1067,22 @@
     },
     {
       "source": "Suumo",
+      "title": "稲葉町 499万円",
+      "address": "稲葉町 499万円",
+      "price": "499万円",
+      "size": "620.78m2 / 143.37m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_21562716/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F716%2F21562716%2F21562716_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥4,990,000  (~$33,266 USD)",
+      "size_en": "143 m² building  /  621 m² land",
+      "date_found": "2026-08-26",
+      "lat": 34.711695,
+      "lng": 136.394854
+    },
+    {
+      "source": "Suumo",
       "title": "◇土地面積約２２２坪の広々敷地◇村主小学校約２１１ｍと通学安心の立地◇津イ",
       "address": "２坪の広々敷地◇村主小学校約２１１ｍと通学安心の立地◇津イ",
       "price": "500万円",
@@ -1154,7 +1200,7 @@
       "price": "1090万円",
       "size": "309.87m2 / 131.24m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_75535636/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F636%2F75535636%2F75535636_0001.jpg&w=192&h=144",
+      "image": "",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥10,900,000  (~$72,666 USD)",
@@ -1309,6 +1355,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "中古一戸建て鈴鹿市磯山2丁目　中古一戸建てPR",
+      "address": "中古一戸建て鈴鹿市磯山2丁目　中古一戸建てPR価格850万",
+      "price": "850万円",
+      "size": "188.91m² / 416.11m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000021/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F21%2F2%2F1%2Fdqes.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "416 m² building  /  189 m² land",
+      "date_found": "2026-08-26",
+      "lat": 34.813447,
+      "lng": 136.565191
+    },
+    {
+      "source": "Lifull Homes",
       "title": "中古一戸建て中古戸建　鈴鹿市小社町",
       "address": "て中古戸建　鈴鹿市小社町<img src=\"https:/",
       "price": "780万円",
@@ -1341,19 +1403,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て津市高茶屋二丁目　戸建てPR",
-      "address": "中古一戸建て津市高茶屋二丁目　戸建てPR価格1,399万",
-      "price": "1,399万円",
-      "size": "130m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000745/",
-      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F745%2F2%2F2%2F2m85.jpg&width=208&height=138",
+      "title": "中古一戸建て津市白塚町　戸建てPR",
+      "address": "中古一戸建て津市白塚町　戸建てPR価格1,449万円所在",
+      "price": "1,449万円",
+      "size": "214.48m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000670/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F670%2F2%2F1%2Fg9zz.jpg&width=208&height=138",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥13,990,000  (~$93,266 USD)",
-      "size_en": "130 m² land",
-      "date_found": "2026-08-25",
-      "lat": 34.678532,
-      "lng": 136.511675
+      "price_en": "¥14,490,000  (~$96,600 USD)",
+      "size_en": "214 m² land",
+      "date_found": "2026-08-26",
+      "lat": 34.773656,
+      "lng": 136.531024
     },
     {
       "source": "Lifull Homes",
@@ -1370,6 +1432,22 @@
       "date_found": "2026-04-08",
       "lat": 34.699798,
       "lng": 136.440428
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "中古一戸建て津市片田志袋町　戸建てPR",
+      "address": "中古一戸建て津市片田志袋町　戸建てPR価格799万円所在",
+      "price": "799万円",
+      "size": "272m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000744/",
+      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F744%2F2%2F1%2Fbcmj.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥7,990,000  (~$53,266 USD)",
+      "size_en": "272 m² land",
+      "date_found": "2026-08-26",
+      "lat": 34.717984,
+      "lng": 136.449026
     },
     {
       "source": "Lifull Homes",
@@ -1418,6 +1496,22 @@
       "date_found": "2026-05-14",
       "lat": 34.740272,
       "lng": 136.482806
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "中古一戸建て近鉄名古屋線 久居駅 バス35分 下稲葉下車 徒歩2分",
+      "address": "徒歩2分三重県津市稲葉町建築年（築年数）1926年01月（",
+      "price": "499万円",
+      "size": "620.78m² / 143.37m²",
+      "url": "https://www.homes.co.jp/kodate/b-1319120000191/",
+      "image": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131912%2Fsale%2F191%2F2%2F2%2F0p85.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥4,990,000  (~$33,266 USD)",
+      "size_en": "143 m² building  /  621 m² land",
+      "date_found": "2026-08-26",
+      "lat": 34.69555,
+      "lng": 136.40935
     },
     {
       "source": "Akiya Bank",
