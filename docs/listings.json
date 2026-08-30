@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-29T20:38:15",
+  "generated": "2026-08-30T20:43:05",
   "listings": [
     {
       "source": "AtHome",
-      "title": "御殿場市 中畑（御殿場駅） 2階建 １０ＤＫ",
-      "address": "御殿場市 中畑（御殿場駅） 2階建 １０ＤＫ",
+      "title": "Gotemba City Nakahata (Gotemba Station) 2-story building 10DK",
+      "address": "Gotemba City Nakahata (Gotemba Station) 2-story building 10DK",
       "price": "1,350万円",
       "size": "493.37m² / 225.07m²",
       "url": "https://www.athome.co.jp/kodate/1151725028/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -19,8 +19,8 @@
     },
     {
       "source": "AtHome",
-      "title": "駿東郡小山町 藤曲（駿河小山駅） 2階建 ５ＬＤＫ",
-      "address": "駿東郡小山町 藤曲（駿河小山駅） 2階建 ５ＬＤＫ",
+      "title": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
+      "address": "Fujimagari, Oyama-cho, Sunto-gun (Suruga-Oyama Station) 2-story 5LDK",
       "price": "900万円",
       "size": "329.40m² / 117.58m²",
       "url": "https://www.athome.co.jp/kodate/6989336556/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -35,8 +35,8 @@
     },
     {
       "source": "AtHome",
-      "title": "鈴鹿市 広瀬町（加佐登駅） 2階建 ６ＬＤＫ",
-      "address": "鈴鹿市 広瀬町（加佐登駅） 2階建 ６ＬＤＫ",
+      "title": "Suzuka City Hirose-cho (Kasato Station) 2-story 6LDK",
+      "address": "Suzuka City Hirose-cho (Kasato Station) 2-story 6LDK",
       "price": "380万円",
       "size": "790.07m² / 134.54m²",
       "url": "https://www.athome.co.jp/kodate/6991669027/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -164,7 +164,7 @@
     {
       "source": "AtHome",
       "title": "鈴鹿市 東旭が丘４丁目（白子駅） 2階建 ７ＬＤＫ",
-      "address": "鈴鹿市 東旭が丘４丁目（白子駅） 2階建 ７Ｌ",
+      "address": "Suzuka City Higashi Asahigaoka 4-chome (Shiroko Station) 2-story building 7L",
       "price": "1,400万円",
       "size": "329.54m² / 154.80m²",
       "url": "https://www.athome.co.jp/kodate/1193979019/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
@@ -273,7 +273,7 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 白塚町（高田本山駅） 平屋建 ６ＤＫ",
+      "title": "Tsu City Shiratsukacho (Takada Motoyama Station) One-story building 6DK",
       "address": "津市 白塚町（高田本山駅） 平屋建 ６ＤＫ",
       "price": "345万円",
       "size": "314.08m² / 140.64m²",
@@ -302,6 +302,22 @@
       "date_found": "2026-07-20",
       "lat": 34.80256,
       "lng": 136.546389
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 美里町家所 2階建 ５ＬＤＫ",
+      "address": "津市 美里町家所 2階建 ５ＬＤＫ",
+      "price": "350万円",
+      "size": "309.35m² / 118.80m²",
+      "url": "https://www.athome.co.jp/kodate/1037354893/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/-amitqssa2y-9SZImtLb_A==",
+      "area": "Tsu, Mie",
+      "build_year": "1980",
+      "price_en": "¥3,500,000  (~$23,333 USD)",
+      "size_en": "119 m² building  /  309 m² land",
+      "date_found": "2026-08-30",
+      "lat": 34.728263,
+      "lng": 136.421168
     },
     {
       "source": "AtHome",
@@ -337,22 +353,6 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 香良洲町（高茶屋駅） 平屋建 ６ＤＫ",
-      "address": "津市 香良洲町（高茶屋駅） 平屋建 ６ＤＫ",
-      "price": "480万円",
-      "size": "569.94m² / 145.34m²",
-      "url": "https://www.athome.co.jp/kodate/6991864526/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/yzEegNvVq5YJDv65P1uNgA==",
-      "area": "Tsu, Mie",
-      "build_year": "1970",
-      "price_en": "¥4,800,000  (~$32,000 USD)",
-      "size_en": "145 m² building  /  570 m² land",
-      "date_found": "2026-08-28",
-      "lat": 34.65269,
-      "lng": 136.540455
-    },
-    {
-      "source": "AtHome",
       "title": "津市 香良洲町（高茶屋駅） 平屋建 ５ＤＫ",
       "address": "津市 香良洲町（高茶屋駅） 平屋建 ５ＤＫ",
       "price": "480万円",
@@ -366,6 +366,22 @@
       "date_found": "2026-07-30",
       "lat": 34.652677,
       "lng": 136.540388
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 香良洲町（高茶屋駅） 平屋建 ６ＤＫ",
+      "address": "津市 香良洲町（高茶屋駅） 平屋建 ６ＤＫ",
+      "price": "480万円",
+      "size": "569.94m² / 145.34m²",
+      "url": "https://www.athome.co.jp/kodate/6991864526/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/yzEegNvVq5YJDv65P1uNgA==",
+      "area": "Tsu, Mie",
+      "build_year": "1970",
+      "price_en": "¥4,800,000  (~$32,000 USD)",
+      "size_en": "145 m² building  /  570 m² land",
+      "date_found": "2026-08-28",
+      "lat": 34.65269,
+      "lng": 136.540455
     },
     {
       "source": "AtHome",
@@ -799,7 +815,7 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
+      "title": "Tsu City Katada Shinmachi (Tsu Shinmachi Station) 2-story 4LDK",
       "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "price": "1,120万円",
       "size": "335.02m² / 101.62m²",
@@ -924,22 +940,6 @@
       "lng": 136.53099
     },
     {
-      "source": "AtHome",
-      "title": "津市 栗真町屋町（高田本山駅） 2階建 ６ＤＫ",
-      "address": "津市 栗真町屋町（高田本山駅） 2階建 ６Ｄ",
-      "price": "1,460万円",
-      "size": "577.00m² / 166.96m²",
-      "url": "https://www.athome.co.jp/kodate/6984472073/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/Pg8piPD-aO_0rO9wROxS9Q==",
-      "area": "Tsu, Mie",
-      "build_year": "1978",
-      "price_en": "¥14,600,000  (~$97,333 USD)",
-      "size_en": "167 m² building  /  577 m² land",
-      "date_found": "2026-08-29",
-      "lat": 34.752992,
-      "lng": 136.518967
-    },
-    {
       "source": "Suumo",
       "title": "大家族や二世帯にもおすすめの、10DKKのゆとりの大型和風住宅",
       "address": "静岡県御殿場市中畑主要地",
@@ -958,7 +958,7 @@
     {
       "source": "Suumo",
       "title": "長法寺町（徳田駅） 390万円",
-      "address": "長法寺町（徳田駅） 390万円",
+      "address": "Chohoji Town (Tokuda Station) 3.9 million yen",
       "price": "390万円",
       "size": "385.53m2 / 101.01m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20901052/",
@@ -989,7 +989,7 @@
     },
     {
       "source": "Suumo",
-      "title": "■近鉄「箕田」駅徒歩約7分■箕田小学校徒歩約4分■土地面積広々約94坪",
+      "title": "■ Approximately 7 minutes' walk from Kintetsu \"Minota\" Station ■ Approximately 4 minutes' walk from Minota Elementary School ■ Land area approximately 94 tsubo",
       "address": "三重県鈴鹿市中箕田１",
       "price": "898万円",
       "size": "314.04m2 / 134.96m2",
@@ -1006,7 +1006,7 @@
     {
       "source": "Suumo",
       "title": "東旭が丘４（白子駅） 1400万円",
-      "address": "三重県鈴鹿市東旭が丘４",
+      "address": "4 Higashiasahigaoka, Suzuka City, Mie Prefecture",
       "price": "1400万円",
       "size": "329.54m2 / 154.8m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_suzuka/nc_20767045/",
@@ -1034,6 +1034,22 @@
       "date_found": "2026-08-11",
       "lat": 34.749542,
       "lng": 136.462449
+    },
+    {
+      "source": "Suumo",
+      "title": "美里町家所 350万円",
+      "address": "Misato Machiyadokoro 3.5 million yen",
+      "price": "350万円",
+      "size": "309.35m2 / 118.8m2",
+      "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_21434942/",
+      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F942%2F21434942%2F21434942_0001.jpg&w=192&h=144",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥3,500,000  (~$23,333 USD)",
+      "size_en": "119 m² building  /  309 m² land",
+      "date_found": "2026-08-30",
+      "lat": 34.728259,
+      "lng": 136.42116
     },
     {
       "source": "Suumo",
@@ -1101,7 +1117,7 @@
     },
     {
       "source": "Suumo",
-      "title": "稲葉町 499万円",
+      "title": "Inaba Town 4.99 million yen",
       "address": "稲葉町 499万円",
       "price": "499万円",
       "size": "620.78m2 / 143.37m2",
@@ -1234,7 +1250,7 @@
       "price": "1090万円",
       "size": "309.87m2 / 131.24m2",
       "url": "https://suumo.jp/chukoikkodate/mie/sc_tsu/nc_75535636/",
-      "image": "https://img01.suumo.com/jj/resizeImage?src=gazo%2Fbukken%2F050%2FN010000%2Fimg%2F636%2F75535636%2F75535636_0001.jpg&w=192&h=144",
+      "image": "",
       "area": "Tsu, Mie",
       "build_year": "",
       "price_en": "¥10,900,000  (~$72,666 USD)",
@@ -1389,6 +1405,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "中古一戸建て鈴鹿市野町西3丁目　中古一戸建てPR",
+      "address": "中古一戸建て鈴鹿市野町西3丁目　中古一戸建てPR価格1,5",
+      "price": "1,500万円",
+      "size": "264.54m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000148/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F148%2F2%2F1%2Fe2gi.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥15,000,000  (~$100,000 USD)",
+      "size_en": "265 m² land",
+      "date_found": "2026-08-30",
+      "lat": 34.853871,
+      "lng": 136.562002
+    },
+    {
+      "source": "Lifull Homes",
       "title": "中古一戸建て中古戸建　鈴鹿市小社町",
       "address": "て中古戸建　鈴鹿市小社町<img src=\"https:/",
       "price": "780万円",
@@ -1421,51 +1453,35 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て北堀江2丁目平家住宅",
-      "address": "歩9分三重県鈴鹿市北堀江2丁目建築年（築年数）1971年0",
-      "price": "700万円",
-      "size": "210.8m² / 78.64m² / 495.66m²",
-      "url": "https://www.homes.co.jp/kodate/b-1119090000708/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111909%2Fsale%2F708%2F2%2F2%2F87dd.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "1970",
-      "price_en": "¥7,000,000  (~$46,666 USD)",
-      "size_en": "79 m² building  /  211 m² land  /  496 m² other",
-      "date_found": "2026-08-29",
-      "lat": 34.883079,
-      "lng": 136.626038
+      "title": "Used detached house Tsu City Shiratsuka-cho detached house PR",
+      "address": "中古一戸建て津市白塚町　戸建てPR価格1,399万円所在",
+      "price": "1,399万円",
+      "size": "297.66m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000683/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F683%2F2%2F1%2Fxirt.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥13,990,000  (~$93,266 USD)",
+      "size_en": "298 m² land",
+      "date_found": "2026-08-30",
+      "lat": 34.772534,
+      "lng": 136.538452
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て津市白塚町　戸建てPR",
-      "address": "中古一戸建て津市白塚町　戸建てPR価格1,449万円所在",
-      "price": "1,449万円",
-      "size": "214.48m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000670/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F670%2F2%2F1%2Fg9zz.jpg&width=208&height=138",
+      "title": "中古一戸建て津市藤方　戸建てPR",
+      "address": "中古一戸建て津市藤方　戸建てPR価格1,099万円所在地",
+      "price": "1,099万円",
+      "size": "220.57m²",
+      "url": "https://www.homes.co.jp/kodate/b-1220370000750/",
+      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F750%2F2%2F1%2Fj6jl.jpg&width=208&height=138",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥14,490,000  (~$96,600 USD)",
-      "size_en": "214 m² land",
-      "date_found": "2026-08-29",
-      "lat": 34.773656,
-      "lng": 136.531024
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "中古一戸建て津市片田志袋町　戸建てPR",
-      "address": "中古一戸建て津市片田志袋町　戸建てPR価格799万円所在",
-      "price": "799万円",
-      "size": "272m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000744/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F744%2F2%2F1%2Fbcmj.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥7,990,000  (~$53,266 USD)",
-      "size_en": "272 m² land",
-      "date_found": "2026-08-29",
-      "lat": 34.717984,
-      "lng": 136.449026
+      "price_en": "¥10,990,000  (~$73,266 USD)",
+      "size_en": "221 m² land",
+      "date_found": "2026-08-30",
+      "lat": 34.694793,
+      "lng": 136.515084
     },
     {
       "source": "Lifull Homes",
@@ -1482,22 +1498,6 @@
       "date_found": "2026-04-08",
       "lat": 34.699798,
       "lng": 136.440428
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "中古一戸建て津市白塚町　中古一戸建てPR",
-      "address": "中古一戸建て津市白塚町　中古一戸建てPR価格350万円所",
-      "price": "350万円",
-      "size": "160.62m²",
-      "url": "https://www.homes.co.jp/kodate/b-1574380000157/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F157%2F2%2F1%2Febcl.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥3,500,000  (~$23,333 USD)",
-      "size_en": "161 m² land",
-      "date_found": "2026-08-29",
-      "lat": 34.773976,
-      "lng": 136.537492
     },
     {
       "source": "Lifull Homes",
@@ -1691,7 +1691,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "賃貸居住用",
+      "title": "物件",
       "address": "三重県 津市 白山町南家城",
       "price": "5万円",
       "size": "",
@@ -1831,7 +1831,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "売買居住用",
+      "title": "For sale and residence",
       "address": "三重県 津市 一身田豊野",
       "price": "950万円",
       "size": "249.75 m²",
@@ -1845,7 +1845,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "売買居住用",
+      "title": "For sale and residence",
       "address": "三重県 津市 白山町北家城",
       "price": "480万円",
       "size": "703.2 m²",
@@ -1859,7 +1859,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "売買居住用",
+      "title": "For sale and residence",
       "address": "三重県 津市 美杉町太郎生",
       "price": "500万円",
       "size": "173.55 m²",
@@ -1873,7 +1873,7 @@
     },
     {
       "source": "Akiya Bank",
-      "title": "売買居住用",
+      "title": "For sale and residence",
       "address": "・美杉町の物件には珍しい合併処理浄化槽完備",
       "price": "500万円",
       "size": "297.52 m²",
@@ -1888,7 +1888,7 @@
     {
       "source": "Shizuoka Akiya",
       "title": "売土地",
-      "address": "駿東郡小山町須走",
+      "address": "Subashiri, Oyama-machi, Sunto-gun",
       "price": "500万円",
       "size": "592m² / 592m²",
       "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/176339",
@@ -1903,8 +1903,8 @@
     },
     {
       "source": "Shizuoka Akiya",
-      "title": "売土地",
-      "address": "駿東郡小山町藤曲",
+      "title": "land for sale",
+      "address": "Fujimagari, Oyama-machi, Sunto-gun",
       "price": "820万円",
       "size": "368.73m² / 368.73m²",
       "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/175097",
@@ -1916,38 +1916,6 @@
       "date_found": "2026-07-09",
       "lat": 35.365835,
       "lng": 138.985998
-    },
-    {
-      "source": "Shizuoka Akiya",
-      "title": "売住宅",
-      "address": "駿東郡小山町藤曲",
-      "price": "900万円",
-      "size": "117.58m² / 329.40m² / 117.58m²",
-      "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/174120",
-      "image": "https://akiya-bank.shizuoka.fudohsan.jp/img/174120/2M/1781160641",
-      "area": "Oyama, Shizuoka",
-      "build_year": "",
-      "price_en": "¥9,000,000  (~$60,000 USD)",
-      "size_en": "329 m² building  /  118 m² land  /  118 m² other",
-      "date_found": "2026-06-11",
-      "lat": 35.36008,
-      "lng": 138.979586
-    },
-    {
-      "source": "Shizuoka Akiya",
-      "title": "売住宅",
-      "address": "駿東郡小山町藤曲919-1",
-      "price": "1,380万円",
-      "size": "173.61m² / 450.08m² / 173.61m²",
-      "url": "https://akiya-bank.shizuoka.fudohsan.jp/%E7%89%A9%E4%BB%B6/161302",
-      "image": "https://akiya-bank.shizuoka.fudohsan.jp/img/161302/2M/1781153692",
-      "area": "Oyama, Shizuoka",
-      "build_year": "",
-      "price_en": "¥13,800,000  (~$92,000 USD)",
-      "size_en": "450 m² building  /  174 m² land  /  174 m² other",
-      "date_found": "2026-06-11",
-      "lat": 35.359072,
-      "lng": 138.973558
     }
   ]
 }
