@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T20:17:30",
+  "generated": "2026-09-20T20:32:38",
   "listings": [
     {
       "source": "AtHome",
@@ -981,22 +981,6 @@
       "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "price": "1,120万円",
       "size": "335.02m² / 101.62m²",
-      "url": "https://www.athome.co.jp/kodate/6987265116/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/8IZhiCWaLHYRDL5N2hsqaA==",
-      "area": "Tsu, Mie",
-      "build_year": "1983",
-      "price_en": "¥11,200,000  (~$74,666 USD)",
-      "size_en": "102 m² building  /  335 m² land",
-      "date_found": "2026-07-17",
-      "lat": 34.702293,
-      "lng": 136.440657
-    },
-    {
-      "source": "AtHome",
-      "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
-      "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
-      "price": "1,120万円",
-      "size": "335.02m² / 101.62m²",
       "url": "https://www.athome.co.jp/kodate/6990305666/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/9Z7ebr_r-RtmxXU9ny_XGw==",
       "area": "Tsu, Mie",
@@ -1006,6 +990,22 @@
       "date_found": "2026-09-13",
       "lat": 34.70227,
       "lng": 136.440666
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
+      "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
+      "price": "1,120万円",
+      "size": "335.02m² / 101.62m²",
+      "url": "https://www.athome.co.jp/kodate/6987265116/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/8IZhiCWaLHYRDL5N2hsqaA==",
+      "area": "Tsu, Mie",
+      "build_year": "1983",
+      "price_en": "¥11,200,000  (~$74,666 USD)",
+      "size_en": "102 m² building  /  335 m² land",
+      "date_found": "2026-07-17",
+      "lat": 34.702293,
+      "lng": 136.440657
     },
     {
       "source": "AtHome",
@@ -1489,6 +1489,22 @@
     },
     {
       "source": "Lifull Homes",
+      "title": "中古一戸建て鈴鹿市磯山2丁目　中古一戸建てPR",
+      "address": "中古一戸建て鈴鹿市磯山2丁目　中古一戸建てPR価格850万",
+      "price": "850万円",
+      "size": "188.91m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000021/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F21%2F2%2F1%2Fdqes.jpg&width=208&height=138",
+      "area": "Suzuka, Mie",
+      "build_year": "",
+      "price_en": "¥8,500,000  (~$56,666 USD)",
+      "size_en": "189 m² land",
+      "date_found": "2026-09-20",
+      "lat": 34.813447,
+      "lng": 136.565191
+    },
+    {
+      "source": "Lifull Homes",
       "title": "中古一戸建て中古戸建　鈴鹿市小社町",
       "address": "て中古戸建　鈴鹿市小社町<img src=\"https:/",
       "price": "780万円",
@@ -1537,22 +1553,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て津市高茶屋二丁目　戸建てPR",
-      "address": "中古一戸建て津市高茶屋二丁目　戸建てPR価格1,399万",
-      "price": "1,399万円",
-      "size": "130m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000745/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F745%2F2%2F2%2F84ac.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥13,990,000  (~$93,266 USD)",
-      "size_en": "130 m² land",
-      "date_found": "2026-09-18",
-      "lat": 34.678532,
-      "lng": 136.511675
-    },
-    {
-      "source": "Lifull Homes",
       "title": "中古一戸建て野田",
       "address": "鉄名古屋線 津新町駅 バス18分 野田〔津〕下車 徒歩1分",
       "price": "1,480万円",
@@ -1598,22 +1598,6 @@
       "date_found": "2026-04-08",
       "lat": 34.699798,
       "lng": 136.440428
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "中古一戸建て津市白塚町　中古一戸建てPR",
-      "address": "中古一戸建て津市白塚町　中古一戸建てPR価格450万円所",
-      "price": "450万円",
-      "size": "212.26m²",
-      "url": "https://www.homes.co.jp/kodate/b-1574380000160/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F160%2F2%2F1%2Fylyz.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥4,500,000  (~$30,000 USD)",
-      "size_en": "212 m² land",
-      "date_found": "2026-09-19",
-      "lat": 34.775053,
-      "lng": 136.533539
     },
     {
       "source": "Lifull Homes",
