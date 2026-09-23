@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T21:09:16",
+  "generated": "2026-09-23T21:21:21",
   "listings": [
     {
       "source": "AtHome",
@@ -1439,22 +1439,6 @@
     },
     {
       "source": "Yahoo RE",
-      "title": "このエリアのおすすめ土地",
-      "address": "小山町",
-      "price": "1,180万円",
-      "size": "230.21m2 / 1991m2",
-      "url": "https://realestate.yahoo.co.jp/land/detail_corp/b0022536535/?ult_out=uh_nhlist",
-      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2253/6535/0039/c8f54f2fdd45c26748d9bb0cd9afcc52_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
-      "area": "Oyama, Shizuoka",
-      "build_year": "",
-      "price_en": "¥11,800,000  (~$78,666 USD)",
-      "size_en": "1991 m² building  /  230 m² land",
-      "date_found": "2026-09-22",
-      "lat": 35.3684,
-      "lng": 138.983978
-    },
-    {
-      "source": "Yahoo RE",
       "title": "津市美杉町八知",
       "address": "津市美杉町八知",
       "price": "480万円",
@@ -1484,38 +1468,6 @@
       "date_found": "2026-05-28",
       "lat": 35.319719,
       "lng": 138.903686
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "中古一戸建て鈴鹿市寺家1丁目　中古一戸建てPR",
-      "address": "中古一戸建て鈴鹿市寺家1丁目　中古一戸建てPR価格700万",
-      "price": "700万円",
-      "size": "218.91m²",
-      "url": "https://www.homes.co.jp/kodate/b-1574380000001/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F1%2F2%2F1%2Fnon1.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥7,000,000  (~$46,666 USD)",
-      "size_en": "219 m² land",
-      "date_found": "2026-09-22",
-      "lat": 34.816731,
-      "lng": 136.579341
-    },
-    {
-      "source": "Lifull Homes",
-      "title": "中古一戸建て鈴鹿市長太栄町4丁目　戸建てPR",
-      "address": "中古一戸建て鈴鹿市長太栄町4丁目　戸建てPR価格1,499",
-      "price": "1,499万円",
-      "size": "205.43m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000684/",
-      "image": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F684%2F2%2F1%2Fw6i0.jpg&width=208&height=138",
-      "area": "Suzuka, Mie",
-      "build_year": "",
-      "price_en": "¥14,990,000  (~$99,933 USD)",
-      "size_en": "205 m² land",
-      "date_found": "2026-09-22",
-      "lat": 34.890598,
-      "lng": 136.632715
     },
     {
       "source": "Lifull Homes",
@@ -1567,19 +1519,19 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て津市白塚町　戸建てPR",
-      "address": "中古一戸建て津市白塚町　戸建てPR価格1,449万円所在",
-      "price": "1,449万円",
-      "size": "214.48m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000670/",
-      "image": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F670%2F2%2F1%2Fyi6u.jpg&width=208&height=138",
+      "title": "中古一戸建て津市白塚町　中古一戸建てPR",
+      "address": "中古一戸建て津市白塚町　中古一戸建てPR価格350万円所",
+      "price": "350万円",
+      "size": "160.62m²",
+      "url": "https://www.homes.co.jp/kodate/b-1574380000157/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F157438%2Fsale%2F157%2F2%2F1%2Febcl.jpg&width=208&height=138",
       "area": "Tsu, Mie",
       "build_year": "",
-      "price_en": "¥14,490,000  (~$96,600 USD)",
-      "size_en": "214 m² land",
-      "date_found": "2026-09-22",
-      "lat": 34.773656,
-      "lng": 136.531024
+      "price_en": "¥3,500,000  (~$23,333 USD)",
+      "size_en": "161 m² land",
+      "date_found": "2026-09-23",
+      "lat": 34.773976,
+      "lng": 136.537492
     },
     {
       "source": "Lifull Homes",
