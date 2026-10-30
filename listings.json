@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T22:35:29",
+  "generated": "2026-10-30T22:08:30",
   "listings": [
     {
       "source": "AtHome",
@@ -823,22 +823,6 @@
       "address": "津市 河辺町（津駅） 平屋建 ５ＤＫ",
       "price": "980万円",
       "size": "390.28m² / 150.08m²",
-      "url": "https://www.athome.co.jp/kodate/1120888205/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/X5_Zqjpt31GaZvKxXvbDuA==",
-      "area": "Tsu, Mie",
-      "build_year": "1936",
-      "price_en": "¥9,800,000  (~$65,333 USD)",
-      "size_en": "150 m² building  /  390 m² land",
-      "date_found": "2026-10-23",
-      "lat": 34.734508,
-      "lng": 136.510493
-    },
-    {
-      "source": "AtHome",
-      "title": "津市 河辺町（津駅） 平屋建 ５ＤＫ",
-      "address": "津市 河辺町（津駅） 平屋建 ５ＤＫ",
-      "price": "980万円",
-      "size": "390.28m² / 150.08m²",
       "url": "https://www.athome.co.jp/kodate/6985685427/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
       "image": "https://www.athome.co.jp/image_files/path/hjXH3QDGZMi3F7BZLKw2zA==",
       "area": "Tsu, Mie",
@@ -848,6 +832,22 @@
       "date_found": "2026-10-23",
       "lat": 34.740275,
       "lng": 136.482811
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 河辺町（津駅） 平屋建 ５ＤＫ",
+      "address": "津市 河辺町（津駅） 平屋建 ５ＤＫ",
+      "price": "980万円",
+      "size": "390.28m² / 150.08m²",
+      "url": "https://www.athome.co.jp/kodate/1120888205/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/X5_Zqjpt31GaZvKxXvbDuA==",
+      "area": "Tsu, Mie",
+      "build_year": "1936",
+      "price_en": "¥9,800,000  (~$65,333 USD)",
+      "size_en": "150 m² building  /  390 m² land",
+      "date_found": "2026-10-23",
+      "lat": 34.734508,
+      "lng": 136.510493
     },
     {
       "source": "AtHome",
@@ -929,22 +929,6 @@
     },
     {
       "source": "AtHome",
-      "title": "津市 片田新町 2階建 ４ＬＤＫ",
-      "address": "津市 片田新町 2階建 ４ＬＤＫ",
-      "price": "1,180万円",
-      "size": "306.56m² / 136.00m²",
-      "url": "https://www.athome.co.jp/kodate/1199139224/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
-      "image": "https://www.athome.co.jp/image_files/path/zE7HA4mCotduLwzik3wB-A==",
-      "area": "Tsu, Mie",
-      "build_year": "1990",
-      "price_en": "¥11,800,000  (~$78,666 USD)",
-      "size_en": "136 m² building  /  307 m² land",
-      "date_found": "2026-10-23",
-      "lat": 34.70064,
-      "lng": 136.438735
-    },
-    {
-      "source": "AtHome",
       "title": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "address": "津市 片田新町（津新町駅） 2階建 ４ＬＤＫ",
       "price": "1,180万円",
@@ -958,6 +942,22 @@
       "date_found": "2026-10-23",
       "lat": 34.70065,
       "lng": 136.4387
+    },
+    {
+      "source": "AtHome",
+      "title": "津市 片田新町 2階建 ４ＬＤＫ",
+      "address": "津市 片田新町 2階建 ４ＬＤＫ",
+      "price": "1,180万円",
+      "size": "306.56m² / 136.00m²",
+      "url": "https://www.athome.co.jp/kodate/1199139224/?DOWN=1&BKLISTID=001LPC&SEARCHDIV=1&sref=list_simple",
+      "image": "https://www.athome.co.jp/image_files/path/zE7HA4mCotduLwzik3wB-A==",
+      "area": "Tsu, Mie",
+      "build_year": "1990",
+      "price_en": "¥11,800,000  (~$78,666 USD)",
+      "size_en": "136 m² building  /  307 m² land",
+      "date_found": "2026-10-23",
+      "lat": 34.70064,
+      "lng": 136.438735
     },
     {
       "source": "AtHome",
@@ -1393,22 +1393,6 @@
     },
     {
       "source": "Yahoo RE",
-      "title": "このエリアのおすすめ土地",
-      "address": "小山町",
-      "price": "1,180万円",
-      "size": "230.21m2 / 1991m2 / 537m2",
-      "url": "https://realestate.yahoo.co.jp/land/detail_corp/b0022536535/?ult_out=uh_nhlist",
-      "image": "https://realestate-pctr.c.yimg.jp/ds/realestate-buy-image/bld_image/00/2253/6535/0039/c8f54f2fdd45c26748d9bb0cd9afcc52_00_01.jpg?pri=l&up=0&nf_src=ds&nf_st=200&nf_path=/realestate-buy-image/no_image/noimage_640x640.png&w=250&h=250",
-      "area": "Oyama, Shizuoka",
-      "build_year": "",
-      "price_en": "¥11,800,000  (~$78,666 USD)",
-      "size_en": "1991 m² building  /  230 m² land  /  537 m² other",
-      "date_found": "2026-10-23",
-      "lat": 35.3684,
-      "lng": 138.983978
-    },
-    {
-      "source": "Yahoo RE",
       "title": "津市美杉町八知",
       "address": "津市美杉町八知",
       "price": "480万円",
@@ -1489,22 +1473,6 @@
     },
     {
       "source": "Lifull Homes",
-      "title": "中古一戸建て津市高茶屋二丁目　戸建てPR",
-      "address": "中古一戸建て津市高茶屋二丁目　戸建てPR価格1,449万",
-      "price": "1,449万円",
-      "size": "130m²",
-      "url": "https://www.homes.co.jp/kodate/b-1220370000745/",
-      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F122037%2Fsale%2F745%2F2%2F2%2Furcw.jpg&width=208&height=138",
-      "area": "Tsu, Mie",
-      "build_year": "",
-      "price_en": "¥14,490,000  (~$96,600 USD)",
-      "size_en": "130 m² land",
-      "date_found": "2026-10-29",
-      "lat": 34.678532,
-      "lng": 136.511675
-    },
-    {
-      "source": "Lifull Homes",
       "title": "中古一戸建て近鉄大阪線 榊原温泉口駅 バス15分 八対野3区下車 徒歩3分",
       "address": "15分 八対野3区下車 徒歩3分<img src=\"htt",
       "price": "800万円",
@@ -1534,6 +1502,20 @@
       "date_found": "2026-10-22",
       "lat": 34.699798,
       "lng": 136.440428
+    },
+    {
+      "source": "Lifull Homes",
+      "title": "中古一戸建て津市城山一丁目PR",
+      "address": "中古一戸建て津市城山一丁目PR価格600万円所在地三重県",
+      "price": "600万円",
+      "size": "146.2m²",
+      "url": "https://www.homes.co.jp/kodate/b-1310390000042/",
+      "image": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F131039%2Fsale%2F42%2F2%2F1%2F2vz0.jpg&width=208&height=138",
+      "area": "Tsu, Mie",
+      "build_year": "",
+      "price_en": "¥6,000,000  (~$40,000 USD)",
+      "size_en": "146 m² land",
+      "date_found": "2026-10-30"
     },
     {
       "source": "Lifull Homes",
